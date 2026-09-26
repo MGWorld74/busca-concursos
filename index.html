@@ -295,7 +295,11 @@ function extractUf(t){
   if(m && UFS.includes(m[1])) return m[1];
   m = /[\/(]([A-Z]{2})(?=[)\s,.:;]|$)/.exec(t) || /\b[A-Z]{2,6}-([A-Z]{2})\b/.exec(t);
   if(m && UFS.includes(m[1])) return m[1];
+  m = /\b[^\s-]{2,}-([A-Z]{2})\b/.exec(t);   // "Cidade-UF" grudado (ex.: Aparecida-SP)
+  if(m && UFS.includes(m[1])) return m[1];
   for(const [uf,name] of NAME_LIST){ if(t.includes(name)) return uf; }
+  m = /\b([A-Z]{2})\b/g; let mm;              // sigla de UF solta (ex.: "SEPLAG MG 2026")
+  while((mm = m.exec(t))){ if(UFS.includes(mm[1])) return mm[1]; }
   return '';
 }
 function extractOrgao(t){
