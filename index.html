@@ -24,10 +24,10 @@
 :root[data-theme="dark"]{--bg:#08132a;--card:#0f2140;--ink:#eef3fb;--muted:#a8b8cf;--line:#23406b;--soft:#14305a;--brand:#3ecf7c;--brand-ink:#04210f;--focus:#ffdf00;--ok:#3ecf7c;--gold:#ffdf00;--hero-a:#003d1a;--hero-b:#001a4d;--shadow:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{background:linear-gradient(120deg,var(--hero-a) 0%,var(--hero-a) 30%,var(--hero-b) 100%);color:#fff;padding:28px 16px 74px;border-top:6px solid var(--yellow)}
+header{background:linear-gradient(120deg,var(--hero-a) 0%,var(--hero-a) 30%,var(--hero-b) 100%);color:#fff;padding:20px 16px 32px;border-top:6px solid var(--yellow)}
 .wrap{max-width:1100px;margin:0 auto}
 .top{position:relative}
-.brand{width:100%;max-width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.brand{width:100%;max-width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;display:block;box-shadow:0 6px 20px rgba(0,0,0,.35)}
 .theme-float{position:absolute;top:12px;right:12px;z-index:2}
 h1{margin:0;font-size:24px;letter-spacing:-.3px}
 header p{margin:6px 0 0;opacity:.92}
@@ -35,7 +35,7 @@ header p{margin:6px 0 0;opacity:.92}
 .tab{background:rgba(255,255,255,.16);color:#fff;border:0;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600}
 .tab:hover{background:rgba(255,255,255,.28)}
 .tab.active{background:var(--yellow);color:#002776}
-main{margin-top:-52px;padding:0 16px 40px}
+main{margin-top:-14px;padding:0 16px 40px}
 .panel{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:16px;border:1px solid var(--line)}
 label.f{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px}
 input[type=text],input[type=number],select{
@@ -99,7 +99,7 @@ mark{background:#ffdf00;color:#000;border-radius:3px;padding:0 1px}
 details{margin-top:14px}
 summary{cursor:pointer;font-weight:600}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
-@media(max-width:560px){.searchrow{flex-direction:column}}
+@media(max-width:560px){.searchrow{flex-direction:column}.brand{height:130px}}
 [hidden]{display:none!important}
 </style>
 </head>
