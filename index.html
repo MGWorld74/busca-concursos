@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Busca Concursos — concursos públicos por âmbito</title>
+<meta name="description" content="Busca automática de concursos públicos no Brasil por âmbito nacional, estadual ou municipal, com editais abertos, previstos e notícias relacionadas.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Busca Concursos — concursos públicos por âmbito">
+<meta property="og:description" content="Escolha nacional, estadual ou município e veja editais abertos e previstos automaticamente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='80'%3E%F0%9F%94%8E%3C/text%3E%3C/svg%3E">
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-messaging-compat.js"></script>
+<style>
+:root{
+  --bg:#f2f6f3;--card:#ffffff;--ink:#0d1b2e;--muted:#465a6d;--line:#cbd8d0;--soft:#e4f1e8;
+  --brand:#00692c;--brand-ink:#ffffff;--blue:#002776;--yellow:#ffdf00;--focus:#002776;
+  --ok:#00692c;--bad:#b3261e;--gold:#9a6b00;
+  --hero-a:#005e27;--hero-b:#002776;
+  --shadow:0 1px 2px rgba(0,39,118,.06),0 6px 20px rgba(0,39,118,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#08132a;--card:#0f2140;--ink:#eef3fb;--muted:#a8b8cf;--line:#23406b;--soft:#14305a;--brand:#3ecf7c;--brand-ink:#04210f;--focus:#ffdf00;--ok:#3ecf7c;--gold:#ffdf00;--hero-a:#003d1a;--hero-b:#001a4d;--shadow:none}
+}
+:root[data-theme="dark"]{--bg:#08132a;--card:#0f2140;--ink:#eef3fb;--muted:#a8b8cf;--line:#23406b;--soft:#14305a;--brand:#3ecf7c;--brand-ink:#04210f;--focus:#ffdf00;--ok:#3ecf7c;--gold:#ffdf00;--hero-a:#003d1a;--hero-b:#001a4d;--shadow:none}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:linear-gradient(120deg,var(--hero-a) 0%,var(--hero-a) 30%,var(--hero-b) 100%);color:#fff;padding:0;border-top:6px solid var(--yellow);line-height:0}
+.wrap{max-width:1100px;margin:0 auto}
+.top{position:relative}
+.brand{width:100%;max-width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;display:block;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.theme-float{position:absolute;top:12px;right:12px;z-index:2}
+h1{margin:0;font-size:24px;letter-spacing:-.3px}
+header p{margin:6px 0 0;opacity:.92}
+.tab{background:rgba(255,255,255,.16);color:#fff;border:0;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600}
+.tab:hover{background:rgba(255,255,255,.28)}
+.tab.active{background:var(--yellow);color:#002776}
+.tabsbox{display:flex;gap:8px;margin-bottom:14px;background:var(--soft);border:1px dashed var(--brand);border-radius:12px;padding:10px}
+.tabsbox .tab{background:var(--card);color:var(--brand);border:1px solid var(--line);padding:10px 18px;border-radius:10px;font-weight:700}
+.tabsbox .tab:hover{filter:brightness(.97)}
+.tabsbox .tab.active{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+main{margin-top:16px;padding:0 16px 40px}
+.panel{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:16px;border:1px solid var(--line)}
+label.f{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px}
+input[type=text],input[type=number],select{
+  width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+input:focus,select:focus,button:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:-1px}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--brand);color:var(--brand-ink);border:0;border-radius:10px;padding:10px 18px;font-weight:600;white-space:nowrap}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:var(--soft);color:var(--brand);border:1px solid var(--line)}
+.btn.sm{padding:6px 10px;font-size:13px;border-radius:8px;text-decoration:none;display:inline-block}
+.btn:disabled{opacity:.6;cursor:wait}
+
+/* seletor de âmbito */
+.seg{display:flex;gap:6px;background:var(--soft);border-radius:12px;padding:4px}
+.seg button{flex:1;background:transparent;border:0;border-radius:9px;padding:10px 8px;font-weight:700;color:var(--muted)}
+.seg button.active{background:var(--brand);color:var(--brand-ink)}
+.scope-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:12px}
+.searchrow{display:flex;gap:8px;margin-top:12px}
+.big{font-size:16px;padding:13px}
+.hint{color:var(--muted);font-size:12.5px;margin:8px 2px 0}
+
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.checks{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:14px}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin:18px 2px 6px}
+.count{font-weight:700}
+.status{color:var(--muted);font-size:12.5px;margin:0 2px 10px;min-height:18px}
+.status button{border:0;background:none;color:var(--brand);text-decoration:underline;padding:0 4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--soft);color:var(--brand);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;cursor:pointer}
+.chip::after{content:" ×"}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--brand)}
+.sub{margin:24px 2px 0;font-size:15px}
+.card h3{margin:0;font-size:15.5px;line-height:1.35}
+.row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;color:#fff}
+.t-Abertura{background:#00692c}.t-Previsto{background:#002776}.t-Alteração{background:#ffdf00;color:#002776}.t-Resultado{background:#1a56b0}.t-Notícia{background:#566577}
+.scope-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.meta{color:var(--muted);font-size:13px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px}
+.kv b{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:12px}
+.new{color:var(--ok);font-weight:700}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.fav{background:transparent;border:1px solid var(--line);border-radius:8px;color:var(--muted);font-size:16px;line-height:1;padding:4px 8px}
+.fav.on{color:var(--gold);border-color:var(--gold)}
+mark{background:#ffdf00;color:#000;border-radius:3px;padding:0 1px}
+.empty{text-align:center;color:var(--muted);padding:34px 10px}
+.notice{background:var(--soft);border:1px dashed var(--brand);border-radius:12px;padding:10px 14px;margin-bottom:14px;font-size:13px}
+.newslist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.newslist li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13.5px}
+.newslist a{color:var(--brand);font-weight:600;text-decoration:none}
+.newslist a:hover{text-decoration:underline}
+.newslist .meta{font-size:12px}
+.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:16px}
+.link{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--card)}
+.link:hover{border-color:var(--brand)}
+.link b{display:block;color:var(--brand)}
+.link span{font-size:12px;color:var(--muted)}
+details{margin-top:14px}
+summary{cursor:pointer;font-weight:600}
+.alertbox{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line)}
+.alertbox h3{margin:0 0 4px;font-size:15px}
+.alertlist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.alertlist li{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--soft);border-radius:8px;padding:7px 10px;font-size:13px}
+.alertlist button{background:none;border:0;color:var(--bad);font-size:12px;text-decoration:underline;padding:0}
+.alertmsg{font-size:12.5px;margin-top:8px;min-height:16px}
+.alertmsg.ok{color:var(--ok)}
+.alertmsg.bad{color:var(--bad)}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
+@media(max-width:560px){.searchrow{flex-direction:column}.brand{height:130px}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <img class="brand" src="radar-concursos-banner.jpg" alt="Radar Concursos — monitorando seu próximo concurso">
+      <button class="tab theme-float" id="themeBtn" title="Alternar tema">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<div class="tabsbox">
+  <button class="tab active" data-tab="live">Concursos</button>
+  <button class="tab" data-tab="web">Fontes oficiais</button>
+</div>
+<section id="tab-live">
+  <div class="panel">
+    <label class="f">Âmbito da busca</label>
+    <div class="seg" id="seg" role="tablist" aria-label="Âmbito">
+      <button data-scope="nacional" class="active" role="tab" aria-selected="true">🇧🇷 Nacional</button>
+      <button data-scope="estadual" role="tab" aria-selected="false">🏛️ Estadual</button>
+      <button data-scope="municipal" role="tab" aria-selected="false">🏙️ Municipal</button>
+    </div>
+    <div class="scope-fields">
+      <div id="wrapUf" hidden><label class="f">Estado (UF)</label><select id="fUf"><option value="">Selecione…</option></select></div>
+      <div id="wrapMun" hidden>
+        <label class="f">Município</label>
+        <select id="fMun" disabled><option value="">Selecione o estado primeiro…</option></select>
+        <input type="text" id="fMunManual" placeholder="Nome do município" autocomplete="off" hidden>
+        <p class="hint" style="margin:4px 2px 0"><a href="#" id="munManualToggle">Não encontrou o município? Digite manualmente</a></p>
+      </div>
+    </div>
+
+    <div class="searchrow">
+      <input type="text" id="q" class="big" placeholder='Refine (opcional): cargo, órgão, "frase exata", -excluir…' autocomplete="off">
+      <button class="btn" id="goBtn">Atualizar</button>
+      <button class="btn ghost" id="clearBtn" title="Voltar aos filtros padrão">Limpar</button>
+    </div>
+    <p class="hint" id="scopeHint"></p>
+
+    <div class="filters">
+      <div><label class="f">Período (notícias)</label>
+        <select id="fDias"><option value="7">7 dias</option><option value="15" selected>15 dias</option><option value="30">30 dias</option><option value="90">90 dias</option></select></div>
+      <div><label class="f">Situação</label>
+        <select id="fSit"><option value="">Todas</option><option value="aberto">Edital aberto</option><option value="breve">Edital previsto</option><option value="encerrado">Resultados/notícias</option></select></div>
+      <div><label class="f">Ordenar por</label>
+        <select id="fSort"><option value="rec">Mais recentes</option><option value="rel">Relevância</option><option value="sal">Maior salário</option><option value="vagas">Mais vagas</option></select></div>
+    </div>
+    <div id="more">
+      <div class="filters">
+        <div><label class="f">Tipo</label>
+          <select id="fTipo"><option value="">Todos</option><option>Abertura</option><option>Previsto</option><option>Alteração</option><option>Resultado</option><option>Notícia</option></select></div>
+        <div><label class="f">Modalidade</label>
+          <select id="fMod"><option value="">Todas</option><option>Concurso</option><option>Processo seletivo</option><option>Estágio</option></select></div>
+        <div><label class="f">Escolaridade</label>
+          <select id="fEsc"><option value="">Todas</option><option>Fundamental</option><option>Médio</option><option>Técnico</option><option>Superior</option></select></div>
+        <div><label class="f">Salário mínimo (R$)</label><input type="number" id="fSal" min="0" step="500" placeholder="0"></div>
+        <div><label class="f">Vagas mínimas</label><input type="number" id="fVagas" min="0" step="10" placeholder="0"></div>
+      </div>
+      <div class="checks">
+        <label><input type="checkbox" id="fFav"> Só favoritos ★</label>
+        <label><input type="checkbox" id="fStrict"> Exigir termos digitados no título</label>
+      </div>
+    </div>
+
+    <div class="alertbox">
+      <h3>🔔 Avisos</h3>
+      <p class="hint" style="margin:0">Receba uma notificação no seu dispositivo assim que sair um concurso novo, mesmo com o site fechado.</p>
+      <div id="alertOff">
+        <button class="btn ghost sm" id="alertEnable" style="margin-top:10px">Ativar avisos neste dispositivo</button>
+      </div>
+      <div id="alertOn" hidden>
+        <div class="scope-fields" style="margin-top:10px">
+          <div><label class="f">Âmbito do aviso</label>
+            <select id="aAmbito">
+              <option value="nacional">🇧🇷 Nacional</option>
+              <option value="estadual">🏛️ Estadual</option>
+              <option value="municipal">🏙️ Municipal</option>
+            </select>
+          </div>
+          <div id="aWrapUf" hidden><label class="f">Estado (UF)</label><select id="aUf"><option value="">Selecione…</option></select></div>
+          <div id="aWrapMun" hidden><label class="f">Município (opcional)</label><input type="text" id="aMun" placeholder="Nome do município" autocomplete="off"></div>
+          <div><label class="f">Cargo/termo (opcional)</label><input type="text" id="aTermo" placeholder="Ex.: analista, professor…" autocomplete="off"></div>
+        </div>
+        <button class="btn sm" id="aSalvar" style="margin-top:10px">Salvar aviso</button>
+        <ul class="alertlist" id="alertList"></ul>
+      </div>
+      <p class="alertmsg" id="alertMsg" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="bar">
+    <div><span class="count" id="count">0</span> <span id="countTxt">resultados</span></div>
+    <div class="chips" id="active"></div>
+  </div>
+  <div class="status" id="status" role="status" aria-live="polite"></div>
+
+  <div id="resultsWrap">
+  <div id="secAbertoWrap" hidden>
+    <h2 class="sub">📢 Edital Aberto <span class="count" id="countAberto">0</span></h2>
+    <div class="grid" id="secAberto"></div>
+  </div>
+  <div id="secPrevistoWrap" hidden>
+    <h2 class="sub">🕓 Edital Previsto <span class="count" id="countPrevisto">0</span></h2>
+    <div class="grid" id="secPrevisto"></div>
+  </div>
+  <div id="secOutrasWrap" hidden>
+    <h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <span class="count" id="countOutras">0</span></h2>
+    <ul class="newslist" id="secOutras"></ul>
+  </div>
+  <div class="empty" id="empty" hidden>Nenhum resultado com esses filtros. Tente ampliar o período, remover filtros ou trocar os termos.</div>
+  </div>
+  <div style="text-align:right;margin-top:10px">
+    <button class="btn ghost sm" id="exportJson">Exportar JSON</button>
+    <button class="btn ghost sm" id="exportCsv">Exportar CSV</button>
+  </div>
+</section>
+
+<section id="tab-web" hidden>
+  <div class="panel">
+    <h2 style="margin:0 0 4px;font-size:18px">Fontes oficiais</h2>
+    <p class="hint" style="margin-top:0">Digite o que procura e clique em <b>Pesquisar</b>. A página de resultados abre em uma nova aba, com o que você digitou entre aspas — nada além disso é acrescentado.</p>
+    <div class="searchrow" style="margin-top:12px">
+      <input type="text" id="wq" class="big" placeholder="Ex.: analista judiciário, professor de matemática…" autocomplete="off">
+      <button class="btn" id="wgo">Pesquisar</button>
+    </div>
+    <div class="filters" style="grid-template-columns:minmax(220px,360px)">
+      <div><label class="f">Pesquisar em</label><select id="wOnde"></select></div>
+    </div>
+    <p class="hint" id="wMsg" role="status" aria-live="polite"></p>
+  </div>
+  <h3 class="sub">Ou abra uma fonte específica</h3>
+  <div class="links" id="webLinks"></div>
+</section>
+</main>
+
+<footer>
+  Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados. A busca por âmbito é automática e heurística (via Google Notícias) — confira sempre o edital oficial antes de se inscrever.
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- dados de apoio ---------- */
+const UFS = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'];
+const UFNAMES = {AC:'Acre',AL:'Alagoas',AP:'Amapá',AM:'Amazonas',BA:'Bahia',CE:'Ceará',DF:'Distrito Federal',ES:'Espírito Santo',GO:'Goiás',MA:'Maranhão',MT:'Mato Grosso',MS:'Mato Grosso do Sul',MG:'Minas Gerais',PA:'Pará',PB:'Paraíba',PR:'Paraná',PE:'Pernambuco',PI:'Piauí',RJ:'Rio de Janeiro',RN:'Rio Grande do Norte',RS:'Rio Grande do Sul',RO:'Rondônia',RR:'Roraima',SC:'Santa Catarina',SP:'São Paulo',SE:'Sergipe',TO:'Tocantins'};
+const NAME_LIST = Object.entries(UFNAMES).filter(e=>e[0]!=='PA').sort((a,b)=>b[1].length-a[1].length);
+const norm = s => String(s == null ? '' : s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const brl = n => n ? n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}) : '—';
+const mem = {};
+const store = {
+  get(k){ try{ const v = localStorage.getItem(k); return v==null ? (mem[k]??null) : v; }catch(e){ return mem[k]??null; } },
+  set(k,v){ mem[k]=v; try{ localStorage.setItem(k,v); }catch(e){} },
+  del(k){ delete mem[k]; try{ localStorage.removeItem(k); }catch(e){} }
+};
+function relTime(ts){
+  if(!ts) return '—';
+  const m = Math.round((Date.now()-ts)/60000);
+  if(m < 60) return 'há '+Math.max(m,1)+' min';
+  const h = Math.round(m/60); if(h < 24) return 'há '+h+' h';
+  const d = Math.round(h/24); if(d < 30) return 'há '+d+' dia'+(d>1?'s':'');
+  return new Date(ts).toLocaleDateString('pt-BR');
+}
+
+/* ---------- extração de metadados a partir do título da notícia ---------- */
+const RX = {
+  alt:  /\b(retifica\w*|altera\w*|prorroga\w*|reabre\w*|reabertura|suspende\w*|suspens\w*|cancela\w*|adia\w*|anula\w*|errata)\b/,
+  res:  /\b(gabarito\w*|resultado\w*|classificad\w*|classificacao|homologa\w*|convoca\w*|convocacao|nomea\w*|aprovad\w*|nota final|notas|chamamento)\b/,
+  prev: /\b(autoriza\w*|previst\w*|preve\w*|comissao|banca (definida|escolhida|contratada)|solicita\w*|pedido|em breve|planeja\w*|deve abrir|sera aberto|anuncia\w*)\b/,
+  abr:  /\b(abre\w*|abertas?|edital|lanca\w*|publica\w*|inscricoes|vagas?|oferece\w*|seleciona\w*|contrata\w*)\b/
+};
+function classify(n){
+  if(RX.alt.test(n)) return 'Alteração';
+  if(RX.res.test(n)) return 'Resultado';
+  if(RX.prev.test(n)) return 'Previsto';
+  if(RX.abr.test(n)) return 'Abertura';
+  return 'Notícia';
+}
+function modalidade(n){
+  if(/\bestagio\b/.test(n)) return 'Estágio';
+  if(/(processo seletivo|teste seletivo|selecao|selecoes)/.test(n)) return 'Processo seletivo';
+  return 'Concurso';
+}
+function escolaridade(n){
+  const out = [];
+  if(/fundamental/.test(n)) out.push('Fundamental');
+  if(/(ensino medio|nivel medio|\bmedio\b)/.test(n)) out.push('Médio');
+  if(/(tecnico|nivel tecnico)/.test(n)) out.push('Técnico');
+  if(/superior/.test(n)) out.push('Superior');
+  return out;
+}
+function money(s){
+  const out = []; const re = /R\$\s?([\d.]+(?:,\d{1,2})?)/g; let m;
+  while((m = re.exec(s))) out.push(parseFloat(m[1].replace(/\./g,'').replace(',','.')));
+  return out.length ? Math.max(...out) : 0;
+}
+function extractUf(t){
+  let m = /\s[-–]\s([A-Z]{2})\b/.exec(t);
+  if(m && UFS.includes(m[1])) return m[1];
+  m = /[\/(]([A-Z]{2})(?=[)\s,.:;]|$)/.exec(t) || /\b[A-Z]{2,6}-([A-Z]{2})\b/.exec(t);
+  if(m && UFS.includes(m[1])) return m[1];
+  m = /\b[^\s-]{2,}-([A-Z]{2})\b/.exec(t);   // "Cidade-UF" grudado (ex.: Aparecida-SP)
+  if(m && UFS.includes(m[1])) return m[1];
+  for(const [uf,name] of NAME_LIST){ if(t.includes(name)) return uf; }
+  m = /\b([A-Z]{2})\b/g; let mm;              // sigla de UF solta (ex.: "SEPLAG MG 2026")
+  while((mm = m.exec(t))){ if(UFS.includes(mm[1])) return mm[1]; }
+  return '';
+}
+function extractOrgao(t){
+  let m = /^(.+?)\s[-–]\s([A-Z]{2})\b/.exec(t);
+  if(m && UFS.includes(m[2]) && m[1].length <= 90) return m[1].trim();
+  m = /^(.+?)\s+(abre|abrem|reabre|retifica|publica|divulga|divulgam|autoriza|prorroga|altera|convoca|lança|anuncia|suspende|cancela|homologa|oferece|seleciona|contrata|tem|terá|divulgou|abriu|libera|define|recebe|prevê|solicita)\b/i.exec(t);
+  if(m && m[1].length <= 80) return m[1].trim();
+  return '';
+}
+function extractCargos(t){
+  const m = /\bpara\s+(.+?)(?:\s+com\s+(?:sal|vaga)|\s+e\s+cadastro|$)/i.exec(t);
+  return m ? m[1].trim().slice(0,110) : '';
+}
+function hash(s){ let h = 5381; for(let i=0;i<s.length;i++) h = ((h<<5)+h+s.charCodeAt(i))|0; return 'i'+(h>>>0).toString(36); }
+function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return ''; } }
+function blobOf(it){ return norm([it.titulo, it.orgao, it.uf, UFNAMES[it.uf]||'', it.municipio, it.cargos, it.escolaridade.join(' ')].join(' ')); }
+
+function build(rawTitle, link, pubDate, source, srcUrl, scope, uf, municipio){
+  let title = String(rawTitle||'').trim();
+  source = String(source||'').trim();
+  if(source){ const suf = ' - '+source; if(title.endsWith(suf)) title = title.slice(0,-suf.length).trim(); }
+  else{
+    const m = /^(.*\S)\s[-–]\s([^-–]{2,40})$/.exec(title);
+    if(m && !/^[A-Z]{2}\b/.test(m[2]) && m[1].length > 15){ title = m[1]; source = m[2].trim(); }
+  }
+  const n = norm(title);
+  const vm = /(\d[\d.]*)\s+vagas?/i.exec(title);
+  const it = {
+    id: hash(n), titulo: title, orgao: extractOrgao(title), uf: extractUf(title) || uf || '',
+    scope, municipio: municipio||'',
+    tipo: classify(n), modalidade: modalidade(n), escolaridade: escolaridade(n),
+    vagas: vm ? parseInt(vm[1].replace(/\./g,''),10)||0 : 0,
+    cr: /cadastro[\s-]*(de\s+)?reserva|\bCR\b/i.test(title),
+    salario: money(title), cargos: extractCargos(title),
+    fonte: source || hostOf(srcUrl), link: link || '', ts: Date.parse(pubDate) || 0
+  };
+  it._n = blobOf(it);
+  return it;
+}
+
+/* ---------- consulta local (termos livres) ---------- */
+function parseQuery(q){
+  return String(q||'').split(/\s+(?:OR|OU)\s+/i).map(part=>{
+    const out = {terms:[], not:[]};
+    const re = /(-?)(?:"([^"]+)"|(\S+))/g; let m;
+    while((m = re.exec(part))){
+      const neg = m[1]==='-', val = norm(m[2]||m[3]||'');
+      if(!val) continue;
+      (neg?out.not:out.terms).push(val);
+    }
+    return out;
+  }).filter(a=>a.terms.length||a.not.length);
+}
+function variants(t){
+  const v = [];
+  if(t.length > 4){
+    if(t.endsWith('al')) v.push(t.slice(0,-2)+'ais');
+    if(t.endsWith('ais')) v.push(t.slice(0,-3)+'al');
+    if(t.endsWith('ao')) v.push(t.slice(0,-2)+'oes');
+    if(t.endsWith('oes')) v.push(t.slice(0,-3)+'ao');
+    if(t.endsWith('es')) v.push(t.slice(0,-2));
+    if(t.endsWith('s')) v.push(t.slice(0,-1));
+  }
+  return v;
+}
+function has(b, t){ return b.includes(t) || variants(t).some(x=>b.includes(x)); }
+function matchAlt(it, a, strict){
+  const b = it._n; let score = 0;
+  for(const t of a.terms){
+    if(has(b,t)) score += (it.orgao && norm(it.orgao).includes(t)) ? 3 : 1;
+    else if(strict) return -1;
+  }
+  for(const t of a.not){ if(has(b,t)) return -1; }
+  return score;
+}
+function highlighter(alts){
+  const words = [...new Set(alts.flatMap(a=>a.terms))].filter(w=>w.length>1);
+  if(!words.length) return s=>esc(s);
+  return s => {
+    const n = norm(s); const ranges = [];
+    for(const w of words){ let i = n.indexOf(w); while(i>-1){ ranges.push([i,i+w.length]); i = n.indexOf(w,i+w.length); } }
+    if(!ranges.length) return esc(s);
+    ranges.sort((a,b)=>a[0]-b[0]);
+    const merged = [ranges[0].slice()];
+    for(const r of ranges.slice(1)){ const l = merged[merged.length-1]; if(r[0]<=l[1]) l[1]=Math.max(l[1],r[1]); else merged.push(r.slice()); }
+    let out='', p=0;
+    for(const [a,b] of merged){ out += esc(s.slice(p,a))+'<mark>'+esc(s.slice(a,b))+'</mark>'; p=b; }
+    return out + esc(s.slice(p));
+  };
+}
+
+/* ---------- rede: Google Notícias via proxies CORS ---------- */
+const PROXIES = [
+  {name:'allorigins.win', kind:'xml', url:'https://api.allorigins.win/raw?url={url}'},
+  {name:'rss2json.com',   kind:'json', url:'https://api.rss2json.com/v1/api.json?rss_url={url}'},
+  {name:'corsproxy.io',   kind:'xml', url:'https://corsproxy.io/?url={url}'},
+  {name:'codetabs.com',   kind:'xml', url:'https://api.codetabs.com/v1/proxy/?quest={url}'}
+];
+const feedUrl = q => 'https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=pt-BR&gl=BR&ceid=BR:pt-419';
+async function fetchTimeout(url, ms){
+  const ctl = new AbortController(); const t = setTimeout(()=>ctl.abort(), ms);
+  try{ return await fetch(url, {signal: ctl.signal}); } finally { clearTimeout(t); }
+}
+function parseXml(xml, scope, uf, municipio){
+  const doc = new DOMParser().parseFromString(xml, 'text/xml');
+  if(doc.querySelector('parsererror') || !doc.querySelector('rss')) throw new Error('resposta inválida');
+  return Array.from(doc.querySelectorAll('item')).map(it=>{
+    const g = t => { const e = it.querySelector(t); return e ? e.textContent : ''; };
+    const s = it.querySelector('source');
+    return build(g('title'), g('link'), g('pubDate'), s ? s.textContent : '', s ? s.getAttribute('url') : '', scope, uf, municipio);
+  }).filter(x=>x.titulo);
+}
+function parseJson(data, scope, uf, municipio){
+  if(!data || data.status !== 'ok' || !Array.isArray(data.items)) throw new Error('resposta inválida');
+  return data.items.map(i=>build(i.title, i.link, (i.pubDate||'').replace(' ','T')+'Z', '', '', scope, uf, municipio)).filter(x=>x.titulo);
+}
+function fetchViaProxies(target, scope, uf, municipio){
+  const custom = (store.get('cb3_proxy')||'').trim();
+  const jobs = [];
+  if(custom) jobs.push({name:'proxy próprio', kind:'xml', url:custom});
+  PROXIES.forEach(p=>jobs.push(p));
+  return new Promise((resolve, reject)=>{
+    let done = false, started = 0, failed = 0; const errs = [], timers = [];
+    const attempt = async job => {
+      const res = await fetchTimeout(job.url.replace('{url}', encodeURIComponent(target)), 12000);
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      return job.kind==='json' ? parseJson(await res.json(), scope, uf, municipio) : parseXml(await res.text(), scope, uf, municipio);
+    };
+    const start = () => {
+      if(done || started >= jobs.length) return;
+      const job = jobs[started++];
+      timers.push(setTimeout(start, 2500));
+      attempt(job).then(items=>{
+        if(done) return;
+        done = true; timers.forEach(clearTimeout); lastProxyUsed = job.name; resolve(items);
+      }).catch(e=>{
+        errs.push(job.name+': '+(e.name==='AbortError' ? 'tempo esgotado' : e.message));
+        if(++failed === jobs.length && !done) reject(new Error(errs.join(' | ')));
+        else start();
+      });
+    };
+    start();
+  });
+}
+async function fetchFeed(q, scope, uf, municipio){
+  const key = 'cb3_c_'+q, TTL = 15*60*1000;
+  try{
+    const c = JSON.parse(store.get(key)||'null');
+    if(c && Date.now()-c.t < TTL) return {items:c.items, cached:true};
+  }catch(e){}
+  const items = await fetchViaProxies(feedUrl(q), scope, uf, municipio);
+  store.set(key, JSON.stringify({t:Date.now(), items}));
+  return {items, cached:false};
+}
+
+/* ---------- municípios por estado (API do IBGE, filtra a lista pelo UF escolhido) ---------- */
+const MUNI_CACHE = {};
+async function fetchMunicipios(uf){
+  if(MUNI_CACHE[uf]) return MUNI_CACHE[uf];
+  const key = 'cb3_muni_'+uf, TTL = 30*24*60*60*1000;
+  try{
+    const c = JSON.parse(store.get(key)||'null');
+    if(c && Date.now()-c.t < TTL){ MUNI_CACHE[uf] = c.nomes; return c.nomes; }
+  }catch(e){}
+  const res = await fetchTimeout('https://servicodados.ibge.gov.br/api/v1/localidades/estados/'+uf+'/municipios', 10000);
+  if(!res.ok) throw new Error('HTTP '+res.status);
+  const data = await res.json();
+  const nomes = data.map(m=>m.nome).sort((a,b)=>a.localeCompare(b,'pt-BR'));
+  MUNI_CACHE[uf] = nomes;
+  store.set(key, JSON.stringify({t:Date.now(), nomes}));
+  return nomes;
+}
+let muniToken = 0;
+async function loadMunicipios(uf, preselect){
+  const sel = $('#fMun'), token = ++muniToken;
+  if(!uf){
+    sel.innerHTML = '<option value="">Selecione o estado primeiro…</option>'; sel.disabled = true;
+    return;
+  }
+  sel.innerHTML = '<option value="">Carregando municípios…</option>'; sel.disabled = true;
+  try{
+    const nomes = await fetchMunicipios(uf);
+    if(token !== muniToken) return;
+    sel.innerHTML = '<option value="">Selecione o município…</option>' + nomes.map(n=>`<option value="${esc(n)}">${esc(n)}</option>`).join('');
+    sel.disabled = false;
+    if(preselect && nomes.includes(preselect)) sel.value = preselect;
+  }catch(e){
+    if(token !== muniToken) return;
+    sel.innerHTML = '<option value="">Não foi possível carregar a lista de municípios</option>'; sel.disabled = true;
+    showManualMuni(true);
+    if(preselect){ $('#fMunManual').value = preselect; }
+  }
+}
+function showManualMuni(on){
+  $('#fMun').hidden = on; $('#fMunManual').hidden = !on;
+  $('#munManualToggle').textContent = on ? 'Usar lista de municípios do IBGE' : 'Não encontrou o município? Digite manualmente';
+}
+function getMunicipio(){
+  return $('#fMunManual').hidden ? $('#fMun').value.trim() : $('#fMunManual').value.trim();
+}
+
+/* ---------- construção automática da consulta por âmbito ---------- */
+function buildQueries(scope, uf, municipio, core, days){
+  const suffix = ' when:'+(days>=365 ? '1y' : days+'d');
+  let bases;
+  if(scope === 'nacional'){
+    bases = [
+      (core?core+' ':'')+'concurso público federal edital',
+      (core?core+' ':'')+'concurso nacional inscrições abertas'
+    ];
+  }else if(scope === 'estadual'){
+    const ufName = UFNAMES[uf] || '';
+    bases = [
+      (core?core+' ':'')+'concurso público governo do estado '+ufName,
+      (core?core+' ':'')+'concurso público '+ufName+' edital inscrições'
+    ];
+  }else{
+    const ufName = uf ? UFNAMES[uf] : '';
+    bases = [
+      (core?core+' ':'')+'concurso público prefeitura de '+municipio+(ufName?' '+ufName:''),
+      (core?core+' ':'')+'prefeitura de '+municipio+' edital inscrições'+(ufName?' '+ufName:'')
+    ];
+  }
+  return bases.map(b=>b.trim()+suffix);
+}
+
+/* ---------- estado ---------- */
+let LIVE = [];
+let BASE_ITEMS = [], BASE_META = {atualizadoEm:'', total:0};
+let favs = new Set(); try{ favs = new Set(JSON.parse(store.get('cb3_favs')||'[]')); }catch(e){}
+let favItems = {}; try{ favItems = JSON.parse(store.get('cb3_favitems')||'{}'); }catch(e){}
+let loadToken = 0, liveMsg = '', lastProxyUsed = '', scope = 'nacional';
+
+/* ---------- base automática (concursos.json gerado por robô agendado) ---------- */
+function fromJsonItem(o){
+  const titulo = String(o.titulo||'').trim(), n = norm(titulo);
+  const it = {
+    id: hash(n), titulo, orgao: String(o.orgao||'') || extractOrgao(titulo),
+    uf: UFS.includes(o.uf) ? o.uf : (extractUf(titulo) || ''),
+    scope: ['nacional','estadual','municipal'].includes(o.scope) ? o.scope : 'nacional',
+    municipio: String(o.municipio||''),
+    tipo: ['Abertura','Previsto','Alteração','Resultado','Notícia'].includes(o.tipo) ? o.tipo : classify(n),
+    modalidade: o.modalidade || modalidade(n),
+    escolaridade: Array.isArray(o.escolaridade) ? o.escolaridade : escolaridade(n),
+    vagas: parseInt(o.vagas,10)||0, cr: !!o.cr, salario: parseFloat(o.salario)||0,
+    cargos: String(o.cargos||''), fonte: String(o.fonte||'Google Notícias'), link: String(o.link||''),
+    ts: Date.parse(o.ts)||0
+  };
+  it._n = blobOf(it);
+  return it;
+}
+function filterByScope(items, sc, uf, municipio){
+  if(sc === 'nacional') return items.filter(it => it.scope === 'nacional' || !it.uf);
+  if(sc === 'estadual'){
+    if(!uf) return [];
+    const ufName = norm(UFNAMES[uf]||'');
+    return items.filter(it => it.uf === uf || it._n.includes(ufName));
+  }
+  if(!municipio) return [];
+  const mnorm = norm(municipio);
+  return items.filter(it => it._n.includes(mnorm) || (it.orgao && norm(it.orgao).includes(mnorm)));
+}
+function mergeUnique(...lists){
+  const m = new Map();
+  lists.forEach(arr => arr.forEach(it => m.set(it.id, it)));
+  return Array.from(m.values());
+}
+async function loadBaseline(){
+  try{
+    const res = await fetchTimeout('concursos.json?'+Date.now(), 8000);
+    if(!res.ok) return;
+    const data = await res.json();
+    const itens = Array.isArray(data.itens) ? data.itens.map(fromJsonItem).filter(x=>x.titulo) : [];
+    BASE_ITEMS = itens; BASE_META = {atualizadoEm:String(data.atualizadoEm||''), total:itens.length};
+    const uf = $('#fUf').value, municipio = getMunicipio();
+    LIVE = mergeUnique(filterByScope(BASE_ITEMS, scope, uf, municipio), LIVE);
+    updateUfCounts(); render();
+  }catch(e){ /* concursos.json ainda não existe (ex.: antes do primeiro run do robô) — segue só com busca ao vivo */ }
+}
+
+function allItems(){
+  const ids = new Set(LIVE.map(x=>x.id));
+  const out = LIVE.slice();
+  Object.values(favItems).forEach(x=>{ if(!ids.has(x.id)) out.push(x); });
+  return out;
+}
+
+const SCOPE_HINTS = {
+  nacional: 'Busca automática por concursos e seleções de âmbito federal/nacional (órgãos, autarquias, empresas públicas federais).',
+  estadual: 'Busca automática por concursos do governo estadual selecionado.',
+  municipal: 'Escolha o estado — a lista de municípios (dados do IBGE) é carregada automaticamente. Depois escolha o município para buscar.'
+};
+
+async function loadLive(force){
+  const token = ++loadToken;
+  const uf = $('#fUf').value, municipio = getMunicipio(), core = $('#q').value.trim();
+  const days = +$('#fDias').value;
+
+  if(scope === 'estadual' && !uf){ liveMsg = 'Selecione um estado para buscar.'; LIVE = []; renderStatus(); render(); return; }
+  if(scope === 'municipal' && !uf){ liveMsg = 'Selecione um estado para carregar os municípios.'; LIVE = []; renderStatus(); render(); return; }
+  if(scope === 'municipal' && !municipio){ liveMsg = 'Selecione (ou digite) um município para buscar.'; LIVE = []; renderStatus(); render(); return; }
+
+  const baseSubset = filterByScope(BASE_ITEMS, scope, uf, municipio);
+  LIVE = mergeUnique(baseSubset, LIVE);   // mostra a base automática de imediato, enquanto busca ao vivo
+  updateUfCounts(); render();
+
+  const queries = buildQueries(scope, uf, municipio, core, days);
+  if(force) queries.forEach(x=>store.del('cb3_c_'+x));
+  $('#goBtn').disabled = true;
+  liveMsg = 'Buscando concursos ao vivo…'; renderStatus();
+  const settled = await Promise.allSettled(queries.map(q=>fetchFeed(q, scope, uf, municipio)));
+  if(token !== loadToken) return;
+  $('#goBtn').disabled = false;
+  const ok = settled.filter(s=>s.status==='fulfilled');
+  const baseTxt = baseSubset.length ? baseSubset.length+' da base automática' : '';
+  if(!ok.length){
+    LIVE = baseSubset;   // sem rede: ainda mostra a base já commitada no repositório
+    const why = settled[0].reason && settled[0].reason.message || '';
+    liveMsg = (baseTxt ? baseTxt+'. ' : '') + 'Busca ao vivo indisponível agora. <button id="retryLive">Tentar de novo</button><br><small>'+esc(why)+'</small>';
+  }else{
+    const map = new Map();
+    ok.forEach(s=>s.value.items.forEach(it=>{ if(!map.has(it.id)) map.set(it.id, it); }));
+    const freshItems = filterByScope(Array.from(map.values()), scope, uf, municipio);
+    LIVE = mergeUnique(baseSubset, freshItems);
+    const cached = ok.filter(s=>s.value.cached).length;
+    liveMsg = LIVE.length+' itens'+(baseTxt ? ' ('+baseTxt+' + '+freshItems.length+' ao vivo)' : '')+' · '+ok.length+'/'+queries.length+' consultas'
+      + (lastProxyUsed && cached < ok.length ? ' · via '+esc(lastProxyUsed) : '') + (cached ? ' · cache de 15 min' : '');
+  }
+  updateUfCounts();
+  render();
+}
+
+/* ---------- filtros e render ---------- */
+function getF(){
+  return {
+    q:$('#q').value.trim(), sit:$('#fSit').value,
+    tipo:$('#fTipo').value, mod:$('#fMod').value, esc:$('#fEsc').value,
+    sal:parseFloat($('#fSal').value)||0, vagas:parseInt($('#fVagas').value)||0,
+    sort:$('#fSort').value, fav:$('#fFav').checked, strict:$('#fStrict').checked
+  };
+}
+function compute(){
+  const f = getF(), alts = parseQuery(f.q);
+  const res = [];
+  for(const it of allItems()){
+    if(f.sit && !({aberto:['Abertura','Alteração'], breve:['Previsto'], encerrado:['Resultado']}[f.sit]||[]).includes(it.tipo)) continue;
+    if(f.tipo && it.tipo !== f.tipo) continue;
+    if(f.mod && it.modalidade !== f.mod) continue;
+    if(f.esc && !it.escolaridade.includes(f.esc)) continue;
+    if(f.sal && it.salario < f.sal) continue;
+    if(f.vagas && it.vagas < f.vagas) continue;
+    if(f.fav && !favs.has(it.id)) continue;
+    let score = 0;
+    if(alts.length){
+      score = Math.max(...alts.map(a=>matchAlt(it,a,f.strict)));
+      if(score < 0) continue;
+    }
+    res.push({it, score});
+  }
+  const S = {
+    rec:(a,b)=> b.it.ts-a.it.ts,
+    rel:(a,b)=> b.score-a.score || b.it.ts-a.it.ts,
+    sal:(a,b)=> b.it.salario-a.it.salario,
+    vagas:(a,b)=> b.it.vagas-a.it.vagas
+  };
+  res.sort(S[f.sort]);
+  return {res, alts};
+}
+function editalLink(it){
+  const base = it.orgao || it.titulo;
+  return 'https://www.google.com/search?q='+encodeURIComponent('"'+base+'" '+(it.modalidade==='Concurso'?'concurso':'seleção')+' edital');
+}
+function renderStatus(){
+  $('#status').innerHTML = liveMsg;
+  const r = $('#retryLive'); if(r) r.onclick = ()=>loadLive(true);
+}
+const SCOPE_LABEL = {nacional:'Nacional', estadual:'Estadual', municipal:'Municipal'};
+function groupOf(it){
+  if(it.tipo === 'Abertura' || it.tipo === 'Alteração') return 'aberto';
+  if(it.tipo === 'Previsto') return 'previsto';
+  return 'outras';
+}
+function cardHtml(it, hl){
+  const isFav = favs.has(it.id);
+  const recent = it.ts && Date.now()-it.ts < 2*86400000;
+  const meta = [it.orgao && esc(it.orgao), it.uf || '', esc(it.fonte)].filter(Boolean).join(' · ');
+  const tags = [it.modalidade, ...it.escolaridade, it.cr?'Cadastro reserva':''].filter(Boolean);
+  const temLink = /^https?:\/\//i.test(it.link);
+  return `<article class="card">
+    <div class="row"><h3>${hl(it.titulo)}</h3><span class="badge t-${it.tipo}">${it.tipo}</span></div>
+    <div class="row" style="align-items:center"><span class="scope-badge">${SCOPE_LABEL[it.scope]||''}</span></div>
+    <div class="meta">${meta}</div>
+    ${it.cargos ? `<div class="meta">Cargos: ${hl(it.cargos)}</div>`:''}
+    <div class="tags">${tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
+    <div class="kv">
+      <div><b>Salário (até)</b>${brl(it.salario)}</div>
+      <div><b>Vagas</b>${it.vagas || '—'}${it.cr && it.vagas?' + CR':''}</div>
+    </div>
+    <div class="meta">${recent?'<span class="new">Novo · </span>':''}Publicado ${relTime(it.ts)}</div>
+    <div class="acts">
+      <button class="fav ${isFav?'on':''}" data-fav="${esc(it.id)}" title="Favoritar" aria-label="${isFav?'Remover dos favoritos':'Favoritar'}" aria-pressed="${isFav}">${isFav?'★':'☆'}</button>
+      ${temLink ? `<a class="btn sm" href="${esc(it.link)}" target="_blank" rel="noopener">📄 Ver edital / notícia</a>`:''}
+      <a class="btn ghost sm" href="${editalLink(it)}" target="_blank" rel="noopener">🔍 Buscar edital oficial</a>
+    </div>
+  </article>`;
+}
+function newsLiHtml(it, hl){
+  const temLink = /^https?:\/\//i.test(it.link);
+  const meta = [esc(it.fonte), it.uf || '', relTime(it.ts)].filter(Boolean).join(' · ');
+  return `<li><span class="badge t-${it.tipo}">${it.tipo}</span> `
+    + (temLink ? `<a href="${esc(it.link)}" target="_blank" rel="noopener">${hl(it.titulo)}</a>` : hl(it.titulo))
+    + ` <span class="meta">— ${meta}</span></li>`;
+}
+function render(){
+  const {res, alts} = compute(), hl = highlighter(alts);
+  $('#count').textContent = res.length;
+  $('#countTxt').textContent = res.length===1 ? 'resultado' : 'resultados';
+  $('#empty').hidden = res.length>0;
+
+  const groups = {aberto:[], previsto:[], outras:[]};
+  res.forEach(r => groups[groupOf(r.it)].push(r));
+
+  $('#secAbertoWrap').hidden = !groups.aberto.length;
+  $('#countAberto').textContent = groups.aberto.length;
+  $('#secAberto').innerHTML = groups.aberto.slice(0,200).map(r=>cardHtml(r.it,hl)).join('');
+
+  $('#secPrevistoWrap').hidden = !groups.previsto.length;
+  $('#countPrevisto').textContent = groups.previsto.length;
+  $('#secPrevisto').innerHTML = groups.previsto.slice(0,200).map(r=>cardHtml(r.it,hl)).join('');
+
+  $('#secOutrasWrap').hidden = !groups.outras.length;
+  $('#countOutras').textContent = groups.outras.length;
+  $('#secOutras').innerHTML = groups.outras.slice(0,300).map(r=>newsLiHtml(r.it,hl)).join('');
+
+  renderChips(); renderStatus(); writeHash();
+}
+function renderChips(){
+  const f = getF(), items = [];
+  const add = (label,reset)=>items.push({label,reset});
+  if(f.sit) add({aberto:'Abertura/Alteração',breve:'Previstos',encerrado:'Resultados'}[f.sit],()=>$('#fSit').value='');
+  if(f.tipo) add(f.tipo,()=>$('#fTipo').value='');
+  if(f.mod) add(f.mod,()=>$('#fMod').value='');
+  if(f.esc) add(f.esc,()=>$('#fEsc').value='');
+  if(f.sal) add('≥ '+brl(f.sal),()=>$('#fSal').value='');
+  if(f.vagas) add('≥ '+f.vagas+' vagas',()=>$('#fVagas').value='');
+  if(f.fav) add('Favoritos',()=>$('#fFav').checked=false);
+  const box = $('#active'); box.innerHTML = '';
+  items.forEach(x=>{
+    const s = document.createElement('span'); s.className='chip'; s.textContent = x.label;
+    s.onclick = ()=>{ x.reset(); render(); }; box.appendChild(s);
+  });
+}
+function updateUfCounts(){
+  const cnt = {};
+  LIVE.forEach(it=>{ if(it.uf) cnt[it.uf] = (cnt[it.uf]||0)+1; });
+  Array.from($('#fUf').options).forEach(o=>{ if(o.value) o.textContent = o.value+' — '+UFNAMES[o.value]+(cnt[o.value] ? ' ('+cnt[o.value]+')' : ''); });
+}
+
+/* ---------- exportação ---------- */
+function download(name, text, type){
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text],{type})); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+}
+function exportRows(){
+  return compute().res.map(({it})=>({titulo:it.titulo, orgao:it.orgao, uf:it.uf, ambito:SCOPE_LABEL[it.scope], municipio:it.municipio,
+    tipo:it.tipo, modalidade:it.modalidade, escolaridade:it.escolaridade.join('|'), vagas:it.vagas, salario:it.salario,
+    cargos:it.cargos, fonte:it.fonte, link:it.link}));
+}
+$('#exportJson').onclick = ()=>download('concursos.json', JSON.stringify(exportRows(),null,2), 'application/json');
+$('#exportCsv').onclick = ()=>{
+  const rows = exportRows(); if(!rows.length) return alert('Nada para exportar.');
+  const cols = Object.keys(rows[0]), cell = v => '"'+String(v).replace(/"/g,'""')+'"';
+  download('concursos.csv', '\ufeff'+cols.join(';')+'\n'+rows.map(r=>cols.map(c=>cell(r[c])).join(';')).join('\n'), 'text/csv');
+};
+
+/* ---------- aba fontes oficiais ---------- */
+const enc = encodeURIComponent;
+const limpa = t => String(t||'').replace(/[“”]/g,'"').replace(/\s+/g,' ').trim();
+const aspas = t => '"'+limpa(t).replace(/"/g,'')+'"';
+const comAspas = t => limpa(t).includes('"') ? limpa(t) : aspas(t);
+function webState(){ return {term:limpa($('#wq').value)}; }
+function webQuery(st){ return st.term ? comAspas(st.term) : ''; }
+function webSources(st){
+  const w = webQuery(st);
+  const g = site => 'https://www.google.com/search?q='+enc((site ? 'site:'+site+' ' : '') + w);
+  const bancas = '(site:ibfc.org.br OR site:consulplan.net OR site:institutoaocp.org.br) '+w;
+  return [
+    {id:'google', nome:'Google — todas as fontes', desc:'Busca ampla na web', url:g('')},
+    {id:'dou', nome:'Diário Oficial da União', desc:'Imprensa Nacional — publicações oficiais (federais)', url:'https://www.in.gov.br/consulta/-/buscar/dou?q='+enc(w)+'&s=todos&exactDate=all&sortType=0'},
+    {id:'gov', nome:'gov.br', desc:'Sites do governo federal', url:g('gov.br')},
+    {id:'pci', nome:'PCI Concursos', desc:'Notícias e editais', url:g('pciconcursos.com.br')},
+    {id:'jc', nome:'JC Concursos', desc:'Agregador de concursos', url:g('jcconcursos.com.br')},
+    {id:'cnb', nome:'Concursos no Brasil', desc:'Listas por estado', url:g('concursosnobrasil.com')},
+    {id:'estrategia', nome:'Estratégia Concursos', desc:'Notícias e análises de editais', url:g('estrategiaconcursos.com.br')},
+    {id:'gran', nome:'Gran Cursos Online', desc:'Notícias e editais', url:g('grancursosonline.com.br')},
+    {id:'cebraspe', nome:'Cebraspe', desc:'Banca — editais e avisos', url:g('cebraspe.org.br')},
+    {id:'fgv', nome:'FGV', desc:'Banca — editais e avisos', url:g('conhecimento.fgv.br')},
+    {id:'vunesp', nome:'Vunesp', desc:'Banca — editais e avisos', url:g('vunesp.com.br')},
+    {id:'fcc', nome:'FCC', desc:'Banca — editais e avisos', url:g('concursosfcc.com.br')},
+    {id:'bancas', nome:'IBFC / Consulplan / AOCP', desc:'Bancas — busca combinada', url:'https://www.google.com/search?q='+enc(bancas)},
+    {id:'noticias', nome:'Google Notícias', desc:'Últimas notícias sobre o tema', url:'https://news.google.com/search?q='+enc(w)+'&hl=pt-BR&gl=BR&ceid=BR:pt-419'},
+    {id:'pcilista', nome:'PCI Concursos — lista completa', desc:'Todos os concursos abertos (sem busca por termo)', url:'https://www.pciconcursos.com.br/concursos/', semBusca:true}
+  ];
+}
+function buildWeb(){
+  $('#webLinks').innerHTML = webSources(webState()).map(x=>
+    `<a class="link" href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.nome)} ↗</b><span>${esc(x.desc)}</span></a>`).join('');
+}
+function pesquisarWeb(){
+  const st = webState(), msg = $('#wMsg');
+  if(!st.term){ msg.textContent = 'Digite o que deseja pesquisar.'; $('#wq').focus(); return; }
+  const fontes = webSources(st);
+  const src = fontes.find(x=>x.id===$('#wOnde').value) || fontes[0];
+  const win = window.open(src.url, '_blank');
+  if(win){ try{ win.opener = null; }catch(e){} msg.innerHTML = 'Aberto em <b>'+esc(src.nome)+'</b> — pesquisa: <code>'+esc(webQuery(st))+'</code>'; }
+  else{ msg.innerHTML = 'O navegador bloqueou a nova aba. <a href="'+esc(src.url)+'" target="_blank" rel="noopener">Clique aqui para abrir a pesquisa</a>.'; }
+}
+
+/* ---------- eventos: âmbito, campos condicionais, busca automática ---------- */
+const ufOpts = UFS.map(u=>`<option value="${u}">${u} — ${UFNAMES[u]}</option>`).join('');
+$('#fUf').insertAdjacentHTML('beforeend', ufOpts);
+
+function setScope(s){
+  scope = s;
+  $$('#seg button').forEach(b=>{ const on = b.dataset.scope===s; b.classList.toggle('active',on); b.setAttribute('aria-selected',on); });
+  $('#wrapUf').hidden = (s==='nacional');
+  $('#wrapMun').hidden = (s!=='municipal');
+  $('#scopeHint').textContent = SCOPE_HINTS[s];
+  if(s === 'municipal'){
+    const uf = $('#fUf').value;
+    if(uf) loadMunicipios(uf, $('#fMun').value || $('#fMunManual').value);
+  }
+}
+$('#seg').addEventListener('click', e=>{
+  const b = e.target.closest('button[data-scope]'); if(!b) return;
+  setScope(b.dataset.scope); loadLive();
+});
+
+let debounceT;
+function debouncedLoad(){ clearTimeout(debounceT); debounceT = setTimeout(loadLive, 700); }
+
+$('#goBtn').onclick = ()=>loadLive(true);
+$('#q').addEventListener('keydown', e=>{ if(e.key==='Enter') loadLive(true); });
+$('#q').addEventListener('input', debouncedLoad);
+$('#fUf').addEventListener('change', ()=>{
+  if(scope === 'municipal') loadMunicipios($('#fUf').value);
+  else loadLive();
+});
+$('#fMun').addEventListener('change', ()=>loadLive());
+$('#fMunManual').addEventListener('input', debouncedLoad);
+$('#fMunManual').addEventListener('keydown', e=>{ if(e.key==='Enter') loadLive(true); });
+$('#munManualToggle').addEventListener('click', e=>{
+  e.preventDefault();
+  showManualMuni($('#fMunManual').hidden);
+});
+$('#fDias').addEventListener('change', ()=>loadLive());
+['fSit','fTipo','fMod','fEsc','fSort','fFav','fStrict'].forEach(id=>$('#'+id).addEventListener('change', render));
+['fSal','fVagas'].forEach(id=>$('#'+id).addEventListener('input', render));
+
+$('#resultsWrap').addEventListener('click', e=>{
+  const b = e.target.closest('[data-fav]'); if(!b) return;
+  const id = b.dataset.fav;
+  if(favs.has(id)){ favs.delete(id); delete favItems[id]; }
+  else{ favs.add(id); const it = allItems().find(x=>x.id===id); if(it) favItems[id] = it; }
+  store.set('cb3_favs', JSON.stringify([...favs])); store.set('cb3_favitems', JSON.stringify(favItems)); render();
+});
+$$('.tab[data-tab]').forEach(t=>t.onclick = ()=>{
+  $$('.tab[data-tab]').forEach(x=>x.classList.toggle('active', x===t));
+  $('#tab-live').hidden = t.dataset.tab!=='live';
+  $('#tab-web').hidden = t.dataset.tab!=='web';
+  if(t.dataset.tab==='web') buildWeb();
+});
+$('#wOnde').innerHTML = webSources(webState()).filter(x=>!x.semBusca).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('');
+$('#wOnde').value = store.get('cb3_onde') || 'google';
+if(!$('#wOnde').value) $('#wOnde').value = 'google';
+$('#wOnde').addEventListener('change', ()=>store.set('cb3_onde', $('#wOnde').value));
+$('#wgo').onclick = pesquisarWeb;
+$('#wq').addEventListener('keydown', e=>{ if(e.key==='Enter') pesquisarWeb(); });
+$('#wq').addEventListener('input', buildWeb);
+
+const savedTheme = store.get('cb3_theme');
+if(savedTheme) document.documentElement.dataset.theme = savedTheme;
+$('#themeBtn').onclick = ()=>{
+  const cur = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  const nx = cur==='dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = nx; store.set('cb3_theme', nx);
+};
+
+const HASHMAP = {q:'q', uf:'fUf', dias:'fDias', sit:'fSit', sort:'fSort', tipo:'fTipo', esc:'fEsc', mod:'fMod'};
+function readHash(){
+  try{
+    const p = new URLSearchParams(location.hash.replace(/^#/,''));
+    if(p.has('scope') && ['nacional','estadual','municipal'].includes(p.get('scope'))) setScope(p.get('scope'));
+    for(const [k,id] of Object.entries(HASHMAP)){
+      if(!p.has(k)) continue;
+      const v = p.get(k), el = $('#'+id);
+      if(el.tagName==='SELECT' && !Array.from(el.options).some(o=>o.value===v)) continue;
+      el.value = v;
+    }
+    if(scope==='municipal' && p.has('mun') && $('#fUf').value) loadMunicipios($('#fUf').value, p.get('mun'));
+  }catch(e){}
+}
+function writeHash(){
+  try{
+    const p = new URLSearchParams();
+    if(scope!=='nacional') p.set('scope', scope);
+    for(const [k,id] of Object.entries(HASHMAP)){
+      const v = $('#'+id).value, def = id==='fDias' ? '15' : id==='fSort' ? 'rec' : '';
+      if(v !== def) p.set(k, v);
+    }
+    if(scope==='municipal'){ const m = getMunicipio(); if(m) p.set('mun', m); }
+    const h = p.toString();
+    try{ history.replaceState(null, '', h ? '#'+h : location.pathname+location.search); }
+    catch(e){ location.replace(h ? '#'+h : '#'); }
+  }catch(e){}
+}
+$('#clearBtn').onclick = ()=>{
+  $('#q').value = ''; $('#fMun').value = ''; $('#fMunManual').value = ''; showManualMuni(false);
+  ['fTipo','fMod','fEsc','fSal','fVagas'].forEach(id=>$('#'+id).value = '');
+  $('#fSit').value = ''; $('#fSort').value = 'rec'; $('#fDias').value = '15';
+  $('#fFav').checked = false; $('#fStrict').checked = false;
+  loadLive(true);
+};
+$$('label.f').forEach(l=>{ const c = l.nextElementSibling; if(c && c.id) l.htmlFor = c.id; });
+
+/* ---------- avisos (notificações push via Firebase Cloud Messaging) ---------- */
+(function(){
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzdlivqw9Bm2jl-hYtr0DaisdQ3zrP2h8",
+    authDomain: "alertaconcurso-7e456.firebaseapp.com",
+    projectId: "alertaconcurso-7e456",
+    storageBucket: "alertaconcurso-7e456.firebasestorage.app",
+    messagingSenderId: "609357356859",
+    appId: "1:609357356859:web:0098178f08df84a0bde11e",
+    measurementId: "G-CMWQVCDNMM"
+  };
+  const VAPID_KEY = "BA9FiFYWU30Czh_vbPBbLuZg9qUo4UBW4jcv-cKseoGyIGHpN65hKOtb68tS4yMMpX1bYoz4pN_ZK7OMLFGo3Hw";
+
+  const elOff = $('#alertOff'), elOn = $('#alertOn'), elMsg = $('#alertMsg'), elList = $('#alertList');
+  function msg(text, cls){ elMsg.textContent = text; elMsg.className = 'alertmsg' + (cls ? ' ' + cls : ''); }
+
+  const suportado = 'serviceWorker' in navigator && 'PushManager' in window && typeof Notification !== 'undefined';
+  if(!suportado){
+    elOff.hidden = true;
+    msg('Seu navegador não suporta notificações push.', 'bad');
+    return;
+  }
+
+  let app, db, messaging;
+  try{
+    app = firebase.initializeApp(firebaseConfig);
+    db = firebase.firestore();
+    messaging = firebase.messaging();
+  }catch(e){ elOff.hidden = true; msg('Não foi possível iniciar os avisos agora.', 'bad'); return; }
+
+  $('#aUf').insertAdjacentHTML('beforeend', ufOpts);
+
+  function setAAmbito(v){
+    $('#aWrapUf').hidden = (v === 'nacional');
+    $('#aWrapMun').hidden = (v !== 'municipal');
+  }
+  $('#aAmbito').addEventListener('change', e => setAAmbito(e.target.value));
+  setAAmbito('nacional');
+
+  function alertasLocais(){ try{ return JSON.parse(store.get('cb3_alertas') || '[]'); }catch(e){ return []; } }
+  function salvarAlertasLocais(arr){ store.set('cb3_alertas', JSON.stringify(arr)); }
+
+  function descAlerta(a){
+    let d = a.ambito === 'nacional' ? '🇧🇷 Nacional' : a.ambito === 'estadual' ? '🏛️ Estadual' : '🏙️ Municipal';
+    if(a.uf) d += ' — ' + a.uf;
+    if(a.municipio) d += ' (' + a.municipio + ')';
+    if(a.termo) d += ' • "' + a.termo + '"';
+    return d;
+  }
+
+  function renderAlertList(){
+    const arr = alertasLocais();
+    elList.innerHTML = arr.map(a =>
+      `<li><span>${esc(descAlerta(a))}</span><button data-id="${esc(a.id)}">Remover</button></li>`
+    ).join('') || '<li style="background:transparent;color:var(--muted);padding-left:0">Nenhum aviso salvo neste dispositivo ainda.</li>';
+  }
+
+  function ativarUI(){ elOff.hidden = true; elOn.hidden = false; renderAlertList(); }
+
+  if(store.get('cb3_fcmtoken')) ativarUI();
+
+  $('#alertEnable').onclick = async () => {
+    try{
+      const perm = await Notification.requestPermission();
+      if(perm !== 'granted'){ msg('Permissão de notificação não concedida.', 'bad'); return; }
+      const reg = await navigator.serviceWorker.register('./firebase-messaging-sw.js');
+      const token = await messaging.getToken({ vapidKey: VAPID_KEY, serviceWorkerRegistration: reg });
+      if(!token) throw new Error('sem token');
+      store.set('cb3_fcmtoken', token);
+      ativarUI();
+      msg('Avisos ativados neste dispositivo!', 'ok');
+    }catch(e){ msg('Não foi possível ativar os avisos agora. Tente novamente mais tarde.', 'bad'); }
+  };
+
+  $('#aSalvar').onclick = async () => {
+    const token = store.get('cb3_fcmtoken');
+    if(!token){ msg('Ative os avisos neste dispositivo primeiro.', 'bad'); return; }
+    const alerta = {
+      ambito: $('#aAmbito').value,
+      uf: $('#aWrapUf').hidden ? '' : $('#aUf').value,
+      municipio: $('#aWrapMun').hidden ? '' : $('#aMun').value.trim(),
+      termo: $('#aTermo').value.trim(),
+      token, ativo: true, criadoEm: new Date().toISOString()
+    };
+    try{
+      const ref = await db.collection('alertas').add(alerta);
+      const arr = alertasLocais();
+      arr.push({ id: ref.id, ambito: alerta.ambito, uf: alerta.uf, municipio: alerta.municipio, termo: alerta.termo });
+      salvarAlertasLocais(arr);
+      renderAlertList();
+      $('#aUf').value = ''; $('#aMun').value = ''; $('#aTermo').value = '';
+      msg('Aviso salvo! Você será notificado quando sair algo compatível.', 'ok');
+    }catch(e){ msg('Não foi possível salvar o aviso agora. Tente novamente.', 'bad'); }
+  };
+
+  elList.addEventListener('click', async e => {
+    const b = e.target.closest('button[data-id]'); if(!b) return;
+    const id = b.dataset.id;
+    b.disabled = true;
+    try{ await db.collection('alertas').doc(id).update({ ativo: false }); }catch(e){}
+    salvarAlertasLocais(alertasLocais().filter(a => a.id !== id));
+    renderAlertList();
+  });
+})();
+
+/* ---------- inicialização ---------- */
+setScope('nacional');
+readHash();
+render();
+loadBaseline();
+loadLive();
+})();
+</script>
+</body>
+</html>
