@@ -37,10 +37,6 @@ header p{margin:6px 0 0;opacity:.92}
 .tab{background:rgba(255,255,255,.16);color:#fff;border:0;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600}
 .tab:hover{background:rgba(255,255,255,.28)}
 .tab.active{background:var(--yellow);color:#002776}
-.tabsbox{display:flex;gap:8px;margin-bottom:14px;background:var(--soft);border:1px dashed var(--brand);border-radius:12px;padding:10px}
-.tabsbox .tab{background:var(--card);color:var(--brand);border:1px solid var(--line);padding:10px 18px;border-radius:10px;font-weight:700}
-.tabsbox .tab:hover{filter:brightness(.97)}
-.tabsbox .tab.active{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
 main{margin-top:14px;padding:0 16px 40px}
 .panel{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:16px;border:1px solid var(--line)}
 label.f{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px}
@@ -98,8 +94,6 @@ mark{background:#ffdf00;color:#000;border-radius:3px;padding:0 1px}
 .newslist a{color:var(--brand);font-weight:600;text-decoration:none}
 .newslist a:hover{text-decoration:underline}
 .newslist .meta{font-size:12px}
-.links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:16px}
-.link{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--card)}
 .link:hover{border-color:var(--brand)}
 .link b{display:block;color:var(--brand)}
 .link span{font-size:12px;color:var(--muted)}
@@ -129,10 +123,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
 </header>
 
 <main class="wrap">
-<div class="tabsbox">
-  <button class="tab active" data-tab="live">Concursos</button>
-  <button class="tab" data-tab="web">Fontes oficiais</button>
-</div>
 <section id="tab-live">
   <div class="panel">
     <label class="f">Âmbito da busca</label>
@@ -231,22 +221,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
   </div>
 </section>
 
-<section id="tab-web" hidden>
-  <div class="panel">
-    <h2 style="margin:0 0 4px;font-size:18px">Fontes oficiais</h2>
-    <p class="hint" style="margin-top:0">Digite o que procura e clique em <b>Pesquisar</b>. A página de resultados abre em uma nova aba, com o que você digitou entre aspas — nada além disso é acrescentado.</p>
-    <div class="searchrow" style="margin-top:12px">
-      <input type="text" id="wq" class="big" placeholder="Ex.: analista judiciário, professor de matemática…" autocomplete="off">
-      <button class="btn" id="wgo">Pesquisar</button>
-    </div>
-    <div class="filters" style="grid-template-columns:minmax(220px,360px)">
-      <div><label class="f">Pesquisar em</label><select id="wOnde"></select></div>
-    </div>
-    <p class="hint" id="wMsg" role="status" aria-live="polite"></p>
-  </div>
-  <h3 class="sub">Ou abra uma fonte específica</h3>
-  <div class="links" id="webLinks"></div>
-</section>
 </main>
 
 <footer>
@@ -835,48 +809,6 @@ $('#exportCsv').onclick = ()=>{
 };
 
 /* ---------- aba fontes oficiais ---------- */
-const enc = encodeURIComponent;
-const limpa = t => String(t||'').replace(/[“”]/g,'"').replace(/\s+/g,' ').trim();
-const aspas = t => '"'+limpa(t).replace(/"/g,'')+'"';
-const comAspas = t => limpa(t).includes('"') ? limpa(t) : aspas(t);
-function webState(){ return {term:limpa($('#wq').value)}; }
-function webQuery(st){ return st.term ? comAspas(st.term) : ''; }
-function webSources(st){
-  const w = webQuery(st);
-  const g = site => 'https://www.google.com/search?q='+enc((site ? 'site:'+site+' ' : '') + w);
-  const bancas = '(site:ibfc.org.br OR site:consulplan.net OR site:institutoaocp.org.br) '+w;
-  return [
-    {id:'google', nome:'Google — todas as fontes', desc:'Busca ampla na web', url:g('')},
-    {id:'dou', nome:'Diário Oficial da União', desc:'Imprensa Nacional — publicações oficiais (federais)', url:'https://www.in.gov.br/consulta/-/buscar/dou?q='+enc(w)+'&s=todos&exactDate=all&sortType=0'},
-    {id:'gov', nome:'gov.br', desc:'Sites do governo federal', url:g('gov.br')},
-    {id:'pci', nome:'PCI Concursos', desc:'Notícias e editais', url:g('pciconcursos.com.br')},
-    {id:'jc', nome:'JC Concursos', desc:'Agregador de concursos', url:g('jcconcursos.com.br')},
-    {id:'cnb', nome:'Concursos no Brasil', desc:'Listas por estado', url:g('concursosnobrasil.com')},
-    {id:'estrategia', nome:'Estratégia Concursos', desc:'Notícias e análises de editais', url:g('estrategiaconcursos.com.br')},
-    {id:'gran', nome:'Gran Cursos Online', desc:'Notícias e editais', url:g('grancursosonline.com.br')},
-    {id:'cebraspe', nome:'Cebraspe', desc:'Banca — editais e avisos', url:g('cebraspe.org.br')},
-    {id:'fgv', nome:'FGV', desc:'Banca — editais e avisos', url:g('conhecimento.fgv.br')},
-    {id:'vunesp', nome:'Vunesp', desc:'Banca — editais e avisos', url:g('vunesp.com.br')},
-    {id:'fcc', nome:'FCC', desc:'Banca — editais e avisos', url:g('concursosfcc.com.br')},
-    {id:'bancas', nome:'IBFC / Consulplan / AOCP', desc:'Bancas — busca combinada', url:'https://www.google.com/search?q='+enc(bancas)},
-    {id:'noticias', nome:'Google Notícias', desc:'Últimas notícias sobre o tema', url:'https://news.google.com/search?q='+enc(w)+'&hl=pt-BR&gl=BR&ceid=BR:pt-419'},
-    {id:'pcilista', nome:'PCI Concursos — lista completa', desc:'Todos os concursos abertos (sem busca por termo)', url:'https://www.pciconcursos.com.br/concursos/', semBusca:true}
-  ];
-}
-function buildWeb(){
-  $('#webLinks').innerHTML = webSources(webState()).map(x=>
-    `<a class="link" href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.nome)} ↗</b><span>${esc(x.desc)}</span></a>`).join('');
-}
-function pesquisarWeb(){
-  const st = webState(), msg = $('#wMsg');
-  if(!st.term){ msg.textContent = 'Digite o que deseja pesquisar.'; $('#wq').focus(); return; }
-  const fontes = webSources(st);
-  const src = fontes.find(x=>x.id===$('#wOnde').value) || fontes[0];
-  const win = window.open(src.url, '_blank');
-  if(win){ try{ win.opener = null; }catch(e){} msg.innerHTML = 'Aberto em <b>'+esc(src.nome)+'</b> — pesquisa: <code>'+esc(webQuery(st))+'</code>'; }
-  else{ msg.innerHTML = 'O navegador bloqueou a nova aba. <a href="'+esc(src.url)+'" target="_blank" rel="noopener">Clique aqui para abrir a pesquisa</a>.'; }
-}
-
 /* ---------- eventos: âmbito, campos condicionais, busca automática ---------- */
 const ufOpts = UFS.map(u=>`<option value="${u}">${u} — ${UFNAMES[u]}</option>`).join('');
 $('#fUf').insertAdjacentHTML('beforeend', ufOpts);
@@ -924,20 +856,6 @@ $('#resultsWrap').addEventListener('click', e=>{
   else{ favs.add(id); const it = allItems().find(x=>x.id===id); if(it) favItems[id] = it; }
   store.set('cb3_favs', JSON.stringify([...favs])); store.set('cb3_favitems', JSON.stringify(favItems)); render();
 });
-$$('.tab[data-tab]').forEach(t=>t.onclick = ()=>{
-  $$('.tab[data-tab]').forEach(x=>x.classList.toggle('active', x===t));
-  $('#tab-live').hidden = t.dataset.tab!=='live';
-  $('#tab-web').hidden = t.dataset.tab!=='web';
-  if(t.dataset.tab==='web') buildWeb();
-});
-$('#wOnde').innerHTML = webSources(webState()).filter(x=>!x.semBusca).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('');
-$('#wOnde').value = store.get('cb3_onde') || 'google';
-if(!$('#wOnde').value) $('#wOnde').value = 'google';
-$('#wOnde').addEventListener('change', ()=>store.set('cb3_onde', $('#wOnde').value));
-$('#wgo').onclick = pesquisarWeb;
-$('#wq').addEventListener('keydown', e=>{ if(e.key==='Enter') pesquisarWeb(); });
-$('#wq').addEventListener('input', buildWeb);
-
 const savedTheme = store.get('cb3_theme');
 if(savedTheme) document.documentElement.dataset.theme = savedTheme;
 $('#themeBtn').onclick = ()=>{
