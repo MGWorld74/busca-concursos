@@ -24,18 +24,21 @@
 :root[data-theme="dark"]{--bg:#08132a;--card:#0f2140;--ink:#eef3fb;--muted:#a8b8cf;--line:#23406b;--soft:#14305a;--brand:#3ecf7c;--brand-ink:#04210f;--focus:#ffdf00;--ok:#3ecf7c;--gold:#ffdf00;--hero-a:#003d1a;--hero-b:#001a4d;--shadow:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{background:linear-gradient(120deg,var(--hero-a) 0%,var(--hero-a) 30%,var(--hero-b) 100%);color:#fff;padding:20px 16px 32px;border-top:6px solid var(--yellow)}
+header{background:linear-gradient(120deg,var(--hero-a) 0%,var(--hero-a) 30%,var(--hero-b) 100%);color:#fff;padding:0;border-top:6px solid var(--yellow);line-height:0}
 .wrap{max-width:1100px;margin:0 auto}
 .top{position:relative}
 .brand{width:100%;max-width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;display:block;box-shadow:0 6px 20px rgba(0,0,0,.35)}
 .theme-float{position:absolute;top:12px;right:12px;z-index:2}
 h1{margin:0;font-size:24px;letter-spacing:-.3px}
 header p{margin:6px 0 0;opacity:.92}
-.tabs{display:flex;gap:6px;margin-top:18px}
 .tab{background:rgba(255,255,255,.16);color:#fff;border:0;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600}
 .tab:hover{background:rgba(255,255,255,.28)}
 .tab.active{background:var(--yellow);color:#002776}
-main{margin-top:-14px;padding:0 16px 40px}
+.tabsbox{display:flex;gap:8px;margin-bottom:14px;background:var(--soft);border:1px dashed var(--brand);border-radius:12px;padding:10px}
+.tabsbox .tab{background:var(--card);color:var(--brand);border:1px solid var(--line);padding:10px 18px;border-radius:10px;font-weight:700}
+.tabsbox .tab:hover{filter:brightness(.97)}
+.tabsbox .tab.active{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+main{margin-top:16px;padding:0 16px 40px}
 .panel{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:16px;border:1px solid var(--line)}
 label.f{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px}
 input[type=text],input[type=number],select{
@@ -110,17 +113,16 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
       <img class="brand" src="radar-concursos-banner.jpg" alt="Radar Concursos — monitorando seu próximo concurso">
       <button class="tab theme-float" id="themeBtn" title="Alternar tema">🌓</button>
     </div>
-    <div class="tabs">
-      <button class="tab active" data-tab="live">Concursos</button>
-      <button class="tab" data-tab="web">Fontes oficiais</button>
-    </div>
   </div>
 </header>
 
 <main class="wrap">
+<div class="tabsbox">
+  <button class="tab active" data-tab="live">Concursos</button>
+  <button class="tab" data-tab="web">Fontes oficiais</button>
+</div>
 <section id="tab-live">
   <div class="panel">
-    <div class="notice" id="baseNotice" hidden></div>
     <label class="f">Âmbito da busca</label>
     <div class="seg" id="seg" role="tablist" aria-label="Âmbito">
       <button data-scope="nacional" class="active" role="tab" aria-selected="true">🇧🇷 Nacional</button>
@@ -152,8 +154,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
       <div><label class="f">Ordenar por</label>
         <select id="fSort"><option value="rec">Mais recentes</option><option value="rel">Relevância</option><option value="sal">Maior salário</option><option value="vagas">Mais vagas</option></select></div>
     </div>
-    <details id="more">
-      <summary>Mais filtros</summary>
+    <div id="more">
       <div class="filters">
         <div><label class="f">Tipo</label>
           <select id="fTipo"><option value="">Todos</option><option>Abertura</option><option>Previsto</option><option>Alteração</option><option>Resultado</option><option>Notícia</option></select></div>
@@ -168,16 +169,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
         <label><input type="checkbox" id="fFav"> Só favoritos ★</label>
         <label><input type="checkbox" id="fStrict"> Exigir termos digitados no título</label>
       </div>
-      <details style="margin-top:10px">
-        <summary style="font-size:13px;color:var(--muted)">Configurações avançadas (proxy CORS)</summary>
-        <div class="searchrow" style="margin-top:10px">
-          <input type="text" id="proxy" placeholder="Proxy próprio, ex.: https://meuproxy/?u={url}">
-          <button class="btn ghost sm" id="saveProxy">Salvar</button>
-          <button class="btn ghost sm" id="clearCache">Limpar cache</button>
-        </div>
-        <p class="hint">Este site consulta o Google Notícias por HTTPS via proxies CORS públicos (sem servidor próprio). Se os resultados falharem, tente um proxy próprio no formato acima.</p>
-      </details>
-    </details>
+    </div>
   </div>
 
   <div class="bar">
@@ -566,14 +558,6 @@ function mergeUnique(...lists){
   lists.forEach(arr => arr.forEach(it => m.set(it.id, it)));
   return Array.from(m.values());
 }
-function renderBaseNotice(){
-  const el = $('#baseNotice');
-  if(!BASE_META.total){ el.hidden = true; return; }
-  el.hidden = false;
-  el.innerHTML = '📦 <b>Base automática:</b> '+BASE_META.total+' itens coletados por um robô agendado'
-    + (BASE_META.atualizadoEm ? ', atualizados '+relTime(Date.parse(BASE_META.atualizadoEm)) : '')
-    + '. A busca ao vivo complementa em tempo real.';
-}
 async function loadBaseline(){
   try{
     const res = await fetchTimeout('concursos.json?'+Date.now(), 8000);
@@ -581,7 +565,6 @@ async function loadBaseline(){
     const data = await res.json();
     const itens = Array.isArray(data.itens) ? data.itens.map(fromJsonItem).filter(x=>x.titulo) : [];
     BASE_ITEMS = itens; BASE_META = {atualizadoEm:String(data.atualizadoEm||''), total:itens.length};
-    renderBaseNotice();
     const uf = $('#fUf').value, municipio = getMunicipio();
     LIVE = mergeUnique(filterByScope(BASE_ITEMS, scope, uf, municipio), LIVE);
     updateUfCounts(); render();
@@ -830,7 +813,6 @@ function pesquisarWeb(){
 /* ---------- eventos: âmbito, campos condicionais, busca automática ---------- */
 const ufOpts = UFS.map(u=>`<option value="${u}">${u} — ${UFNAMES[u]}</option>`).join('');
 $('#fUf').insertAdjacentHTML('beforeend', ufOpts);
-$('#proxy').value = store.get('cb3_proxy') || '';
 
 function setScope(s){
   scope = s;
@@ -889,18 +871,6 @@ $('#wOnde').addEventListener('change', ()=>store.set('cb3_onde', $('#wOnde').val
 $('#wgo').onclick = pesquisarWeb;
 $('#wq').addEventListener('keydown', e=>{ if(e.key==='Enter') pesquisarWeb(); });
 $('#wq').addEventListener('input', buildWeb);
-
-$('#saveProxy').onclick = ()=>{
-  const v = $('#proxy').value.trim();
-  if(v && !v.includes('{url}')) return alert('O endereço precisa conter {url}.');
-  v ? store.set('cb3_proxy', v) : store.del('cb3_proxy');
-  loadLive(true);
-};
-$('#clearCache').onclick = ()=>{
-  try{ Object.keys(localStorage).filter(k=>k.startsWith('cb3_c_')).forEach(k=>localStorage.removeItem(k)); }catch(e){}
-  Object.keys(mem).filter(k=>k.startsWith('cb3_c_')).forEach(k=>delete mem[k]);
-  loadLive(true);
-};
 
 const savedTheme = store.get('cb3_theme');
 if(savedTheme) document.documentElement.dataset.theme = savedTheme;
