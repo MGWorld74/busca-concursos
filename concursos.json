@@ -1,8 +1,161 @@
 {
-  "atualizadoEm": "2026-09-27T08:14:11.056301+00:00",
+  "atualizadoEm": "2026-09-27T12:17:15.466146+00:00",
   "fonte": "Google Notícias (agregação automática via GitHub Actions)",
   "janelaDias": 30,
   "itens": [
+    {
+      "titulo": "Concurso público aguardado há quase 20 anos abre inscrições em Goiás com salários de até R$ 16,8 mil",
+      "orgao": "Concurso público aguardado há quase 20 anos",
+      "uf": "GO",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 16.8,
+      "cargos": "",
+      "fonte": "Portal 6",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdF9vUkJjWHBGTm1YbFdVV1ZWZkdQdW9jOHBUcWpCUnptVFhEdGk5b1FTM0NYd0pFUlVVaFhaTTRKOTNHUW5vSkF5QXF2UE5VWmZaVDZXX1B0a0hsU1J0cWYya01zeDI0cC05S1h1SUt1RTZnbGFLYzllRFFaOUM1UjhwYmpnampjZlktZkgxd280RjluUWRqeUpFdHBJVXNjQU52UTRxMHo1WDdsSGJ6NG00VDhOczNWTkZ5ZFBrelVUOFduRTE4dUEyMEpNZw?oc=5",
+      "ts": "2026-09-27T12:13:22+00:00"
+    },
+    {
+      "titulo": "Mais de 2.200 candidatos fazem prova de concurso da Prefeitura de Itupeva na UNIP de Jundiaí",
+      "orgao": "",
+      "uf": "",
+      "scope": "municipal",
+      "municipio": "",
+      "tipo": "Notícia",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "jornal da região",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLVFtY3U1TjgtM0M1eVBEQVl6ajhMRk1RWjVKY2d6RXdnUXNBSDJnZWpnVlVacVpoZGxwMlhvY3MwbnJ0SVcyeWJ3dDNSMGk2bVZTLWJWU1A0Wi0xbTZXT3Bfd1pjaWIxc3MxZE95cmtrMi0yaDZPMWhtZVVWRGFSRDhxVnl4QXM2OWJ4OHZySkJwMDhSd2NOQjU0T3F1SGczWHVpd25JNjZheFF0Q2dtdXQtcFZ1T2tpSUs5VmZkTQ?oc=5",
+      "ts": "2026-09-27T11:36:13+00:00"
+    },
+    {
+      "titulo": "MS planeja expansão da rede estadual e amplia ações de segurança nas escolas",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Previsto",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "RCN67",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUZfajhHRFI0MXg3ZkZ3X2VsYWwzV1hNa1FLeWsyTWhVZF9fWWY0a3p2aF93T0YwRVV2Ml9LOFJndXR4NEFCWkJaZ0FjQU9HemxtOEs1aHpmM2xsbjlOV3EycHM5S3B5SUMzUkp4V2Y1ZXFnc0xyWTgxRGhQTFZSZmhsenFSQ2UydjdZUXJtYW1Wc3hMUmxVVTdtNGZ0a0Ztd2cxUTI2VmZpcDFGZmVfU2t5STJSTmRqa1hUR3pn?oc=5",
+      "ts": "2026-09-27T10:35:00+00:00"
+    },
+    {
+      "titulo": "Câmara de Santana do Seridó – RN abre concurso público com quatro vagas imediatas",
+      "orgao": "Câmara de Santana do Seridó",
+      "uf": "RN",
+      "scope": "municipal",
+      "municipio": "Santana do Seridó",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Blog de Assis",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRHZjcTJqYVhPWGlwLU5UcklOTm42SlB4TkpvT1RVZTNEaERKa2ZVdEtSOHlKSDFhMUNLanR2YjQ1TDkxLUNmcUxla3JiTWFmYXYzS1ZYdWpTd19vckFnbHY2cVRxWEdvTDRfMVc4UDI2M2s4THh6WFdiWFFDWHl5LW9OVE1wemI4TTdDNWMyNDdLVVpXRWRFZE15Z24tY3JjdFNXQWllRlVzQzZuNUx5VU9GVWE2VnBfUHFxOVQ2bjFzN1llSXBmZg?oc=5",
+      "ts": "2026-09-27T10:06:18+00:00"
+    },
+    {
+      "titulo": "Concursos públicos no RS oferecem mais de 200 vagas",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 200,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Correio do Povo",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNazRBVkpiVUpVUXctc0NJeEYzWUJoYnpxOFVBR1NNYUlvd2VMYmtMZHNVUzljMFVNei1oSExhWTJXMUZmWEZ6MHo1cld0OU9EbFppR2hfelVaU2c5c1JBNU01NG1mVVU1OXQ0QnYtcVlCN2J0ZmFzaXE3VjlKbG04SXFrRVRzSVVYbjdMSmdSUGZzaGdwTG5jb2tsV3FSZS1MZXE2Um94VEhsUjBmaURkb2ZGYTc5eElOYWptbzJ0dlBtOS1qWVE?oc=5",
+      "ts": "2026-09-27T10:04:01+00:00"
+    },
+    {
+      "titulo": "Colombiano se surpreende com nascente de água cristalina no TO",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Notícia",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Jornal do Tocantins",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeFlKbW9Qam9uRlVPYUQzM1I1c2RqR0VHdVMxd3VOZlA4X1RMdnZCMzFpLTVnYmpwM3RrNVBhdkVFcXdaWEl1aGd5MU5uTHR1TXVnWklpeVBiUW4xeC1mb2c0OUM0eVF3aGFqdGl4bWdCZGs0WGZPY3NRMFJqblNXVnh6UDhDWmJzTzd2T0p5V2hVQ25iT1dFcExlRTBSMm5LNFpDVXhwOXVZTUR4UWV2c3BJY1VEZDhwaUE?oc=5",
+      "ts": "2026-09-27T10:00:00+00:00"
+    },
+    {
+      "titulo": "Concursos Abertos de Prefeituras: mais de 40 editais",
+      "orgao": "",
+      "uf": "",
+      "scope": "municipal",
+      "municipio": "",
+      "tipo": "Notícia",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wX3hKSXVKSk9nOXJzSDEtSS1Gd1dGS1ZwaE1iZjdhZWFLVzhUZmV1ODQ4RDZHRENPeXZ4dlNBWGVicGxDNGtIS3lwSXBTTE1TZGpJMGZIOVBoajdNTXRyaWd4UG50dUUzcDZ3bUhGTE9sbURrOEVQMDlUOU1pQlnSAYQBQVVfeXFMUElCYmRLS2tJcGQ4SGF0dFM1ZjhHWWJ1UHQzOVBCeE4zajY4TjJNdFN0WHdXYTNGZHI5b05uTnF1T2Y3N2hqVEl0ODVYWVhFVjdhUjREWmNYU0YtVDZONWxGdklubHdETTlnN1dVY2ZRcjVGVXg4a0pQOHBtZ0ZXRWpEUmZo?oc=5",
+      "ts": "2026-09-27T09:40:59+00:00"
+    },
+    {
+      "titulo": "CRBio-1, Marinha, DPE-PB e outros órgãos: concursos ofertam 24,6 mil vagas",
+      "orgao": "",
+      "uf": "PB",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "UOL Economia",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNHZNcTBGekNUcFNFaGNyLWpZd21oeTdVWnZ4TkgwQ1JfVzhqZHFiVjNRNGdMZ0drNkc0ZVdjVmpZTFBmc21pbnM4Z0FMSXd3cHNrcmdLZTdzeEN5YXZ5Ty1TblBMcGpKU3NDc2h2UC02Q1BlUW04M2JnTWN1ME53T214WVVYNzJaLUVFd3h6QVJhYXJvNGoxQ29RY1FXS2xl?oc=5",
+      "ts": "2026-09-27T08:33:30+00:00"
+    },
+    {
+      "titulo": "Concurso Ubajara: 57 vagas + CR; inscreva-se!",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 57,
+      "cr": true,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QTmZBNVdfMWczMlJNYlZaY1Iya2RmT2Zzd3NDMlh6V3JTS3V0Tk10ZTkzMHVmRWF3OC1hdGhnQUtIbVRpUFdONTBpNTI4QnY1MWt6UEVUcUdaa2l2clhwMHVvVmgwSGlGOGZDd1RkYVJlUmlLZ1YtNFpoSjnSAYIBQVVfeXFMTktCUXNnZU5IRExYMWp1SklDU09sMUp1cGNjcE40Y3dhdEVrblA5cmplcDNoYnZETHZKVlRBRFFjc3JGZ2FVV3lpemFkcWE4LUxkNnVGX3o1eWRlTGM3WDRMTElwbGR3QmRCMllOX3lHZU9hMU1nWTRwdi1FR0ZUZmdUdw?oc=5",
+      "ts": "2026-09-27T07:44:49+00:00"
+    },
     {
       "titulo": "Concursos Abertos: milhares de vagas e iniciais de até R$ 32 mil",
       "orgao": "",
@@ -89,23 +242,6 @@
       "ts": "2026-09-26T23:51:05+00:00"
     },
     {
-      "titulo": "Concursos Abertos de Prefeituras: mais de 40 editais",
-      "orgao": "",
-      "uf": "",
-      "scope": "municipal",
-      "municipio": "",
-      "tipo": "Notícia",
-      "modalidade": "Concurso",
-      "escolaridade": [],
-      "vagas": 0,
-      "cr": false,
-      "salario": 0,
-      "cargos": "",
-      "fonte": "Estratégia Concursos",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wX3hKSXVKSk9nOXJzSDEtSS1Gd1dGS1ZwaE1iZjdhZWFLVzhUZmV1ODQ4RDZHRENPeXZ4dlNBWGVicGxDNGtIS3lwSXBTTE1TZGpJMGZIOVBoajdNTXRyaWd4UG50dUUzcDZ3bUhGTE9sbURrOEVQMDlUOU1pQlnSAYQBQVVfeXFMUElCYmRLS2tJcGQ4SGF0dFM1ZjhHWWJ1UHQzOVBCeE4zajY4TjJNdFN0WHdXYTNGZHI5b05uTnF1T2Y3N2hqVEl0ODVYWVhFVjdhUjREWmNYU0YtVDZONWxGdklubHdETTlnN1dVY2ZRcjVGVXg4a0pQOHBtZ0ZXRWpEUmZo?oc=5",
-      "ts": "2026-09-26T22:51:54+00:00"
-    },
-    {
       "titulo": "Prefeitura de São Fernando - RN abre concurso público com 22 vagas e salários de até R$ 4.101,05.",
       "orgao": "Prefeitura de São Fernando",
       "uf": "RN",
@@ -121,23 +257,6 @@
       "fonte": "concursosrn.com.br",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdlNFc1MzeGtRa2Q4TncxbS1aOGFmNm1mRUdtWnFjRTRXbnpjUFNlYUtOdE80bDdjZVlYSDlOSW5qWW9CUC1NcWZPZFdJN2VsQU9Tb0lHaktteU04X01QVkJ5VVdoejdUeGlvWXJzWVBwWXdQckgzSkoxSXZNcG1tdWVwbTBZX3B2dl82NE5iX0s1ZkxHNjRXTE8weVlXN1FUbEZwWG15V2ZoN09wMU03RFp5bTE5WVRoTGNRSQ?oc=5",
       "ts": "2026-09-26T22:38:00+00:00"
-    },
-    {
-      "titulo": "Com salários de até R$ 30 mil, RS tem 16 concursos públicos com inscrições abertas",
-      "orgao": "Com salários de até R$ 30 mil, RS",
-      "uf": "",
-      "scope": "nacional",
-      "municipio": "",
-      "tipo": "Abertura",
-      "modalidade": "Concurso",
-      "escolaridade": [],
-      "vagas": 0,
-      "cr": false,
-      "salario": 30.0,
-      "cargos": "",
-      "fonte": "Diário Gaúcho",
-      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQS2lYNkdMek5kakE1c0djNU1rN1AzLTBhbHE3UVptbWhLUWRvc0g0NDZyQzBfY043SFgtWmZ6Z3NzemFhUFphRUhsQmJ0WlJMNGIzYk91UHhrUnJVZmRscXpFQlNKTF9ha1dQMGM5NmZvclNITTJWQ01kajRfMFNRZHBxYjNjWjJwM2U4SkVYWW5ZZ1hrWndXTHM2R2djTFZoc0ptSy0zZnp4Z2h6UFNkYWpYclh2clpJUl9tZmJySUZuZVhnQjRrcVAxTGw2dzRid3htaVB3eW8zM0NoM3JaZHQzcDlaaWVobEtySkZNTEt3M2RwUEVpVkx2RGdZS1FpQ2NN?oc=5",
-      "ts": "2026-09-26T21:14:08+00:00"
     },
     {
       "titulo": "Prefeitura abre seleção para motoristas com salário R$ 2.180,45; confira quantas vagas",
@@ -174,6 +293,23 @@
       "ts": "2026-09-26T21:10:17+00:00"
     },
     {
+      "titulo": "Com salários de até R$ 30 mil, RS tem 16 concursos públicos com inscrições abertas",
+      "orgao": "Com salários de até R$ 30 mil, RS",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 30.0,
+      "cargos": "",
+      "fonte": "GZH",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQaFFrUVp4SHl4TVZyRTlxUjRRUEZ4YmZwR1R0aUZpd2NMcmx6OHIyNXVzbzE0VFZoMEQyenlVUjJob2k3SHRlS1MxdFpBRngwa09lSjY1cjE2WWtZd0ZkWW93dERIX2lsT0Z4Q1lrM2ZpbVR5enIzOUFlaDR1UTRBc1NPMkx2RV9MY0E1Z2VCWFdlVm5kSXZEYmc2ZnpJSXl5Q01TSzg3S0MtT191Mk5iVE9jY2Jmd25UcnkwOVJ0UTdPLWxwZ1JFX3E2RkREWlFUckVhR1k5d2xxb0JZWVEyWnJQYUowWDIwamM3SHRRNjBDZ05ueWtfSTdmLXp6TGhTRHBBUndTVm53dw?oc=5",
+      "ts": "2026-09-26T21:09:53+00:00"
+    },
+    {
       "titulo": "Prova do concurso público do Corpo de Bombeiros ocorre neste domingo (27) em Roraima",
       "orgao": "",
       "uf": "RR",
@@ -203,7 +339,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "o Edital Vozes da Bahia na 14ª Festa Literária Internacional de Cachoeira",
-      "fonte": "jornalfolhadoestado.com",
+      "fonte": "Folha do Estado da Bahia",
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOempsQWo0MUM3U0piVkZad1lYcG15SEZUZDJXWHJ4anRxTzBuTUNxTnhzWkxyVU5INHl3aDEyTzFjcjR2V0JTd015elZxblZGY1lGb3VfcGp4QU45ZFprMzJhQXNtMEt4VXBBM1E3OHV5ZG1rY3lBck1zMjZmVUJZMXQ4MFgxd0ZoNlBXZWc5M1JvbDh0OFllb2g5WXI3TXk0dmtkNFVrRmhnVXBrVkJFQnEzSzJaczNLQXBxeE9BdW0zVlByT09qeGdrLU0wMGtrYkhFUXFnbEc3ZGJOY3Q2NkFmUllOSTdkMS0zUHIxYzN6ZWRKblk4?oc=5",
       "ts": "2026-09-26T19:15:36+00:00"
     },
@@ -497,23 +633,6 @@
       "ts": "2026-09-26T13:10:00+00:00"
     },
     {
-      "titulo": "Câmara de Santana do Seridó – RN abre concurso público com quatro vagas imediatas",
-      "orgao": "Câmara de Santana do Seridó",
-      "uf": "RN",
-      "scope": "municipal",
-      "municipio": "Santana do Seridó",
-      "tipo": "Abertura",
-      "modalidade": "Concurso",
-      "escolaridade": [],
-      "vagas": 0,
-      "cr": false,
-      "salario": 0,
-      "cargos": "",
-      "fonte": "Gláucia Lima",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX0FhMGxvSnUza0lkdzNzX1YwalRfMjRINTg1QWlrQUo2cTNvZHRPaXRSODctTDRXYW0yRC0xb3ZpRmF3bkM0dHV4OWxkNjhGMzVTdU1ieUpZWFRhNXd5ZldBc1o2SlFiLUQzenZFd0RJblZEbWw4Rnl4U1czZW1BWUtWdkNUNUphOHlFUGdWMXhWNnk1SHRBWmRRNW1CWlh6TFA0alRfU3ZacFlCSmRfbGtLM0FqQQ?oc=5",
-      "ts": "2026-09-26T12:55:04+00:00"
-    },
-    {
       "titulo": "Edital prevê R$ 1,4 milhão para 60 iniciativas culturais em Alagoas",
       "orgao": "Edital",
       "uf": "AL",
@@ -679,7 +798,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "curso de especialização em Alfabetização e Letramento",
-      "fonte": "Prefeitura de Lucas do Rio Verde",
+      "fonte": "lucasdorioverde.mt.gov.br",
       "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPcy1EeldDUXpucmdPNkZuZkl3MFBnRFM1ZU9SNHpLSHY0R3hCMUp1VVBfT0IxR1VmVFpzc0o2Z2RpN1lfdkREVkV0ZnY5cmVSMDU3RWlzTUZCOW5ZaGU4S0JiSnVHelBRZXdSR044bk5FUXRDeExCU1RpaXdZemRKNkZZYjRObG1PRnN5VlJTbklyN2RldnVwTmw5SjEwbXQxMUJPWkdJelV4aXlvb2VkbERabUJadkxiVDNLWXB3bkNwS3MzOGFyV01iVGZ5Z2FoeXJlRmNlZjlnZlQ1RXpPRWdQbURRajM1MS1WRVE2eExHTU1mdzlBeTdIenc0dlk?oc=5",
       "ts": "2026-09-26T11:58:58+00:00"
     },
@@ -781,7 +900,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "Ponto da Pauta",
+      "fonte": "pontodapauta.com.br",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE82Y3NHSDI0MzdadzlhLVAxZHNfSmFxZklVdkJPWTV3V1NKYlFndGVDSk96SXd1cWh5WVNjN19rTl81RHYwUlJBUWxjWjBoWkVPTlh5TzF6bHVXaWdFQ2lOYmdJN28wTXBJc3NLcXJLdw?oc=5",
       "ts": "2026-09-26T11:00:57+00:00"
     },
@@ -849,7 +968,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "Portal Ponto X",
+      "fonte": "portalpontox.com",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZk5JcFVwbjNIR2pfbTZGaEE0QXowUTluVV93RXBFTTdqeHpuSlVUYmNFTy10eVE2WU5Dd09GaFZIdVdBdFVfSFdiSHMyLXpkWll2SHdMcnF5aVY3Z2kwb0hyWW5jb2p6SVIzb3h1ZW0ycGpFNE03cTlkeEQ5b1ZNV3VGaFd6bFpqYXR2RnpqS2N0LXBxMENLUnZjOEM0cTZwM3ZNNzdXY3loUDYtZloybGx1SVRObVF5WXVnWmtLWFd4dkxKQmc?oc=5",
       "ts": "2026-09-26T10:36:16+00:00"
     },
@@ -886,23 +1005,6 @@
       "fonte": "Imprensa 24h",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11Q1dRS0c5b0IzNzVLR3VSclItclJaejRZVU5qUU0zdlhWVWRCTVhXMTAzMXhTZDR3STVkMENhMkg5czVfYlcwUVRza1VxdHY0RzFVOGpzM1pid3dhM0NxYWUtcndmci1C?oc=5",
       "ts": "2026-09-26T10:10:21+00:00"
-    },
-    {
-      "titulo": "Concurso Chapecó SC: novo edital terá 90 vagas em 41 cargos!",
-      "orgao": "Concurso Chapecó SC: novo edital",
-      "uf": "",
-      "scope": "nacional",
-      "municipio": "",
-      "tipo": "Abertura",
-      "modalidade": "Concurso",
-      "escolaridade": [],
-      "vagas": 90,
-      "cr": false,
-      "salario": 0,
-      "cargos": "",
-      "fonte": "Estratégia Concursos",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5TTnhwbThkaFV1TEZVYmdESEFNYXNBNUxuVG5RSHZPNjNBalBzSW9sTmtvbnctaDFOSWR0bFVnLTVaaVNZVlVIMDk1bzJyMEZkV1NRSGNnYWtlRkVzY1ZNWDBWS2pYRWY4Y3dxM2dpZ1hGcWV2SG03dFpQbHbSAYIBQVVfeXFMTUlrWUF1ZDgzbWVXaXpmbzJ4NUJTYm51c21qSmFfUWVMWHM1NTJNa0xRR0N0UGoxYjRzTFdpbzhZMldqdnl3aXF6dlp5M1NpWE9Oc3hLaHdJeC1aTHpIemJ1WUN4MFFPNllWOERFMjdiVGNIQzYwckkzbkVlVkpFRWJMUQ?oc=5",
-      "ts": "2026-09-26T10:08:41+00:00"
     },
     {
       "titulo": "Concurso Sesa-AP abre 4.210 vagas com remuneração de até R$ 11,8 mil",
@@ -1112,23 +1214,6 @@
       "ts": "2026-09-26T08:23:52+00:00"
     },
     {
-      "titulo": "Concursos Jurídicos 2027: prepare-se para os próximos editais!",
-      "orgao": "",
-      "uf": "",
-      "scope": "nacional",
-      "municipio": "",
-      "tipo": "Notícia",
-      "modalidade": "Concurso",
-      "escolaridade": [],
-      "vagas": 0,
-      "cr": false,
-      "salario": 0,
-      "cargos": "os próximos editais!",
-      "fonte": "Estratégia Carreira Jurídica",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxQkNjLWJPdmVnb0pHR2c1dzRVRFdWTjV3VktpRUZMUGtPQ1RpYzE4TVF6SlVkamRPX211QXhPZWdodHc2eE5BS0Frc2lfbmtTNmVCN0tIWVQ5alNuaGw4NVhZVHNEV0tJOHc?oc=5",
-      "ts": "2026-09-26T08:19:23+00:00"
-    },
-    {
       "titulo": "Publicado edital de concurso com 183 vagas para hospital de Bocaiuva",
       "orgao": "",
       "uf": "",
@@ -1328,7 +1413,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "concurso da Manausprev terminam na terça-feira",
-      "fonte": "redeondadigital.com.br",
+      "fonte": "Rede Onda Digital",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdE9LR2FqSUZ6R1lucE5pMk1LOE1RRXFrbjRNZVNzYnNVZ21tRXNuNkVQX1NqaWlCdnBMTXM2SEhtYVBzeERHLWJoeFVhWGhucVRDc0FXWE13aDFEQ3JCTndFaVo0TTJDLUR5THpYUXl3VzRVbEcxYmhnc3E3WDN1X1hvdEkyREM4Zk1XdWFyWHg0Y2J5VTFUX1UyVGFTNnlROTFIZA?oc=5",
       "ts": "2026-09-26T00:53:00+00:00"
     },
@@ -1362,7 +1447,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUHRpbDY0VVMtbk5NVUNkX3dFOTlmbTlpS3ZuRHlsSW9fNkswbkFFVG9yVmJ6UkJpYUdhU2FxRzNGTnlZUkVsM1JlaWdHNDdvMmlPU0paRXBzVnVXZzBNRm12QVpURzVNUzFlbzNFSEVvanFKNUExc0dlY3BoMTNmaC1ac1dZdzN5NVJURGhRcEVkbFBYU1Y1ZENBaHpNMFhOa0VsSXB5VGxlaWM?oc=5",
       "ts": "2026-09-26T00:25:45+00:00"
     },
@@ -1396,7 +1481,7 @@
       "cr": false,
       "salario": 2.0,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWVVySlNUU3o5aXkySmxzZHNNYTdNbTVjQmlld2ZXN3JNaXhfbHVoVEFiWlFVVVdERDJNQUNRbWZwZGJtTGhBd2lZV0VERTM2VWxvSDltbUVPdHNvWE1zUXlmdlY2OE5rakNCTE94aDhoaFZ4Nl84bS1xVXRXNlRkR2VSbFFYcmVrbkZ2WU5yU3BrUVlYVHVpWlpkdHFSNGFKY3F1VE9udjcwRl9keUxRZ0oya1VGY1lqMHNPRHJEWQ?oc=5",
       "ts": "2026-09-26T00:19:52+00:00"
     },
@@ -1430,7 +1515,7 @@
       "cr": false,
       "salario": 4.1,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWjZ2ckJxSFJkR21nTWZsRkpWY2hUaXc2Y1h4UHlNZDU1cm1waVBIam5ZSEZrZU5ISWI0ZDQ0SW9qdFBaWndTNG9XLV9oRUNJV1JieDY0a01DZ0RZVzFyZUpTbm1jR0ZlTDZSYklkYVp0YVNQbkR5MUtlZGNmVWstVmhZbzZIbTB1aEVrdnl4N05wTGM3anFYX1Y0QkdLaDBBNURNZXVEMGt6M1FDMmc?oc=5",
       "ts": "2026-09-26T00:08:32+00:00"
     },
@@ -1481,7 +1566,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTXozcmh3TXZMZWlpdFI4aWVScFFmcGZJVG5rQWNPMnhGVDB5ZmczdUJjZXFYbGhrLTFxT3RReS1XdEExak5VbndyV2hZREx6Vkp1WGc4V2VTdS1QTXdiaHI4ZUt0eGFKNlBzVVdWVWFtQkFYbFBMWjFyYnZ3QjVCQUJDS18xSW40VFNPcjRlbjRTc3FTWUpKLUZ1S3ltUzctMkJOdGdYdWVrX2I2MzRhcGtwSWI0WnE5cTJB?oc=5",
       "ts": "2026-09-25T23:58:51+00:00"
     },
@@ -1532,7 +1617,7 @@
       "cr": false,
       "salario": 3.8,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOY2JURVZKYnhHTF9PT18ySDF5cmRhSTFGb25zalpIR05LQU1DQmJwSktZQUFzT3p5MkxvUVZnbHFCbV9HNlo2Y0tCRjV5dG1DYnN2ckhqUXVxUjNXWkpGeXlGd3ptRzNDWlBGTXlLcDg0X0hjSk4zcDdJY3hqTDFnUVd4NUJabzFVMnNJdkZVSXZ2UEtONFJZZnRZeFBHejBpNnlkNl90NlZIX3lRZkY4NTF0RzluWlZOX2prT1ViOVpOX2hk?oc=5",
       "ts": "2026-09-25T23:43:57+00:00"
     },
@@ -1707,7 +1792,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ3NrRE1RejNJMUtHSXZ3MWYyaGdZdFFFOTJzUkJ6cEpDcUhLeXMtajJkT0t6LVBraGJQM0xnc296YVVqNHhTV011d0UtZjg5OE9EeDVkQW9SUVM2d2E1SVdaT2hJb0VxTlNlUU5SUnZOWmNmeW9vaDlHUFBYRVZWbzJyaUpmMGRQeE5XZ25TU3BRNjgtN3pkVThB?oc=5",
       "ts": "2026-09-25T22:37:24+00:00"
     },
@@ -1744,6 +1829,23 @@
       "fonte": "Paraíba Já",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZjIxaFBtelVNY2FHbTJVejFsV2kyMnRqMTdYRlRZU3hWNDZKZGZBdEpScE9uSFFqYXZGOHo3dmctdTI5SXVtZG4ycF9qTWI5eTJCOWNDOHhMSURRbG5QNXIwZnpVYnNTZzIzODNvMy1zREJyaFBodXA2MDZZMEd3a3RsdUdkRk5VNVpUQWc3Q3AwX1p4ZDVpS0lrUVhhMkE3M0pJNmVNTUhSWWk4Y3hiTTJ5SnhLU0xUbURBR3U3S2VYQXlOUE9LSVJfUELSAcwBQVVfeXFMT2YyMWhQbXpVTWNhR20yVXoxbFdpMjJ0ajE3WEZUWVN4VjQ2SmRmQXRKUnBPbkhRamF2Rjh6N3ZnLXUyOUl1bWRuMnBfak1iOXkyQjljQzh4TElEUWxuUDVyMGZ6VWJzU2cyMzgzbzMtc0RCcmhQaHVwNjA2WTBHd2t0bHVHZEZOVTVaVEFnN0NwMF9aeGQ1aUtJa1FYYTJBNzNKSTZlTU1IUllpOGN4Yk0yeUp4S1NMVG1EQUd1N0tlWEF5TlBPS0lSX1BC?oc=5",
       "ts": "2026-09-25T22:19:54+00:00"
+    },
+    {
+      "titulo": "Concurso de Aparecida (SP) tem mais de 20 vagas e salário até R$ 6,9 mil",
+      "orgao": "Concurso de Aparecida (SP)",
+      "uf": "SP",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 20,
+      "cr": false,
+      "salario": 6.9,
+      "cargos": "",
+      "fonte": "Concursos no Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY1VFTm5iLVNYd1ZtcDU0NTd6QkVrQllSY1ZKSllITzNqRXJFb2NMRThkdmotZ3JLOUFJR1Q4WllpTlZCUmVNQVB6Vy1FNWtKV0lpWUVOTG9OcVRWUnVqT0paYThfUkNpMWFVN3g0UTFLWWlUTjN4NlZPenBBMi1UNzhzQTAzczdFNmFpbHVYZHEwTmJXbGFzYzNPZmpXdnVRSTZOSWZiMWZ0VDQ3TkVRVTVDUC1LWHRYTl9IVlpDc0U?oc=5",
+      "ts": "2026-09-25T22:18:06+00:00"
     },
     {
       "titulo": "Prefeitura de Novo Mundo MT publica edital de processo seletivo para cadastro de reserva na Educação",
@@ -1848,6 +1950,23 @@
       "fonte": "Blog Gran Cursos Online",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00bnY2ZVk4UGRYS3AwWDJvRUJIb09Mci15SjJmMktWNGZ6Q2tRVTlCRGVYcXc2TEJzTVdOTEZtdlFzMEs3cFlTc0ZVZHMxRzdJckszY2R3eFdQaTg1NHdkVzQ2bmY4QlFReVlKWktjeWo?oc=5",
       "ts": "2026-09-25T22:04:19+00:00"
+    },
+    {
+      "titulo": "Concurso TRF2: PLOA prevê novo edital em 2028!",
+      "orgao": "Concurso TRF2: PLOA",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Previsto",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBHc1NFY1kyaVZNc1FZanMwV0xPRk5FVWtDX1daUGRzZGlQVWdXV2FSLUx2Sl9sQjVQcEpWc3Y4OEdLdmhIRnh2MDJGRjhaXzFHLVJxMEtCM3ZEN3RhVEk0U3Z3?oc=5",
+      "ts": "2026-09-25T21:56:57+00:00"
     },
     {
       "titulo": "Concurso Câmara de Serro Corá (RN) disponibiliza cargo de 30 horas",
@@ -1984,6 +2103,23 @@
       "fonte": "Maranhão Hoje",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNlk1MHU3UXdHV0hTczVqWjR3ckhkZHg4cUVGRU4zYlBFazBDNEk2TTU4cHlOeGtQdktPUFMyWjJxekxaYnIyTUk0elNYbzJwXzhNV0lNODhBNTZhZU9GdnlsMWs5M3ZJM18xb0ttM1VHNS0ta3ZtMjQxTHBmRlBZb3lNR21WVS1hRzZWcEtlelNlMnVVZkpyQ1hBRnlYdFV6bnhZbEthWTRuRmR0dnpvSGZxVW9jUWpRaW1SRjZJOFFwU0E?oc=5",
       "ts": "2026-09-25T21:41:08+00:00"
+    },
+    {
+      "titulo": "Concurso TRF 5 Juiz: provas são remarcadas; inicial é de R$ 37 mil",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Notícia",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 37.0,
+      "cargos": "",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LclJvbHdUVWVOYUdPZVdad1FIVjg1R3NfRnRET0JGM0JoUTlfYURrUlVUeDNLaHk5d2hQUHVNTG14RFJHNVAwdG1BLUQ5aWtYcVh6d1h0N1djeXJ3LWl1Wm9TYXAxdHBt?oc=5",
+      "ts": "2026-09-25T21:37:48+00:00"
     },
     {
       "titulo": "Quem lê acredita!",
@@ -2236,7 +2372,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Ouvidor",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObTJwZk1KOXFfV0NaQmhNWjdpM2NNeU9jUDdZTGgwT1hZX1FNYXJNcGlMWnZIYjNQM1pGVU5FV3Z2YTVvcFFKUmVwWGpwdXZhbnZpMXVmajBuTkZQSFNFMWVtaV9fdnlwWFNRRk9CNmhDLVpsWGx1NTl3UkNtazdEWVdza3U4WEV5eFhMRTRWdTVKLXZtcGV3UHc3S1Q0Qm9BQmc?oc=5",
       "ts": "2026-09-25T20:53:34+00:00"
     },
@@ -2270,7 +2406,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Educador Social",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM1NyQWJPdXFGNWJneWdadE52OW5sNU9fV1hPajJqOWx6Nzh5X0RvbnVRb2k4VVg3Uy0waFJYTWsyREUwdmRsamZrZkhFcXN6TEZ2RmtvM0l5STVzdTFhLUJ0akRXajMxN2c3NS1BajdzaWE3RVJ4TU9iWkJrOF9tXy0yWmpJV0dkRWMzVWtYcWlaUHJjb2QxbWNhT3c?oc=5",
       "ts": "2026-09-25T20:47:59+00:00"
     },
@@ -2457,7 +2593,7 @@
       "cr": false,
       "salario": 13753.96,
       "cargos": "o Campus de Quixadá e salários que podem chegar a R$ 13.753,96",
-      "fonte": "Monólitos Post",
+      "fonte": "monolitospost.com",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOXzkxanZMeVZEMk85WXlQbVBXR1NLaTlNenkydXVtMnBqM0ZNeEpFMHQ3aEowUXJ4UWU3cXdESDl4SmVidzN5Z0NfeVlLcDVJR0FpRXhfRVZ4V2V5MkxBa0V1QUt0M2dSUWh6QkVYazQ0VkZNMmZNcXZTd2F1RFJSOEVpRGxoZ0g2UUpDeUgxRG1tYmRkcnFRQWRTSkRKY05HTjFyTktIVE9xVWQ2QjcwWFM4OFhzWGlMMDFxSkhPX0pCcWNpVWhzbGpOd2JXLV9VWnpfWQ?oc=5",
       "ts": "2026-09-25T20:19:50+00:00"
     },
@@ -2579,7 +2715,7 @@
       "cr": false,
       "salario": 3000.0,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTUZHdk1ibjNVbEdkcTRrXzBoTm9LWDQ0bUFVcXNxUGlkUVF6Ul9OYUd4TjZKcTFNYmxHaVlvSVZyY01YVUl1RlJUeTBOZU1kbXNnYUdoU3pQc1FGY2laSmRMN0VXYV9UZjUyZ1k4OFA3N3JQMjZrOC1iOGloU1UzVVNJTWxIU2hjR1FfcEo1U0pDQXpPVnQ3VkxQUWJOYkYxTUtTODBJb0ZtVGltWk1n?oc=5",
       "ts": "2026-09-25T19:56:55+00:00"
     },
@@ -2613,7 +2749,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "profissionais de apoio escolar e tutores de alunos",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRmZ2dXNNdTVmYUpYcGtDdUNzNkMxX3hGYV9mU2JkNGg4eHJJOTNrQWh5elpSbjFVd1lYZUFyeS1SUFBNUDBRXzd3U1pCXzNSV1V1bGpvNk9HRFhrcHBzN3M2SmhLUlBDQWFWa1k2TFpzNDlyaTNjX2VvVU1GNDFPaUJGVWUwNjFNbjRpSWJlY1BwdlZ0T0djR0NEOENRQ2V4dEpaUHI0ZnVSbExaTHQ3M0xkeHViSTJyekY1TmdnR3lGcjlTOFFWMDhIUTMwREZ2Yk9QdXpzaw?oc=5",
       "ts": "2026-09-25T19:55:22+00:00"
     },
@@ -2664,7 +2800,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Analista",
-      "fonte": "Ceisc",
+      "fonte": "ceisc.com.br",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTzZMQjdWSzJWVzR0RXBiQUpXUGlzT3JNYW1hYlNzNUc3VzE1b3l5QlhtNG0tajQweGRodlhDQVRmQmZXLUFqa3I3U0ltSi1fMUt1Q1BybDJGTjFkRE5PTFktakZOdGZ1aXNoczRMUkZUTW0xMkNHZlN1RGlwZllYdVVuQkNlWGxfOWRRbWYxcTh3LVlJSGpoakt4WFgtSUFfMDQ3T0FzckFMdXNtZF9FeU1SNjEyS2tENkRMTzdidmlGbXJ6cGd5MG11OWdLRGw4OUdCbkh0RUdYQQ?oc=5",
       "ts": "2026-09-25T19:48:35+00:00"
     },
@@ -2698,7 +2834,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professor adjunto na área de inteligência artificial",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN0F5VUlqWlM1azJlVWZGWXZka3Q5a0UzNUc2MXBsQ0NvSmUwWTNyU3lDbDJFZ3h5VEhrcnc3eEwtbXBNNWpGMGNUT1o0RTg4cVpLNmdhQ2hSSXh0T3FDbG8wZmpPZjlUanZsVlFkYnpldndvTTJmWDR3azJZdVR6T3NDcVJRZHJsUVNSaGJETmt3Z3lucThaamdCa3RiQTVtQ015SFFsYWlKNnNiSTd5eFd6VENQUHlhWVhXb0ZQSVNUeGZvaXhn?oc=5",
       "ts": "2026-09-25T19:45:59+00:00"
     },
@@ -2874,7 +3010,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWnFpOWYxdW5xMVJ0NGVzM0R5NXJWQmhjUFdrWk9fNXlaZkNFWnlIS1AwQU1mZm1jNllWMFZaczlHQ04zcEExVHVBd2ZVVFVvWFB0UXlVRUNkeEVhZ2tSdFFDZnJYdGJ3Z3RMVW1Ea1VGQ2V3ZnFlNjRqNkpGMnNNOVRmZmZnSDhmUkZCa0x0LVY5ekZkZ1VUZTgyeDdHLTB3WkNxLXpqU3BYV1dzQWJDbDJwS25iNHZv?oc=5",
       "ts": "2026-09-25T19:11:14+00:00"
     },
@@ -2959,7 +3095,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "fatos24h.com.br",
+      "fonte": "Fatos 24h",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRnNxcmlJQ092eGNFS1ctMGFSVnN1V3J6TW10SmdsMFRZTzBIWkxnZ1kzVG1NUHNQYzlXQUprZ3VpOGlfOTh6ek5DanJabmhmZENUaE1qY0pnN1k0cWdyVm5EcTEtY0JYTENKNjlqajVKdlNWalJqNEFwa21YRXJWQUppaXFneVpVV3hXdzN4RmlUcHllMU9hbTE5TW5TM2xPdEdnWU45SlhDdV96WC1qNm1xRnJ2MDZiSXpiMXNSR1otSmNoNndJ?oc=5",
       "ts": "2026-09-25T18:54:34+00:00"
     },
@@ -2977,7 +3113,7 @@
       "salario": 0,
       "cargos": "31 vagas",
       "fonte": "Ache Concursos",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTmFwYXNKVDlBQ0JoM2NBdFU4ejVsNGl2RDVUMEtzLUlqdDlRaEtkbzg3QW9vSENyXzhxYXJqNjl2UThrNWlKVTU5TUhqOW9Idl9fUkstUFRTeEdxQnQ0Q2JfazFqWEppQWZKNmxIdkZFQ3VXUC1XRUJ5NE9pYTZuT3hqTVNoN3hFZ2oyNlRucmEtSnFNRnRFNEktZXo0d0xraUFZZy1vZ0Nkc1B1RmlkYU55TkxKZ2ZsamNuVGJEWTdYUkHSAcgBQVVfeXFMUDJucUpCVUpHcjJCRFJGdWd4SjlvamNlbWtMYnZFOVBxb1ZJdzRHSHhheDhBM1BUaklOb1lpLUM4US1aekdqRER3YlJSbExnclhHdDlHNzlzMUNkbXdyaVRfV0dqV1FHMlVhQUpwVzhENm91VWstYW0zM1JlUGxlc1BWQVVPeVM4aWtIalNSdGpnbHlILVZnOFpuTUxXQ0VCeVBzaUt5VHh4Y282TGMzNUFBejNla3VHMnRDTFp5SUJhdjVWa3FaY1U?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMm5xSkJVSkdyMkJEUkZ1Z3hKOW9qY2Vta0xidkU5UHFvVkl3NEdIeGF4OEEzUFRqSU5vWWktQzhRLVp6R2pERHdiUlJsTGdyWEd0OUc3OXMxQ2Rtd3JpVF9XR2pXUUcyVWFBSnBXOEQ2b3VVay1hbTMzUmVQbGVzUFZBVU95Uzhpa0hqU1J0amdseUgtVmc4Wm5NTFdDRUJ5UHNpS3lUeHhjbzZMYzM1QUF6M2VrdUcydENMWnlJQmF2NVZrcVpjVdIByAFBVV95cUxQMm5xSkJVSkdyMkJEUkZ1Z3hKOW9qY2Vta0xidkU5UHFvVkl3NEdIeGF4OEEzUFRqSU5vWWktQzhRLVp6R2pERHdiUlJsTGdyWEd0OUc3OXMxQ2Rtd3JpVF9XR2pXUUcyVWFBSnBXOEQ2b3VVay1hbTMzUmVQbGVzUFZBVU95Uzhpa0hqU1J0amdseUgtVmc4Wm5NTFdDRUJ5UHNpS3lUeHhjbzZMYzM1QUF6M2VrdUcydENMWnlJQmF2NVZrcVpjVQ?oc=5",
       "ts": "2026-09-25T18:53:06+00:00"
     },
     {
@@ -3027,7 +3163,7 @@
       "cr": false,
       "salario": 10.0,
       "cargos": "diversos profissionais com remunerações que podem passar de R$ 10 mil",
-      "fonte": "Instituto AOCP",
+      "fonte": "noticias.institutoaocp.org.br",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQS2EwS2pyMTZiY0w0cjNTTF9BYzgyd2NQNmkyb3Mxa0dEUkphWVpJcEx0bkJTRVltbE53cEJEbUUtZG9zUmZRcmhpNFo3YkxwTVFlODI2OVg0S3lBdV9Fb3JkLU1mdXJCcEkydHlMQ1QzMUU1VVl4cDhVRjZyNDJTN2JPcUhTRU8yM2xPWXJsOXB0UDRKaXpKVnpPSndYVU9XT1Vjd3hXcEgtTW9VRkhxZDNxSzRGcVR0eTVrMWN6SFZWNmVOM0t5Z2Z2UHJQd1VQNVFyb1lqdzduWlo3S3Nha1VrYUJYMkhfVXRj?oc=5",
       "ts": "2026-09-25T18:48:47+00:00"
     },
@@ -3044,7 +3180,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOHpOYnhUc1Vzb2tNRW5GMEZvS25Sa3hwMkc0VWctXzRyajQxWVBCMldLeVJ3SlJTSWo5aUw1TzNsX2FvZGo1MjQxMEtEOGRRR2JqSDZXaTM1Qkx2Y3B2X2JsUXRsOUFMcURLbXpXZEg1dEdJa0pQa3lZY2FaZDAtWVd0NmJLRmJfSTJtU21TVFVNNlFtRlBoODhPaTdOYXhGbDBSSE0wMGxvTjNlQ1FWRDhRaF93ZGUyMmxsNWNhYW10M3ZnV3BVR0dpVk0?oc=5",
       "ts": "2026-09-25T18:48:22+00:00"
     },
@@ -3146,7 +3282,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Atendente de Central do Cidadão",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVUZXYk5YMmJtcjJEekpodHdHbUdpbjNWVnZHbkRIV093dzFpYVZ4c0hyQUNfSllzS20tblc1TlBia0JxYmlGaUJOblhMcmY0VWVrNVY4RTUwWmZiRjRVZmw2d0VrRXd4ZDFlM0FuNGJEUVVETHVNdzRRTEJ0SXFBYkx5SFVpNjFFelFpaDVURmt3d09yamU2Mzd6NU5rYUt5QUZBQ1dqUllHdWY5aE4zeVgwQ0lDQVhNWGg4YngxdTJyZw?oc=5",
       "ts": "2026-09-25T18:14:34+00:00"
     },
@@ -3165,7 +3301,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Técnico em Radioterapia em Florianópolis",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTjNXZ1REc0ZPeDhIVllUZWhOREJzYTlaZk9lY2kyVzFxa1FzUXlOb1gzU05PelVyRU1vdU1Ra0JlNG14V1h3eW5QMk8tT3ZfUGdRdUFTWHZjVlNHcFVCZVNaRE0zYTYyTVhjQVhBNmpuUjhfTWd4N3NiVl8za3VQV3hNSDdLZm0wYUNXeHd3MDlra1dMbks3Z3pjVzN5dExieFZBY0R4eDJFTnRfd1E?oc=5",
       "ts": "2026-09-25T18:02:37+00:00"
     },
@@ -3270,9 +3406,26 @@
       "cr": false,
       "salario": 0,
       "cargos": "o cargo de Motorista",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN2owU0dFWEJ2VVhONnlSbG51NFVwa3F1Z2NacE1PdmJ4dW4zZmJOdzMtX1VvdDI2YlpjR3NMeXk4bGY1TE9rQVVwS3pqN0lWQnJEcElibkVlV3pmc2ZNTFotNl9QSk9jMjJNVHlUUGNzSEJjVnVNeU9pWk11UVhVUjVOUlhSUmRMZl9nYmotTU5fQ3BwMGlBZ0JvVkhWYS1mbHAtYloyQ0tKY2JDQ0Q5bw?oc=5",
       "ts": "2026-09-25T17:55:52+00:00"
+    },
+    {
+      "titulo": "Prefeito de Baixa Grande do Ribeiro é multado em R$ 9 mil pelo TCE e tem prazo de 30 dias para realizar concurso",
+      "orgao": "Prefeito de Baixa Grande do Ribeiro é multado em R$ 9 mil pelo TCE e",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Notícia",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 9.0,
+      "cargos": "realizar concurso",
+      "fonte": "Piaui em Foco",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQekk0SkFSTVM4OWlsQVdLZGhyd3hMcUtMcHJfQ1hjRnJVeUh5VGxtLUJ3WWhWS21Ra2tOekxERG5HLUlTMmRkOHJkQ3BfUTBxRWoxRC1qOHR3d3NlTjA5clZ1eWVpR0JBU0tMMGYyRTVzT2dHbVZta2tQdnhMRGx1ck1rTTBfV0N1Rk5JRmZJcHZWelNaRF9FWGFFSlk4VFdhQVA3N25UMEc5Zm1JSWRQZ2FzVzFTMzZ2NFUtNUNTTExobUpndDRLVHVGMFB4bDdHOGpISzdHb0RGVWR4T0d3V2pGOA?oc=5",
+      "ts": "2026-09-25T17:47:20+00:00"
     },
     {
       "titulo": "Prefeitura de Afonso Cláudio - ES abre processo seletivo para merendeira",
@@ -3287,7 +3440,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "merendeira",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWEdPYzZKY21IRGQxSVh0TVN0bUlaODZ1cEI3TzJtWGNnVzVRT3hfQldoUjZoUy1HcDZlR2FSVkJpX2hHNHQyWmlhaW03c3FLMm5xU2dWbndMOUZlTzZWbzJQZXRlU1ZwTFl0WGpETmtJMVBXYVhCYnhHUkFGd251dXVkTi1EcTdqSXdfTHhzUnMzeXo2ek9XQWlJdXBWWE9pdjhyT3haZUt5SUphQkNZTg?oc=5",
       "ts": "2026-09-25T17:47:07+00:00"
     },
@@ -3304,7 +3457,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUHZwVWxQR2hjRXR0c3ZPU2ttdnhPLXRLZTJ6UFRuOVpBS0tnbXRXVU82bXRjeWxHRTMwbkJ1bVU4M1Zxb293N1NtQWYzWDN6ZXRZT2FfWmxJMDl3YWkwRE40ZmljanpfWjUyTVQ4TFZkSjVOclROY2lRTUpvNnRLTFNLeXhSUDNYRlZCUklMSE9MQ0NFVFNidUVrTzZwTW91RlZVWUtOR0tjaTU0b2RnSHlhdXBEYUxKZXJBazdMdE9OQVJycmZtcFZTTQ?oc=5",
       "ts": "2026-09-25T17:45:40+00:00"
     },
@@ -3321,7 +3474,7 @@
       "cr": false,
       "salario": 13.0,
       "cargos": "",
-      "fonte": "meionews.com",
+      "fonte": "Meio News",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPU1dwU1pSdEh1WURLM1g5NzhsbVJSSjRlaUpWMl9Rd0stZFVtSFNRMU05cUkzRFlZcmo1VkRjZ3AzdV9aZW5oS1dQZ2lGY2kzV3Z4NUYxaXM3WDVnN2RyVmtUbzNkWkdFWTZJM2UxUnBncWxsbDl3OFBMR3lYQlkwbTA5ODg5ejVLYktxYWh0YWM4dnExQm94TlhJYjVRZTBDM1JNbnByVy1xM3RETGQ3bS05WkJpZ9IBtgFBVV95cUxPU1dwU1pSdEh1WURLM1g5NzhsbVJSSjRlaUpWMl9Rd0stZFVtSFNRMU05cUkzRFlZcmo1VkRjZ3AzdV9aZW5oS1dQZ2lGY2kzV3Z4NUYxaXM3WDVnN2RyVmtUbzNkWkdFWTZJM2UxUnBncWxsbDl3OFBMR3lYQlkwbTA5ODg5ejVLYktxYWh0YWM4dnExQm94TlhJYjVRZTBDM1JNbnByVy1xM3RETGQ3bS05WkJpZw?oc=5",
       "ts": "2026-09-25T17:43:45+00:00"
     },
@@ -3440,7 +3593,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "cadastro de reserva na educação",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUHk3RGR1eUE1RVBQOG8yMkhVS1RGQzQ3VDd0WFlpZnRtV3pybXhjaDJXR2hCeUw3OVFaOG81dlJUb3FRQldETkQ5STZlZExIN1BxQmN2NExDYjdhSjJuREFrdHc4MGxJQWptOGVpS3dhR3lsTUZzSm9vemc1QS1RM1RHS09GcURWR1Z0cmpPTF9BblVMWGNDSkx3djlDdVo1RUlzZDJHRHp4VnJWbXlkNTZBMG4zYWFrTmc?oc=5",
       "ts": "2026-09-25T17:16:14+00:00"
     },
@@ -3474,7 +3627,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "formação de cadastro de reserva",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeWFnbzhfVmJrcnBtdW5kNS1mdHZqVFEwZGVZUl96VTFsSTVLMXNQMFozZkU1YW1heXFOaExCa0o4bDZ2Qk9hT1NXaW5yOVFUQVFqQ0RaZTRram4td0Q4SldfVjFYUmhQNmN4VzVJYzFvRHhwbTZ4QkZ6cVc0WG5LZ01JSDZ4MUR4S2dkVV9CQ3JzSkJFQVlucE1hQWFCMkhQYXE2RnFwZ1pfbGxNam43bW9qdWozX2VZ?oc=5",
       "ts": "2026-09-25T17:12:41+00:00"
     },
@@ -3576,7 +3729,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "auxiliares de educação infantil",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRjRKOGVPOFpSZVBzdDdSQWI1eFFsWGwtSkt3LXVLbG1SRU9iZXRkbXlBNHhWemp4VHRxSFVTeEFaQTJNRXZoU0NpdktXX0xlQXdvM1ZvaTBvRXp3b3ZmZ25WOU5ORGpFSm9xUEVEX0tubW1sMDdTY3BmUWVtSUM3ZXhRN0hLUzc2S3lFZWZTQ3pjUUZhb0wtVkx2amdIMW1ZY2l2SnBrNVl6VUdyY0p1VnBmNzYxRmhHZzU5TTEwd2UxSnZ5Um1v?oc=5",
       "ts": "2026-09-25T17:01:37+00:00"
     },
@@ -3593,7 +3746,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Bibliotecário",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd2lTYWhFTlRXTzRENzRrX1cwX0JmakNKQTl2TGF3NGowbGNfcEZNb2RSVU9oYkZGRFQ4QWFGSVJIM2pxRDROVlVuYWM5ODZQLTluQ3AzTTZ2X1ZxWTVpVlptelY4cEtHaXkyRzZaQldTRGtLM3NJZjVUeDNNY3ZzUGZZQVZLa2V4Y2UwdV9BaFI3RTdjZWU2QlJjd0YzZw?oc=5",
       "ts": "2026-09-25T17:00:05+00:00"
     },
@@ -3627,7 +3780,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "motoristas",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMFpIZC1PXzg5VEt1MHFsYkpRSWw0VUdjMjFZNUlNYTBodmFpeVJxSGp0VlRxVmt3dW9lWkVMajJhSEE5S2FzR1Rvc0g3SWItV1lEVHlfVXlJcVp0Q0xBZ2UxUG5CWW5NRjhZQW1xbk90MDhLdzhqdXhfaHlhaTdLZER3SkdKNXAtYXpnZWhtX1ozRVM2R2RhQTNoYjR2enNpNjg3eA?oc=5",
       "ts": "2026-09-25T16:57:23+00:00"
     },
@@ -3763,7 +3916,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "www.gov.br",
+      "fonte": "gov.br",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRjE1Q1R1cGxpcXB5cFo2ZGowZlZHWXRILUpkZ1dRd0E2blFiMktkb3hpQmlfc09RRF9LMnhXQkJKNURQLXpjLWp1WFhsd2NPLVhlczA5QW10M0tWVmFncVAxR2djdUNNMlhoQURURjZVNHRQT3BnSlNsckxJeEdJRnRMMS1TUlB2UVcwU1ZLV2VTZw?oc=5",
       "ts": "2026-09-25T16:35:00+00:00"
     },
@@ -3797,7 +3950,7 @@
       "cr": false,
       "salario": 17433.24,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUWFCMmZjWlVza2g0UF9sZld5NUhWSC1PT3BsUnh2NGtrZ2Vxejh0UnhGSGFvdzM0UWJpR1pFdEppeTFTcmlWdlNGdThrcjZ0OERRUk5US2JfR0t4SjUtSEs2RGNzb3B1LS1uZkpUUEtadTlSODNTckZpdHhEXzhqQno0U0RhczVsNmlzTEcybG5HbnpkSXY3cXQycG91SGtyS2hKNGktcm1sUnEtcWRXeg?oc=5",
       "ts": "2026-09-25T16:32:02+00:00"
     },
@@ -3993,6 +4146,23 @@
       "ts": "2026-09-25T15:42:37+00:00"
     },
     {
+      "titulo": "Concurso Câmara de Clementina (SP) oferece vencimento de R$ 2.500",
+      "orgao": "Concurso Câmara de Clementina (SP)",
+      "uf": "SP",
+      "scope": "municipal",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 2500.0,
+      "cargos": "",
+      "fonte": "Concursos no Brasil",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSjYzd0VrVERnOVpwaGxpejNWRlYxMWdzcm9nd0lmbVlOUmFQRkZyVXdSczVibVBBWHVHdnhFQnJEenJtUHphV0tGQzhIUjg5dTE2cEpUdEhlQVk5TmhNUkVRVENkWkdQUGZ3R2lGQkpKcUJEVno0UVg1ZXpJakNBRlRQQ1FlUk9Oam1YcURCUl91NnpLV2ZJOW9sT18xV2VnZndOQS1mdXZRNkNMVUZoaVpKZlVvQW5T?oc=5",
+      "ts": "2026-09-25T15:42:16+00:00"
+    },
+    {
       "titulo": "Concursos TRF: veja os editais previstos para sair este ano",
       "orgao": "",
       "uf": "",
@@ -4039,7 +4209,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "TV Sim Brasil",
+      "fonte": "tvsimbrasil.com.br",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQWxLRGk5R0J5dDlfd1ExMk4tQ3l3MS1rYkliWTlLdnZLY2ZkT0pEYnFxQjFuVk84NU91Y19rZzYtaWdYMHdDTlRSWkoyTU52TkpzOTRCZ09ySk4zNVZaSDA1SUlXYXlQRVJnZmVUSWdqelhUZjhOVFRaSFljZmJ1c2xubS1hejd0Q3JRZFVya2s3VHZvZ3E2a1U2LURfNF9GdmtjeFVTbmNKM1I3dTQ1T0ZB?oc=5",
       "ts": "2026-09-25T15:36:48+00:00"
     },
@@ -4404,7 +4574,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professores substitutos em Coroatá e Caxias",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUnhzeUx6SE1ER2dKTG1fdi13YVJqTTdzRkhxTDEzY1pUZnVTQ3JoM2ltSW1kMFc0SWZSSWt0NGJKeWNQeTRjd0ZNMkNNa2dSVjhlSXZIbWQ5a2V2d2JIa0xOak51aEZGSktyZk5fcW9xRlFlTmNFVExLc01RdnJUVEZIVnRqMnIxakFmaDFLV252OEZ4dFJYcVhDUEJ1VVQ5RjFLcDlUTjljTlpCSHU0RkNvRW5oREtSSjVV?oc=5",
       "ts": "2026-09-25T14:18:02+00:00"
     },
@@ -4439,7 +4609,7 @@
       "salario": 0,
       "cargos": "",
       "fonte": "Ache Concursos",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUlpMSEx0RDB1YmhmQjhuVGtiV2VnWGg3UkphczFkUzVDQ1l2TllPZ3JfVHhyQ2xkZVNJTkY4NTJfTEVIRTFZZDI0WDVMWUVLQUpsQThTZXMyS2ZLOWdZU1RlbjlHOFkzNGFWaFNrS3JnSFQ4blgtRGFwWEJ3MVIwSGFveU5mRXJxQjVkZmdvWjZrVk54TGtwYlk0RUw4eWg0Smd6SWpORUpQaE1Xc2JpYU9vWWZCMmhFRW5Ic0thOTRkOTZOVnhZQjdIc9IB0AFBVV95cUxQQmJvMm9wc0ZKV2lRRy1YSGRhV1AwODE4eHc2aTRxMTIxMC1CUDlMUzdzWmMwNzg2VU5QS0luRU5FTG9TRFJHb2ozb1FsY0lQaXZ2ZldFRXQ0MUtkQTdxUlBVakRTOUh0ZG5HYmxreG00ellsSzRuUEtzNlphaUtLWmk3RTZ3ZGhTekZjODluR2ZtVkNqRDRQVlBzaC1hT3hNdndqZVAwbW1MMXFjMG9ZUjMtOXY0VHh2bmFWMW0wdlZBUTJzUXVKX3RkMWNsSW5U?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQmJvMm9wc0ZKV2lRRy1YSGRhV1AwODE4eHc2aTRxMTIxMC1CUDlMUzdzWmMwNzg2VU5QS0luRU5FTG9TRFJHb2ozb1FsY0lQaXZ2ZldFRXQ0MUtkQTdxUlBVakRTOUh0ZG5HYmxreG00ellsSzRuUEtzNlphaUtLWmk3RTZ3ZGhTekZjODluR2ZtVkNqRDRQVlBzaC1hT3hNdndqZVAwbW1MMXFjMG9ZUjMtOXY0VHh2bmFWMW0wdlZBUTJzUXVKX3RkMWNsSW5U0gHQAUFVX3lxTFBCYm8yb3BzRkpXaVFHLVhIZGFXUDA4MTh4dzZpNHExMjEwLUJQOUxTN3NaYzA3ODZVTlBLSW5FTkVMb1NEUkdvajNvUWxjSVBpdnZmV0VFdDQxS2RBN3FSUFVqRFM5SHRkbkdibGt4bTR6WWxLNG5QS3M2WmFpS0taaTdFNndkaFN6RmM4OW5HZm1WQ2pENFBWUHNoLWFPeE12d2plUDBtbUwxcWMwb1lSMy05djRUeHZuYVYxbTB2VkFRMnNRdUpfdGQxY2xJblQ?oc=5",
       "ts": "2026-09-25T14:15:05+00:00"
     },
     {
@@ -4506,7 +4676,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "o cargo de Visitador do PIM",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnFGR0J0WFV6Slg1azYwTmQ1M0xKcGRCZWpjWmNJb1BOMnppdHo0WHR1aVFGRGJlR3BhSWNmQm5MVXNyRGFRNm5PRXpTVkkxdXR2TTcybDgtOURuVFlRbFdRZ25VUXRNMTRabkRsX082LUFUQWxtLW0waDBDQTNzUGJsV203X0N6M192Tl82WVdra3VwUEExX3VnWFp1c3RYRHNnbnAzcTdaYjhwWUR2MDZRcEw?oc=5",
       "ts": "2026-09-25T14:10:44+00:00"
     },
@@ -4540,7 +4710,7 @@
       "cr": false,
       "salario": 6771.8,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdjZ1NC1YR3pPeDNkYXlZYk04cndNTjhQS21FTU9OSmhzMUZ6WVFKR0RpbnIycUFhU1NzUkpzMERMbVBPZHd5WFZvOHhjbjdSc3QzSmV5Z3VlazhXZWpJNnpMRWtyeDVsNFBBU2lHOWZaRGpITVBJWVpBS21rLTdfaGw0Q012ci1uSlA3Q2ExVXptRlhvMWxwUHlvcXhuaF9nektGcjln?oc=5",
       "ts": "2026-09-25T14:03:00+00:00"
     },
@@ -4559,7 +4729,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professores do magistério superior",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNnZaLTI0RHhxTFp5ek5ycHNreWxUOFk2RldIbHM3VDJIQm9WS3E2ckFDT015YVNsUlVmdmJndmxpSlNWZjZVNTdtUkI5VHhxc2NiNDdwS1otS1FYVDUwTVFod3F6amNVME1DMFY4UlpuR0lyZTk2U2p6bVNRWWZyQnRYRUN4cmVUNEFXeFlXUXI5WlZJLXdiN29nZ1c4VENuNTZKa1FHUXRXdlRVNGNtVGRkRzk4MUR4?oc=5",
       "ts": "2026-09-25T14:02:40+00:00"
     },
@@ -4720,6 +4890,23 @@
       "ts": "2026-09-25T13:45:59+00:00"
     },
     {
+      "titulo": "Concursos TRT 2026: abertos e previstos (atualizado)",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Previsto",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83enNwanVudkh0c0hRRDl2S25Eam1KN2lnZXRBTkQxTEw4RG5VelJJN09uYk1TT0xDVlpuOHZTdE5kTDNFazZhOUxwQU82Q2F2WGE4Q0dmdExPU2cwems0Yw?oc=5",
+      "ts": "2026-09-25T13:40:43+00:00"
+    },
+    {
       "titulo": "Prefeitura de Afonso Cláudio (ES) divulga seleção para Merendeira",
       "orgao": "Prefeitura de Afonso Cláudio (ES)",
       "uf": "ES",
@@ -4749,7 +4936,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQU2hJTnlVWWtjNE1JdWdoaTl2aXpDVUZNeEtId0Z5TV9DeDBGRnY0ZkExUGVNYS1faXJiY01KRFBNYUVtSkRSWmQ1Xzh1ODlmWHkxX0V5eXNoR0N3RHVoVVEzMzlSa2s4M0p4MVdVRXpYeEVLc2JTMVlUaW13SzhLQWhtaWFWQlJqNmUzU1ZoOG1TS0dsWF9LaUF0S2ZvSUVVWjFQelhkaDk0bGpmaWpBZTFBd1B6YW9yTE5fYQ?oc=5",
       "ts": "2026-09-25T13:33:46+00:00"
     },
@@ -4783,7 +4970,7 @@
       "cr": false,
       "salario": 4867.69,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVFJUY1F4eWhGejY2Qzh6WG9mMXh5OFY3bm1iLU1wSUZ2SElrek9lU3ljT0ltNG92eFpaWDdVdkJZbXg1YVE5MHB0VkFlUzd1SVdIcDloTzFHNW9ObjVTUEpVT01SUnR1Y1JUUEJYZGdpT203bl82WWxGeDJ1d3doYTdCU09EUDQydDhCYld6eC1WRTlOMXgwUnVyQjZ5a0tVWXplWFdlRWtGSDY4TGplVnM1NFBKYWdPRGc?oc=5",
       "ts": "2026-09-25T13:31:44+00:00"
     },
@@ -4800,7 +4987,7 @@
       "cr": false,
       "salario": 3847.97,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSXBjQXBGVzVxXzVNSjRHZjIyN281clluck04N0FtNXF1cTVRSnVMLUp6MXZ4azFHLTJvMVRmeDZ6Qkg2Wk56UV81azBNYlZMSkgwek1ZRVd4Zzl3c29EcmVvWmdCT2pyenpReFRMeEZ2WlNuVW0zQlJEcWxEM0ctOGJRSWtUbkFFSVJWV28yLXoxWHhDOUY0Rmo3c1hkMTJmNTFRci1MZkVpaEdnVERR?oc=5",
       "ts": "2026-09-25T13:22:05+00:00"
     },
@@ -4919,7 +5106,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Professor Assistente na área de Ciências Políticas em Marília - SP",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQV0dJcVZPTjc1NjhjMVF3c0pCRGYtOXVVNzlxTmtWZDhadmp4NXBhZmFWemNlZTlpd3pIWk5XUUpSZzFqdnZkeUtXcFdQcmFfRzRqbVlwek40VTdTeGNwZmhZaUJQXzRCR29sT0VNMzR3aE5RWGZaQU5sOU54N2RsY1Nxb1dIMjZMU2VIUlBjdmtxWXB5eDlIcHBNUS15TmhRZGZXTll5UFlPem5OUnpJc3JRQ2xpMlJSUllTaWFjQ1lOS05wSVpLLUtB?oc=5",
       "ts": "2026-09-25T13:06:34+00:00"
     },
@@ -4953,7 +5140,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "o cargo de Controlador Interno",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeU5FbG9qdXF4aGE4dTc1a21UcVZKbnAtM0l2b29IMVhIbnU4cUgxcFduN2t1RlV1b1JZNkNZazJHb0JkVTBUZlZlT2VLdnJLVWVZWG1hd0hlUlFDV1FzWDNucEdnaThoV0plb3FqQk1ZNUxFbGxwRWlhMi1vRUF0Rm1lNnNvbE9yNWk2Mk8zeExuQ3JGWXU2TFF6bkpJNjlnS20yNnVCb0hIWXVGc2l4UVYxNUE?oc=5",
       "ts": "2026-09-25T13:00:00+00:00"
     },
@@ -5123,7 +5310,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professores e coordenação",
-      "fonte": "Via Carreira",
+      "fonte": "viacarreira.com",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWUZsSjN1eUp6dlhuNURjM0J3MTJoQWFuMVNrcjlXbWduOUhlZDgtemdheG5VYkUtelEyVG1vVWM4RjhTY2RWd2ZLUWVqR1dTNTRIS3BOd01DX1A5cS1kZTFnWVJBd1N6MFFWQlgwWlQ0Nmt5SjN4MXhtV0xYaWpGNE5KbmV4WmRmU0ppNzdEbV9XRlNUbWNkUzZtNGotNGtTTkFkS0JIMA?oc=5",
       "ts": "2026-09-25T12:25:51+00:00"
     },
@@ -5140,7 +5327,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "KENNEDY EM DIA",
+      "fonte": "kennedyemdia.com.br",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY3c2V1lNS0Myamc2dFlIZmc1bzBIdzhYajlaMV9Id2VzMHV1X2xtRUNBOUkwM0lqU3piTnBhRS1WX2RvUGg5bWxTRjFRekV6UVN5R01tQTFfamE1Rk84OUp2bVpBV2I1b3RtODNpRHppMFhLaXlZTFdvYV9FSlZSY0dHZjhyQTdKaTVaNzYyRE1yeVN6NzFqOWg2QmhieWdCeDZjREg0d1lFM3loSzBWS1pYS29iVUd4UUdaRQ?oc=5",
       "ts": "2026-09-25T12:20:07+00:00"
     },
@@ -5259,7 +5446,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professores de diferentes áreas",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOVQyUnltNlVUaFpBeU1ueEpsdXRNTlBSLWJjRlpkZ2h3Um1nMmprRG9DOXdmWHlXTWpmOTBwQlNITjR6UWRqbWVMc3VsSTNRRDhiLUFYb1V5dllJV1d3Z1BnQVN1TE1OZXBvYUFiYzUwX0hfSjVlREFoaVNmZy1OekhfTEM4UmV3cTZQTzEzc01UM2NHNVp6RUU3SHpLMkpsM2pSMllmYjY3MGN4NnlRVThvTkR4TlhyTmlJYUJtWjNvUTdyeWc?oc=5",
       "ts": "2026-09-25T11:54:02+00:00"
     },
@@ -5310,7 +5497,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "cadastro de reserva na área da educação",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPS1ZfTnlKbGs5NEZqTllZWFVPV1k5TXo2VXZnSVBrUkZhdGlVNEltNlJxV09rcVlNczFDRTVDejUtbXN1a0l2VFl3R19iWnZMOEFlaTNyRHZnbFRSeklfanJZMFR5aGZDYUhNQ21ZQWJjVVBoVDVycHNYRVZCMTY0bUJpd1phLTBEQ2dMY284azV1RERGRm9pdTcyNVk5dVhOVWJTN0MzSGtBMGk2d0w2VGFQamtTblExZGJ3LUFneVJYdkcxbkRUSmZmdEV0LTg?oc=5",
       "ts": "2026-09-25T11:48:08+00:00"
     },
@@ -5361,7 +5548,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Professor Regente",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPalVMcmNPSDZpZUE4ZkRYcEo2ZktJdlZ5RTVuODBieHhPU09Sd1I2Q2R3a3hZUTB4cWhyRUNsOTVGVmFoSjVwdElkRklfdzZiX193LTBGS3lWWkVLa1c0a2xQUlZKdDNEUENaVGxETlBFMkJVWmhKbDFveHpmUmwwalphTm8tZndvbkhqcEw4Z1RKNjVpTlVyV1RwejI1MnNBZW4yMlhOeTFGNjBZbm9zQXZETjNMeGV1?oc=5",
       "ts": "2026-09-25T11:41:40+00:00"
     },
@@ -5395,7 +5582,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Professor Regente",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNblBZWjdfeDBBSEJSWUFiM1VrWlBsZ2JpRWh6YVNwU3hQUjBJOXFEQ2kweDcwTXAza3Z6VFRkdWtyV0dMY0dBbWZjLXQ4eUNwRm1QcWhpMGtKSzlPR0VwRkc5bVUxaTJicS1FMTJKVFVteEx0aW1nQTVmRHJSaUZUUUZKNDZ1RkNHaDZZVkljX1B6STYzZXJnSmtIbVJHdll1Y2FvRjJKN1ltaFE?oc=5",
       "ts": "2026-09-25T11:40:04+00:00"
     },
@@ -5432,7 +5619,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professores da rede pública",
-      "fonte": "Via Carreira",
+      "fonte": "viacarreira.com",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQWtiZWVLTWJuSHIwTXpXcVRFUlZKbG84dEVqU2FRLWstTW9Vd3lFSHVQZGMyX0F5Y3ZneUNVdmVoNUhURXZFU2wwU1BhcGM0TEtBd3IwdHlNckVBUnNFaG03djNvZjFGVlFOTktVVVRmQ3I2bGxBYWVoZVV3MHc5NXczdzc2TWNRclJ0eTVGN0JxU2R2VlZQNnI2NHFJZnFGc2c?oc=5",
       "ts": "2026-09-25T11:29:22+00:00"
     },
@@ -5452,7 +5639,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQM0xYdHFqY1VGVVJrX210UE1pSWU0SXZpdGZhMkkzT1Y1RG9PM0c0RTdmakhDY191Y0dCOG1JcFptdHdRcUhBZjVkTE1WUThfd0FnLWphZ0dDQm4taWdta2xRS2MwTVVRanNMZU42X0s5b2IwR2MzdjZFa0pnS29nNl9BNERTUVpnMDVDR1VJQnZ5VWN4MHRNc3FqeGRiaE5uQlg1UFlYcXhwZEZoVzl1Vkd4ZWxRSUhGM2txQVJKNXN0V0tLZUhIMEJXNEQtQQ?oc=5",
       "ts": "2026-09-25T11:20:58+00:00"
     },
@@ -5696,7 +5883,7 @@
       "salario": 0,
       "cargos": "nova seleção com cargos de nível superior",
       "fonte": "JC Concursos",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNW5ZTEJ1WjQxaVA4cW9TRU9mOV9ZdVR5TmU4ZFVqRTBRRkh2eXBOM1BqNVZiQllCWlpRcnhSU0hKazFGUmtSMG5PS0EtTGVTUGI3S1kyNGd4c0pidGJnRkJtUnRHeTVKVTRGTTk5WDctZ1hDY2d3ZVpLODAxTXQ5MEJDeGs1bkdTSFg3aU1HenBOMFEyYU1SYno1MUhvZmxNNTBza0tqRHNNWnQzcHhVakE1d01BNV9mMFJFS1locWM5SjNMQ1lWUHMzQmxiZ1ls0gHWAUFVX3lxTE16V2cyWDd4amI1dUFnVTB5WWY4TFVnVmY3UkFZNjBrajRDUFZSd1hEV2NMY25JWkFGaUJpVnEtTjRiaWNnVkdUenR2RjRCMURWNlNlakxhb0R1bmh4WUd2Y19RR0NkRmJIMzVQVkVHdFlFZ1hjbGxuUl9xXzNYRWoxT19IbVFlVE1JZE5PdUpfZmdwN0YzcjRSQUZURFY0NDlDWFEtTk9lNjJLNEhhVWZPaVlKbkVfWnpUTVFDSV9yM1RZMnpsd05xTUpyMy1JYmxKMmhIMVE?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNeldnMlg3eGpiNXVBZ1UweVlmOExVZ1ZmN1JBWTYwa2o0Q1BWUndYRFdjTGNuSVpBRmlCaVZxLU40YmljZ1ZHVHp0dkY0QjFEVjZTZWpMYW9EdW5oeFlHdmNfUUdDZEZiSDM1UFZFR3RZRWdYY2xsblJfcV8zWEVqMU9fSG1RZVRNSWROT3VKX2ZncDdGM3I0UkFGVERWNDQ5Q1hRLU5PZTYySzRIYVVmT2lZSm5FX1p6VE1RQ0lfcjNUWTJ6bHdOcU1KcjMtSWJsSjJoSDFR0gHWAUFVX3lxTE16V2cyWDd4amI1dUFnVTB5WWY4TFVnVmY3UkFZNjBrajRDUFZSd1hEV2NMY25JWkFGaUJpVnEtTjRiaWNnVkdUenR2RjRCMURWNlNlakxhb0R1bmh4WUd2Y19RR0NkRmJIMzVQVkVHdFlFZ1hjbGxuUl9xXzNYRWoxT19IbVFlVE1JZE5PdUpfZmdwN0YzcjRSQUZURFY0NDlDWFEtTk9lNjJLNEhhVWZPaVlKbkVfWnpUTVFDSV9yM1RZMnpsd05xTUpyMy1JYmxKMmhIMVE?oc=5",
       "ts": "2026-09-25T09:41:53+00:00"
     },
     {
@@ -5769,6 +5956,40 @@
       "fonte": "PEBSP",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPN0gxUTRHQjA1SXNyM0ZfellBcFBTcXUxUktiWVF0enQxY0plLVQwTjZHZEVwYVk0XzhuRTRqSGFuQ0ZwVkE5YjRwZE1ELXEybGZJdkJaaTJRRzVwaXlwVEsxNVdIMFBmOS1BeEpGNG1mMWY2My1DRkhYY1MxZE91S3JBbVdJOTdUa0VaYmtnODJjZw?oc=5",
       "ts": "2026-09-25T07:17:11+00:00"
+    },
+    {
+      "titulo": "Concurso Chapecó SC: novo edital terá 90 vagas em 41 cargos!",
+      "orgao": "Concurso Chapecó SC: novo edital",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 90,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5TTnhwbThkaFV1TEZVYmdESEFNYXNBNUxuVG5RSHZPNjNBalBzSW9sTmtvbnctaDFOSWR0bFVnLTVaaVNZVlVIMDk1bzJyMEZkV1NRSGNnYWtlRkVzY1ZNWDBWS2pYRWY4Y3dxM2dpZ1hGcWV2SG03dFpQbHbSAYIBQVVfeXFMTUlrWUF1ZDgzbWVXaXpmbzJ4NUJTYm51c21qSmFfUWVMWHM1NTJNa0xRR0N0UGoxYjRzTFdpbzhZMldqdnl3aXF6dlp5M1NpWE9Oc3hLaHdJeC1aTHpIemJ1WUN4MFFPNllWOERFMjdiVGNIQzYwckkzbkVlVkpFRWJMUQ?oc=5",
+      "ts": "2026-09-25T07:00:00+00:00"
+    },
+    {
+      "titulo": "Concursos Jurídicos 2027: prepare-se para os próximos editais!",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Notícia",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "os próximos editais!",
+      "fonte": "Estratégia Carreira Jurídica",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxQkNjLWJPdmVnb0pHR2c1dzRVRFdWTjV3VktpRUZMUGtPQ1RpYzE4TVF6SlVkamRPX211QXhPZWdodHc2eE5BS0Frc2lfbmtTNmVCN0tIWVQ5alNuaGw4NVhZVHNEV0tJOHc?oc=5",
+      "ts": "2026-09-25T07:00:00+00:00"
     },
     {
       "titulo": "Concursos Educação 2027: Orçamento prevê 19,4 mil vagas!",
@@ -5941,6 +6162,40 @@
       "ts": "2026-09-25T07:00:00+00:00"
     },
     {
+      "titulo": "Concurso Procurador Federal: 50 vagas em concurso unificado!",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 50,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Estratégia Carreira Jurídica",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80X3U0a3gtMlQ3RHJ3RnhoNWdZamJqa05abXdQQ0U4RFE1Qy05cHUxS2NRS1pGYmZDcWJESXcxOVY4QTRvdm9WbDNqYnJ5SnAyMWpJQTZKaHpkTlU4ZGx5UzhNMklJendRRnJvLUR3?oc=5",
+      "ts": "2026-09-25T07:00:00+00:00"
+    },
+    {
+      "titulo": "Concurso PGFN: 50 vagas para Procurador no edital AGU!",
+      "orgao": "",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 50,
+      "cr": false,
+      "salario": 0,
+      "cargos": "Procurador no edital AGU!",
+      "fonte": "Estratégia Carreira Jurídica",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Bck1FcEJ2SDZINWdYRlM1ZUVKb09UMnA2d0N2ejlZQUJ6SHpvSE13bWlLTlFaVnVyM0NRNFUzaUh5ckYzM0w4OWt3VUcwRHZnY3RJRjhCc2JUcEk?oc=5",
+      "ts": "2026-09-25T07:00:00+00:00"
+    },
+    {
       "titulo": "Enap atualiza relação de candidatos sub judice no Concurso Nacional Unificado 2",
       "orgao": "",
       "uf": "",
@@ -5970,7 +6225,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "Dia a Dia Arapongas",
+      "fonte": "diaadiaarapongas.com.br",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOTl4cEdvYXZYNHhQVXBCLXlqX2FfLUhCVWxNS3lpX2ZNWDdPTEk1UUtUWmpMODdFR1QzbmVmYjFCa2MwN0U1TzNsa19rd0RueEkyZzV2N0xBOGYxN1Z6VXQ5ZkR4LVJVbHlEU3o1UjliVkNubkxXcjFWQjBCVmwtSGw1YW9yak84a1BhMFRTUHZoUGJITVdnUkJPcDFmWDV4UFVxTEJTeUVERUF5ODBPb0Z4amFrNFNZdkxJTW5HZWxyclpQRldv?oc=5",
       "ts": "2026-09-25T04:57:02+00:00"
     },
@@ -6021,7 +6276,7 @@
       "cr": false,
       "salario": 22.0,
       "cargos": "",
-      "fonte": "GC Notícias",
+      "fonte": "gcnoticias.com.br",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOEJVRF9WNk1VbzdJNkZhclZNX0lmWjJPSGZuN0dud0pjVnNjdXc4cnhNVU1TeWt4UnJOT3VBV0VVRU9KZjNXZm9JMmczMnBUaEN2Sm9lenZKZzU3TFRYSW9ic2dfaDcxMnRndU9TZC1XZlBFc0lrcXBjSmxFdUhnSGNCa04wS2JKTTlBVTB1SnFMS3Z5V29FejBPRjRRaDh2ZDVRLVYyNTdFX29LaDMxSVNPWmg?oc=5",
       "ts": "2026-09-25T03:14:36+00:00"
     },
@@ -6055,7 +6310,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "Interior da Bahia",
+      "fonte": "interiordabahia.com.br",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaUt5TzE2ZkFCM1BaRDJNX0wyVm1lNF9GbHA1VFRCcjRxSkg4Q0RMalZlaE9PQnE0WjlsTEJxSWNIeDlCNFFIRmpLQnktQ0ZJNGJSM2NPakI0T1cxSDFvY0RiNkUydWFGLTVGM0FDNVhFQ3Q1cTJDbVNudW9MVWpsSG5PXzFCeThKOHMyVTI5ZFk2MWh3aFhjbmNtNHRLYzl1MVRzcnkzQQ?oc=5",
       "ts": "2026-09-25T02:09:32+00:00"
     },
@@ -6140,7 +6395,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "participar?",
-      "fonte": "n1n.com.br",
+      "fonte": "Portal N1N",
       "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaDc5WHJkMzcwWjhPYl9DSlU3Z3JZZkJSVGJzT2xpM05wN2RHaG9jR3Q0TllRc3lfNERCRU5lVnhUZ3djRGZoOWw4cEtvbDFPbU1qUHlKYk1fb0dCVW0ybXJEM2pIVEpnSFdGc3ZkM055Uk1tNXBVdWI3RTNXWExpeTVMX0NhR0JleWJFXzBPdWxpOVc1cmlPZ0RiWWJfTm9XbU9teWJjanRaNERGbDFBSk5PYXRSWmpiWjFKWTN3U3RWV3Y4cXpoVDBuMDVUeXg5OUpDQ1J5R1dlbkxLNEhv?oc=5",
       "ts": "2026-09-25T00:05:54+00:00"
     },
@@ -6160,6 +6415,23 @@
       "fonte": "Tribuna do Paraná",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNVVDbHgyOGwzNldSenp2US12RklIdlVOQWQ2N1N3bGY0TXZlNUFVRkNVOGQ2SzJiR0hRRXFiYmVLWXItYWRxMjgtZnEyQVVhZFhpaFdSUXFiOFpNSXVHNThQYU5aRldWWl9ETmlDM3NOUFZNelVicWtUQU5SLXZxVjFoQTItX25WQzZxVFNYMlRuN1ZoNjhHLUxJS09oc3ZpcUVKa0UwdEFiNGliTkZaWlhHekxubUxzYi1QdUNB0gHDAUFVX3lxTE1UM0lCN1k4RERkVHdJN3FGRk1DemUya2FDV1hDVXVPYTJLWHFCRmNkRFhyVERGQzhWMEluUERwMVJFbExmMHVIanVzSHBNNU05aU9kbnRwaFp0NURibGRVb1VIQy1FVG1NcWQ2WTNNbWJLalVBcjI5RTlSWjBhUDJ6ZEpTVEt4c2llUC02endFZl9vYUtzUS1GdHBoOXVCaXpHMkp1d0hlMnQ5SWVRb1Fvd1dHR1B2aXZCWElyeUdLcW5Wdw?oc=5",
       "ts": "2026-09-24T23:34:00+00:00"
+    },
+    {
+      "titulo": "Prefeitura de Reserva do Iguaçu/PR abre processo seletivo para cadastro de reserva",
+      "orgao": "Prefeitura de Reserva do Iguaçu/PR",
+      "uf": "PR",
+      "scope": "municipal",
+      "municipio": "Reserva do Iguaçu/PR",
+      "tipo": "Abertura",
+      "modalidade": "Processo seletivo",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": true,
+      "salario": 0,
+      "cargos": "cadastro de reserva",
+      "fonte": "concursossc.com.br",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQX2V3b3JHT2ZRdUEwN0NzVXBkVUlYSTl3aFNadno2MWhQNjRVUTJGcW1oUHJlWWR2RE9kUzhBMGJ4LU5JWEJPcFZhdVpCZFJVWm1ESndvMkZVQTUza1BKVWVPbGVIbm5QN2ZFcVgybnItRlBRdVd2NzlhRFU1VkI1NE5neDcwS3RtR2ZNNzdWZk80amttUm5oOW1jWDYxMG1KcS0tTkN3QlNJMV82NnB3?oc=5",
+      "ts": "2026-09-24T23:09:47+00:00"
     },
     {
       "titulo": "Concurso Polícia Penal CE 2026: Governo propõe quebra da cláusula de barreira. Entenda o que muda",
@@ -6312,7 +6584,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "seleção na área da Saúde",
-      "fonte": "Diário do Estado",
+      "fonte": "diariodoestadogo.com.br",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcGNPMUhNX28zOEJDNW9fa3BpZ1NOTEl2WW82d0RWVFNfWW9oRnBuUW5Wd2JRZ3BkN2RUb2cxZkRQdkxxb2U4b1dIMUhhcEUxNnhGekF3Ylp5VEJITTdIYTB4UHh1bzdhaUM0VWFjMWdtX1BDVjFfN1poNzcyWFUyUnRvcEVRd1Q5ZFJqX0FfcGo3andsV3lTYm9NM3Y5S2c?oc=5",
       "ts": "2026-09-24T22:02:45+00:00"
     },
@@ -6455,6 +6727,23 @@
       "fonte": "redejovemfm.com.br",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQajkwT09VUW4wbTZ1Ry02aURLTFhKc3VvNTdlNXkyTlF2RVpfN0RGNEk1TFVqVDJNMmxQQXp4YnM5MlNwMUlIb3NoWTZoSEJlSFg3MDJ0dWJ5SEMxdGUyeFB5Xy1kSnFKTkhEdVlUZWpOTFVWN01xQjVtMVZPQTYzTFQ2UDdwMk9nYkgyb3VoaUpPMnVxSEllaXdCSmhpRThlZVZUSA?oc=5",
       "ts": "2026-09-24T21:22:50+00:00"
+    },
+    {
+      "titulo": "Concurso IFRJ: PLOA prevê edital com oferta de 70 vagas",
+      "orgao": "Concurso IFRJ: PLOA",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Previsto",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 70,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1SZXpjQjJiN1pGYzBlb0FhNDB2Z2xRMWJCYmVNQnprY2VfTThpY184X1NZOU04bVFnR2lvNVFqd2RnTEpjYUFtVDFYVEMyMU9YRTg4WWFLNXpSWkxtV0JxNVFBVVU?oc=5",
+      "ts": "2026-09-24T21:14:42+00:00"
     },
     {
       "titulo": "UFPI abre 30 vagas para Letras-Libras em Teresina",
@@ -6622,7 +6911,7 @@
       "cr": false,
       "salario": 5.5,
       "cargos": "pesquisadores com bolsas de até R$ 5,5 mil",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeTNLQkozemxLMVJvYkZ4eldGVzBJbDJJNDNoNzFEa29IODVOV2laNHFGUEtidmphaGdwV2JHYWY5VWlESkpQMVVtVzhheWdtSGJoc2ZsWkdlTzhpZ1RpTTVsR1NLcTVibVE4dGNQdXNuU1FJMlBKaEo4WktvUEtfTHlKRGVqdTNzd21jblZfOXdPb25SekEwR0lGM2xVM3pEMTBXUnNiNlZ2U1NRa3RJ?oc=5",
       "ts": "2026-09-24T20:47:08+00:00"
     },
@@ -6675,7 +6964,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Psicólogo e Terapeuta Ocupacional",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaFFUNWM4VGtjdVp3XzlReVpfbHJwMUhfQzdKNDlJYXUyZ3F5QlY5Y2NncDVzamw3MlM0ZDFua3Z2WXlqVW5zV0VVSm5ScnM0QXZGRFFqQ3NGQ2hJbVJocHhIUUtkNmJWc3hGY29mV21IeENpZ3I3ZElqZ0g0OTRmeHh2YnBQMEcyRlNuVEVMWkxyYkc3dllpUmZSM0FrYUJoSE5PNm1BbTNpaWt2bi10WXo3NGNySFpmelRIMWlhUW81ZkNHbkE?oc=5",
       "ts": "2026-09-24T20:41:04+00:00"
     },
@@ -6763,6 +7052,23 @@
       "fonte": "mpf.mp.br",
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPMmZ3Q0M5YVZleDBZVlZqMWJWVFNXSDlSdmVYMEJuWE45M0FSS0N6ZktJY1hmS0g5YlYtaGFtNVh2Q3Z1clloSmYzZVc3cHVjdkdncjEtQWJOdGdENkZ4dHlUb1BiWFV4cV9hN0JwaDFpc1Z3aGZyX3d1MWZ5V1JaZWh0WE5aX0tXT3M0dnNRVE5FcW4zMXBvd244U05NWkF2bWExLXp2RG96WXVCQzRoYW9PUFdEbGtTdm1PRFVxUG5JTWR4cWZRNGJDbDVXWjM5eFpTWV80QjZOTWZ6QnpCdTkxZjU1SGhUZUpPSg?oc=5",
       "ts": "2026-09-24T20:10:00+00:00"
+    },
+    {
+      "titulo": "SEBRAE-SP abre vaga para Consultor de Políticas Públicas",
+      "orgao": "SEBRAE-SP",
+      "uf": "SP",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "Consultor de Políticas Públicas",
+      "fonte": "pciconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTUg0cHhKQ1FKOXQ3dUxoenN2am90eU5fQ1FKQllsbjJZM2N2U2xOREluTVgtTF9pVHAzLVIxakNIc0lNM2I3ak1aRTRoMC1rYnN3amR1cFZxemhyZzNhVHktSHRWUFdSX0IyWkd1UWFxelF6VUR2WU12eGFrbThOUE1iYUJfc0RSNi1GRExVSE56T1ViTktiQ05nbmhPZw?oc=5",
+      "ts": "2026-09-24T20:09:45+00:00"
     },
     {
       "titulo": "Prefeitura de Santo Antônio da Patrulha/RS abre processo seletivo para cadastro de reserva",
@@ -6884,6 +7190,23 @@
       "ts": "2026-09-24T19:45:31+00:00"
     },
     {
+      "titulo": "MPMS abre inquérito sobre barragens da Eldorado Brasil",
+      "orgao": "MPMS",
+      "uf": "",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "Campo Grande News",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbGJVM1czUmp3UFBOaUdkM1BNX2lvc3FsbEtFOVlPVjNrUmdiYlp5czdTeWp1VXpGWXo5YlVOUWFSMUQ0dEFUTGtpbzMtYnZ6X1NFd3V1VU1XRGtJeVo0cE8xN0o2cm51ZWhIY0hUdno4dXhBdmdPazFSVUFjbm1veFVYcWdPOHlrSFVDOWo4eDFkUUxQdzNrSU9UczhsdmZ2S0tac3FkMmtLcVJ00gGsAUFVX3lxTE1VWlZocXc2ZlpOOUpnLVN1cVVfam9lcmVjanVjOU84dExQcTI5SjBxUUpSS05mbmZXWUk2c2VsOWpzdHRuX05kT1FJa3Z1ZFUyQVBKd01nR0l2bTFuOHhVYzZKMGxYZWVsaUFxQ3RIYkFJeEw3RHVGdWlqaUJybWUyWm54UHc2VXVCM1B1SHN0WTIweFJzNC1qbFlLeE5PWm9OS2VHYUZNcXJNUDE?oc=5",
+      "ts": "2026-09-24T19:42:00+00:00"
+    },
+    {
       "titulo": "Município de Colombo PR publica edital nº 001/2026 para concurso com 352 vagas",
       "orgao": "Município de Colombo PR",
       "uf": "",
@@ -6981,7 +7304,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "professor da Educação Básica da Seduc-PI",
-      "fonte": "A10+",
+      "fonte": "a10mais.com",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOVWVzX1NEd3E0WWxZc1dYbC1VeHpPR09EYVVGV1hzUUVOb1dtMDdEY3ZkWWhUYjZVTnJJX1VqVFJXVS0wbjhLWGFNNjZpVDdmNWlGcjVJSk56LUJBNV96VG9sNDZpRTQybjVCMHg4elZtek01QjAxRnR3V01yUFM1RmVLcWRSMENEY2JQNHhWQ19MNnAzdUctM3BKYzdKN1E1N1VjUVloTlFYOFY1RVp3djU0VkxINlRqS2d1X1dqUkhYRnVTSDBLdXlEY01VaXdqWmg0VWs1b9IB3AFBVV95cUxQUUc0QWJzQ0tVOXZaQ3EtZWJIZ0NScFYtV0tGOHNaZWNoUU81VFVXX0kxdWhkRnJ6VGZmYVlTWG9mZ0lGT0ZjMEJoNDNONUgtVWY3MldiYlgyUXJUbWpHbF9sX1p6Mm9uY3FlWWtPZGRoeHFzNHJHbU43TkowMWdfU0t3VDJTNHNjQ0lUVEp0VHFsVmwwSmZhRS1zbW5UMjE2b1JRRDM4NUZmYmg1ZWs3RVk1VmJJY3E4ZXczVU1EX21RQVJQejZNUkJ3UExsRDZTTVFXT0hHQWVHWUlu?oc=5",
       "ts": "2026-09-24T19:26:29+00:00"
     },
@@ -7051,7 +7374,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "cargos de nível fundamental",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdUR1Z1EyWjZSU3J3Q0FacU5HZzlKazhJLUZMT2N2MWg2c1hMUE8xRDZaMmEtendGOW5JZ2hXMUtZQWloR1VtUHZQaVdBUE9wR3piaE81c1hZcW5DTGRKdHlSNXJUY0lDNW9NT0lpckhZcWNHMy1mVHJvQTdvcGpRdGhsakl1a08wVThzSWZDN3p2S2RPTG5GUnhNZHltMm1KbXFxTkNKRmlLbFU4TUd6cWloME1pSkwzeXdrTlZSc1BYbVk?oc=5",
       "ts": "2026-09-24T19:13:04+00:00"
     },
@@ -7102,7 +7425,7 @@
       "cr": false,
       "salario": 18000.0,
       "cargos": "diversos cargos",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVnlQRTE2UElzN0d3MUtDNmFFMnN1ZVpLZnlKRk1XX1JaNWE3b1BhQzVDYmlVbC13UnAxclNtelo2aDN1Nk5sRnFlRW5oUk44Zm1sTFhOaXU3dXpWenVUejVYei1ncFEtQlJQTHpFaDVoeFRtd2NTZlhEVjJKaWdtM3hoV3FCamV2cXp0N0tqcFd2andQZGRCeWZheF9uRm42a0dzcmFEcXFMUUg4X3RmT0FkVQ?oc=5",
       "ts": "2026-09-24T19:05:36+00:00"
     },
@@ -7595,7 +7918,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "o cargo de Encanador",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaExsanUzM3JPNm0tRHg2dHlQR042b2tlbC1KVHJuSHU4dWNVc002WFRueHJEaXFyUlBEbG1IUjU4TW9KZVd6eUZhM0RTZVpCVVU1eXlhN25qNmhnNWw2d1k4VGZ0U2dybENCd1JjMlFHcGlPSHRnd1M2QmliUnNjY0ZhMnlJR3ZaTGJtSF9Xb2V2SS1IMzdxbXFuWTJNM1kwY0wxVk5oMVJFVnFaNDZpR0pR?oc=5",
       "ts": "2026-09-24T18:01:54+00:00"
     },
@@ -7697,7 +8020,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Professor de Educação Física e Coordenador Administrativo",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUlA2RUxqOGk0dkE3QWxQdHdpU0pHdGhZbURtZDFKMjB2RlJuMEZ2MXN0ZmFuNXN1aEF2WF94OEpUdzZKX3hpTWhYRDZFZVQza1Y0bzBoRnNjdlZiOFgzR25WTVpYU0tRZTA0am9KckVLekp6SC1Jcl90dWJtdFFjRU9QbHNFQWNvRFBSQ1hTMEhyNktkWkhTdzVWVWx2MTdtaTBVNEphamwyZFlLODVEYjJHOEdiWDRGTlpRQXNKM2U4aUN1OTJINUJwbHRfbzZDUkh1dHJfZzBGNUJSWi1GZ2dJZHowcDAwNDU0N3ZaX0I?oc=5",
       "ts": "2026-09-24T17:54:28+00:00"
     },
@@ -7850,7 +8173,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Educador Social",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcWNFRTFZTUUzSGxYekxMcG9sTFdUOS1mSWk4SmVKeEdQcUlTVWQ2eU5jZGdOZUg1cXFDaDJMNGp1Y0p1emxpMFlQQVBzUnQtLTB1MkF3Umg3TU5vWE5ZS1RGLXA5RllZX1lpZVpFX0FqbFBIUVlDeFl2MXRpVTctd3B3TUsweFEyc3daYnNmR1NZQ05VQ01yU2t0V3VoY3psbE9ObGJ1VmVYSm1RajQ5aHptWHY1UG45?oc=5",
       "ts": "2026-09-24T17:22:26+00:00"
     },
@@ -7884,7 +8207,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Assistente Administrativo",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON0F2LWhLak9sdENmdjdQS3cxcERXdDlxNDNXV2IzTHc3ek5PWG5XTDhndlVEZklzczJ5dmxUSE03enZsckZyRFRqWEJneXVuQ3pzRXp3M3FxRzJfdW5iQkV2NU9pVk56NC13RVJFYzg5SF9CQUUwcGd6cEF4dEgxN1RJVHYyV2Y3QVZLTHlNYmp3WWR3TWVIVV96cDBlSnEyR0pwZ2pMbVhWd2s?oc=5",
       "ts": "2026-09-24T17:18:25+00:00"
     },
@@ -7938,7 +8261,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Cuidador Social e Professor de Geografia",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNOVJfcDQ5NnNldnBWc29aYW5OQmU2ZjctM2xYVVFsZEdBWlVsU2cwVHVsd0JmYndmaGp3aHNMeTY3TEh5NlpHOEdZQjFMaFN6V3dScmYtcnNVc3lqcjc1aU5vTnhOalZqRVZvTGRtSW96U3d0cmNKLTBTN1BQR3FaVWV0Z3laMWVNV1Rua1pDeVZRSkNNM2FMQmJiT01USHJ5UDZld05WNGlCTUpKZ0E0czRSZG1yWmVzNExtYXhSZnUtZkhjQVRmY2d6UHZ3eEp3MHJ1OWlTVQ?oc=5",
       "ts": "2026-09-24T17:11:43+00:00"
     },
@@ -8023,7 +8346,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "auxiliares de serviços na UPAM",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONjVXYzJ3dkIzeG55N1dGMW9oT0FXZDB0TzR4ME9fQUtuV1ppOWl2cWwwY1EzRm9ZLUs4ZENaU1V2d1RabkRqcWhYZTliOHY1YlRMM0FIOVhfd1JEUW5JYy16eTZDd25hd0dRMnA2RjVpWTZQT01aOERlUFdxUVlYRTh1M19lQ3dCV19OTGVoT0ZuNGpIOFdPY1I3RHJQUGU5S3VKNUxlWTF3R0NmQ1laRnJhdjU?oc=5",
       "ts": "2026-09-24T16:41:49+00:00"
     },
@@ -8040,7 +8363,7 @@
       "cr": true,
       "salario": 0,
       "cargos": "formação de cadastro de reserva",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcFFGbTg5WnhUMDVXMm1HRTVXMmpqOERReEg1Tmh5WlVBY1VIMWduNzdiTGJtSUplVHVrbFBaYWV1SGV6bGEydlVqM3BYTTJza2ZTTm81bzlTcHNRcVZZUENHamJrOE1lcVZISUR0c0ZUZUtvNnoza2pPdGh3NkVDRzRpSmVtYUpPVHNJMGw2NW1XRzgweHR4Ni1DMzNoaUMzMm9yX2NCaXowd195OTlCVDdBYXhvNzBHUmdwRVc2blpFSjI5Rmc?oc=5",
       "ts": "2026-09-24T16:29:32+00:00"
     },
@@ -8513,6 +8836,23 @@
       "ts": "2026-09-24T15:00:49+00:00"
     },
     {
+      "titulo": "Prefeitura de Mineiros oferece 74 vagas temporárias na Educação",
+      "orgao": "Prefeitura de Mineiros",
+      "uf": "",
+      "scope": "municipal",
+      "municipio": "Mineiros",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 74,
+      "cr": false,
+      "salario": 0,
+      "cargos": "",
+      "fonte": "diariodamidia.com.br",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbUdrQTZ0Vzc1eTJYNjhmTUdFUHlwWmxYQWdGS2tfQmFqMVdNcTNNSVdjVmhtOXdobFV2aWpUbURpb0VRWUlFZXVBeHk4Z3hwN1Zqckw5a3d2Q1o2WnlSZVBiVzIzeTlxN25yWFM0b0lJanc4SFAxNm9uNEtvcWt1a011Q01pSkx6WnFlYjAyQ3cwSDdVcXN3?oc=5",
+      "ts": "2026-09-24T14:57:50+00:00"
+    },
+    {
       "titulo": "Edital Primavera de Rondônia-RO 2026 abre 18 vagas na prefeitura",
       "orgao": "Edital Primavera de Rondônia-RO 2026",
       "uf": "RO",
@@ -8806,7 +9146,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Assistente Administrativo II no Serviço de Obras e Manutenção",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVi1mRktESmZXT1d4eG1PSEpTaTF0V1JoUm5QdHd0RGFuOXNuY0NfemtZT0lEcVpGUkV3UzZ2a2d4X1hCN25ZVnRMZU05aDB4bGZUc2ZtemhqdktYdnZSS1F2akdyQlpJTFlWNWdNNDJUalVwVkVncnA3Y05DTXk2S1BHY1U2VDJMT2xvektFM044bDB2ZXdlWlN4b0ZSSzJESElNdW9aaFpSUHp3eDVHSktodkdoU0lBamctSEYyYmVrOXJwTl9IUDJJOTVtaDN4am9CN2FhTQ?oc=5",
       "ts": "2026-09-24T14:20:40+00:00"
     },
@@ -8823,7 +9163,7 @@
       "cr": false,
       "salario": 4300.0,
       "cargos": "",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbzJkV2llMW1KTzF2Uzk4Wi1wSkc4czZGaWdqRzNUYjJLS2tNby1neUVVbmRoUzNqdE8yM1hSbGJwRnozUEwyN1g5WHlZUkhBQ0pTZWNFdWlTN1B3LVE2STZYZ1ZMWkYwLVoxa183RTkzakVQRE5ISGtPd3FJaDJZVnF5VXdnbWtyYWJfU0R2RlNLbmlVUTlmcVlIT291c21PUFBj?oc=5",
       "ts": "2026-09-24T14:17:18+00:00"
     },
@@ -8874,7 +9214,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Assistente Administrativo no HEMOSC de Criciúma",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWUpBeS1MNEhJNkNWSTJQaTNNcDRJUFh3UXprZnJZbkNHc21yYmY2RVc0b3JqM2pCcWticVRITVdxaWNPRmhSaHJGXzZRalV3VUdzcElxZU1mbmJEZWdXSDVpRlNEdWIzNWFvZFNiTXFQbERsc2hGMTJKeDBRNEphaS0xdEx6bkJEYm1VZWFqSTYtWE5KS2lsMjZDdzNFakplR1hxOGZXSk1uMzVfbFFIZjBuYm1EUEU?oc=5",
       "ts": "2026-09-24T14:15:30+00:00"
     },
@@ -8908,7 +9248,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Médicos da Estratégia Saúde da Família e Preceptores",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOTZSZlJuaktPczBSRUYySlNGWEJTdmRNakxfYVBadnhNNDFabjhBMUJJQ1VVM2ZZZWYycWw0TnhxcEcyWnpmSWlYdlJMMldUdGlDR05uQ2o4anJ2cjVQZGp1bm9nYmVMSFd5Y1FfdEIxQWJXdWxkR3FxUVJnajJLV3dLM0Rzb0Vkb0NYRXZUeFZabVV3LTBabFJGS214UDd0NzR5UGxXaXh0UnFPbXZOX3JzMlo0RTdwSTdDQWtCbk4?oc=5",
       "ts": "2026-09-24T14:10:49+00:00"
     },
@@ -8944,7 +9284,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "portal.tjpe.jus.br",
+      "fonte": "TJPE",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc3QtYjVsWFhkN3Z1S1dKWXE0MURFakZ5dTVMbTFGT3NnN1BqTjBKckF4SEJFdzlNT1J4WW9lTi1rN3E2RnpMSzZWa2VaaVE5NDZCZ0k3RUg3MzAzODNHVkowMjdpZmJPRFJWOHlZNGFfN0ljU3kzTGp4NzRkOGJSUFBJVHRiMGpTbkN1RkNSajBVd0czVUh3ZDVnc2RhTlpOMVBtRGZqS0F5LXpib0paRlh0QlJQTUZaQ1c1ZmlIaDVOSGdDSFM5WXNaa0ZIZw?oc=5",
       "ts": "2026-09-24T14:08:46+00:00"
     },
@@ -9089,6 +9429,23 @@
       "ts": "2026-09-24T13:50:24+00:00"
     },
     {
+      "titulo": "Concurso TRT-MG: órgão já prepara novo edital para 2027",
+      "orgao": "",
+      "uf": "MG",
+      "scope": "nacional",
+      "municipio": "",
+      "tipo": "Abertura",
+      "modalidade": "Concurso",
+      "escolaridade": [],
+      "vagas": 0,
+      "cr": false,
+      "salario": 0,
+      "cargos": "2027",
+      "fonte": "Ache Concursos",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZkZVOFVLamJIbk9Uck5ELWJTUXJoVXBPeEotYTdJQXk1UkIzY3BobEVqbmlzY3JEb21FU2lDaFk0Mkp5RlowUkpkOVBkM2JEQmZIaGJjdFZRMFBEWGduTnVCNE5UTFVRb0hDWGZfdkdaOW80TlZHdWdjdmllalExWjdKb3FUalpLYUNHNC1TVExld2NIYnMxNTZFWE96cXNfNWlxbNIBqgFBVV95cUxNNXB5Q0FsSXNmU0JLdXdzZENoS0dEV1JnaEpyV05HN01mU2NUUUV4VktmRWN0M0ZVcnlFNG4wX2tkX1BqV3N2MVFfYVlNbjBuakFEanJSa0wyTzdMX1UtOFRGa2xBNmpiSUlYSWRUc0VtUFJtRkZRRmJPaWY5UVN3QTNBV083WHRCT2hwellLLWZGNkpxZi1tODV0R0Z1VFVkelk2WG1oZTR4QQ?oc=5",
+      "ts": "2026-09-24T13:50:11+00:00"
+    },
+    {
       "titulo": "Concurso SEDF: termo de referência detalha provas e salários",
       "orgao": "",
       "uf": "",
@@ -9135,7 +9492,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "Via Carreira",
+      "fonte": "viacarreira.com",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUmxPU0tqeTlwZUJHT19qNjZhTlJYX0lSSlRhVGtJOGFDcW1rZ1NGVkxFM3Fid2NOdy1zNUNYVWt4cTNDTGZadmdfSHNKOTVGUkdISDBOcWtvcmJxNWtBaEdpTWFyYjdnR1EyUGx1Q1ZrZksyRE5oNVhXYk1uMTFSMkt3eXdJbi1ObERrc3AtT2pMUlZ3TVBCTDlTN3ZGWHQ3MjgxOUpUMnpMLWs?oc=5",
       "ts": "2026-09-24T13:44:46+00:00"
     },
@@ -9203,7 +9560,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "o cargo de Auxiliar Administrativo",
-      "fonte": "PCI Concursos",
+      "fonte": "pciconcursos.com.br",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWEtLTlphOXNIbHVSanR5UF92eHUzR3pMMkM2MEN4UnpMbndlZnIzWnlQalJOM3lZWFFybXdUWUZ0U0dHSW91UzJtR0F2YUFjQUItOVlvQ1ZldUFOWm0xbFFTaVV5eVhfUVhKekpNQ2plUlZzTDlVdEpQTmFoXy1vSElnVl9pVHc1X3JmRGlEcEVXUXQtem1WQ1dhZ0RfdFcyNXVZRg?oc=5",
       "ts": "2026-09-24T13:37:39+00:00"
     },
@@ -9237,7 +9594,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "Promotor atualiza datas para sequencia do certame",
-      "fonte": "Ceisc",
+      "fonte": "ceisc.com.br",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeUluN0NoSXo3NGlCVTBmdFlnSldncW1QTGJJNzJYVGhCcVA1QVNYYTVncjJrT251Wm44N1p4cHZHeFVYcFhyVU9QQWo3ZGRmT2d3OGNRM044WmtURjZ0U3lZZ1ZyOWdNaGdVNERQcjU0VFB4WWZFNTBPallwNm1OSmt4eWkzUV9XTWtsX2M1UXZfSkluOHVFTS1Yb1hCc2VRZzZYMTJEcjRqYUk?oc=5",
       "ts": "2026-09-24T13:37:02+00:00"
     },
@@ -9441,7 +9798,7 @@
       "cr": false,
       "salario": 0,
       "cargos": "",
-      "fonte": "Via Carreira",
+      "fonte": "viacarreira.com",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVVFPXzlkRjcybFIxU1EwbW51US1tWXRHM1R2V0lwZVVNN0ZNNTFsdTEyT0c5anhlcEU4M21IbTVzamFWRERCTXcxeXpUNk56V2c2bDFkNDh1alRvM21XcWczakdIdy0zUU1oMzRTNUF3bDBDcFlrUVdLd2Q1YVltei0yeW5FLWZLcTUxVTRHcXNTa1JtMXFsSUVUMG5FaER1Uzlj?oc=5",
       "ts": "2026-09-24T13:11:35+00:00"
     },
@@ -9787,7 +10144,7 @@
       "cr": false,
       "salario": 3.6,
       "cargos": "",
-      "fonte": "portaln10.com.br",
+      "fonte": "Portal N10",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPRWNOdnhNenpBU0tiNE5nQjBQWGVlM1dwNHladlpxcGhhYlFRd1lRb2pKbVRyS0hxcW9qTGRSVmY5dWE0OE9tNjR2RE9ndGlNckpoNEYwakRpblNCdUFQSmdicHNwa3M4eGVtUGFmX2JZQmFHdG9tX3BhMEJpRmRLdXFDbTBQNEo2Z25HaHBDX25iRTJpZkk2YmdDeHFlRHkwQ3B3UUV1aGNrOWIxcGZtYWh0OG5PMEl2TzhicnRIWDNHZlJPZi1EUG5nQ1B6VnRMZDJrQWJsVGVjdTdx?oc=5",
       "ts": "2026-09-24T12:28:36+00:00"
     },
@@ -10525,23 +10882,6 @@
       "fonte": "JC Concursos",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPczVnc0hVNFRxenVHYWFNM05FTjNtUEVieXVkMEhUU1REMlFSQjJfMlJReVN5WEVhOGdqOWJjVnliMjBnWS01aDg4c0JzdFBXS3RNZU9KMVJKSGxDaGpqU2dkQS02Y3Z0TkFQWUFlVDdELTB3b2ROdkRXT0QyV05TTWxJaVZ1MllXTzVycFNhbmQ1c3NTazNua250Q19MR3BKRkFOQ3d5UGs5MU1HZEQxblU4RjlkU2lnN20wc2RjQTVYRTBKUE1qT05uNmVDa1lOQTQ4dTBMTUlLRW5wOU9tYWFieHXSAeoBQVVfeXFMTWFwbGZwQ0pVZ2x0ZkhzMjRmZkFtWURadjRhbXlMN195NEdLc1o1Vm96UnVPTUxiWGZPcm1kUk1pN1JDMWVpV1loY05wQlhIR0h3RGJYbVVGVFdQYl9yWV9yWFBYVHk4MF9SLTBmOE93c1FxZVlONDgzRi1ET3plc0FVSjFnSWpyZnZvQW0yN0lWOGhQcFNRUXdVeU8yemZ6M3ZnZXpFNU1PQnhOLXpJSk9qT2VZV2F3TmhHSkJ4eGo5YWQ5cE1SbFdMS2JsM0RhMEc2Um1OanA4cHlSck5Ub3lGbEF1MFh1ckZB?oc=5",
       "ts": "2026-09-24T09:37:37+00:00"
-    },
-    {
-      "titulo": "Prefeito de Baixa Grande do Ribeiro é multado em R$ 9 mil pelo TCE e tem prazo de 30 dias para realizar concurso",
-      "orgao": "Prefeito de Baixa Grande do Ribeiro é multado em R$ 9 mil pelo TCE e",
-      "uf": "",
-      "scope": "nacional",
-      "municipio": "",
-      "tipo": "Notícia",
-      "modalidade": "Concurso",
-      "escolaridade": [],
-      "vagas": 0,
-      "cr": false,
-      "salario": 9.0,
-      "cargos": "realizar concurso",
-      "fonte": "viagora.com.br",
-      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPNk9FVnFfX1kxNGxaOHo2Y19oVTRieXlGQUMwZWFNLUdXa2VfNlZhcGN4TTE2TjEtakthMFJJWVp6cW9taExEV0VEanhzYU1BU1FhR0JiSE9DcUJKNmNpZDRUWFAzcWdIU3gtZlEwejJ6QWc5eHNQRDRpSmlDVmRaQ05IYlZsT2FnRmRSaGtzS2JEaGFOVTVFSkJPZTQxUTQxUkdsU1NkOGxpaUp0QXc3U0JDQng1djBXazVnNXlTZ0xJSE1EOHJXUHkwTEZNdlJrbFpWSEVSUHctNUxtLW1aZ0NGemRGZkpIU2JLa1hXU2dIUFkybmowQjZsV05jdWR6Ry0tQ0h6d193SEFXM0HSAY4CQVVfeXFMTzZPRVZxX19ZMTRsWjh6NmNfaFU0Ynl5RkFDMGVhTS1HV2tlXzZWYXBjeE0xNk4xLWpLYTBSSVlaenFvbWhMRFdFRGp4c2FNQVNRYUdCYkhPQ3FCSjZjaWQ0VFhQM3FnSFN4LWZRMHoyekFnOXhzUEQ0aUppQ1ZkWkNOSGJWbE9hZ0ZkUmhrc0tiRGhhTlU1RUpCT2U0MVE0MVJHbFNTZDhsaWlKdEF3N1NCQ0J4NXYwV2s1ZzV5U2dMSUhNRDhyV1B5MExGTXZSa2xaVkhFUlB3LTVMbS1tWmdDRnpkRmZKSFNiS2tYV1NnSFBZMm5qMEI2bFdOY3VkekctLUNIendfd0hBVzNB?oc=5",
-      "ts": "2026-09-24T09:34:00+00:00"
     },
     {
       "titulo": "Concurso do IFPA retifica cronograma e abre inscrições para 65 vagas",
