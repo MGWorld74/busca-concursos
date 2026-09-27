@@ -27,7 +27,7 @@
 :root[data-theme="dark"]{--bg:#08132a;--card:#0f2140;--ink:#eef3fb;--muted:#a8b8cf;--line:#23406b;--soft:#14305a;--brand:#3ecf7c;--brand-ink:#04210f;--focus:#ffdf00;--ok:#3ecf7c;--gold:#ffdf00;--hero-a:#003d1a;--hero-b:#001a4d;--shadow:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{background:linear-gradient(120deg,var(--hero-a) 0%,var(--hero-a) 30%,var(--hero-b) 100%);color:#fff;padding:0;border-top:6px solid var(--yellow);line-height:0}
+header{background:transparent;color:#fff;padding:0;line-height:0}
 .wrap{max-width:1100px;margin:0 auto}
 .top{position:relative}
 .brand{width:100%;max-width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;display:block;box-shadow:0 6px 20px rgba(0,0,0,.35)}
@@ -41,7 +41,7 @@ header p{margin:6px 0 0;opacity:.92}
 .tabsbox .tab{background:var(--card);color:var(--brand);border:1px solid var(--line);padding:10px 18px;border-radius:10px;font-weight:700}
 .tabsbox .tab:hover{filter:brightness(.97)}
 .tabsbox .tab.active{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
-main{margin-top:16px;padding:0 16px 40px}
+main{margin-top:14px;padding:0 16px 40px}
 .panel{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:16px;border:1px solid var(--line)}
 label.f{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:4px}
 input[type=text],input[type=number],select{
@@ -56,7 +56,8 @@ button{font:inherit;cursor:pointer}
 
 /* seletor de âmbito */
 .seg{display:flex;gap:6px;background:var(--soft);border-radius:12px;padding:4px}
-.seg button{flex:1;background:transparent;border:0;border-radius:9px;padding:10px 8px;font-weight:700;color:var(--muted)}
+.seg button{flex:1;background:rgba(0,0,0,.06);border:0;border-radius:9px;padding:10px 8px;font-weight:700;color:var(--muted);transition:background .15s,color .15s}
+.seg button:hover{background:var(--brand);color:var(--brand-ink)}
 .seg button.active{background:var(--brand);color:var(--brand-ink)}
 .scope-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:12px}
 .searchrow{display:flex;gap:8px;margin-top:12px}
@@ -151,7 +152,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
     </div>
 
     <div class="searchrow">
-      <input type="text" id="q" class="big" placeholder='Refine (opcional): cargo, órgão, "frase exata", -excluir…' autocomplete="off">
       <button class="btn" id="goBtn">Atualizar</button>
       <button class="btn ghost" id="clearBtn" title="Voltar aos filtros padrão">Limpar</button>
     </div>
@@ -175,10 +175,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
           <select id="fEsc"><option value="">Todas</option><option>Fundamental</option><option>Médio</option><option>Técnico</option><option>Superior</option></select></div>
         <div><label class="f">Salário mínimo (R$)</label><input type="number" id="fSal" min="0" step="500" placeholder="0"></div>
         <div><label class="f">Vagas mínimas</label><input type="number" id="fVagas" min="0" step="10" placeholder="0"></div>
-      </div>
-      <div class="checks">
-        <label><input type="checkbox" id="fFav"> Só favoritos ★</label>
-        <label><input type="checkbox" id="fStrict"> Exigir termos digitados no título</label>
       </div>
     </div>
 
@@ -651,7 +647,7 @@ const SCOPE_HINTS = {
 
 async function loadLive(force){
   const token = ++loadToken;
-  const uf = $('#fUf').value, municipio = getMunicipio(), core = $('#q').value.trim();
+  const uf = $('#fUf').value, municipio = getMunicipio(), core = '';
   const days = +$('#fDias').value;
 
   if(scope === 'estadual' && !uf){ liveMsg = 'Selecione um estado para buscar.'; LIVE = []; renderStatus(); render(); return; }
@@ -691,14 +687,14 @@ async function loadLive(force){
 /* ---------- filtros e render ---------- */
 function getF(){
   return {
-    q:$('#q').value.trim(), sit:$('#fSit').value,
+    sit:$('#fSit').value,
     tipo:$('#fTipo').value, mod:$('#fMod').value, esc:$('#fEsc').value,
     sal:parseFloat($('#fSal').value)||0, vagas:parseInt($('#fVagas').value)||0,
-    sort:$('#fSort').value, fav:$('#fFav').checked, strict:$('#fStrict').checked
+    sort:$('#fSort').value
   };
 }
 function compute(){
-  const f = getF(), alts = parseQuery(f.q);
+  const f = getF(), alts = [];
   const res = [];
   for(const it of allItems()){
     if(f.sit && !({aberto:['Abertura','Alteração'], breve:['Previsto'], encerrado:['Resultado']}[f.sit]||[]).includes(it.tipo)) continue;
@@ -707,12 +703,7 @@ function compute(){
     if(f.esc && !it.escolaridade.includes(f.esc)) continue;
     if(f.sal && it.salario < f.sal) continue;
     if(f.vagas && it.vagas < f.vagas) continue;
-    if(f.fav && !favs.has(it.id)) continue;
-    let score = 0;
-    if(alts.length){
-      score = Math.max(...alts.map(a=>matchAlt(it,a,f.strict)));
-      if(score < 0) continue;
-    }
+    const score = 0;
     res.push({it, score});
   }
   const S = {
@@ -813,7 +804,6 @@ function renderChips(){
   if(f.esc) add(f.esc,()=>$('#fEsc').value='');
   if(f.sal) add('≥ '+brl(f.sal),()=>$('#fSal').value='');
   if(f.vagas) add('≥ '+f.vagas+' vagas',()=>$('#fVagas').value='');
-  if(f.fav) add('Favoritos',()=>$('#fFav').checked=false);
   const box = $('#active'); box.innerHTML = '';
   items.forEach(x=>{
     const s = document.createElement('span'); s.className='chip'; s.textContent = x.label;
@@ -911,8 +901,7 @@ let debounceT;
 function debouncedLoad(){ clearTimeout(debounceT); debounceT = setTimeout(loadLive, 700); }
 
 $('#goBtn').onclick = ()=>loadLive(true);
-$('#q').addEventListener('keydown', e=>{ if(e.key==='Enter') loadLive(true); });
-$('#q').addEventListener('input', debouncedLoad);
+
 $('#fUf').addEventListener('change', ()=>{
   if(scope === 'municipal') loadMunicipios($('#fUf').value);
   else loadLive();
@@ -925,7 +914,7 @@ $('#munManualToggle').addEventListener('click', e=>{
   showManualMuni($('#fMunManual').hidden);
 });
 $('#fDias').addEventListener('change', ()=>loadLive());
-['fSit','fTipo','fMod','fEsc','fSort','fFav','fStrict'].forEach(id=>$('#'+id).addEventListener('change', render));
+['fSit','fTipo','fMod','fEsc','fSort'].forEach(id=>$('#'+id).addEventListener('change', render));
 ['fSal','fVagas'].forEach(id=>$('#'+id).addEventListener('input', render));
 
 $('#resultsWrap').addEventListener('click', e=>{
@@ -957,7 +946,7 @@ $('#themeBtn').onclick = ()=>{
   document.documentElement.dataset.theme = nx; store.set('cb3_theme', nx);
 };
 
-const HASHMAP = {q:'q', uf:'fUf', dias:'fDias', sit:'fSit', sort:'fSort', tipo:'fTipo', esc:'fEsc', mod:'fMod'};
+const HASHMAP = {uf:'fUf', dias:'fDias', sit:'fSit', sort:'fSort', tipo:'fTipo', esc:'fEsc', mod:'fMod'};
 function readHash(){
   try{
     const p = new URLSearchParams(location.hash.replace(/^#/,''));
@@ -986,10 +975,9 @@ function writeHash(){
   }catch(e){}
 }
 $('#clearBtn').onclick = ()=>{
-  $('#q').value = ''; $('#fMun').value = ''; $('#fMunManual').value = ''; showManualMuni(false);
+  $('#fMun').value = ''; $('#fMunManual').value = ''; showManualMuni(false);
   ['fTipo','fMod','fEsc','fSal','fVagas'].forEach(id=>$('#'+id).value = '');
   $('#fSit').value = ''; $('#fSort').value = 'rec'; $('#fDias').value = '15';
-  $('#fFav').checked = false; $('#fStrict').checked = false;
   loadLive(true);
 };
 $$('label.f').forEach(l=>{ const c = l.nextElementSibling; if(c && c.id) l.htmlFor = c.id; });
