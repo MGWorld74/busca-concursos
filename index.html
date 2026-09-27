@@ -340,6 +340,34 @@ function extractCargos(t){
   const m = /\bpara\s+(.+?)(?:\s+com\s+(?:sal|vaga)|\s+e\s+cadastro|$)/i.exec(t);
   return m ? m[1].trim().slice(0,110) : '';
 }
+const BANCAS = [
+  {nome:'Cebraspe', url:'https://www.cebraspe.org.br/concursos/', rx:/\b(cebraspe|cespe)\b/},
+  {nome:'FGV', url:'https://conhecimento.fgv.br/concursos', rx:/\b(fgv|fundacao getulio vargas)\b/},
+  {nome:'FCC', url:'https://www.concursosfcc.com.br/', rx:/\b(fcc|fundacao carlos chagas)\b/},
+  {nome:'Vunesp', url:'https://www.vunesp.com.br/', rx:/\bvunesp\b/},
+  {nome:'IBFC', url:'https://ibfc.org.br/', rx:/\bibfc\b/},
+  {nome:'IADES', url:'https://www.iades.com.br/', rx:/\biades\b/},
+  {nome:'IDECAN', url:'https://www.idecan.org.br/', rx:/\bidecan\b/},
+  {nome:'AOCP', url:'https://www.aocp.com.br/', rx:/\baocp\b/},
+  {nome:'Quadrix', url:'https://www.quadrix.org.br/', rx:/\bquadrix\b/},
+  {nome:'Instituto Consulplan', url:'https://www.institutoconsulplan.org.br/', rx:/\bconsulplan\b/},
+  {nome:'Fundatec', url:'https://www.fundatec.org.br/', rx:/\bfundatec\b/},
+  {nome:'Funrio', url:'https://www.funrio.org.br/', rx:/\bfunrio\b/},
+  {nome:'Cetro Concursos', url:'https://www.cetroconcursos.org.br/', rx:/\bcetro\b/},
+  {nome:'Instituto AVALIA', url:'https://www.institutoavalia.com.br/', rx:/\binstituto avalia\b/},
+  {nome:'Legalle Concursos', url:'https://www.legalleconcursos.com.br/', rx:/\blegalle\b/},
+  {nome:'Objetiva Concursos', url:'https://www.objetivas.com.br/', rx:/\bobjetiva\b/},
+  {nome:'Fepese', url:'https://fepese.org.br/', rx:/\bfepese\b/},
+  {nome:'Consulpam', url:'https://consulpam.com.br/', rx:/\bconsulpam\b/},
+  {nome:'Instituto Machado de Assis', url:'https://www.institutomachadodeassis.com.br/', rx:/\bmachado de assis\b/},
+  {nome:'IBADE', url:'https://www.ibade.org.br/', rx:/\bibade\b/},
+  {nome:'IBAM', url:'https://www.ibam.org.br/', rx:/\bibam\b/},
+];
+function detectBanca(t){
+  const n = norm(t);
+  for(const b of BANCAS){ if(b.rx.test(n)) return b; }
+  return null;
+}
 function hash(s){ let h = 5381; for(let i=0;i<s.length;i++) h = ((h<<5)+h+s.charCodeAt(i))|0; return 'i'+(h>>>0).toString(36); }
 function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return ''; } }
 function blobOf(it){ return norm([it.titulo, it.orgao, it.uf, UFNAMES[it.uf]||'', it.municipio, it.cargos, it.escolaridade.join(' ')].join(' ')); }
@@ -361,7 +389,8 @@ function build(rawTitle, link, pubDate, source, srcUrl, scope, uf, municipio){
     vagas: vm ? parseInt(vm[1].replace(/\./g,''),10)||0 : 0,
     cr: /cadastro[\s-]*(de\s+)?reserva|\bCR\b/i.test(title),
     salario: money(title), cargos: extractCargos(title),
-    fonte: source || hostOf(srcUrl), link: link || '', ts: Date.parse(pubDate) || 0
+    fonte: source || hostOf(srcUrl), link: link || '', ts: Date.parse(pubDate) || 0,
+    banca: (detectBanca(title)||{}).nome || ''
   };
   it._n = blobOf(it);
   return it;
@@ -573,7 +602,7 @@ function fromJsonItem(o){
     escolaridade: Array.isArray(o.escolaridade) ? o.escolaridade : escolaridade(n),
     vagas: parseInt(o.vagas,10)||0, cr: !!o.cr, salario: parseFloat(o.salario)||0,
     cargos: String(o.cargos||''), fonte: String(o.fonte||'Google Notícias'), link: String(o.link||''),
-    ts: Date.parse(o.ts)||0
+    ts: Date.parse(o.ts)||0, banca: String(o.banca||'') || (detectBanca(titulo)||{}).nome || ''
   };
   it._n = blobOf(it);
   return it;
@@ -699,6 +728,16 @@ function editalLink(it){
   const base = it.orgao || it.titulo;
   return 'https://www.google.com/search?q='+encodeURIComponent('"'+base+'" '+(it.modalidade==='Concurso'?'concurso':'seleção')+' edital');
 }
+function orgaoLink(it){
+  const base = it.orgao || it.titulo;
+  return 'https://www.google.com/search?q='+encodeURIComponent('"'+base+'" site oficial concursos');
+}
+function bancaLink(it){
+  const conhecida = BANCAS.find(b=>b.nome===it.banca);
+  if(conhecida) return conhecida.url;
+  const base = it.orgao || it.titulo;
+  return 'https://www.google.com/search?q='+encodeURIComponent('banca organizadora concurso "'+base+'"');
+}
 function renderStatus(){
   $('#status').innerHTML = liveMsg;
   const r = $('#retryLive'); if(r) r.onclick = ()=>loadLive(true);
@@ -730,6 +769,8 @@ function cardHtml(it, hl){
       <button class="fav ${isFav?'on':''}" data-fav="${esc(it.id)}" title="Favoritar" aria-label="${isFav?'Remover dos favoritos':'Favoritar'}" aria-pressed="${isFav}">${isFav?'★':'☆'}</button>
       ${temLink ? `<a class="btn sm" href="${esc(it.link)}" target="_blank" rel="noopener">📄 Ver edital / notícia</a>`:''}
       <a class="btn ghost sm" href="${editalLink(it)}" target="_blank" rel="noopener">🔍 Buscar edital oficial</a>
+      <a class="btn ghost sm" href="${orgaoLink(it)}" target="_blank" rel="noopener">🏛️ Site do órgão</a>
+      <a class="btn ghost sm" href="${bancaLink(it)}" target="_blank" rel="noopener">🏫 ${it.banca ? esc(it.banca) : 'Banca organizadora'}</a>
     </div>
   </article>`;
 }

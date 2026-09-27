@@ -144,6 +144,38 @@ def extract_cargos(t):
     return m.group(1).strip()[:110] if m else ''
 
 
+BANCAS = [
+    ('Cebraspe', re.compile(r'\b(cebraspe|cespe)\b')),
+    ('FGV', re.compile(r'\b(fgv|fundacao getulio vargas)\b')),
+    ('FCC', re.compile(r'\b(fcc|fundacao carlos chagas)\b')),
+    ('Vunesp', re.compile(r'\bvunesp\b')),
+    ('IBFC', re.compile(r'\bibfc\b')),
+    ('IADES', re.compile(r'\biades\b')),
+    ('IDECAN', re.compile(r'\bidecan\b')),
+    ('AOCP', re.compile(r'\baocp\b')),
+    ('Quadrix', re.compile(r'\bquadrix\b')),
+    ('Instituto Consulplan', re.compile(r'\bconsulplan\b')),
+    ('Fundatec', re.compile(r'\bfundatec\b')),
+    ('Funrio', re.compile(r'\bfunrio\b')),
+    ('Cetro Concursos', re.compile(r'\bcetro\b')),
+    ('Instituto AVALIA', re.compile(r'\binstituto avalia\b')),
+    ('Legalle Concursos', re.compile(r'\blegalle\b')),
+    ('Objetiva Concursos', re.compile(r'\bobjetiva\b')),
+    ('Fepese', re.compile(r'\bfepese\b')),
+    ('Consulpam', re.compile(r'\bconsulpam\b')),
+    ('Instituto Machado de Assis', re.compile(r'\bmachado de assis\b')),
+    ('IBADE', re.compile(r'\bibade\b')),
+    ('IBAM', re.compile(r'\bibam\b')),
+]
+
+
+def detect_banca(n):
+    for nome, rx in BANCAS:
+        if rx.search(n):
+            return nome
+    return ''
+
+
 MUNICIPAL_KW = ['prefeitura', 'camara municipal', 'camara de', 'guarda municipal',
                 'autarquia municipal', 'fundacao municipal', 'iprem']
 ESTADUAL_KW = ['governo do estado', 'secretaria de estado', 'secretaria estadual',
@@ -196,7 +228,7 @@ def build_item(raw_title, link, pub_date, source_name, source_url):
         'tipo': classify(n), 'modalidade': modalidade(n), 'escolaridade': escolaridade(n),
         'vagas': vagas, 'cr': bool(re.search(r'cadastro[\s-]*(de\s+)?reserva|\bCR\b', title, re.IGNORECASE)),
         'salario': money(title), 'cargos': extract_cargos(title), 'fonte': fonte,
-        'link': link or '', 'ts': ts_iso,
+        'link': link or '', 'ts': ts_iso, 'banca': detect_banca(n),
     }
 
 

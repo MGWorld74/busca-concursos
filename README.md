@@ -127,6 +127,19 @@ python scripts/atualizar_concursos.py
 Isso sobrescreve o `concursos.json` local com dados frescos, para conferir
 antes de commitar.
 
+## Links de edital, órgão e banca
+
+Cada card de concurso já vem com três atalhos, além do link da notícia:
+- 🔍 **Buscar edital oficial** — pesquisa pronta no Google pelo nome do órgão + "edital".
+- 🏛️ **Site do órgão** — pesquisa pronta pelo site oficial do órgão.
+- 🏫 **Banca organizadora** — se o nome da banca aparece no título (lista própria
+  com ~20 bancas comuns: Cebraspe, FGV, FCC, Vunesp, IBFC, IDECAN, AOCP, Quadrix
+  etc.), linka direto pro site oficial da banca; senão, cai numa busca.
+
+São links de busca (não um link direto garantido pro PDF do edital), porque a
+única fonte de dados é o Google Notícias — que não traz esse link — mas abrem
+exatamente o que a pessoa precisa em 1 clique, sem deixar o robô mais lento.
+
 ## Limitações conhecidas (heurísticas, não garantias)
 
 - A classificação de tipo (Abertura/Previsto/Alteração/Resultado), âmbito
