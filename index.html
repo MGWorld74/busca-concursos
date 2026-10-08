@@ -23,13 +23,13 @@ main{padding-bottom:30px}
 .seg button:hover,.seg button.on{background:var(--brand);color:#fff}
 
 /* filtros */
-.filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 14px;margin-top:14px}
+.filters{display:flex;flex-wrap:wrap;align-items:flex-start;gap:12px 14px;margin-top:14px}
 .fld{flex:1 1 150px;max-width:260px}
 .fld label{display:block;font-size:12px;font-weight:600;color:#33475a;margin-bottom:4px}
 select,input[type=text]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--field);color:var(--ink);font:inherit}
 select:focus,input:focus,button:focus-visible{outline:2px solid var(--blue);outline-offset:-1px}
 .fld a{display:inline-block;margin-top:4px;font-size:12.5px;color:var(--blue)}
-.btns{display:flex;gap:8px}
+.btns{display:flex;gap:8px;margin-top:19px}
 button{font:inherit;cursor:pointer}
 .btn{background:var(--brand);color:#fff;border:0;border-radius:10px;padding:10px 18px;font-weight:600}
 .btn:hover{filter:brightness(1.1)}
@@ -71,7 +71,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
 @media(max-width:600px){
   .sticky{position:static;box-shadow:none}
   .fld{max-width:none}
-  .btns{width:100%}.btns .btn{flex:1}
+  .btns{width:100%;margin-top:4px}.btns .btn{flex:1}
 }
 [hidden]{display:none!important}
 </style>
@@ -98,7 +98,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
       <label for="fMun">Município</label>
       <select id="fMun" disabled></select>
       <input type="text" id="fMunManual" placeholder="Nome do município" autocomplete="off" hidden>
-      <a href="#" id="munToggle">Não encontrou o município? Digite manualmente</a>
     </div>
     <div class="fld">
       <label for="fTipo">Tipo</label>
@@ -112,7 +111,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
       <label for="fEsc">Escolaridade</label>
       <select id="fEsc"><option value="">Todas</option><option>Fundamental</option><option>Médio</option><option>Técnico</option><option>Superior</option></select>
     </div>
-    <div class="fld sort">
+    <div class="fld sort" id="wSort">
       <label for="fSort">Ordenar por</label>
       <select id="fSort"><option value="rec">Mais recentes</option><option value="vagas">Mais vagas</option><option value="sal">Maior salário</option></select>
     </div>
@@ -133,7 +132,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
   </div>
 </main>
 
-<footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados. A classificação é automática (via Google Notícias) — confira sempre o edital oficial.</footer>
+<footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.</footer>
 
 <script>
 (function(){
@@ -323,7 +322,6 @@ async function loadMunicipios(uf){
 }
 function manual(on){
   $('#fMun').hidden = on; $('#fMunManual').hidden = !on;
-  $('#munToggle').textContent = on ? 'Usar a lista de municípios' : 'Não encontrou o município? Digite manualmente';
 }
 const getMun = () => ($('#fMunManual').hidden ? $('#fMun').value : $('#fMunManual').value).trim();
 
@@ -347,6 +345,7 @@ function setScope(s){
   });
   $('#wUf').hidden = s === 'nacional';
   $('#wMun').hidden = s !== 'municipal';
+  $('#wSort').hidden = s === 'municipal';
   $('#fUf').options[0].text = s === 'estadual' ? 'Todos' : 'Selecione…';
   reset();
 }
@@ -440,7 +439,6 @@ async function atualizar(){
 $('#fUf').innerHTML = '<option value=""></option>' + UFS.map(u => '<option value="'+u+'">'+u+' — '+UFNAMES[u]+'</option>').join('');
 $('#seg').addEventListener('click', e => { const b = e.target.closest('button[data-scope]'); if(b) setScope(b.dataset.scope); });
 $('#fUf').addEventListener('change', () => { if(scope === 'municipal') loadMunicipios($('#fUf').value); });
-$('#munToggle').addEventListener('click', e => { e.preventDefault(); manual($('#fMunManual').hidden); });
 $('#goBtn').addEventListener('click', atualizar);
 $('#result').addEventListener('click', e => { const b = e.target.closest('[data-more]'); if(b){ shown[b.dataset.more] += SEC[b.dataset.more].page; drawSection(b.dataset.more); } });
 $('#clearBtn').addEventListener('click', reset);
