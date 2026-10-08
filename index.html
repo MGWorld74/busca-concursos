@@ -11,18 +11,21 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-.banner{display:block;width:100%;height:auto;border-radius:12px}
+.banner{display:block;width:100%;height:auto;border-radius:12px;margin-top:16px}
 main{padding-bottom:30px}
 
+/* barra fixa (abas + filtros) */
+.sticky{position:sticky;top:0;z-index:10;background:var(--bg);padding:14px 0 12px;box-shadow:0 6px 8px -8px rgba(0,39,118,.35)}
+.sticky .seg{margin-top:0}
 /* abas de âmbito */
 .seg{display:flex;gap:6px;background:var(--soft);border-radius:12px;padding:4px;margin-top:14px}
-.seg button{flex:1;background:#d6e3da;border:0;border-radius:9px;padding:10px 8px;font-weight:700;color:var(--muted)}
+.seg button{flex:1;background:#d6e3da;border:0;border-radius:9px;padding:10px 8px;font-weight:700;color:#2b3f50}
 .seg button:hover,.seg button.on{background:var(--brand);color:#fff}
 
 /* filtros */
-.filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 14px;margin-top:16px}
+.filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 14px;margin-top:14px}
 .fld{flex:1 1 150px;max-width:260px}
-.fld label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.fld label{display:block;font-size:12px;font-weight:600;color:#33475a;margin-bottom:4px}
 select,input[type=text]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--field);color:var(--ink);font:inherit}
 select:focus,input:focus,button:focus-visible{outline:2px solid var(--blue);outline-offset:-1px}
 .fld a{display:inline-block;margin-top:4px;font-size:12.5px;color:var(--blue)}
@@ -37,9 +40,19 @@ button{font:inherit;cursor:pointer}
 .msg{color:var(--muted);font-size:13px;margin:18px 2px 0;min-height:18px}
 .total{margin:12px 2px 0}
 .total b{font-size:15px}
-.sub{margin:22px 2px 8px;font-size:15px}
+.sec{margin-top:22px}
+.sec summary{cursor:pointer;list-style:none;padding:2px}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary::before{content:"▸ ";color:var(--brand)}
+.sec[open]>summary::before{content:"▾ "}
+.sub{display:inline;margin:0;font-size:15px}
+.sec summary+*{margin-top:8px}
+.more{display:block;margin:14px auto 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
 .card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:14px;padding:16px;box-shadow:0 1px 2px rgba(0,39,118,.06),0 6px 20px rgba(0,39,118,.07);display:flex;flex-direction:column;gap:10px}
+.card.fresh{border-top-color:#ffdf00;background:#fffdf2}
+.tags{display:flex;gap:6px;align-items:center}
+.sel{font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:#ffdf00;color:#002776}
 .card h3{margin:0;font-size:15.5px;line-height:1.35}
 .card h3 a{color:inherit;text-decoration:none}
 .card h3 a:hover{text-decoration:underline}
@@ -48,13 +61,18 @@ button{font:inherit;cursor:pointer}
 .t-Abertura{background:#00692c}.t-Previsto{background:#002776}.t-Alteração{background:#ffdf00;color:#002776}.t-Resultado{background:#1a56b0}.t-Notícia{background:#566577}
 .pill{align-self:flex-start;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
 .meta{margin:0;color:var(--muted);font-size:13px}
-.new{color:var(--brand);font-weight:700}
 .news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .news li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13.5px}
 .news a{color:var(--brand);font-weight:600;text-decoration:none}
 .news a:hover{text-decoration:underline}
 .news .meta{display:inline;font-size:12px}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
+@media(min-width:601px){.fld.sort{max-width:200px}}
+@media(max-width:600px){
+  .sticky{position:static;box-shadow:none}
+  .fld{max-width:none}
+  .btns{width:100%}.btns .btn{flex:1}
+}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -64,6 +82,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
 </div>
 
 <main class="wrap">
+  <div class="sticky">
   <div class="seg" id="seg" role="tablist" aria-label="Âmbito">
     <button data-scope="nacional" class="on" role="tab">🇧🇷 Nacional</button>
     <button data-scope="estadual" role="tab">🏛️ Estadual</button>
@@ -93,19 +112,24 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
       <label for="fEsc">Escolaridade</label>
       <select id="fEsc"><option value="">Todas</option><option>Fundamental</option><option>Médio</option><option>Técnico</option><option>Superior</option></select>
     </div>
+    <div class="fld sort">
+      <label for="fSort">Ordenar por</label>
+      <select id="fSort"><option value="rec">Mais recentes</option><option value="vagas">Mais vagas</option><option value="sal">Maior salário</option></select>
+    </div>
     <div class="btns">
       <button class="btn" id="goBtn">Atualizar</button>
       <button class="btn ghost" id="clearBtn">Limpar</button>
     </div>
+  </div>
   </div>
 
   <p class="msg" id="msg" role="status" aria-live="polite"></p>
 
   <div id="result" hidden>
     <p class="total"><b id="total">0</b> <span id="totalTxt">resultados</span></p>
-    <div id="wAberto" hidden><h2 class="sub">📢 Edital Aberto <b id="nAberto"></b></h2><div class="grid" id="lAberto"></div></div>
-    <div id="wPrevisto" hidden><h2 class="sub">🕓 Edital Previsto <b id="nPrevisto"></b></h2><div class="grid" id="lPrevisto"></div></div>
-    <div id="wNoticias" hidden><h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <b id="nNoticias"></b></h2><ul class="news" id="lNoticias"></ul></div>
+    <details class="sec" id="wAberto" open hidden><summary><h2 class="sub">📢 Edital Aberto <b id="nAberto"></b></h2></summary><div class="grid" id="lAberto"></div><button class="btn ghost more" id="mAberto" data-more="aberto" hidden></button></details>
+    <details class="sec" id="wPrevisto" open hidden><summary><h2 class="sub">🕓 Edital Previsto <b id="nPrevisto"></b></h2></summary><div class="grid" id="lPrevisto"></div><button class="btn ghost more" id="mPrevisto" data-more="previsto" hidden></button></details>
+    <details class="sec" id="wNoticias" open hidden><summary><h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <b id="nNoticias"></b></h2></summary><ul class="news" id="lNoticias"></ul><button class="btn ghost more" id="mNoticias" data-more="noticias" hidden></button></details>
   </div>
 </main>
 
@@ -177,6 +201,10 @@ function extractCargos(t){
   const m = /\bpara\s+(.+?)(?:\s+com\s+(?:sal|vaga)|\s+e\s+cadastro|$)/i.exec(t);
   return m ? m[1].trim().slice(0,110) : '';
 }
+function money(s){
+  const v = Array.from(s.matchAll(/R\$\s?([\d.]+(?:,\d{1,2})?)/g)).map(m => parseFloat(m[1].replace(/\./g,'').replace(',','.')));
+  return v.length ? Math.max(...v) : 0;
+}
 function scopeOf(n, temUf){
   if(RX_MUN.test(n)) return 'municipal';
   if(RX_EST.test(n)) return 'estadual';
@@ -199,7 +227,9 @@ function make(rawTitle, fonte, link, ts, ctxUf){
     const m = MUN_ORG.exec(orgao) || MUN_ORG.exec(fonte);
     municipio = m ? m[1].trim() : '';
   }
+  const vm = /(\d[\d.]*)\s+vagas?/i.exec(titulo);
   return {
+    vagas: vm ? parseInt(vm[1].replace(/\./g,''),10) || 0 : 0, salario: money(titulo),
     id: hash(n), titulo, orgao, fonte, scope, municipio,
     uf: ufTitulo || (scope === 'estadual' && ctxUf) || '',
     tipo: tipoOf(n), modalidade: modalidadeOf(n), escolaridade: escolaridadeOf(n),
@@ -307,6 +337,7 @@ function clearResults(texto){
 function reset(){
   $('#fUf').value = ''; $('#fMunManual').value = ''; manual(false); loadMunicipios('');
   ['fTipo','fMod','fEsc'].forEach(id => $('#'+id).value = '');
+  $('#fSort').value = 'rec';
   clearResults();
 }
 function setScope(s){
@@ -322,7 +353,7 @@ function setScope(s){
 
 /* ---------- exibição ---------- */
 function filtrar(uf, mun){
-  const tipo = $('#fTipo').value, mod = $('#fMod').value, esc = $('#fEsc').value;
+  const tipo = $('#fTipo').value, mod = $('#fMod').value, esc = $('#fEsc').value, ord = $('#fSort').value;
   const corte = Date.now() - DAYS*864e5, m = norm(mun);
   return Array.from(pool.values()).filter(it => {
     if(it.scope !== scope) return false;
@@ -340,22 +371,25 @@ function filtrar(uf, mun){
       }
     }
     return true;
-  }).sort((a,b) => b.ts - a.ts);
+  }).sort((a,b) => (ord === 'vagas' ? b.vagas - a.vagas : ord === 'sal' ? b.salario - a.salario : 0) || b.ts - a.ts);
 }
 const SCOPE_LABEL = {nacional:'Nacional', estadual:'Estadual', municipal:'Municipal'};
 const safeLink = u => /^https?:\/\//i.test(u) ? esc(u) : '';
 
+const brl = n => n.toLocaleString('pt-BR', {style:'currency', currency:'BRL', maximumFractionDigits:0});
 function cardHtml(it){
   const meta = [it.orgao, it.uf, it.fonte].filter(Boolean).map(esc).join(' · ');
-  const novo = it.ts && Date.now()-it.ts < 2*864e5;
+  const extra = [it.vagas ? it.vagas.toLocaleString('pt-BR')+' vagas' : '', it.salario ? 'até '+brl(it.salario) : ''].filter(Boolean).join(' · ');
+  const novo = it.ts && Date.now()-it.ts < 864e5;
   const href = safeLink(it.link);
-  return '<article class="card">'
+  return '<article class="card'+(novo ? ' fresh' : '')+'">'
     + '<div class="row"><h3>'+(href ? '<a href="'+href+'" target="_blank" rel="noopener">'+esc(it.titulo)+'</a>' : esc(it.titulo))+'</h3>'
     + '<span class="badge t-'+it.tipo+'">'+it.tipo+'</span></div>'
-    + '<span class="pill">'+SCOPE_LABEL[it.scope]+'</span>'
+    + '<div class="tags"><span class="pill">'+SCOPE_LABEL[it.scope]+'</span>'+(novo ? '<span class="sel">NOVO</span>' : '')+'</div>'
     + (meta ? '<p class="meta">'+meta+'</p>' : '')
+    + (extra ? '<p class="meta">'+esc(extra)+'</p>' : '')
     + (it.cargos ? '<p class="meta">Cargos: '+esc(it.cargos)+'</p>' : '')
-    + '<p class="meta">'+(novo ? '<span class="new">Novo</span> · ' : '')+'Publicado '+relTime(it.ts)+'</p>'
+    + '<p class="meta">Publicado '+relTime(it.ts)+'</p>'
     + '</article>';
 }
 function newsHtml(it){
@@ -365,16 +399,23 @@ function newsHtml(it){
     + (href ? '<a href="'+href+'" target="_blank" rel="noopener">'+esc(it.titulo)+'</a>' : esc(it.titulo))
     + ' <span class="meta">— '+meta+'</span></li>';
 }
+const SEC = {aberto:{id:'Aberto', fn:cardHtml, page:9}, previsto:{id:'Previsto', fn:cardHtml, page:9}, noticias:{id:'Noticias', fn:newsHtml, page:15}};
+let groups = {}, shown = {};
+function drawSection(k){
+  const s = SEC[k], arr = groups[k], n = shown[k];
+  $('#w'+s.id).hidden = !arr.length;
+  $('#n'+s.id).textContent = arr.length;
+  $('#l'+s.id).innerHTML = arr.slice(0, n).map(s.fn).join('');
+  const more = $('#m'+s.id);
+  more.hidden = arr.length <= n;
+  more.textContent = 'Ver mais ('+(arr.length - n)+')';
+}
 function render(list){
-  const g = {aberto:[], previsto:[], noticias:[]};
-  list.forEach(it => g[it.tipo === 'Abertura' || it.tipo === 'Alteração' ? 'aberto' : it.tipo === 'Previsto' ? 'previsto' : 'noticias'].push(it));
+  groups = {aberto:[], previsto:[], noticias:[]};
+  list.forEach(it => groups[it.tipo === 'Abertura' || it.tipo === 'Alteração' ? 'aberto' : it.tipo === 'Previsto' ? 'previsto' : 'noticias'].push(it));
   $('#total').textContent = list.length;
   $('#totalTxt').textContent = list.length === 1 ? 'resultado' : 'resultados';
-  [['Aberto','aberto',cardHtml],['Previsto','previsto',cardHtml],['Noticias','noticias',newsHtml]].forEach(([id,k,fn]) => {
-    $('#w'+id).hidden = !g[k].length;
-    $('#n'+id).textContent = g[k].length;
-    $('#l'+id).innerHTML = g[k].map(fn).join('');
-  });
+  Object.keys(SEC).forEach(k => { shown[k] = SEC[k].page; $('#w'+SEC[k].id).open = true; drawSection(k); });
   $('#result').hidden = false;
 }
 
@@ -401,6 +442,7 @@ $('#seg').addEventListener('click', e => { const b = e.target.closest('button[da
 $('#fUf').addEventListener('change', () => { if(scope === 'municipal') loadMunicipios($('#fUf').value); });
 $('#munToggle').addEventListener('click', e => { e.preventDefault(); manual($('#fMunManual').hidden); });
 $('#goBtn').addEventListener('click', atualizar);
+$('#result').addEventListener('click', e => { const b = e.target.closest('[data-more]'); if(b){ shown[b.dataset.more] += SEC[b.dataset.more].page; drawSection(b.dataset.more); } });
 $('#clearBtn').addEventListener('click', reset);
 
 setScope('nacional');
