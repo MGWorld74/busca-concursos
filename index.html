@@ -223,29 +223,42 @@ async function loadBase(){
 }
 
 const PROXIES = [
-  'https://api.allorigins.win/raw?url=',
-  'https://corsproxy.io/?url=',
-  'https://api.codetabs.com/v1/proxy/?quest='
+  {u:'https://api.allorigins.win/raw?url=', json:false},
+  {u:'https://corsproxy.io/?url=', json:false},
+  {u:'https://api.codetabs.com/v1/proxy/?quest=', json:false},
+  {u:'https://api.rss2json.com/v1/api.json?rss_url=', json:true}
 ];
 const feedUrl = q => 'https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=pt-BR&gl=BR&ceid=BR:pt-419';
-function getXml(url){
+function readXml(xml){
+  const doc = new DOMParser().parseFromString(xml, 'text/xml');
+  if(!doc.querySelector('rss')) throw new Error('resposta inválida');
+  return Array.from(doc.querySelectorAll('item')).map(i => {
+    const g = t => { const e = i.querySelector(t); return e ? e.textContent : ''; };
+    return {title:g('title'), source:g('source'), link:g('link'), date:g('pubDate')};
+  });
+}
+function readJson(d){
+  if(!d || d.status !== 'ok' || !Array.isArray(d.items)) throw new Error('resposta inválida');
+  return d.items.map(i => {
+    let title = i.title || '', source = '';
+    const m = /^(.*\S)\s[-–]\s([^-–]{2,40})$/.exec(title);
+    if(m){ title = m[1]; source = m[2].trim(); }
+    return {title, source, link:i.link, date:(i.pubDate || '').replace(' ','T')+'Z'};
+  });
+}
+function getRaw(url){
   return Promise.any(PROXIES.map(async p => {
-    const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 12000);
+    const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 15000);
     try{
-      const res = await fetch(p+encodeURIComponent(url), {signal: ctl.signal});
+      const res = await fetch(p.u+encodeURIComponent(url), {signal: ctl.signal});
       if(!res.ok) throw new Error('HTTP '+res.status);
-      const xml = await res.text();
-      if(!/<rss/.test(xml)) throw new Error('resposta inválida');
-      return xml;
+      return p.json ? readJson(await res.json()) : readXml(await res.text());
     }finally{ clearTimeout(t); }
   }));
 }
 async function fetchFeed(q, ctxUf){
-  const doc = new DOMParser().parseFromString(await getXml(feedUrl(q)), 'text/xml');
-  return Array.from(doc.querySelectorAll('item')).map(i => {
-    const g = t => { const e = i.querySelector(t); return e ? e.textContent : ''; };
-    return make(g('title'), g('source'), g('link'), Date.parse(g('pubDate')), ctxUf);
-  }).filter(Boolean);
+  const raw = await getRaw(feedUrl(q));
+  return {lidas: raw.length, items: raw.map(r => make(r.title, r.source, r.link, Date.parse(r.date), ctxUf)).filter(Boolean)};
 }
 function queries(scope, uf, mun){
   const nome = UFNAMES[uf] || '';
@@ -371,13 +384,14 @@ async function atualizar(){
   if(scope === 'municipal' && !uf){ clearResults('Selecione um estado para ver os concursos municipais.'); return; }
   const btn = $('#goBtn'); btn.disabled = true; $('#msg').textContent = 'Atualizando…';
   const [base, live] = await Promise.all([loadBase(), Promise.allSettled(queries(scope, uf, mun).map(q => fetchFeed(q, uf)))]);
-  live.forEach(r => { if(r.status === 'fulfilled') r.value.forEach(add); });
+  let lidas = 0, aproveitadas = 0;
+  live.forEach(r => { if(r.status === 'fulfilled'){ lidas += r.value.lidas; aproveitadas += r.value.items.length; r.value.items.forEach(add); } });
   const aoVivo = live.some(r => r.status === 'fulfilled');
   const list = filtrar(uf, mun);
   render(list);
-  $('#msg').textContent = !base && !aoVivo ? 'Não foi possível atualizar agora. Tente novamente.'
+  $('#msg').textContent = !base && !aoVivo ? 'Não foi possível buscar agora (serviços de acesso ao Google Notícias indisponíveis). Tente novamente em instantes.'
     : !aoVivo ? 'Busca ao vivo indisponível agora; exibindo a base automática.'
-    : list.length ? '' : 'Nenhum concurso encontrado com esses filtros.';
+    : list.length ? '' : 'Nenhum concurso encontrado com esses filtros ('+lidas+' notícias lidas, '+aproveitadas+' classificadas como concurso).';
   btn.disabled = false;
 }
 
