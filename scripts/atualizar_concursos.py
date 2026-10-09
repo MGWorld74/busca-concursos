@@ -1,480 +1,69 @@
 #!/usr/bin/env python3
-"""
-Atualiza concursos.json com notícias de concursos públicos coletadas do
-Google Notícias, classificadas por âmbito (nacional/estadual/municipal),
-tipo (Abertura/Previsto/Alteração/Resultado/Notícia) e outros metadados.
-
-Roda a partir do GitHub Actions (.github/workflows/atualizar.yml), server-side,
-sem precisar de proxies CORS (esses só são necessários quando a busca roda
-dentro do navegador, no site).
-
-Uso local (opcional, para testar antes de commitar):
-    pip install requests
-    python scripts/atualizar_concursos.py
-"""
-import json
-import os
-import re
-import sys
-import time
-import unicodedata
+"""Coleta notícias de concursos no Google Notícias (RSS) e grava concursos.json.
+O site (index.html) faz a classificação por âmbito; o robô só coleta e guarda 30 dias."""
+import json, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import quote, urlparse
 
-import requests
+DIAS = 30
+SAIDA = Path(__file__).resolve().parent.parent / "concursos.json"
+UFS = {"AC":"Acre","AL":"Alagoas","AP":"Amapá","AM":"Amazonas","BA":"Bahia","CE":"Ceará","DF":"Distrito Federal","ES":"Espírito Santo","GO":"Goiás","MA":"Maranhão","MT":"Mato Grosso","MS":"Mato Grosso do Sul","MG":"Minas Gerais","PA":"Pará","PB":"Paraíba","PR":"Paraná","PE":"Pernambuco","PI":"Piauí","RJ":"Rio de Janeiro","RN":"Rio Grande do Norte","RS":"Rio Grande do Sul","RO":"Rondônia","RR":"Roraima","SC":"Santa Catarina","SP":"São Paulo","SE":"Sergipe","TO":"Tocantins"}
 
-ROOT = Path(__file__).resolve().parent.parent
-OUT_PATH = ROOT / "concursos.json"
-NOTIF_PATH = ROOT / "notificados.json"
-SITE_URL = "https://mgworld74.github.io/busca-concursos/"
-MAX_NOTIFICADOS = 6000  # teto de itens lembrados, para o arquivo não crescer sem limite
+def consultas():
+    q = [("concurso público federal edital", ""), ("concurso público nacional inscrições abertas", ""),
+         ("concurso público governo do estado edital", "")]
+    for uf, nome in UFS.items():
+        q.append((f"concurso público governo do estado {nome}", uf))
+        q.append((f"concurso público {nome} edital inscrições", uf))
+        q.append((f"concurso público prefeituras {nome} edital", uf))
+    return [(f"{t} when:{DIAS}d", uf) for t, uf in q]
 
-UFS = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB',
-       'PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO']
-UFNAMES = {
-    'AC':'Acre','AL':'Alagoas','AP':'Amapá','AM':'Amazonas','BA':'Bahia','CE':'Ceará',
-    'DF':'Distrito Federal','ES':'Espírito Santo','GO':'Goiás','MA':'Maranhão',
-    'MT':'Mato Grosso','MS':'Mato Grosso do Sul','MG':'Minas Gerais','PA':'Pará',
-    'PB':'Paraíba','PR':'Paraná','PE':'Pernambuco','PI':'Piauí','RJ':'Rio de Janeiro',
-    'RN':'Rio Grande do Norte','RS':'Rio Grande do Sul','RO':'Rondônia','RR':'Roraima',
-    'SC':'Santa Catarina','SP':'São Paulo','SE':'Sergipe','TO':'Tocantins'
-}
-
-
-TTL_DIAS = 30          # itens mais antigos que isso são descartados a cada execução
-MAX_ITENS = 1200       # teto de tamanho do concursos.json
-JANELA_BUSCA = '3d'    # "when:" do Google Notícias (roda a cada poucas horas, então 3d já cobre com folga)
-PAUSA_ENTRE_BUSCAS = 0.4  # segundos, para não bater forte no Google Notícias
-TIMEOUT = 12
-HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; BuscaConcursosBot/1.0; +https://github.com/)'}
-
-
-def norm(s):
-    if s is None:
-        return ''
-    s = unicodedata.normalize('NFD', str(s))
-    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
-    return s.lower()
-
-
-NAME_LIST = sorted(
-    [(uf, norm(nome)) for uf, nome in UFNAMES.items() if uf != 'PA'],
-    key=lambda e: -len(e[1])
-)
-
-RX_ALT = re.compile(r'\b(retifica\w*|altera\w*|prorroga\w*|reabre\w*|reabertura|suspende\w*|suspens\w*|cancela\w*|adia\w*|anula\w*|errata)\b')
-RX_RES = re.compile(r'\b(gabarito\w*|resultado\w*|classificad\w*|classificacao|homologa\w*|convoca\w*|convocacao|nomea\w*|aprovad\w*|nota final|notas|chamamento)\b')
-RX_PREV = re.compile(r'\b(autoriza\w*|previst\w*|preve\w*|comissao|banca (definida|escolhida|contratada)|solicita\w*|pedido|em breve|planeja\w*|deve abrir|sera aberto|anuncia\w*)\b')
-RX_ABR = re.compile(r'\b(abre\w*|abertas?|edital|lanca\w*|publica\w*|inscricoes|vagas?|oferece\w*|seleciona\w*|contrata\w*)\b')
-
-
-def classify(n):
-    if RX_ALT.search(n): return 'Alteração'
-    if RX_RES.search(n): return 'Resultado'
-    if RX_PREV.search(n): return 'Previsto'
-    if RX_ABR.search(n): return 'Abertura'
-    return 'Notícia'
-
-
-def modalidade(n):
-    if re.search(r'\bestagio\b', n): return 'Estágio'
-    if re.search(r'(processo seletivo|teste seletivo|selecao|selecoes)', n): return 'Processo seletivo'
-    return 'Concurso'
-
-
-def escolaridade(n):
-    out = []
-    if re.search(r'fundamental', n): out.append('Fundamental')
-    if re.search(r'(ensino medio|nivel medio|\bmedio\b)', n): out.append('Médio')
-    if re.search(r'(tecnico|nivel tecnico)', n): out.append('Técnico')
-    if re.search(r'superior', n): out.append('Superior')
-    return out
-
-
-def money(s):
-    vals = []
-    for m in re.finditer(r'R\$\s?([\d.]+(?:,\d{1,2})?)', s):
+def buscar(q):
+    url = "https://news.google.com/rss/search?q=" + urllib.parse.quote(q) + "&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (RadarConcursos)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        root = ET.fromstring(r.read())
+    for it in root.iter("item"):
+        fonte = (it.findtext("source") or "").strip()
+        titulo = (it.findtext("title") or "").strip()
         try:
-            vals.append(float(m.group(1).replace('.', '').replace(',', '.')))
-        except ValueError:
-            pass
-    return max(vals) if vals else 0
-
-
-def extract_uf(t):
-    m = re.search(r'\s[-–]\s([A-Z]{2})\b', t)
-    if m and m.group(1) in UFS:
-        return m.group(1)
-    m = re.search(r'[/(]([A-Z]{2})(?=[)\s,.:;]|$)', t) or re.search(r'\b[A-Z]{2,6}-([A-Z]{2})\b', t)
-    if m and m.group(1) in UFS:
-        return m.group(1)
-    # "Cidade-UF" grudado, sem espaços (ex.: "Aparecida-SP", "Sesa-AP")
-    m = re.search(r'\b[^\s-]{2,}-([A-Z]{2})\b', t)
-    if m and m.group(1) in UFS:
-        return m.group(1)
-    tnorm = norm(t)
-    for uf, name_norm in NAME_LIST:
-        if name_norm in tnorm:
-            return uf
-    # sigla de UF solta no meio do título (ex.: "Concurso SEPLAG MG 2026")
-    for m in re.finditer(r'\b([A-Z]{2})\b', t):
-        if m.group(1) in UFS:
-            return m.group(1)
-    return ''
-
-
-def extract_orgao(t):
-    m = re.match(r'^(.+?)\s[-–]\s([A-Z]{2})\b', t)
-    if m and m.group(2) in UFS and len(m.group(1)) <= 90:
-        return m.group(1).strip()
-    m = re.match(
-        r'^(.+?)\s+(abre|abrem|reabre|retifica|publica|divulga|divulgam|autoriza|prorroga|altera|'
-        r'convoca|lança|anuncia|suspende|cancela|homologa|oferece|seleciona|contrata|tem|terá|'
-        r'divulgou|abriu|libera|define|recebe|prevê|solicita)\b', t, re.IGNORECASE)
-    if m and len(m.group(1)) <= 80:
-        return m.group(1).strip()
-    return ''
-
-
-def extract_cargos(t):
-    m = re.search(r'\bpara\s+(.+?)(?:\s+com\s+(?:sal|vaga)|\s+e\s+cadastro|$)', t, re.IGNORECASE)
-    return m.group(1).strip()[:110] if m else ''
-
-
-BANCAS = [
-    ('Cebraspe', re.compile(r'\b(cebraspe|cespe)\b')),
-    ('FGV', re.compile(r'\b(fgv|fundacao getulio vargas)\b')),
-    ('FCC', re.compile(r'\b(fcc|fundacao carlos chagas)\b')),
-    ('Vunesp', re.compile(r'\bvunesp\b')),
-    ('IBFC', re.compile(r'\bibfc\b')),
-    ('IADES', re.compile(r'\biades\b')),
-    ('IDECAN', re.compile(r'\bidecan\b')),
-    ('AOCP', re.compile(r'\baocp\b')),
-    ('Quadrix', re.compile(r'\bquadrix\b')),
-    ('Instituto Consulplan', re.compile(r'\bconsulplan\b')),
-    ('Fundatec', re.compile(r'\bfundatec\b')),
-    ('Funrio', re.compile(r'\bfunrio\b')),
-    ('Cetro Concursos', re.compile(r'\bcetro\b')),
-    ('Instituto AVALIA', re.compile(r'\binstituto avalia\b')),
-    ('Legalle Concursos', re.compile(r'\blegalle\b')),
-    ('Objetiva Concursos', re.compile(r'\bobjetiva\b')),
-    ('Fepese', re.compile(r'\bfepese\b')),
-    ('Consulpam', re.compile(r'\bconsulpam\b')),
-    ('Instituto Machado de Assis', re.compile(r'\bmachado de assis\b')),
-    ('IBADE', re.compile(r'\bibade\b')),
-    ('IBAM', re.compile(r'\bibam\b')),
-]
-
-
-def detect_banca(n):
-    for nome, rx in BANCAS:
-        if rx.search(n):
-            return nome
-    return ''
-
-
-UFRX = '|'.join(u.lower() for u in UFS)
-RX_CONC = re.compile(r'\b(concursos?|edital|editais|vagas?|selecao|selecoes|processo seletivo|teste seletivo|inscricoes|certame|gabarito\w*|convoca\w*|nomea\w*|nomeados|aprovados|classificad\w*|cadastro reserva|banca|provas?|estagio|residencia|chamamento|homologa\w*)\b')
-RX_MUN = re.compile(r'\b(?:prefeitura|camara municipal|camara de vereadores|guarda (?:civil )?municipal|secretaria municipal|autarquia municipal|fundacao municipal|iprem|municipio de|camara de (?!deputados)\w)')
-RX_EST = re.compile(r'\b(?:governo (?:do estado|estadual)|secretaria (?:de estado|estadual)|assembleia legislativa|camara legislativa|policia (?:militar|civil|penal)|corpo de bombeiros|tribunal de justica|tribunal de contas do estado|defensoria publica do estado|ministerio publico do estado|procuradoria geral do estado|detran|sefaz|seplag|seduc|sesau?|estaduais?|uerj|uenf|uems|uepa|unesp|unicamp|usp)\b|\b(?:pm|pc|cbm|tj|mp|dpe|tce|pge)e?[ -]?(?:' + UFRX + r')\b')
-RX_FED = re.compile(r'\b(?:federal|federais|(?:da|de) uniao|nacional unificado|inss|receita|banco do brasil|caixa|petrobras|correios|bndes|ibge|ibama|icmbio|anvisa|anatel|aneel|antt|cvm|banco central|bacen|trf\d?|trt\d*|tre|tse|tst|stf|stj|stm|cnj|cnmp|mpu|mpf|mpt|mpm|dpu|agu|prf|funai|fiocruz|ebserh|senado|camara dos deputados|tcu|cgu|cnu|exercito|marinha|aeronautica|serpro|dataprev|embrapa|capes|cnpq|ipea|inep|ministerio (?:da|do|de|dos|das))\b|\b(?:if|uf)(?:' + UFRX + r')\b')
-MUN_ORG = re.compile(r'^(?:prefeitura|c[aâ]mara(?: municipal)?)\s+(?:municipal\s+)?d[aeo]s?\s+(.+)$', re.IGNORECASE)
-
-
-def scope_of(n, tem_uf):
-    if RX_MUN.search(n): return 'municipal'
-    if RX_EST.search(n): return 'estadual'
-    if RX_FED.search(n): return 'nacional'
-    return 'estadual' if tem_uf else ''
-
-
-def definir_escopo(titulo, orgao, fonte, uf_ctx=''):
-    """Devolve (scope, uf, municipio) ou None se não der para definir o âmbito."""
-    uf_titulo = extract_uf(titulo)
-    sc = scope_of(norm(f'{titulo} {orgao} {fonte}'), bool(uf_titulo))
-    if not sc:
-        return None
-    municipio = ''
-    if sc == 'municipal':
-        m = MUN_ORG.match(orgao or '') or MUN_ORG.match(fonte or '')
-        municipio = m.group(1).strip() if m else ''
-    uf = uf_titulo or (uf_ctx if sc == 'estadual' else '')
-    return sc, uf, municipio
-
-
-def build_item(raw_title, link, pub_date, source_name, source_url, uf_ctx=''):
-    title = (raw_title or '').strip()
-    source_name = (source_name or '').strip()
-    if source_name:
-        suf = ' - ' + source_name
-        if title.endswith(suf):
-            title = title[:-len(suf)].strip()
-    else:
-        m = re.match(r'^(.*\S)\s[-–]\s([^-–]{2,40})$', title)
-        if m and not re.match(r'^[A-Z]{2}\b', m.group(2)) and len(m.group(1)) > 15:
-            title, source_name = m.group(1), m.group(2).strip()
-    if not title:
-        return None
-    n = norm(title)
-    if not RX_CONC.search(n):
-        return None
-    orgao = extract_orgao(title)
-    fonte = source_name or (urlparse(source_url or link or '').hostname or '')
-    escopo = definir_escopo(title, orgao, fonte, uf_ctx)
-    if not escopo:
-        return None
-    sc, uf, municipio = escopo
-    vm = re.search(r'(\d[\d.]*)\s+vagas?', title, re.IGNORECASE)
-    vagas = int(vm.group(1).replace('.', '')) if vm else 0
-    try:
-        ts = parsedate_to_datetime(pub_date)
-        if ts.tzinfo is None:
-            ts = ts.replace(tzinfo=timezone.utc)
-        ts_iso = ts.astimezone(timezone.utc).isoformat()
-    except Exception:
-        ts_iso = ''
-    return {
-        'titulo': title, 'orgao': orgao, 'uf': uf, 'scope': sc, 'municipio': municipio,
-        'tipo': classify(n), 'modalidade': modalidade(n), 'escolaridade': escolaridade(n),
-        'vagas': vagas, 'cr': bool(re.search(r'cadastro[\s-]*(de\s+)?reserva|\bCR\b', title, re.IGNORECASE)),
-        'salario': money(title), 'cargos': extract_cargos(title), 'fonte': fonte,
-        'link': link or '', 'ts': ts_iso, 'banca': detect_banca(n),
-    }
-
-
-def feed_url(q):
-    return 'https://news.google.com/rss/search?q=' + quote(q) + '&hl=pt-BR&gl=BR&ceid=BR:pt-419'
-
-
-def buscar(session, query, uf_ctx=''):
-    url = feed_url(query + ' when:' + JANELA_BUSCA)
-    try:
-        res = session.get(url, headers=HEADERS, timeout=TIMEOUT)
-        res.raise_for_status()
-        root = ET.fromstring(res.content)
-        itens = []
-        for item in root.findall('./channel/item'):
-            titulo = (item.findtext('title') or '')
-            link = (item.findtext('link') or '')
-            pub_date = (item.findtext('pubDate') or '')
-            source_el = item.find('source')
-            source_name = source_el.text if source_el is not None else ''
-            source_url = source_el.get('url') if source_el is not None else ''
-            built = build_item(titulo, link, pub_date, source_name, source_url, uf_ctx)
-            if built:
-                itens.append(built)
-        print(f'  ok  "{query}" -> {len(itens)} itens')
-        return itens
-    except Exception as e:
-        print(f'  falhou "{query}": {e}', file=sys.stderr)
-        return []
-
-
-def montar_consultas():
-    consultas = [(q, '') for q in (
-        'concurso público federal edital',
-        'concurso público inscrições abertas',
-        'concurso público vagas nível superior',
-        'concurso público vagas nível médio',
-        'concurso público prefeitura edital',
-        'processo seletivo público edital inscrições',
-    )]
-    for uf, nome in UFNAMES.items():
-        consultas.append((f'concurso público {nome} edital inscrições', uf))
-        consultas.append((f'concurso público prefeituras {nome} edital', uf))
-    return consultas
-
-
-def reclassificar(it):
-    """Reaplica as regras de âmbito a um item já salvo; None se deixou de valer."""
-    titulo = it.get('titulo', '')
-    if not RX_CONC.search(norm(titulo)):
-        return None
-    orgao = it.get('orgao') or extract_orgao(titulo)
-    escopo = definir_escopo(titulo, orgao, it.get('fonte', ''), it.get('uf', ''))
-    if not escopo:
-        return None
-    it['orgao'] = orgao
-    it['scope'], it['uf'], it['municipio'] = escopo
-    return it
-
-
-def carregar_existentes():
-    if not OUT_PATH.exists():
-        return []
-    try:
-        data = json.loads(OUT_PATH.read_text(encoding='utf-8'))
-        return data.get('itens', []) if isinstance(data, dict) else []
-    except Exception as e:
-        print(f'Aviso: não consegui ler {OUT_PATH.name} existente ({e}); começando do zero.', file=sys.stderr)
-        return []
-
-
-# ---------- avisos (notificações push via Firebase Cloud Messaging) ----------
-
-def iniciar_firebase():
-    """Retorna um cliente Firestore, ou None se as credenciais não estiverem
-    configuradas (ex.: rodando localmente sem a service account) — nesse caso
-    a coleta segue normalmente, só sem enviar avisos."""
-    cred_path = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
-    if not cred_path or not Path(cred_path).exists():
-        print('Aviso: GOOGLE_APPLICATION_CREDENTIALS não configurado; avisos desativados nesta execução.')
-        return None
-    try:
-        import firebase_admin
-        from firebase_admin import credentials, firestore
-        if not firebase_admin._apps:
-            firebase_admin.initialize_app(credentials.Certificate(cred_path))
-        return firestore.client()
-    except Exception as e:
-        print(f'Aviso: não consegui iniciar o Firebase ({e}); avisos desativados nesta execução.', file=sys.stderr)
-        return None
-
-
-def carregar_notificados():
-    if not NOTIF_PATH.exists():
-        return set()
-    try:
-        return set(json.loads(NOTIF_PATH.read_text(encoding='utf-8')))
-    except Exception:
-        return set()
-
-
-def salvar_notificados(chaves):
-    lista = list(chaves)[-MAX_NOTIFICADOS:]
-    NOTIF_PATH.write_text(json.dumps(lista, ensure_ascii=False), encoding='utf-8')
-
-
-def carregar_alertas(db):
-    try:
-        docs = db.collection('alertas').where('ativo', '==', True).stream()
-        alertas = []
-        for d in docs:
-            a = d.to_dict() or {}
-            a['id'] = d.id
-            alertas.append(a)
-        return alertas
-    except Exception as e:
-        print(f'Aviso: não consegui carregar os alertas ({e}); pulando avisos nesta execução.', file=sys.stderr)
-        return []
-
-
-def bate_alerta(alerta, item):
-    if alerta.get('ambito') != item.get('scope'):
-        return False
-    uf = (alerta.get('uf') or '').strip()
-    if uf and uf != item.get('uf'):
-        return False
-    municipio = norm(alerta.get('municipio') or '')
-    if municipio and municipio not in norm(item.get('titulo', '') + ' ' + item.get('municipio', '')):
-        return False
-    termo = norm(alerta.get('termo') or '')
-    if termo and termo not in norm(item.get('titulo', '') + ' ' + item.get('orgao', '') + ' ' + item.get('cargos', '')):
-        return False
-    return True
-
-
-def enviar_notificacao(item, alerta):
-    from firebase_admin import messaging
-    msg = messaging.Message(
-        token=alerta['token'],
-        notification=messaging.Notification(
-            title='📢 ' + item['titulo'][:120],
-            body=(item.get('orgao') or item.get('fonte') or 'Novo concurso encontrado'),
-        ),
-        webpush=messaging.WebpushConfig(
-            fcm_options=messaging.WebpushFCMOptions(link=item.get('link') or SITE_URL),
-        ),
-    )
-    messaging.send(msg)
-
-
-def processar_avisos(db, coletados, existentes):
-    novos_keys = [k for k in coletados if k not in existentes]
-    notificados = carregar_notificados()
-    a_notificar = [k for k in novos_keys if k not in notificados]
-    if not a_notificar:
-        return
-    alertas = carregar_alertas(db)
-    if not alertas:
-        # ainda marca como "vistos" para não reprocessar depois que um alerta for criado
-        salvar_notificados(notificados | set(a_notificar))
-        return
-
-    from firebase_admin import messaging as fb_messaging
-    enviados, falhas_token = 0, set()
-    for k in a_notificar:
-        item = coletados[k]
-        for alerta in alertas:
-            if alerta['id'] in falhas_token or not bate_alerta(alerta, item):
-                continue
-            try:
-                enviar_notificacao(item, alerta)
-                enviados += 1
-            except fb_messaging.UnregisteredError:
-                # token não é mais válido (app desinstalado, permissão revogada etc.)
-                falhas_token.add(alerta['id'])
-                try:
-                    db.collection('alertas').doc(alerta['id']).update({'ativo': False})
-                except Exception:
-                    pass
-            except Exception as e:
-                print(f'  falha ao enviar aviso ({alerta["id"]}): {e}', file=sys.stderr)
-
-    salvar_notificados(notificados | set(a_notificar))
-    print(f'Avisos: {enviados} notificações enviadas para {len(alertas)} alerta(s) ativo(s).')
-
+            ts = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc)
+        except Exception:
+            continue
+        yield {"titulo": titulo, "fonte": fonte, "link": (it.findtext("link") or "").strip(),
+               "ts": ts.strftime("%Y-%m-%dT%H:%M:%SZ")}
 
 def main():
-    session = requests.Session()
-    consultas = montar_consultas()
-    print(f'Rodando {len(consultas)} consultas no Google Notícias...')
+    corte = datetime.now(timezone.utc) - timedelta(days=DIAS)
+    itens = {}
+    if SAIDA.exists():
+        try:
+            for o in json.loads(SAIDA.read_text(encoding="utf-8")).get("itens", []):
+                itens[o["titulo"]] = o
+        except Exception:
+            pass
+    ok = 0
+    for q, uf in consultas():
+        try:
+            for o in buscar(q):
+                o["uf"] = uf
+                antigo = itens.get(o["titulo"])
+                if antigo and antigo.get("uf") and not uf:
+                    o["uf"] = antigo["uf"]
+                itens[o["titulo"]] = o
+            ok += 1
+        except Exception as e:
+            print("falha:", q, e)
+        time.sleep(1.2)
+    if ok == 0:
+        raise SystemExit("Nenhuma consulta funcionou; mantendo arquivo anterior.")
+    vivos = [o for o in itens.values() if datetime.strptime(o["ts"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc) >= corte]
+    vivos.sort(key=lambda o: o["ts"], reverse=True)
+    SAIDA.write_text(json.dumps({"atualizado": datetime.now(timezone.utc).isoformat(), "itens": vivos},
+                                ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{len(vivos)} itens gravados ({ok} consultas ok)")
 
-    coletados = {}
-    for q, uf_ctx in consultas:
-        for it in buscar(session, q, uf_ctx):
-            chave = norm(it['titulo'])
-            if chave:
-                coletados[chave] = it
-        time.sleep(PAUSA_ENTRE_BUSCAS)
-
-    existentes = {norm(it['titulo']): it for it in map(reclassificar, carregar_existentes()) if it}
-
-    db = iniciar_firebase()
-    if db is not None:
-        processar_avisos(db, coletados, existentes)
-
-    # novo resultado tem prioridade; itens antigos não recapturados nesta rodada são mantidos até expirar
-    combinados = {**existentes, **coletados}
-
-    limite = datetime.now(timezone.utc) - timedelta(days=TTL_DIAS)
-    finais = []
-    for it in combinados.values():
-        ts = it.get('ts') or ''
-        if ts:
-            try:
-                if datetime.fromisoformat(ts.replace('Z', '+00:00')) < limite:
-                    continue
-            except ValueError:
-                pass
-        finais.append(it)
-
-    finais.sort(key=lambda it: it.get('ts') or '', reverse=True)
-    finais = finais[:MAX_ITENS]
-
-    saida = {
-        'atualizadoEm': datetime.now(timezone.utc).isoformat(),
-        'fonte': 'Google Notícias (agregação automática via GitHub Actions)',
-        'janelaDias': TTL_DIAS,
-        'itens': finais,
-    }
-    OUT_PATH.write_text(json.dumps(saida, ensure_ascii=False, indent=2), encoding='utf-8')
-    print(f'Concluído: {len(finais)} itens gravados em {OUT_PATH.name} '
-          f'({len(coletados)} novos/atualizados nesta rodada).')
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
