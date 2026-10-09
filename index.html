@@ -73,6 +73,24 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
   .fld{max-width:none}
   .btns{width:100%;margin-top:4px}.btns .btn{flex:1}
 }
+/* monetização */
+.estudo,.apoio{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.estudo h2,.apoio h2{margin:0 0 4px;font-size:16px}
+.aviso{margin:0 0 12px;font-size:12px;color:var(--muted)}
+.afs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.af{display:block;text-decoration:none;color:inherit;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px}
+.af:hover{border-color:var(--brand)}
+.af b{display:block;font-size:14px;color:var(--brand)}
+.af span{font-size:12.5px;color:var(--muted)}
+.af small{display:block;margin-top:4px;font-size:11px;color:var(--muted)}
+.apoio .btns{margin-top:10px;flex-wrap:wrap}
+.apoio a.btn{text-decoration:none;display:inline-block}
+.apoio code{background:var(--field);border:1px solid var(--line);border-radius:6px;padding:2px 6px;word-break:break-all}
+.ad{margin-top:22px;text-align:center;min-height:0}
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#0d1b2e;color:#fff;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:13px}
+.consent a{color:#ffdf00}
+.consent button{border:0;border-radius:8px;padding:8px 14px;font-weight:700}
+footer a{color:var(--muted)}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -129,14 +147,47 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
     <details class="sec" id="wAberto" open hidden><summary><h2 class="sub">📢 Edital Aberto <b id="nAberto"></b></h2></summary><div class="grid" id="lAberto"></div><button class="btn ghost more" id="mAberto" data-more="aberto" hidden></button></details>
     <details class="sec" id="wPrevisto" open hidden><summary><h2 class="sub">🕓 Edital Previsto <b id="nPrevisto"></b></h2></summary><div class="grid" id="lPrevisto"></div><button class="btn ghost more" id="mPrevisto" data-more="previsto" hidden></button></details>
     <details class="sec" id="wNoticias" open hidden><summary><h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <b id="nNoticias"></b></h2></summary><ul class="news" id="lNoticias"></ul><button class="btn ghost more" id="mNoticias" data-more="noticias" hidden></button></details>
+    <section class="estudo" id="estudo" hidden>
+      <h2>📚 Material para estudar</h2>
+      <p class="aviso">Alguns links são de afiliados: se você comprar, posso receber uma comissão, sem custo extra para você.</p>
+      <div class="afs" id="afs"></div>
+    </section>
+    <div class="ad" id="adslot"></div>
   </div>
+
+  <section class="apoio" id="apoio" hidden>
+    <h2>💚 Apoie o Radar Concursos</h2>
+    <p class="aviso" style="margin-bottom:0">O site é gratuito e mantido de forma independente. Se ele te ajudou, considere contribuir ou acompanhar os avisos de novos editais.</p>
+    <div id="pixBox" hidden style="margin-top:10px">Pix: <code id="pixKey"></code></div>
+    <div class="btns">
+      <button class="btn" id="pixCopy" hidden>Copiar chave Pix</button>
+      <a class="btn ghost" id="tgLink" target="_blank" rel="noopener" hidden>📣 Canal de avisos no Telegram</a>
+    </div>
+  </section>
 </main>
 
-<footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.</footer>
+<footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.<br><a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a></footer>
+<div class="consent" id="consent" hidden>
+  <span>Usamos anúncios (Google AdSense), que podem usar cookies. Veja a <a href="privacidade.html">Política de Privacidade</a>.</span>
+  <button id="cOk" style="background:#ffdf00;color:#002776">Aceitar anúncios</button>
+  <button id="cNo" style="background:#fff;color:#0d1b2e">Recusar</button>
+</div>
 
 <script>
 (function(){
 'use strict';
+
+/* ---------- MONETIZAÇÃO (preencha aqui; o que ficar vazio simplesmente não aparece) ---------- */
+const MONET = {
+  amazonTag: '',      // seu ID de associado Amazon, ex.: 'radarconcursos-20'
+  afiliados: [        // links dos seus programas (Hotmart, Eduzz, Monetizze, Kiwify...)
+    // {rede:'Hotmart', titulo:'Curso preparatório X', desc:'Descrição curta', url:'https://hotm.io/SEULINK'},
+  ],
+  pix: {chave:''},    // sua chave Pix (e-mail, CPF/CNPJ, telefone ou aleatória)
+  telegram: '',       // ex.: 'https://t.me/seucanal'
+  adsenseClient: '',  // ex.: 'ca-pub-1234567890123456' (só depois de aprovado)
+  adsenseSlot: ''     // ID do bloco de anúncio criado no AdSense
+};
 
 /* ---------- dados e utilitários ---------- */
 const UFNAMES = {AC:'Acre',AL:'Alagoas',AP:'Amapá',AM:'Amazonas',BA:'Bahia',CE:'Ceará',DF:'Distrito Federal',ES:'Espírito Santo',GO:'Goiás',MA:'Maranhão',MT:'Mato Grosso',MS:'Mato Grosso do Sul',MG:'Minas Gerais',PA:'Pará',PB:'Paraíba',PR:'Paraná',PE:'Pernambuco',PI:'Piauí',RJ:'Rio de Janeiro',RN:'Rio Grande do Norte',RS:'Rio Grande do Sul',RO:'Rondônia',RR:'Roraima',SC:'Santa Catarina',SP:'São Paulo',SE:'Sergipe',TO:'Tocantins'};
@@ -400,6 +451,7 @@ function cardHtml(it){
     + (extra ? '<p class="meta">'+esc(extra)+'</p>' : '')
     + (it.cargos ? '<p class="meta">Cargos: '+esc(it.cargos)+'</p>' : '')
     + '<p class="meta">Publicado '+relTime(it.ts)+'</p>'
+    + amazonCard(it)
     + '</article>';
 }
 function newsHtml(it){
@@ -427,6 +479,7 @@ function render(list){
   $('#totalTxt').textContent = list.length === 1 ? 'resultado' : 'resultados';
   Object.keys(SEC).forEach(k => { shown[k] = SEC[k].page; $('#w'+SEC[k].id).open = true; drawSection(k); });
   $('#result').hidden = false;
+  renderEstudo();
 }
 
 /* ---------- ação do botão Atualizar ---------- */
@@ -452,6 +505,61 @@ async function atualizar(){
   btn.disabled = false;
 }
 
+/* ---------- monetização ---------- */
+const amazonUrl = q => 'https://www.amazon.com.br/s?k='+encodeURIComponent(q)+'&tag='+encodeURIComponent(MONET.amazonTag);
+function amazonCard(it){
+  if(!MONET.amazonTag) return '';
+  const q = 'apostila concurso '+(it.orgao || it.municipio || (it.uf ? UFNAMES[it.uf] : ''));
+  return '<p class="meta"><a href="'+esc(amazonUrl(q.trim()))+'" target="_blank" rel="sponsored nofollow noopener">📚 Apostilas e livros para este concurso</a></p>';
+}
+function renderEstudo(){
+  const uf = $('#fUf').value, lugar = uf ? UFNAMES[uf] : '';
+  const itens = MONET.afiliados.filter(a => a && /^https?:\/\//i.test(a.url)).map(a =>
+    '<a class="af" href="'+esc(a.url)+'" target="_blank" rel="sponsored nofollow noopener"><b>'+esc(a.titulo)+'</b><span>'+esc(a.desc || '')+'</span><small>'+esc(a.rede || 'Parceiro')+'</small></a>');
+  if(MONET.amazonTag){
+    [['Apostilas '+lugar,'apostila concurso '+lugar],['Português para concursos','português para concursos'],
+     ['Raciocínio lógico','raciocínio lógico concursos'],['Direito constitucional e administrativo','direito constitucional administrativo concursos'],
+     ['Informática para concursos','informática para concursos']].forEach(([t,q]) =>
+      itens.push('<a class="af" href="'+esc(amazonUrl(q.trim()))+'" target="_blank" rel="sponsored nofollow noopener"><b>'+esc(t.trim())+'</b><span>Ver opções na Amazon</span><small>Amazon</small></a>'));
+  }
+  $('#estudo').hidden = !itens.length;
+  $('#afs').innerHTML = itens.join('');
+}
+function initApoio(){
+  const pix = (MONET.pix.chave || '').trim(), tg = (MONET.telegram || '').trim();
+  if(pix){ $('#pixBox').hidden = false; $('#pixKey').textContent = pix; $('#pixCopy').hidden = false; }
+  if(/^https?:\/\//i.test(tg)){ const a = $('#tgLink'); a.href = tg; a.hidden = false; }
+  $('#apoio').hidden = !(pix || /^https?:\/\//i.test(tg));
+  $('#pixCopy').addEventListener('click', async () => {
+    try{ await navigator.clipboard.writeText(pix); $('#pixCopy').textContent = 'Chave copiada ✓'; }
+    catch(e){ window.prompt('Copie a chave Pix:', pix); }
+  });
+}
+function loadAds(){
+  const c = MONET.adsenseClient;
+  if(!/^ca-pub-\d+$/.test(c)) return;
+  try{
+    const sc = document.createElement('script');
+    sc.async = true; sc.crossOrigin = 'anonymous';
+    sc.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+c;
+    document.head.appendChild(sc);
+    if(MONET.adsenseSlot){
+      $('#adslot').innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="'+c+'" data-ad-slot="'+esc(MONET.adsenseSlot)+'" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  }catch(e){ console.warn('AdSense indisponível', e); }
+}
+function initAds(){
+  if(!/^ca-pub-\d+$/.test(MONET.adsenseClient)) return;
+  let v = null; try{ v = localStorage.getItem('radar-ads'); }catch(e){}
+  if(v === 'sim'){ loadAds(); return; }
+  if(v === 'nao') return;
+  $('#consent').hidden = false;
+  const fechar = r => { try{ localStorage.setItem('radar-ads', r); }catch(e){} $('#consent').hidden = true; if(r === 'sim') loadAds(); };
+  $('#cOk').addEventListener('click', () => fechar('sim'));
+  $('#cNo').addEventListener('click', () => fechar('nao'));
+}
+
 /* ---------- eventos ---------- */
 $('#fUf').innerHTML = '<option value=""></option>' + UFS.map(u => '<option value="'+u+'">'+u+' — '+UFNAMES[u]+'</option>').join('');
 $('#seg').addEventListener('click', e => { const b = e.target.closest('button[data-scope]'); if(b) setScope(b.dataset.scope); });
@@ -461,6 +569,8 @@ $('#result').addEventListener('click', e => { const b = e.target.closest('[data-
 $('#clearBtn').addEventListener('click', reset);
 
 setScope('nacional');
+initApoio();
+initAds();
 })();
 </script>
 </body>
