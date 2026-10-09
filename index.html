@@ -253,6 +253,8 @@ async function loadBase(){
 
 const PROXIES = [
   {u:'https://api.allorigins.win/raw?url=', json:false},
+  {u:'https://api.allorigins.win/get?url=', json:false, wrap:true},
+  {u:'https://thingproxy.freeboard.io/fetch/', json:false, raw:true},
   {u:'https://corsproxy.io/?url=', json:false},
   {u:'https://api.codetabs.com/v1/proxy/?quest=', json:false},
   {u:'https://api.rss2json.com/v1/api.json?rss_url=', json:true}
@@ -275,13 +277,22 @@ function readJson(d){
     return {title, source, link:i.link, date:(i.pubDate || '').replace(' ','T')+'Z'};
   });
 }
+const erros = [];
 function getRaw(url){
   return Promise.any(PROXIES.map(async p => {
     const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 15000);
     try{
-      const res = await fetch(p.u+encodeURIComponent(url), {signal: ctl.signal});
+      const alvo = p.raw ? url : encodeURIComponent(url);
+      const res = await fetch(p.u+alvo, {signal: ctl.signal});
       if(!res.ok) throw new Error('HTTP '+res.status);
-      return p.json ? readJson(await res.json()) : readXml(await res.text());
+      let itens;
+      if(p.json) itens = readJson(await res.json());
+      else if(p.wrap){ const j = await res.json(); itens = readXml(j.contents || ''); }
+      else itens = readXml(await res.text());
+      if(!itens.length) throw new Error('resposta vazia');
+      return itens;
+    }catch(e){
+      erros.push(p.u.split('/')[2]+': '+e.message); throw e;
     }finally{ clearTimeout(t); }
   }));
 }
@@ -428,6 +439,12 @@ async function atualizar(){
   live.forEach(r => { if(r.status === 'fulfilled'){ lidas += r.value.lidas; aproveitadas += r.value.items.length; r.value.items.forEach(add); } });
   const aoVivo = live.some(r => r.status === 'fulfilled');
   const list = filtrar(uf, mun);
+  if(!base && !aoVivo){
+    console.warn('Falhas nos proxies:', erros);
+    $('#result').hidden = true;
+    $('#msg').textContent = 'Não foi possível buscar agora (serviços de acesso ao Google Notícias indisponíveis e base automática não encontrada). Tente novamente em instantes.';
+    btn.disabled = false; return;
+  }
   render(list);
   $('#msg').textContent = !base && !aoVivo ? 'Não foi possível buscar agora (serviços de acesso ao Google Notícias indisponíveis). Tente novamente em instantes.'
     : !aoVivo ? 'Busca ao vivo indisponível agora; exibindo a base automática.'
