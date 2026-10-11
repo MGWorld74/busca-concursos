@@ -11,10 +11,16 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 
-/* Layout com colunas laterais para anúncios */
-.site-container{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:160px minmax(0, 1100px) 160px;gap:20px;padding:0 16px}
-.sidebar-ad{padding-top:20px;display:flex;flex-direction:column;gap:20px}
-.sidebar-box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:var(--muted);min-height:300px;display:flex;align-items:center;justify-content:center}
+/* Layout com colunas laterais avançadas para anúncios alinhados */
+.site-container{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:340px minmax(0, 1100px) 340px;gap:20px;padding:0 16px}
+.sidebar-ad{padding-top:20px;display:flex;flex-direction:column;gap:15px}
+
+/* Grid interno das laterais para criar o bloco maior ao lado dos dois menores */
+.sidebar-grid{display:grid;grid-template-columns:160px 160px;gap:10px}
+.sidebar-col-small{display:flex;flex-direction:column;gap:10px}
+.sidebar-box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px;text-align:center;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.box-tall{min-height:310px;grid-column:2} /* Ocupa a altura dos dois blocos menores juntos */
+.box-small{min-height:150px}
 
 .wrap{max-width:1100px;margin:0 auto;padding:0;width:100%}
 .banner{display:block;width:100%;height:auto;border-radius:12px;margin-top:16px}
@@ -74,8 +80,8 @@ button{font:inherit;cursor:pointer}
 .news .meta{display:inline;font-size:12px}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
 
-/* Responsividade: oculta as barras laterais em telas menores (celulares e tablets) */
-@media(max-width:1150px){
+/* Responsividade: oculta as barras laterais em telas menores */
+@media(max-width:1250px){
   .site-container{grid-template-columns:1fr;padding:0 12px}
   .sidebar-ad{display:none}
 }
@@ -111,10 +117,14 @@ footer a{color:var(--muted)}
 <body>
 
 <div class="site-container">
-  <!-- ANÚNCIO LATERAL ESQUERDO -->
+  <!-- LATERAL ESQUERDA (3 blocos alinhados) -->
   <aside class="sidebar-ad">
-    <div class="sidebar-box">
-      <span>Anúncio Lateral Esquerdo<br>(160 x 600)</span>
+    <div class="sidebar-grid">
+      <div class="sidebar-col-small">
+        <div class="sidebar-box box-small">Anúncio Esq. 1<br>(160x150)</div>
+        <div class="sidebar-box box-small">Anúncio Esq. 2<br>(160x150)</div>
+      </div>
+      <div class="sidebar-box box-tall">Anúncio Esq. 3 (Longo)<br>(160x310)</div>
     </div>
   </aside>
 
@@ -178,7 +188,6 @@ footer a{color:var(--muted)}
           <div class="afs" id="afs"></div>
         </section>
         
-        <!-- Exemplo prático de Banner de Propaganda Visual -->
         <div class="ad" id="adslot" style="margin: 30px 0; text-align: center; background: #eef4ef; border: 1px dashed #cbd8d0; padding: 15px; border-radius: 12px;">
           <span style="display: block; font-size: 11px; font-weight: bold; color: #465a6d; margin-bottom: 8px; text-transform: uppercase;">Publicidade / Anúncio Parceiro</span>
           <a href="https://exemplo.com/anuncio" target="_blank" rel="noopener">
@@ -202,10 +211,14 @@ footer a{color:var(--muted)}
     <footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados[cite: 4].<br><a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a></footer>
   </div>
 
-  <!-- ANÚNCIO LATERAL DIREITO -->
+  <!-- LATERAL DIREITA (3 blocos alinhados) -->
   <aside class="sidebar-ad">
-    <div class="sidebar-box">
-      <span>Anúncio Lateral Direito<br>(160 x 600)</span>
+    <div class="sidebar-grid">
+      <div class="sidebar-col-small">
+        <div class="sidebar-box box-small">Anúncio Dir. 1<br>(160x150)</div>
+        <div class="sidebar-box box-small">Anúncio Dir. 2<br>(160x150)</div>
+      </div>
+      <div class="sidebar-box box-tall">Anúncio Dir. 3 (Longo)<br>(160x310)</div>
     </div>
   </aside>
 </div>
@@ -227,7 +240,7 @@ const MONET = {
     {rede: 'Kiwify', titulo: 'Método de Aprovação em Concursos', desc: 'Guia prático de cronogramas de estudo e técnicas de memorização.', url: 'https://exemplo.com/curso-kiwify'}
   ],
   pix: {chave: 'suachave@pixexemplo.com'},
-  telegram: '', // Removido
+  telegram: '', 
   adsenseClient: '',  
   adsenseSlot: ''     
 };
@@ -236,7 +249,7 @@ const UFNAMES = {AC:'Acre',AL:'Alagoas',AP:'Amapá',AM:'Amazonas',BA:'Bahia',CE:
 const UFS = Object.keys(UFNAMES);
 const $ = s => document.querySelector(s);
 const norm = s => String(s == null ? '' : s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;}'}[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const NAME_LIST = UFS.filter(u => u !== 'PA').map(u => [u, norm(UFNAMES[u])]).sort((a,b) => b[1].length - a[1].length);
 const UFRX = UFS.map(u => u.toLowerCase()).join('|');
 const DAYS = 30;
