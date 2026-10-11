@@ -9,17 +9,16 @@
 <style>
 :root{--bg:#f2f6f3;--card:#fff;--ink:#0d1b2e;--muted:#465a6d;--line:#cbd8d0;--soft:#e4f1e8;--field:#eef4ef;--brand:#00692c;--blue:#002776}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;min-height:100vh}
 
-/* Layout com colunas laterais avançadas para anúncios alinhados */
-.site-container{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:340px minmax(0, 1100px) 340px;gap:20px;padding:0 16px}
-.sidebar-ad{padding-top:20px;display:flex;flex-direction:column;gap:15px}
+/* Layout com colunas laterais e rolagem central */
+.site-container{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:340px minmax(0, 1100px) 340px;gap:20px;padding:0 16px;flex:1;padding-bottom:60px}
+.sidebar-ad{padding-top:20px;display:flex;flex-direction:column;gap:15px;position:sticky;top:14px;height:calc(100vh - 80px);overflow-y:auto}
 
-/* Grid interno das laterais para criar o bloco maior ao lado dos dois menores */
 .sidebar-grid{display:grid;grid-template-columns:160px 160px;gap:10px}
 .sidebar-col-small{display:flex;flex-direction:column;gap:10px}
 .sidebar-box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px;text-align:center;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}
-.box-tall{min-height:310px;grid-column:2} /* Ocupa a altura dos dois blocos menores juntos */
+.box-tall{min-height:310px;grid-column:2}
 .box-small{min-height:150px}
 
 .wrap{max-width:1100px;margin:0 auto;padding:0;width:100%}
@@ -78,9 +77,17 @@ button{font:inherit;cursor:pointer}
 .news a{color:var(--brand);font-weight:600;text-decoration:none}
 .news a:hover{text-decoration:underline}
 .news .meta{display:inline;font-size:12px}
-footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
 
-/* Responsividade: oculta as barras laterais em telas menores */
+/* Rodapé fixo refinado */
+footer{position:fixed;bottom:0;left:0;width:100%;background:var(--card);border-top:1px solid var(--line);padding:8px 16px;z-index:20;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);box-shadow:0 -2px 6px rgba(0,0,0,.05)}
+footer .footer-left{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--ink)}
+footer .footer-right{display:flex;align-items:center;gap:10px}
+footer code{background:var(--field);border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--ink)}
+footer .links-info{font-size:11.5px}
+footer .links-info a{color:var(--muted);text-decoration:none}
+footer .links-info a:hover{text-decoration:underline}
+
+/* Responsividade */
 @media(max-width:1250px){
   .site-container{grid-template-columns:1fr;padding:0 12px}
   .sidebar-ad{display:none}
@@ -91,11 +98,12 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
   .sticky{position:static;box-shadow:none}
   .fld{max-width:none}
   .btns{width:100%;margin-top:4px}.btns .btn{flex:1}
+  footer{flex-direction:column;gap:6px;text-align:center}
 }
 
 /* monetização */
-.estudo,.apoio{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.estudo h2,.apoio h2{margin:0 0 4px;font-size:16px}
+.estudo{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.estudo h2{margin:0 0 4px;font-size:16px}
 .aviso{margin:0 0 12px;font-size:12px;color:var(--muted)}
 .afs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
 .af{display:block;text-decoration:none;color:inherit;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px}
@@ -103,32 +111,28 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
 .af b{display:block;font-size:14px;color:var(--brand)}
 .af span{font-size:12.5px;color:var(--muted)}
 .af small{display:block;margin-top:4px;font-size:11px;color:var(--muted)}
-.apoio .btns{margin-top:10px;flex-wrap:wrap}
-.apoio a.btn{text-decoration:none;display:inline-block}
-.apoio code{background:var(--field);border:1px solid var(--line);border-radius:6px;padding:2px 6px;word-break:break-all}
 .ad{margin-top:22px;text-align:center;min-height:0}
-.consent{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#0d1b2e;color:#fff;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:13px}
+.consent{position:fixed;left:0;right:0;bottom:50px;z-index:30;background:#0d1b2e;color:#fff;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:13px}
 .consent a{color:#ffdf00}
-.consent button{border:0;border-radius:8px;padding:8px 14px;font-weight:700}
-footer a{color:var(--muted)}
+.consent button{border:0;border-radius:8px;padding:6px 12px;font-weight:700}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 
 <div class="site-container">
-  <!-- LATERAL ESQUERDA (3 blocos alinhados) -->
+  <!-- LATERAL ESQUERDA -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
         <div class="sidebar-box box-small">Anúncio Esq. 1<br>(160x150)</div>
         <div class="sidebar-box box-small">Anúncio Esq. 2<br>(160x150)</div>
       </div>
-      <div class="sidebar-box box-tall">Anúncio Esq. 3 (Longo)<br>(160x310)</div>
+      <div class="sidebar-box box-tall">Anúncio Esq. 3<br>(160x310)</div>
     </div>
   </aside>
 
-  <!-- CONTEÚDO CENTRAL DO SITE -->
+  <!-- CONTEÚDO CENTRAL COM ROLAGEM -->
   <div>
     <div class="wrap">
       <img class="banner" src="radarconcursos.png" alt="Radar Concursos — monitorando seu próximo concurso">
@@ -184,7 +188,7 @@ footer a{color:var(--muted)}
         <details class="sec" id="wNoticias" open hidden><summary><h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <b id="nNoticias"></b></h2></summary><ul class="news" id="lNoticias"></ul><button class="btn ghost more" id="mNoticias" data-more="noticias" hidden></button></details>
         <section class="estudo" id="estudo" hidden>
           <h2>📚 Material para estudar e Cursos Recomendados</h2>
-          <p class="aviso">Alguns links são de parceiros e afiliados: se você adquirir por aqui, podemos receber uma comissão sem nenhum custo extra para você[cite: 3].</p>
+          <p class="aviso">Alguns links são de parceiros e afiliados[cite: 3].</p>
           <div class="afs" id="afs"></div>
         </section>
         
@@ -197,35 +201,38 @@ footer a{color:var(--muted)}
           </a>
         </div>
       </div>
-
-      <section class="apoio" id="apoio" hidden>
-        <h2>💚 Apoie o Radar Concursos</h2>
-        <p class="aviso" style="margin-bottom:0">O site é gratuito e mantido de forma independente. Se ele te ajudou, considere contribuir[cite: 3].</p>
-        <div id="pixBox" hidden style="margin-top:10px">Pix: <code id="pixKey"></code></div>
-        <div class="btns">
-          <button class="btn" id="pixCopy" hidden>Copiar chave Pix</button>
-        </div>
-      </section>
     </main>
-
-    <footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados[cite: 4].<br><a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a></footer>
   </div>
 
-  <!-- LATERAL DIREITA (3 blocos alinhados) -->
+  <!-- LATERAL DIREITA -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
         <div class="sidebar-box box-small">Anúncio Dir. 1<br>(160x150)</div>
         <div class="sidebar-box box-small">Anúncio Dir. 2<br>(160x150)</div>
       </div>
-      <div class="sidebar-box box-tall">Anúncio Dir. 3 (Longo)<br>(160x310)</div>
+      <div class="sidebar-box box-tall">Anúncio Dir. 3<br>(160x310)</div>
     </div>
   </aside>
 </div>
 
+<!-- RODAPÉ FIXO -->
+<footer>
+  <div class="footer-left">
+    <span>💚 Apoie o Radar Concursos</span>
+  </div>
+  <div class="links-info">
+    <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a>
+  </div>
+  <div class="footer-right">
+    <span>PIX: <code id="pixKey">maurygoncalves@mail.com</code></span>
+    <button class="btn" id="pixCopy" style="padding: 4px 10px; font-size: 12px;">Copiar Pix</button>
+  </div>
+</footer>
+
 <div class="consent" id="consent" hidden>
-  <span>Usamos anúncios (Google AdSense), que podem usar cookies. Veja a <a href="privacidade.html">Política de Privacidade</a>[cite: 4].</span>
-  <button id="cOk" style="background:#ffdf00;color:#002776">Aceitar anúncios</button>
+  <span>Usamos anúncios (Google AdSense), que podem usar cookies[cite: 4].</span>
+  <button id="cOk" style="background:#ffdf00;color:#002776">Aceitar</button>
   <button id="cNo" style="background:#fff;color:#0d1b2e">Recusar</button>
 </div>
 
@@ -236,10 +243,10 @@ footer a{color:var(--muted)}
 const MONET = {
   amazonTag: 'exemplo-20',
   afiliados: [        
-    {rede: 'Hotmart', titulo: 'Estratégia Concursos - Extensivo 2026', desc: 'Curso completo com videoaulas e PDFs focados em editais abertos.', url: 'https://exemplo.com/curso-hotmart'},
-    {rede: 'Kiwify', titulo: 'Método de Aprovação em Concursos', desc: 'Guia prático de cronogramas de estudo e técnicas de memorização.', url: 'https://exemplo.com/curso-kiwify'}
+    {rede: 'Hotmart', titulo: 'Estratégia Concursos - Extensivo 2026', desc: 'Curso completo com videoaulas e PDFs.', url: 'https://exemplo.com/curso-hotmart'},
+    {rede: 'Kiwify', titulo: 'Método de Aprovação em Concursos', desc: 'Guia prático de cronogramas.', url: 'https://exemplo.com/curso-kiwify'}
   ],
-  pix: {chave: 'suachave@pixexemplo.com'},
+  pix: {chave: 'maurygoncalves@mail.com'},
   telegram: '', 
   adsenseClient: '',  
   adsenseSlot: ''     
@@ -574,10 +581,8 @@ function renderEstudo(){
 }
 function initApoio(){
   const pix = (MONET.pix.chave || '').trim();
-  if(pix){ $('#pixBox').hidden = false; $('#pixKey').textContent = pix; $('#pixCopy').hidden = false; }
-  $('#apoio').hidden = !pix;
   $('#pixCopy').addEventListener('click', async () => {
-    try{ await navigator.clipboard.writeText(pix); $('#pixCopy').textContent = 'Chave copiada ✓'; }
+    try{ await navigator.clipboard.writeText(pix); $('#pixCopy').textContent = 'Copiado ✓'; }
     catch(e){ window.prompt('Copie a chave Pix:', pix); }
   });
 }
