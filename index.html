@@ -9,142 +9,157 @@
 <style>
 :root{--bg:#f2f6f3;--card:#fff;--ink:#0d1b2e;--muted:#465a6d;--line:#cbd8d0;--soft:#e4f1e8;--field:#eef4ef;--brand:#00692c;--blue:#002776}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+
+/* Fundo do site com a imagem do logo (marca d'água elegante com transparência) */
+body{
+  margin:0;
+  background-color: var(--bg);
+  background-image: linear-gradient(rgba(242, 246, 243, 0.92), rgba(242, 246, 243, 0.92)), url('radarconcursos.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 50% auto;
+  color: var(--ink);
+  font: 14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 /* Cabeçalho fixo no topo (Logo + Abas + Filtros) */
-.fixed-header{position:sticky;top:0;z-index:20;background:var(--bg);padding-bottom:6px;box-shadow:0 6px 8px -8px rgba(0,39,118,.35)}
+.fixed-header{position:sticky;top:0;z-index:20;background:var(--bg);padding-bottom:4px;box-shadow:0 4px 6px -6px rgba(0,39,118,.35)}
 
-/* Layout geral com colunas laterais mais largas */
-.site-container{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:380px minmax(0, 1260px) 380px;gap:24px;padding:0 16px 60px;flex:1}
+/* Layout geral com colunas laterais mais compactas */
+.site-container{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:380px minmax(0, 1260px) 380px;gap:24px;padding:0 16px 50px;flex:1}
 
-/* Propagandas laterais alinhadas para iniciar junto com a rolagem do resultado */
-.sidebar-ad{padding-top:14px;display:flex;flex-direction:column;gap:15px;position:sticky;top:235px;height:calc(100vh - 250px);overflow-y:auto}
+/* Propagandas laterais compactas */
+.sidebar-ad{padding-top:10px;display:flex;flex-direction:column;gap:10px;position:sticky;top:215px}
 
 .sidebar-grid{display:grid;grid-template-columns:180px 180px;gap:10px}
 .sidebar-col-small{display:flex;flex-direction:column;gap:10px}
-.sidebar-box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px;text-align:center;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}
-.box-tall{min-height:630px;grid-column:2} 
-.box-small{min-height:310px} 
+.sidebar-box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:6px;text-align:center;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.box-tall{min-height:270px;grid-column:2} 
+.box-small{min-height:130px} 
 
-header.site-header{max-width:1260px;margin:12px auto 0;padding:0;width:100%}
-.banner{display:block;width:100%;height:auto;border-radius:12px}
+header.site-header{max-width:1260px;margin:8px auto 0;padding:0;width:100%}
+.banner{display:block;width:100%;height:auto;border-radius:10px}
 
 .wrap{max-width:1260px;margin:0 auto;padding:0;width:100%}
 
 /* Área central onde ocorre a rolagem dos resultados */
-.scroll-content{max-height:calc(100vh - 235px);overflow-y:auto;padding-bottom:40px;padding-top:10px}
+.scroll-content{max-height:calc(100vh - 215px);overflow-y:auto;padding-bottom:30px;padding-top:6px}
 
 /* barra fixa de abas + filtros */
-.sticky{background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line)}
+.sticky{background:var(--bg);padding:6px 0;border-bottom:1px solid var(--line)}
 .sticky .seg{margin-top:0}
 /* abas de âmbito */
-.seg{display:flex;gap:6px;background:var(--soft);border-radius:12px;padding:4px;margin-top:10px}
-.seg button{flex:1;background:#d6e3da;border:0;border-radius:9px;padding:10px 8px;font-weight:700;color:#2b3f50}
+.seg{display:flex;gap:4px;background:var(--soft);border-radius:10px;padding:3px;margin-top:6px}
+.seg button{flex:1;background:#d6e3da;border:0;border-radius:8px;padding:8px 6px;font-weight:700;font-size:13px;color:#2b3f50}
 .seg button:hover,.seg button.on{background:var(--brand);color:#fff}
 
 /* filtros */
-.filters{display:flex;flex-wrap:wrap;align-items:flex-start;gap:12px 14px;margin-top:12px}
-.fld{flex:1 1 150px;max-width:260px}
-.fld label{display:block;font-size:12px;font-weight:600;color:#33475a;margin-bottom:4px}
-select,input[type=text]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--field);color:var(--ink);font:inherit}
+.filters{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px 12px;margin-top:8px}
+.fld{flex:1 1 140px;max-width:240px}
+.fld label{display:block;font-size:11px;font-weight:600;color:#33475a;margin-bottom:2px}
+select,input[type=text]{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--ink);font:inherit;font-size:13px}
 select:focus,input:focus,button:focus-visible{outline:2px solid var(--blue);outline-offset:-1px}
-.fld a{display:inline-block;margin-top:4px;font-size:12.5px;color:var(--blue)}
-.btns{display:flex;gap:8px;margin-top:19px}
+.fld a{display:inline-block;margin-top:2px;font-size:11.5px;color:var(--blue)}
+.btns{display:flex;gap:6px;margin-top:14px}
 button{font:inherit;cursor:pointer}
-.btn{background:var(--brand);color:#fff;border:0;border-radius:10px;padding:10px 18px;font-weight:600}
+.btn{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:600;font-size:13px}
 .btn:hover{filter:brightness(1.1)}
 .btn:disabled{opacity:.6;cursor:wait}
 .btn.ghost{background:var(--soft);color:var(--brand);border:1px solid var(--line)}
 
 /* resultados */
-.msg{color:var(--muted);font-size:13px;margin:18px 2px 0;min-height:18px}
-.total{margin:12px 2px 0}
-.total b{font-size:15px}
-.sec{margin-top:22px}
+.msg{color:var(--muted);font-size:12px;margin:10px 2px 0;min-height:16px}
+.total{margin:8px 2px 0}
+.total b{font-size:14px}
+.sec{margin-top:16px}
 .sec summary{cursor:pointer;list-style:none;padding:2px}
 .sec summary::-webkit-details-marker{display:none}
 .sec summary::before{content:"▸ ";color:var(--brand)}
 .sec[open]>summary::before{content:"▾ "}
-.sub{display:inline;margin:0;font-size:15px}
-.sec summary+*{margin-top:8px}
-.more{display:block;margin:14px auto 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:14px;padding:16px;box-shadow:0 1px 2px rgba(0,39,118,.06),0 6px 20px rgba(0,39,118,.07);display:flex;flex-direction:column;gap:10px}
+.sub{display:inline;margin:0;font-size:14px}
+.sec summary+*{margin-top:6px}
+.more{display:block;margin:10px auto 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:12px;padding:12px;box-shadow:0 1px 2px rgba(0,39,118,.05),0 4px 12px rgba(0,39,118,.05);display:flex;flex-direction:column;gap:8px}
 .card.fresh{border-top-color:#ffdf00;background:#fffdf2}
 .tags{display:flex;gap:6px;align-items:center}
-.sel{font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:#ffdf00;color:#002776}
-.card h3{margin:0;font-size:15.5px;line-height:1.35}
+.sel{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;background:#ffdf00;color:#002776}
+.card h3{margin:0;font-size:14.5px;line-height:1.3}
 .card h3 a{color:inherit;text-decoration:none}
 .card h3 a:hover{text-decoration:underline}
 .row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;color:#fff}
+.badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap;color:#fff}
 .t-Abertura{background:#00692c}.t-Previsto{background:#002776}.t-Alteração{background:#ffdf00;color:#002776}.t-Resultado{background:#1a56b0}.t-Notícia{background:#566577}
-.pill{align-self:flex-start;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
-.meta{margin:0;color:var(--muted);font-size:13px}
-.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.news li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13.5px}
+.pill{align-self:flex-start;font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.meta{margin:0;color:var(--muted);font-size:12px}
+.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.news li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px}
 .news a{color:var(--brand);font-weight:600;text-decoration:none}
 .news a:hover{text-decoration:underline}
-.news .meta{display:inline;font-size:12px}
+.news .meta{display:inline;font-size:11px}
 
 /* Rodapé fixo refinado */
-footer{position:fixed;bottom:0;left:0;width:100%;background:var(--card);border-top:1px solid var(--line);padding:8px 16px;z-index:30;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);box-shadow:0 -2px 6px rgba(0,0,0,.05)}
+footer{position:fixed;bottom:0;left:0;width:100%;background:var(--card);border-top:1px solid var(--line);padding:6px 16px;z-index:30;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);box-shadow:0 -2px 6px rgba(0,0,0,.05)}
 footer .footer-left{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--ink)}
-footer .footer-right{display:flex;align-items:center;gap:10px}
+footer .footer-right{display:flex;align-items:center;gap:8px}
 footer code{background:var(--field);border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--ink)}
-footer .links-info{font-size:11.5px}
+footer .links-info{font-size:11px}
 footer .links-info a{color:var(--muted);text-decoration:none}
 footer .links-info a:hover{text-decoration:underline}
 
 /* Responsividade */
 @media(max-width:1420px){
-  .site-container{grid-template-columns:1fr;padding:0 12px 60px}
+  .site-container{grid-template-columns:1fr;padding:0 12px 50px}
   .sidebar-ad{display:none}
   .scroll-content{max-height:none;overflow-y:visible}
 }
 
-@media(min-width:601px){.fld.sort{max-width:200px}}
+@media(min-width:601px){.fld.sort{max-width:180px}}
 @media(max-width:600px){
   .fixed-header{position:static;box-shadow:none}
   .fld{max-width:none}
   .btns{width:100%;margin-top:4px}.btns .btn{flex:1}
-  footer{flex-direction:column;gap:6px;text-align:center}
+  footer{flex-direction:column;gap:4px;text-align:center}
 }
 
 /* monetização */
-.estudo{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.estudo h2{margin:0 0 4px;font-size:16px}
-.aviso{margin:0 0 12px;font-size:12px;color:var(--muted)}
-.afs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
-.af{display:block;text-decoration:none;color:inherit;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px}
+.estudo{margin-top:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.estudo h2{margin:0 0 4px;font-size:15px}
+.aviso{margin:0 0 10px;font-size:11.5px;color:var(--muted)}
+.afs{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+.af{display:block;text-decoration:none;color:inherit;background:var(--field);border:1px solid var(--line);border-radius:8px;padding:10px}
 .af:hover{border-color:var(--brand)}
-.af b{display:block;font-size:14px;color:var(--brand)}
-.af span{font-size:12.5px;color:var(--muted)}
-.af small{display:block;margin-top:4px;font-size:11px;color:var(--muted)}
-.ad{margin-top:22px;text-align:center;min-height:0}
-.consent{position:fixed;left:0;right:0;bottom:50px;z-index:30;background:#0d1b2e;color:#fff;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:13px}
+.af b{display:block;font-size:13.5px;color:var(--brand)}
+.af span{font-size:12px;color:var(--muted)}
+.af small{display:block;margin-top:2px;font-size:10.5px;color:var(--muted)}
+.ad{margin-top:16px;text-align:center;min-height:0}
+.consent{position:fixed;left:0;right:0;bottom:45px;z-index:30;background:#0d1b2e;color:#fff;padding:8px 16px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:12px}
 .consent a{color:#ffdf00}
-.consent button{border:0;border-radius:8px;padding:6px 12px;font-weight:700}
+.consent button{border:0;border-radius:6px;padding:5px 10px;font-weight:700}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 
 <div class="site-container">
-  <!-- LATERAL ESQUERDA ALINHADA COM O INÍCIO DA ROLAGEM -->
+  <!-- LATERAL ESQUERDA COMPACTADA -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
-        <div class="sidebar-box box-small">Anúncio Esq. 1<br>(180x310)</div>
-        <div class="sidebar-box box-small">Anúncio Esq. 2<br>(180x310)</div>
+        <div class="sidebar-box box-small">Anúncio Esq. 1<br>(180x130)</div>
+        <div class="sidebar-box box-small">Anúncio Esq. 2<br>(180x130)</div>
       </div>
-      <div class="sidebar-box box-tall">Anúncio Esq. 3<br>(180x630)</div>
+      <div class="sidebar-box box-tall">Anúncio Esq. 3<br>(180x270)</div>
     </div>
   </aside>
 
   <!-- CONTEÚDO CENTRAL -->
   <div>
-    <!-- CABEÇALHO FIXO (LOGO + FILTROS) -->
+    <!-- CABEÇALHO FIXO -->
     <div class="fixed-header">
       <header class="site-header">
         <img class="banner" src="radarconcursos.png" alt="Radar Concursos — monitorando seu próximo concurso">
@@ -193,7 +208,7 @@ footer .links-info a:hover{text-decoration:underline}
       </div>
     </div>
 
-    <!-- ÁREA CENTRAL COM ROLAGEM EXCLUSIVA PARA OS RESULTADOS -->
+    <!-- ÁREA CENTRAL COM ROLAGEM -->
     <div class="scroll-content">
       <main class="wrap">
         <p class="msg" id="msg" role="status" aria-live="polite"></p>
@@ -209,10 +224,10 @@ footer .links-info a:hover{text-decoration:underline}
             <div class="afs" id="afs"></div>
           </section>
           
-          <div class="ad" id="adslot" style="margin: 30px 0; text-align: center; background: #eef4ef; border: 1px dashed #cbd8d0; padding: 15px; border-radius: 12px;">
-            <span style="display: block; font-size: 11px; font-weight: bold; color: #465a6d; margin-bottom: 8px; text-transform: uppercase;">Publicidade / Anúncio Parceiro</span>
+          <div class="ad" id="adslot" style="margin: 20px 0; text-align: center; background: #eef4ef; border: 1px dashed #cbd8d0; padding: 10px; border-radius: 10px;">
+            <span style="display: block; font-size: 10.5px; font-weight: bold; color: #465a6d; margin-bottom: 6px; text-transform: uppercase;">Publicidade / Anúncio Parceiro</span>
             <a href="https://exemplo.com/anuncio" target="_blank" rel="noopener">
-              <div style="background: linear-gradient(135deg, #002776, #00692c); color: white; padding: 20px; border-radius: 8px; font-weight: bold; font-size: 16px;">
+              <div style="background: linear-gradient(135deg, #002776, #00692c); color: white; padding: 14px; border-radius: 6px; font-weight: bold; font-size: 14px;">
                 🚀 Quer passar em Concurso Público? Clique aqui e conheça o Intensivo 2026!
               </div>
             </a>
@@ -222,14 +237,14 @@ footer .links-info a:hover{text-decoration:underline}
     </div>
   </div>
 
-  <!-- LATERAL DIREITA ALINHADA COM O INÍCIO DA ROLAGEM -->
+  <!-- LATERAL DIREITA COMPACTADA -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
-        <div class="sidebar-box box-small">Anúncio Dir. 1<br>(180x310)</div>
-        <div class="sidebar-box box-small">Anúncio Dir. 2<br>(180x310)</div>
+        <div class="sidebar-box box-small">Anúncio Dir. 1<br>(180x130)</div>
+        <div class="sidebar-box box-small">Anúncio Dir. 2<br>(180x130)</div>
       </div>
-      <div class="sidebar-box box-tall">Anúncio Dir. 3<br>(180x630)</div>
+      <div class="sidebar-box box-tall">Anúncio Dir. 3<br>(180x270)</div>
     </div>
   </aside>
 </div>
@@ -244,7 +259,7 @@ footer .links-info a:hover{text-decoration:underline}
   </div>
   <div class="footer-right">
     <span>PIX: <code id="pixKey">maurygoncalves@mail.com</code></span>
-    <button class="btn" id="pixCopy" style="padding: 4px 10px; font-size: 12px;">Copiar Pix</button>
+    <button class="btn" id="pixCopy" style="padding: 3px 8px; font-size: 11px;">Copiar Pix</button>
   </div>
 </footer>
 
