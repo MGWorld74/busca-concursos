@@ -10,15 +10,15 @@
 :root{--bg:#f2f6f3;--card:#fff;--ink:#0d1b2e;--muted:#465a6d;--line:#cbd8d0;--soft:#e4f1e8;--field:#eef4ef;--brand:#00692c;--blue:#002776}
 *{box-sizing:border-box}
 
-/* Fundo do site com a imagem do logo (marca d'água elegante com transparência) */
+/* Fundo do site com o logo menor e suave (marca d'água) */
 body{
   margin:0;
   background-color: var(--bg);
-  background-image: linear-gradient(rgba(242, 246, 243, 0.92), rgba(242, 246, 243, 0.92)), url('radarconcursos.png');
+  background-image: linear-gradient(rgba(242, 246, 243, 0.94), rgba(242, 246, 243, 0.94)), url('radarconcursos.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: 50% auto;
+  background-size: 25% auto;
   color: var(--ink);
   font: 14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   display: flex;
@@ -26,14 +26,14 @@ body{
   min-height: 100vh;
 }
 
-/* Cabeçalho fixo no topo (Logo + Abas + Filtros) */
+/* Cabeçalho fixo no topo (Logo menor + Abas + Filtros) */
 .fixed-header{position:sticky;top:0;z-index:20;background:var(--bg);padding-bottom:4px;box-shadow:0 4px 6px -6px rgba(0,39,118,.35)}
 
-/* Layout geral com colunas laterais mais compactas */
+/* Layout geral com colunas laterais compactas */
 .site-container{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:380px minmax(0, 1260px) 380px;gap:24px;padding:0 16px 50px;flex:1}
 
 /* Propagandas laterais compactas */
-.sidebar-ad{padding-top:10px;display:flex;flex-direction:column;gap:10px;position:sticky;top:215px}
+.sidebar-ad{padding-top:10px;display:flex;flex-direction:column;gap:10px;position:sticky;top:150px}
 
 .sidebar-grid{display:grid;grid-template-columns:180px 180px;gap:10px}
 .sidebar-col-small{display:flex;flex-direction:column;gap:10px}
@@ -41,13 +41,13 @@ body{
 .box-tall{min-height:270px;grid-column:2} 
 .box-small{min-height:130px} 
 
-header.site-header{max-width:1260px;margin:8px auto 0;padding:0;width:100%}
-.banner{display:block;width:100%;height:auto;border-radius:10px}
+header.site-header{max-width:1260px;margin:6px auto 0;padding:0;width:100%;text-align:center}
+.banner{display:inline-block;max-height:65px;width:auto;height:auto;border-radius:8px}
 
 .wrap{max-width:1260px;margin:0 auto;padding:0;width:100%}
 
 /* Área central onde ocorre a rolagem dos resultados */
-.scroll-content{max-height:calc(100vh - 215px);overflow-y:auto;padding-bottom:30px;padding-top:6px}
+.scroll-content{max-height:calc(100vh - 160px);overflow-y:auto;padding-bottom:30px;padding-top:6px}
 
 /* barra fixa de abas + filtros */
 .sticky{background:var(--bg);padding:6px 0;border-bottom:1px solid var(--line)}
@@ -159,7 +159,7 @@ footer .links-info a:hover{text-decoration:underline}
 
   <!-- CONTEÚDO CENTRAL -->
   <div>
-    <!-- CABEÇALHO FIXO -->
+    <!-- CABEÇALHO FIXO COM LOGO MENOR -->
     <div class="fixed-header">
       <header class="site-header">
         <img class="banner" src="radarconcursos.png" alt="Radar Concursos — monitorando seu próximo concurso">
