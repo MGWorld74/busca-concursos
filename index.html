@@ -11,18 +11,21 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;min-height:100vh}
 
-/* Layout com colunas laterais e rolagem central */
-.site-container{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:340px minmax(0, 1100px) 340px;gap:20px;padding:0 16px;flex:1;padding-bottom:60px}
+/* Layout com largura aumentada e colunas laterais alinhadas */
+.site-container{max-width:1640px;margin:0 auto;display:grid;grid-template-columns:340px minmax(0, 1260px) 340px;gap:24px;padding:0 16px;flex:1;padding-bottom:60px}
 .sidebar-ad{padding-top:20px;display:flex;flex-direction:column;gap:15px;position:sticky;top:14px;height:calc(100vh - 80px);overflow-y:auto}
 
 .sidebar-grid{display:grid;grid-template-columns:160px 160px;gap:10px}
 .sidebar-col-small{display:flex;flex-direction:column;gap:10px}
 .sidebar-box{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px;text-align:center;font-size:10px;color:var(--muted);display:flex;align-items:center;justify-content:center}
-.box-tall{min-height:310px;grid-column:2}
-.box-small{min-height:150px}
+.box-tall{min-height:630px;grid-column:2} /* Altura exata combinada dos dois menores (310 + 310 + 10 de gap) */
+.box-small{min-height:310px} /* Altura individual de cada bloco menor */
 
-.wrap{max-width:1100px;margin:0 auto;padding:0;width:100%}
-.banner{display:block;width:100%;height:auto;border-radius:12px;margin-top:16px}
+/* Cabeçalho do site com a largura exata da imagem do logo */
+header.site-header{max-width:1260px;margin:16px auto 0;padding:0;width:100%}
+.banner{display:block;width:100%;height:auto;border-radius:12px}
+
+.wrap{max-width:1260px;margin:0 auto;padding:0;width:100%}
 main{padding-bottom:30px}
 
 /* barra fixa (abas + filtros) */
@@ -59,7 +62,7 @@ button{font:inherit;cursor:pointer}
 .sub{display:inline;margin:0;font-size:15px}
 .sec summary+*{margin-top:8px}
 .more{display:block;margin:14px auto 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
 .card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:14px;padding:16px;box-shadow:0 1px 2px rgba(0,39,118,.06),0 6px 20px rgba(0,39,118,.07);display:flex;flex-direction:column;gap:10px}
 .card.fresh{border-top-color:#ffdf00;background:#fffdf2}
 .tags{display:flex;gap:6px;align-items:center}
@@ -88,7 +91,7 @@ footer .links-info a{color:var(--muted);text-decoration:none}
 footer .links-info a:hover{text-decoration:underline}
 
 /* Responsividade */
-@media(max-width:1250px){
+@media(max-width:1380px){
   .site-container{grid-template-columns:1fr;padding:0 12px}
   .sidebar-ad{display:none}
 }
@@ -125,18 +128,19 @@ footer .links-info a:hover{text-decoration:underline}
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
-        <div class="sidebar-box box-small">Anúncio Esq. 1<br>(160x150)</div>
-        <div class="sidebar-box box-small">Anúncio Esq. 2<br>(160x150)</div>
+        <div class="sidebar-box box-small">Anúncio Esq. 1<br>(160x310)</div>
+        <div class="sidebar-box box-small">Anúncio Esq. 2<br>(160x310)</div>
       </div>
-      <div class="sidebar-box box-tall">Anúncio Esq. 3<br>(160x310)</div>
+      <div class="sidebar-box box-tall">Anúncio Esq. 3<br>(160x630)</div>
     </div>
   </aside>
 
   <!-- CONTEÚDO CENTRAL COM ROLAGEM -->
   <div>
-    <div class="wrap">
+    <!-- CABEÇALHO COM A LARGURA EXATA DO LOGO -->
+    <header class="site-header">
       <img class="banner" src="radarconcursos.png" alt="Radar Concursos — monitorando seu próximo concurso">
-    </div>
+    </header>
 
     <main class="wrap">
       <div class="sticky">
@@ -208,10 +212,10 @@ footer .links-info a:hover{text-decoration:underline}
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
-        <div class="sidebar-box box-small">Anúncio Dir. 1<br>(160x150)</div>
-        <div class="sidebar-box box-small">Anúncio Dir. 2<br>(160x150)</div>
+        <div class="sidebar-box box-small">Anúncio Dir. 1<br>(160x310)</div>
+        <div class="sidebar-box box-small">Anúncio Dir. 2<br>(160x310)</div>
       </div>
-      <div class="sidebar-box box-tall">Anúncio Dir. 3<br>(160x310)</div>
+      <div class="sidebar-box box-tall">Anúncio Dir. 3<br>(160x630)</div>
     </div>
   </aside>
 </div>
