@@ -153,13 +153,14 @@ footer a{color:var(--muted)}
       <div class="afs" id="afs"></div>
     </section>
     
-    <!-- Espaço reservado para banner de propaganda / AdSense -->
-    <div class="ad" id="adslot">
-      <!-- Exemplo de banner de propaganda manual direto (opcional):
-      <a href="SEU_LINK_DE_PROPAGANDA" target="_blank">
-        <img src="banner-exemplo.jpg" alt="Anúncio" style="max-width:100%; border-radius:10px; margin-top:15px;">
+    <!-- Exemplo prático de Banner de Propaganda Visual -->
+    <div class="ad" id="adslot" style="margin: 30px 0; text-align: center; background: #eef4ef; border: 1px dashed #cbd8d0; padding: 15px; border-radius: 12px;">
+      <span style="display: block; font-size: 11px; font-weight: bold; color: #465a6d; margin-bottom: 8px; text-transform: uppercase;">Publicidade / Anúncio Parceiro</span>
+      <a href="https://exemplo.com/anuncio" target="_blank" rel="noopener">
+        <div style="background: linear-gradient(135deg, #002776, #00692c); color: white; padding: 20px; border-radius: 8px; font-weight: bold; font-size: 16px;">
+          🚀 Quer passar em Concurso Público? Clique aqui e conheça o Intensivo 2026!
+        </div>
       </a>
-      -->
     </div>
   </div>
 
@@ -186,18 +187,18 @@ footer a{color:var(--muted)}
 'use strict';
 
 /* ==========================================================================
-   MONETIZAÇÃO E PARCERIAS (Insira aqui seus links de afiliados e AdSense)
+   MONETIZAÇÃO E PARCERIAS (Com Exemplos Fictícios de Teste)
    ========================================================================== */
 const MONET = {
-  amazonTag: '',      // Ex.: 'suatag-amazon-20' (ID de associado Amazon para apostilas automáticas)
-  afiliados: [        // Cursos preparatórios, Hotmart, Eduzz, Kiwify, etc.
-    // Exemplo pronto para preencher:
-    // {rede: 'Hotmart', titulo: 'Curso Completo para Concursos', desc: 'Aprenda com especialistas focados no edital.', url: 'https://hotm.io/SEULINK'}
+  amazonTag: 'exemplo-20',      // Exemplo fictício para acionar os cards automáticos da Amazon
+  afiliados: [        
+    {rede: 'Hotmart', titulo: 'Estratégia Concursos - Extensivo 2026', desc: 'Curso completo com videoaulas e PDFs focados em editais abertos.', url: 'https://exemplo.com/curso-hotmart'},
+    {rede: 'Kiwify', titulo: 'Método de Aprovação em Concursos', desc: 'Guia prático de cronogramas de estudo e técnicas de memorização.', url: 'https://exemplo.com/curso-kiwify'}
   ],
-  pix: {chave:''},    // Sua chave Pix para apoio voluntário
-  telegram: '',       // Link do seu canal de avisos no Telegram (ex.: 'https://t.me/seucanal')
-  adsenseClient: '',  // Seu código do Google AdSense (ex.: 'ca-pub-1234567890123456')
-  adsenseSlot: ''     // ID do bloco de anúncio criado no painel do AdSense
+  pix: {chave: 'suachave@pixexemplo.com'},    // Chave Pix de exemplo para testar a caixa de apoio
+  telegram: 'https://t.me/exemplo_concursos', // Link fictício do canal de avisos no Telegram
+  adsenseClient: '',  
+  adsenseSlot: ''     
 };
 
 /* ---------- dados e utilitários ---------- */
