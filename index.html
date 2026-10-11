@@ -26,14 +26,14 @@ body{
   min-height: 100vh;
 }
 
-/* Cabeçalho fixo no topo (Logo menor + Abas + Filtros) */
+/* Cabeçalho fixo no topo */
 .fixed-header{position:sticky;top:0;z-index:20;background:var(--bg);padding-bottom:4px;box-shadow:0 4px 6px -6px rgba(0,39,118,.35)}
 
-/* Layout geral com colunas laterais compactas */
+/* Layout geral */
 .site-container{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:380px minmax(0, 1260px) 380px;gap:24px;padding:0 16px 50px;flex:1}
 
-/* Propagandas laterais compactas */
-.sidebar-ad{padding-top:10px;display:flex;flex-direction:column;gap:10px;position:sticky;top:150px}
+/* Propagandas laterais alinhadas exatamente com o início da rolagem dos resultados */
+.sidebar-ad{padding-top:10px;display:flex;flex-direction:column;gap:10px;position:sticky;top:175px}
 
 .sidebar-grid{display:grid;grid-template-columns:180px 180px;gap:10px}
 .sidebar-col-small{display:flex;flex-direction:column;gap:10px}
@@ -47,7 +47,7 @@ header.site-header{max-width:1260px;margin:6px auto 0;padding:0;width:100%;text-
 .wrap{max-width:1260px;margin:0 auto;padding:0;width:100%}
 
 /* Área central onde ocorre a rolagem dos resultados */
-.scroll-content{max-height:calc(100vh - 160px);overflow-y:auto;padding-bottom:30px;padding-top:6px}
+.scroll-content{max-height:calc(100vh - 175px);overflow-y:auto;padding-bottom:30px;padding-top:6px}
 
 /* barra fixa de abas + filtros */
 .sticky{background:var(--bg);padding:6px 0;border-bottom:1px solid var(--line)}
@@ -102,14 +102,14 @@ button{font:inherit;cursor:pointer}
 .news a:hover{text-decoration:underline}
 .news .meta{display:inline;font-size:11px}
 
-/* Rodapé fixo refinado */
+/* Rodapé fixo refinado conforme layout da imagem */
 footer{position:fixed;bottom:0;left:0;width:100%;background:var(--card);border-top:1px solid var(--line);padding:6px 16px;z-index:30;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);box-shadow:0 -2px 6px rgba(0,0,0,.05)}
-footer .footer-left{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--ink)}
-footer .footer-right{display:flex;align-items:center;gap:8px}
+footer .footer-left{display:flex;align-items:center;gap:12px;font-size:11.5px}
+footer .footer-left a{color:var(--muted);text-decoration:none}
+footer .footer-left a:hover{text-decoration:underline}
+footer .footer-center{font-size:11px;color:var(--muted);text-align:center}
+footer .footer-right{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--ink)}
 footer code{background:var(--field);border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--ink)}
-footer .links-info{font-size:11px}
-footer .links-info a{color:var(--muted);text-decoration:none}
-footer .links-info a:hover{text-decoration:underline}
 
 /* Responsividade */
 @media(max-width:1420px){
@@ -146,7 +146,7 @@ footer .links-info a:hover{text-decoration:underline}
 <body>
 
 <div class="site-container">
-  <!-- LATERAL ESQUERDA COMPACTADA -->
+  <!-- LATERAL ESQUERDA ALINHADA -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
@@ -159,7 +159,7 @@ footer .links-info a:hover{text-decoration:underline}
 
   <!-- CONTEÚDO CENTRAL -->
   <div>
-    <!-- CABEÇALHO FIXO COM LOGO MENOR -->
+    <!-- CABEÇALHO FIXO -->
     <div class="fixed-header">
       <header class="site-header">
         <img class="banner" src="radarconcursos.png" alt="Radar Concursos — monitorando seu próximo concurso">
@@ -237,7 +237,7 @@ footer .links-info a:hover{text-decoration:underline}
     </div>
   </div>
 
-  <!-- LATERAL DIREITA COMPACTADA -->
+  <!-- LATERAL DIREITA ALINHADA -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
@@ -252,12 +252,13 @@ footer .links-info a:hover{text-decoration:underline}
 <!-- RODAPÉ FIXO -->
 <footer>
   <div class="footer-left">
-    <span>💚 Apoie o Radar Concursos</span>
-  </div>
-  <div class="links-info">
     <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a>
   </div>
+  <div class="footer-center">
+    Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.
+  </div>
   <div class="footer-right">
+    <span>💚 Apoie o Radar Concursos</span>
     <span>PIX: <code id="pixKey">maurygoncalves@mail.com</code></span>
     <button class="btn" id="pixCopy" style="padding: 3px 8px; font-size: 11px;">Copiar Pix</button>
   </div>
