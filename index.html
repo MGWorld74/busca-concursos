@@ -148,16 +148,24 @@ footer a{color:var(--muted)}
     <details class="sec" id="wPrevisto" open hidden><summary><h2 class="sub">🕓 Edital Previsto <b id="nPrevisto"></b></h2></summary><div class="grid" id="lPrevisto"></div><button class="btn ghost more" id="mPrevisto" data-more="previsto" hidden></button></details>
     <details class="sec" id="wNoticias" open hidden><summary><h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <b id="nNoticias"></b></h2></summary><ul class="news" id="lNoticias"></ul><button class="btn ghost more" id="mNoticias" data-more="noticias" hidden></button></details>
     <section class="estudo" id="estudo" hidden>
-      <h2>📚 Material para estudar</h2>
-      <p class="aviso">Alguns links são de afiliados: se você comprar, posso receber uma comissão, sem custo extra para você.</p>
+      <h2>📚 Material para estudar e Cursos Recomendados</h2>
+      <p class="aviso">Alguns links são de parceiros e afiliados: se você adquirir por aqui, podemos receber uma comissão sem nenhum custo extra para você[cite: 3].</p>
       <div class="afs" id="afs"></div>
     </section>
-    <div class="ad" id="adslot"></div>
+    
+    <!-- Espaço reservado para banner de propaganda / AdSense -->
+    <div class="ad" id="adslot">
+      <!-- Exemplo de banner de propaganda manual direto (opcional):
+      <a href="SEU_LINK_DE_PROPAGANDA" target="_blank">
+        <img src="banner-exemplo.jpg" alt="Anúncio" style="max-width:100%; border-radius:10px; margin-top:15px;">
+      </a>
+      -->
+    </div>
   </div>
 
   <section class="apoio" id="apoio" hidden>
     <h2>💚 Apoie o Radar Concursos</h2>
-    <p class="aviso" style="margin-bottom:0">O site é gratuito e mantido de forma independente. Se ele te ajudou, considere contribuir ou acompanhar os avisos de novos editais.</p>
+    <p class="aviso" style="margin-bottom:0">O site é gratuito e mantido de forma independente. Se ele te ajudou, considere contribuir ou acompanhar os avisos de novos editais[cite: 3].</p>
     <div id="pixBox" hidden style="margin-top:10px">Pix: <code id="pixKey"></code></div>
     <div class="btns">
       <button class="btn" id="pixCopy" hidden>Copiar chave Pix</button>
@@ -166,9 +174,9 @@ footer a{color:var(--muted)}
   </section>
 </main>
 
-<footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.<br><a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a></footer>
+<footer>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados[cite: 4].<br><a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a></footer>
 <div class="consent" id="consent" hidden>
-  <span>Usamos anúncios (Google AdSense), que podem usar cookies. Veja a <a href="privacidade.html">Política de Privacidade</a>.</span>
+  <span>Usamos anúncios (Google AdSense), que podem usar cookies. Veja a <a href="privacidade.html">Política de Privacidade</a>[cite: 4].</span>
   <button id="cOk" style="background:#ffdf00;color:#002776">Aceitar anúncios</button>
   <button id="cNo" style="background:#fff;color:#0d1b2e">Recusar</button>
 </div>
@@ -177,16 +185,19 @@ footer a{color:var(--muted)}
 (function(){
 'use strict';
 
-/* ---------- MONETIZAÇÃO (preencha aqui; o que ficar vazio simplesmente não aparece) ---------- */
+/* ==========================================================================
+   MONETIZAÇÃO E PARCERIAS (Insira aqui seus links de afiliados e AdSense)
+   ========================================================================== */
 const MONET = {
-  amazonTag: '',      // seu ID de associado Amazon, ex.: 'radarconcursos-20'
-  afiliados: [        // links dos seus programas (Hotmart, Eduzz, Monetizze, Kiwify...)
-    // {rede:'Hotmart', titulo:'Curso preparatório X', desc:'Descrição curta', url:'https://hotm.io/SEULINK'},
+  amazonTag: '',      // Ex.: 'suatag-amazon-20' (ID de associado Amazon para apostilas automáticas)
+  afiliados: [        // Cursos preparatórios, Hotmart, Eduzz, Kiwify, etc.
+    // Exemplo pronto para preencher:
+    // {rede: 'Hotmart', titulo: 'Curso Completo para Concursos', desc: 'Aprenda com especialistas focados no edital.', url: 'https://hotm.io/SEULINK'}
   ],
-  pix: {chave:''},    // sua chave Pix (e-mail, CPF/CNPJ, telefone ou aleatória)
-  telegram: '',       // ex.: 'https://t.me/seucanal'
-  adsenseClient: '',  // ex.: 'ca-pub-1234567890123456' (só depois de aprovado)
-  adsenseSlot: ''     // ID do bloco de anúncio criado no AdSense
+  pix: {chave:''},    // Sua chave Pix para apoio voluntário
+  telegram: '',       // Link do seu canal de avisos no Telegram (ex.: 'https://t.me/seucanal')
+  adsenseClient: '',  // Seu código do Google AdSense (ex.: 'ca-pub-1234567890123456')
+  adsenseSlot: ''     // ID do bloco de anúncio criado no painel do AdSense
 };
 
 /* ---------- dados e utilitários ---------- */
@@ -209,7 +220,7 @@ function relTime(ts){
 }
 function hash(s){ let h = 5381; for(let i=0;i<s.length;i++) h = ((h<<5)+h+s.charCodeAt(i))|0; return 'i'+(h>>>0).toString(36); }
 
-/* ---------- classificação (mesma lógica do script Python) ---------- */
+/* ---------- classificação ---------- */
 const RX_CONC = /\b(concursos?|edital|editais|vagas?|selecao|selecoes|processo seletivo|teste seletivo|inscricoes|certame|gabarito\w*|convoca\w*|nomea\w*|nomeados|aprovados|classificad\w*|cadastro reserva|banca|provas?|estagio|residencia|chamamento|homologa\w*)\b/;
 const RX_MUN = /\b(?:prefeitura|camara municipal|camara de vereadores|guarda (?:civil )?municipal|secretaria municipal|autarquia municipal|fundacao municipal|iprem|municipio de|camara de (?!deputados)\w)/;
 const RX_EST = new RegExp('\\b(?:governo (?:do estado|estadual)|secretaria (?:de estado|estadual)|assembleia legislativa|camara legislativa|policia (?:militar|civil|penal)|corpo de bombeiros|tribunal de justica|tribunal de contas do estado|defensoria publica do estado|ministerio publico do estado|procuradoria geral do estado|detran|sefaz|seplag|seduc|sesau?|estaduais?|uerj|uenf|uems|uepa|unesp|unicamp|usp)\\b|\\b(?:pm|pc|cbm|tj|mp|dpe|tce|pge)e?[ -]?(?:'+UFRX+')\\b');
@@ -262,7 +273,6 @@ function scopeOf(n, temUf){
   return temUf ? 'estadual' : '';
 }
 
-/* cria um item; devolve null se não for concurso ou se não der para definir o âmbito */
 function make(rawTitle, fonte, link, ts, ctxUf){
   let titulo = String(rawTitle || '').trim();
   fonte = String(fonte || '').trim();
@@ -288,7 +298,6 @@ function make(rawTitle, fonte, link, ts, ctxUf){
   };
 }
 
-/* ---------- dados: concursos.json (robô) + busca ao vivo (Google Notícias) ---------- */
 const pool = new Map();
 const add = it => { if(it) pool.set(it.id, it); };
 
@@ -360,7 +369,6 @@ function queries(scope, uf, mun){
   return q.map(x => x+' when:'+DAYS+'d');
 }
 
-/* ---------- municípios (IBGE) ---------- */
 const cacheMun = {};
 let muniTk = 0;
 async function loadMunicipios(uf){
@@ -387,7 +395,6 @@ function manual(on){
 }
 const getMun = () => ($('#fMunManual').hidden ? $('#fMun').value : $('#fMunManual').value).trim();
 
-/* ---------- âmbito e filtros ---------- */
 let scope = 'nacional';
 
 function clearResults(texto){
@@ -412,7 +419,6 @@ function setScope(s){
   reset();
 }
 
-/* ---------- exibição ---------- */
 function filtrar(uf, mun){
   const tipo = $('#fTipo').value, mod = $('#fMod').value, esc = $('#fEsc').value, ord = $('#fSort').value;
   const corte = Date.now() - DAYS*864e5, m = norm(mun);
@@ -426,7 +432,7 @@ function filtrar(uf, mun){
     if(scope === 'municipal'){
       if(it.uf && it.uf !== uf) return false;
       if(m) return it.txt.includes(m);
-      if(!it.uf){   // sem UF no título: confere se o município pertence ao estado escolhido
+      if(!it.uf){
         const nomes = cacheMun[uf] || [];
         return !!it.municipio && nomes.some(n => norm(n) === norm(it.municipio));
       }
@@ -482,7 +488,6 @@ function render(list){
   renderEstudo();
 }
 
-/* ---------- ação do botão Atualizar ---------- */
 async function atualizar(){
   const uf = $('#fUf').value, mun = getMun();
   if(scope === 'municipal' && !uf){ clearResults('Selecione um estado para ver os concursos municipais.'); return; }
@@ -505,7 +510,6 @@ async function atualizar(){
   btn.disabled = false;
 }
 
-/* ---------- monetização ---------- */
 const amazonUrl = q => 'https://www.amazon.com.br/s?k='+encodeURIComponent(q)+'&tag='+encodeURIComponent(MONET.amazonTag);
 function amazonCard(it){
   if(!MONET.amazonTag) return '';
@@ -560,7 +564,6 @@ function initAds(){
   $('#cNo').addEventListener('click', () => fechar('nao'));
 }
 
-/* ---------- eventos ---------- */
 $('#fUf').innerHTML = '<option value=""></option>' + UFS.map(u => '<option value="'+u+'">'+u+' — '+UFNAMES[u]+'</option>').join('');
 $('#seg').addEventListener('click', e => { const b = e.target.closest('button[data-scope]'); if(b) setScope(b.dataset.scope); });
 $('#fUf').addEventListener('change', () => { if(scope === 'municipal') loadMunicipios($('#fUf').value); });
