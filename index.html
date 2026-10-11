@@ -31,10 +31,10 @@ body{
 .fixed-header{background:var(--bg);padding-bottom:2px;box-shadow:0 2px 4px rgba(0,39,118,.1);flex-shrink:0}
 
 /* Layout geral em grade para caber na tela sem scroll */
-.site-container{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:380px minmax(0, 1260px) 380px;gap:20px;padding:8px 16px 45px;flex:1;overflow:hidden;align-items:start}
+.site-container{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:380px minmax(0, 1260px) 380px;gap:20px;padding:8px 16px 50px;flex:1;overflow:hidden;align-items:start}
 
-/* Propagandas laterais alinhadas corretamente com o início dos filtros/conteúdo */
-.sidebar-ad{padding-top:4px;display:flex;flex-direction:column;gap:8px}
+/* Propagandas laterais alinhadas exatamente na mesma linha onde iniciam os resultados */
+.sidebar-ad{padding-top:110px;display:flex;flex-direction:column;gap:8px}
 
 .sidebar-grid{display:grid;grid-template-columns:180px 180px;gap:8px}
 .sidebar-col-small{display:flex;flex-direction:column;gap:8px}
@@ -64,7 +64,7 @@ header.site-header{max-width:1260px;margin:4px auto 0;padding:0;width:100%;text-
 .fld label{display:block;font-size:10.5px;font-weight:600;color:#33475a;margin-bottom:2px}
 select,input[type=text]{width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--field);color:var(--ink);font:inherit;font-size:12px}
 select:focus,input:focus,button:focus-visible{outline:2px solid var(--blue);outline-offset:-1px}
-.fld a{display:inline-block;margin-top:2px;font-size:11px;color:var(--blue)}
+.fld a{display:inline-block;margin-top:2px;font-size:11px;color:#002776}
 .btns{display:flex;gap:6px;margin-top:10px}
 button{font:inherit;cursor:pointer}
 .btn{background:var(--brand);color:#fff;border:0;border-radius:6px;padding:6px 12px;font-weight:600;font-size:12px}
@@ -103,28 +103,30 @@ button{font:inherit;cursor:pointer}
 .news a:hover{text-decoration:underline}
 .news .meta{display:inline;font-size:10.5px}
 
-/* Rodapé fixo centralizado e reorganizado conforme solicitado */
-footer{position:fixed;bottom:0;left:0;width:100%;background:var(--card);border-top:1px solid var(--line);padding:5px 16px;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11.5px;color:var(--muted);box-shadow:0 -2px 6px rgba(0,0,0,.05);text-align:center}
-footer .footer-line1{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;color:var(--ink)}
-footer .footer-line2{font-size:10.5px;color:var(--muted)}
-footer .footer-line3{font-size:11px}
-footer .footer-line3 a{color:var(--muted);text-decoration:none}
-footer .footer-line3 a:hover{text-decoration:underline}
+/* Rodapé fixo ajustado com textos centrais e apoio na direita */
+footer{position:fixed;bottom:0;left:0;width:100%;background:var(--card);border-top:1px solid var(--line);padding:6px 16px;z-index:30;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--muted);box-shadow:0 -2px 6px rgba(0,0,0,.05)}
+footer .footer-center{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;flex:1;text-align:center}
+footer .footer-right{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--ink);white-space:nowrap}
+footer .footer-left-placeholder{width:220px} /* Para equilibrar o grid flex e manter o centro perfeito */
+footer .footer-center a{color:var(--muted);text-decoration:none}
+footer .footer-center a:hover{text-decoration:underline}
 footer code{background:var(--field);border:1px solid var(--line);border-radius:4px;padding:1px 4px;color:var(--ink)}
 
 /* Responsividade */
 @media(max-width:1420px){
-  .site-container{grid-template-columns:1fr;padding:0 12px 45px;overflow-y:auto}
+  .site-container{grid-template-columns:1fr;padding:0 12px 50px;overflow-y:auto}
   body{overflow:auto}
   .sidebar-ad{display:none}
   .scroll-content{max-height:none;overflow-y:visible}
+  footer{flex-direction:column;gap:4px;text-align:center}
+  footer .footer-left-placeholder{display:none}
+  footer .footer-right{width:100%;justify-content:center}
 }
 
 @media(min-width:601px){.fld.sort{max-width:170px}}
 @media(max-width:600px){
   .fld{max-width:none}
   .btns{width:100%;margin-top:4px}.btns .btn{flex:1}
-  footer{font-size:10.5px}
 }
 
 /* monetização */
@@ -138,7 +140,7 @@ footer code{background:var(--field);border:1px solid var(--line);border-radius:4
 .af span{font-size:11.5px;color:var(--muted)}
 .af small{display:block;margin-top:2px;font-size:10px;color:var(--muted)}
 .ad{margin-top:12px;text-align:center;min-height:0}
-.consent{position:fixed;left:0;right:0;bottom:40px;z-index:30;background:#0d1b2e;color:#fff;padding:6px 16px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:11.5px}
+.consent{position:fixed;left:0;right:0;bottom:45px;z-index:30;background:#0d1b2e;color:#fff;padding:6px 16px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:11.5px}
 .consent a{color:#ffdf00}
 .consent button{border:0;border-radius:6px;padding:4px 10px;font-weight:700}
 [hidden]{display:none!important}
@@ -147,7 +149,7 @@ footer code{background:var(--field);border:1px solid var(--line);border-radius:4
 <body>
 
 <div class="site-container">
-  <!-- LATERAL ESQUERDA ALINHADA -->
+  <!-- LATERAL ESQUERDA ALINHADA AO INÍCIO DOS RESULTADOS -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
@@ -209,7 +211,7 @@ footer code{background:var(--field);border:1px solid var(--line);border-radius:4
       </div>
     </div>
 
-    <!-- ÁREA CENTRAL COM ROLAGEM AJUSTADA -->
+    <!-- ÁREA CENTRAL COM ROLAGEM -->
     <div class="scroll-content">
       <main class="wrap">
         <p class="msg" id="msg" role="status" aria-live="polite"></p>
@@ -221,7 +223,7 @@ footer code{background:var(--field);border:1px solid var(--line);border-radius:4
           <details class="sec" id="wNoticias" open hidden><summary><h2 class="sub">📰 Notícias e links (resultados, alterações e avisos) <b id="nNoticias"></b></h2></summary><ul class="news" id="lNoticias"></ul><button class="btn ghost more" id="mNoticias" data-more="noticias" hidden></button></details>
           <section class="estudo" id="estudo" hidden>
             <h2>📚 Material para estudar e Cursos Recomendados</h2>
-            <p class="aviso">Alguns links são de parceiros e afiliados[cite: 3].</p>
+            <p class="aviso">Alguns links são de parceiros e afiliados.</p>
             <div class="afs" id="afs"></div>
           </section>
           
@@ -238,7 +240,7 @@ footer code{background:var(--field);border:1px solid var(--line);border-radius:4
     </div>
   </div>
 
-  <!-- LATERAL DIREITA ALINHADA -->
+  <!-- LATERAL DIREITA ALINHADA AO INÍCIO DOS RESULTADOS -->
   <aside class="sidebar-ad">
     <div class="sidebar-grid">
       <div class="sidebar-col-small">
@@ -250,23 +252,22 @@ footer code{background:var(--field);border:1px solid var(--line);border-radius:4
   </aside>
 </div>
 
-<!-- RODAPÉ FIXO CENTRALIZADO -->
+<!-- RODAPÉ FIXO -->
 <footer>
-  <div class="footer-line1">
+  <div class="footer-left-placeholder"></div>
+  <div class="footer-center">
+    <div>Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.</div>
+    <div><a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a></div>
+  </div>
+  <div class="footer-right">
     <span>💚 Apoie o Radar Concursos</span>
     <span>PIX: <code id="pixKey">maurygoncalves@mail.com</code></span>
-    <button class="btn" id="pixCopy" style="padding: 2px 6px; font-size: 10.5px;">Copiar Pix</button>
-  </div>
-  <div class="footer-line2">
-    Ferramenta independente, sem vínculo com órgãos, bancas ou portais citados.
-  </div>
-  <div class="footer-line3">
-    <a href="sobre.html">Sobre</a> · <a href="privacidade.html">Privacidade</a>
+    <button class="btn" id="pixCopy" style="padding: 2px 6px; font-size: 10px;">Copiar Pix</button>
   </div>
 </footer>
 
 <div class="consent" id="consent" hidden>
-  <span>Usamos anúncios (Google AdSense), que podem usar cookies[cite: 4].</span>
+  <span>Usamos anúncios (Google AdSense), que podem usar cookies.</span>
   <button id="cOk" style="background:#ffdf00;color:#002776">Aceitar</button>
   <button id="cNo" style="background:#fff;color:#0d1b2e">Recusar</button>
 </div>
