@@ -1,12 +1,306 @@
 {
- "atualizado": "2026-10-22T12:40:06.957793+00:00",
+ "atualizado": "2026-10-22T15:36:50.530872+00:00",
  "itens": [
+  {
+   "titulo": "O criador do Brasão de Armas do Estado de Rondônia - Notícias Tudo Aqui",
+   "fonte": "Notícias Tudo Aqui",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNS1lzNmREeTJFTHhTaUNfMGZjR2xsSzFwbzlZc0U2SXBLVk1pMk9mQnVIU1VfdnVjX0ZSTGVwaU1TTGdQOXdDX0FLRWNPNFlGVXdOSUtLTk5OMDFOdXAtOGt2bS12MTBvRzdFVEhwUHpBT2FHVFBfSnNaTkJvaHRocGx2ODNQb1EtVlVNY29JcG5yTUVYRWwtTng0RDZmZE9qSXBSQ3h0R2YwMlM0TUpQQUdmR0J3VzBKOGJPc0JSZzVPMjd4c09VaXZlOA?oc=5",
+   "ts": "2026-10-22T15:23:00Z",
+   "uf": "RO"
+  },
+  {
+   "titulo": "Prefeitura de cidade do PI abre edital para concurso; salários vão até R$ 4,7 mil - G1",
+   "fonte": "G1",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOGZ6QUFvV0JXNEJfT0ExTlFiX0FieEo1NkNmU3VLMDFoanB2WEwxMWhYUnJWQ3Z5c3Fqeld3VUl2eWphZlJhU0hxSl95aEJROFFNWlJrdmNVUWxaYTFMQlVlWVBlemg0T2hILTZsWWp1cjd3dkdtMlYta3JFU0ZKVm04cVItS1ItTE9pdXpsbnpOc2R5Nlg4LTRub1FzQzRCTGs5WEk3MTJtMVNVcVdhSnhKT01IdHlEUEE5bmlnaG_SAc8BQVVfeXFMTlI2SWs0Z1dQdXpaMXhkN3djQW0xaVRhQjFaRkpzVTVURGN2b0F5ZnVhOHFrX21qYmE2cjMzX01XelB1MDlWSW02a3A1Wk51WEJ5dWItQ0VwNEk3a0Z6ekg2SzVZZXVuU3lWS2IyMnBURVZqVzhEbWJDa3R6Y0dDTXZLNnloNm8tTkxZMU9yQURONUFueUZVOUR4dWdIUmhuckxvM25DMlE5OXFBWWk4N3ZfR3dhMW9scUpBRDBJMU43TzBSRDFpektHMW9sWGkw?oc=5",
+   "ts": "2026-10-22T15:05:50Z",
+   "uf": "PI"
+  },
+  {
+   "titulo": "Concurso da PCAC terá organização do IDECAN; número de vagas ainda não foi divulgado - Juruá Online",
+   "fonte": "Juruá Online",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSHlaXy1iYlcxMnY3RE1Rc2duN0l1bll0MDQ2bTV4eXRjbkwwenk5Y0VnMlFoWUd0Qk9XSDliNkNuMTFvTENkTU9kejlTakQ0TnliTm1MMTdXeml5bjFYeWpXTWdOX1lvemttV1ZZN0dkdEE2V0tQbTFWOXBkSmN0YXRyMUFmUEs2aVVqNXRTZGlDaTFKaTJCYWttXy05b1J5Rll3Zml2VHhuT2o0eVI2Tg?oc=5",
+   "ts": "2026-10-22T15:04:58Z",
+   "uf": "AC"
+  },
+  {
+   "titulo": "Tribunal Regional do Trabalho da 4ª Região abre concurso para cadastro de reserva em analista e técnico judiciário - Qconcursos Folha Dirigida",
+   "fonte": "Qconcursos Folha Dirigida",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZTNoYTBIcXdDSzVKU2JTcmRRU3lCZWlLOVdkRVVDNzUwdzZPV08taERzeU1SYkRuQmRPWlMwbHQya2JsNFk1UHVWVXdJSXoybjQ0anRFQmo5MlNxQ05zUmhrWWhHWUFYWUZsUHBCbk9lYUpiV0VXVnhqb1BZTzM3aHRQbzZLRDBEYS1YNmE1djhoZjl6LUQ3UWwtd2lzc01HVmxYNVJFUVVjX01Vb0FWWHBEeUl2cHVZa3VuUHJxY1U5ci1Dc0JNaVZCOUFQMnQ1XzdBWXVGb1U1UkNo?oc=5",
+   "ts": "2026-10-22T14:56:34Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "MPMG recomenda a realização de novo concurso público para professores no Conservatório de Uberlândia - V9 Vitoriosa",
+   "fonte": "V9 Vitoriosa",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaXpnX0V4WlZrMTJBcWZsUVRrZmhlU2pkcGhNVng2S1d0Y0NiblkydlBlbDVRSHIxZ09mWDZaVXhpcXdsb2MyV1RUVnpHX0VDUnJmNjhHT0E3VVV0WnA0eGhiU2F4aWJ2eWN1SHlvUnZFY1VrYTAxX01UZUJYLTF1ZVllRDhySU9zNGJYQjI1REFvak4tdTh6dk1reEFhVlp5NUN3NjlwWFlmektxRTVVNnh2S1R2VjZrb1NhN0RjTGpfQjlEbmc?oc=5",
+   "ts": "2026-10-22T14:50:03Z",
+   "uf": "TO"
+  },
+  {
+   "titulo": "Concurso vai eleger os melhores cafés de Mato Grosso neste sábado em Juína - O Bom da Notícia",
+   "fonte": "O Bom da Notícia",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUWsxNXlnajlqWDk5ZFYzbVQtS0dPLS04c0ItMDBiYUlwUDlraTU1QmZZMmNUdUVSM1BGUjg3X3drRzREMmQ0bTZMUG5VRTNXeG9fU2JKMHBKQlZtUndCZHVRZmo4d0FnM1lZUGE4dlBzSXo1S3ZOWEhYREVHTEpvYzh5Q196OTlUWkltVl9fVHBrdE5vdTg4akc0UFU0djQ4Zy15RlM4Mk1NX1RBVnRYcFFQNkxjczVWMkQ1WEp6bWpHQ053RkFr?oc=5",
+   "ts": "2026-10-22T14:50:00Z",
+   "uf": "MT"
+  },
+  {
+   "titulo": "Concurso TRT RS: edital com 23 cargos e salários de até R$ 18 mil é publicado - Diário do Pará",
+   "fonte": "Diário do Pará",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTVk2MXFxZk9aUDFuZV9ncXZyd1RfWjQ0TkdCS0w3dUdlTmFNYThqREpFVmJTQkdOTjlmalkyak5DcVp3RlExcHZObGJxamlMbUZ3TGp2a050bTE2UWx1NUp1S3FCbW9QS0o2OUZXQV9IYmNDUnpaTUNaNmU3QzhEXzN1TVhZQzdmMS1tZnNSUFdCcVp5U3lKbVFsa2oyQ0VlczFMM1RQbGh0eUpuazc4VmFJWWhMWUhDa0NlRVB0ZE5rOWdMX2w2eWd6UFhHbjg?oc=5",
+   "ts": "2026-10-22T14:47:27Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Governo contrata banca organizadora para o novo concurso da Polícia Civil - ContilNet Notícias",
+   "fonte": "ContilNet Notícias",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUDN4YmdNYXVMekJCLV9QMEhTVU13aURLVTE2TVBsNmJOQ0l6RmF2TmtDVW53d0JrVHJTYVN6Q1REcVQ3Snd2WmowWnZlaHZQcG9FUGtOTUgwTkZ4eXhRQ1E1U2pJWW5TSmpyTGJBQ2NtRkwzLWtVRmtzZ0hici13M2JvWkNkUzd1cmdWU19kbXZORW81ZkU3YUdEZ3hiRHVCbzc2RlR4YzhSU2duX0ZXUU1oY3lVbXlEY0FHTw?oc=5",
+   "ts": "2026-10-22T14:46:40Z",
+   "uf": "AC"
+  },
+  {
+   "titulo": "Prefeitura de Marituba - PA reabre inscrições de concurso público para Guarda Civil - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVC04azdUaHdJSkVqSVlCdEhpSnRFVnZRNmROWGc5Y1N1N0hqNGt4eG1XNVZIZ2NkdzFWTEhFQWU3a19qdEUyajZCbmphUGctdkNqVmpwdTZQTWN6VWYwOVo1d1RXZmtxeU55MXdrZm9FSUVJYVVTT3FkMG85SC1oSWdnVmpYMGR5NXpVYlFOWVgzRWlRQ2JGdFFheUxlRFVXLVBzQUJIQmM0SnNjaUF6blh3b0RoTV9IbmJuUDY3Zw?oc=5",
+   "ts": "2026-10-22T14:34:43Z",
+   "uf": "PR"
+  },
+  {
+   "titulo": "Concurso PC AC: IDECAN é definido para organizar seleção com 139 vagas - Magistrar",
+   "fonte": "Magistrar",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVjFHeWE5NHhMVEdoMHV4MGxRNWhhMUUxSVJfVmtEbEVqWHQxa3hnOGlNa0VoX1VVaDlxN0R0MzJXM2kxSE1pR2VjZ3ZJTGFweG9kTjM0YmNCTTNrY2ZFTW54aHRiaEdjUnFMRXgzdjlQZzlReWpEVEZHWnE2cFlhSTNrc1Y5QVROd0tRbjQ5YWxvUllaa0VjY25DODdVa0l4aHIxTXV0X054dw?oc=5",
+   "ts": "2026-10-22T14:15:45Z",
+   "uf": "AC"
+  },
+  {
+   "titulo": "Governo dispensa licitação para contratar banca do concurso da Civil - ac24horas",
+   "fonte": "ac24horas",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOV3ZXcjhqM3laQXJBRk13cVFjZU5IOTh6WjRyTXF3M2lyUDZVcjN5b29lcjhDUWV3SlgxR0FxbDRHYWJiVElSQU4yQlZPMTdTUlBaZl9vbFVCUUVIMWVLNEo5eFpabTdCaG44NG9DX20zN01qVklaQVYxX0VvbkphSWd6SHJOcVVkOVQ3SzR4SmNYaVFTLW9zRF91RFpxNTU4RGlxVDFnQkZCc3IzRVhLTlpLOXdlZGlTNENCTm9LTFrSAcYBQVVfeXFMTVAxa0JBaW9SQlZxUWNBTl90bVZDN0RiVFR5ZVk1M05rQXRIeXUxZUFDWGJ1Y3lHaEI2ZUM2SGtGUzRkNkVpWTRXN1RGSjQ5ZmFaNV85bU1lVXBnTUtCbzBWU0V5eFJ1RUV1dENVcldpZ1ZUWlNVdm91SGRZZ19VLTFNdjUxdFh3dXpwV2dFYWNUS25sOFpPMnVMQllKRDQwWmhlbWgwVkItTElnSXBuSllsRXhZYnpCN2g5YjJKU0RWQnF4aXFB?oc=5",
+   "ts": "2026-10-22T14:13:35Z",
+   "uf": "AC"
+  },
+  {
+   "titulo": "Prefeitura de Luiz Alves SC abre concurso com 63 vagas - Qconcursos Folha Dirigida",
+   "fonte": "Qconcursos Folha Dirigida",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQV19RekRVUlg4SUxZTTN5RGNPanYxaUVXM0xPY0R0RzFhTGJ3RmQwcmszTE1pOFpHYWdmTWFabkdyZHpzZkxVbUZ5dndWVUVMaHg0ejBOMG8tUXdVZDhHaUFHNU5ibC1DTHdCSUpBeW9aR1RmTEQ1RlVqeVZZVXdMR3VFX0NTZHdKNDVzNld3?oc=5",
+   "ts": "2026-10-22T14:12:14Z",
+   "uf": "SC"
+  },
+  {
+   "titulo": "Concurso PC AC define banca organizadora e prevê vagas em 2026 - Imprensa 24h",
+   "fonte": "Imprensa 24h",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1GdVE2TTlBQmdUSUpuY2t2eUJ1ZFM0NTJyV0owaWlldmx2NjJ3eW5pOVdDUXpOWGw1eW9aXzBEVFliN1owcnpzbkRXSFA4UHBtcHN2d29XVXB1enR6aHNYX2dSRHpVYzVyX3FDVkpR?oc=5",
+   "ts": "2026-10-22T14:06:23Z",
+   "uf": "SE"
+  },
+  {
+   "titulo": "UFMS abre inscrições para 42 vagas de professores em Mato Grosso do Sul - Capital News",
+   "fonte": "Capital News",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQ212Rzg1YS16YmthSXFsd192MEszMWdTdmZzVGhFdDNjVDZSTFhpMDNKdURiQkFqV1k2aWRPZFIySW80cDdnLTZOUlJxbGZhZ2t6REpFanptR3JvVU9pTE9CaGhVWFZ1UlRuMkgwcnA2OTB6aG5RTmNxR3lDZ0RyeWYyS0h5VzFha19VbUE2M3V3bmJJdHo5RGhGbmRmbS1oUUZ3am9WVjc3bC12amp2d0c2OTVZVUtQRnBneXBNby1GY24tc1lKQmhIOUo?oc=5",
+   "ts": "2026-10-22T14:05:00Z",
+   "uf": "MS"
+  },
+  {
+   "titulo": "Governo do ES abre seleção com salários de até R$ 4,5 mil e vagas em todo o Estado - Folha do ES",
+   "fonte": "Folha do ES",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4TE1rUG93RjBGTDAwYWtKRUlnMkNpZlJKZ2VVQ21ERE1iRE9pUVl0VkdqLTRCdlZYaWxNSWRBRWdCNGYzYS15SFJVRTMzQ242MlA5VHdqV1ZuSWJoVTFVSHJYZWhQTU50M0JUWHdzaWFHUWFYQ184cUxlMS1oQjg?oc=5",
+   "ts": "2026-10-22T14:01:17Z",
+   "uf": "ES"
+  },
+  {
+   "titulo": "Controladoria de Alagoas convoca nove candidatos para verificação de cotas em concurso - Tribuna do Sertão",
+   "fonte": "Tribuna do Sertão",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQ0h4OUZzamROLTFLMEZEN3I0MG80MUlrSVF6Z2ZoZEFSMmRscGtpd000YjBmUHdZOG85emtteldFVmpOQjJaM2lMS2paWEdSM19ObDVSVWJEWUFzeUFCNDh2TzV2QjN1X09ZSFd6NnlOQmRWQTRLMHVZdTg2WUZZMTFZNWIwUFVadnBCWHZibTYyMGZ0Mlh3dlJSNWpwTXRqQnlxRnp6Ul9aRl9SLUdXMkpaYTVBR2JybWZVb0ZZZ1h5TGNWanZDZ3FMUWVla0NaYlJLVlJxQy1FUE90cXBXc0xn?oc=5",
+   "ts": "2026-10-22T14:00:00Z",
+   "uf": "AL"
+  },
+  {
+   "titulo": "Estágio PGE RS abre 32 vagas para pós-graduação com bolsa de R$ 2,8 mil - Concursos no Brasil",
+   "fonte": "Concursos no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTG1paTBXWVlRc19pZGtNNGU3SUVkV2hiajR3MkNKTk02WG10d0RoTDQ5NG5tUjhYTHJOck1zdS1YLXdTMGdrcjA3YklUbl9rTS1PMnJieFJDeU13Z3FfTkpLelJWMkhNam1sRkdubFlXcEx3X1Vudk84U3p3cno3RUtVMXhlSDRHTDFmWjNTYlJTV0gwVnRyMjVSRkF5VDNyYjdHUU5Ma3J6TkJpbXpWbjhFcVMzbUNTYnlrMGFR?oc=5",
+   "ts": "2026-10-22T13:57:20Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Concurso TRT-4: edital no RS oferece salários de até R$ 16 mil; provas serão em janeiro - BPMoney",
+   "fonte": "BPMoney",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTjF6TG1sbTdQci1TcWc1RGlXT2dPR3B6a29WZVNNdWkwQzFCQ2tRQ1U4TkZMVVJTMVRQMkRqRExDcm5kMHVXLVlWQnBQRnR2RGFXbVZKRmwzVGd6UWVWTnJlTmhzNnZOdDlFZ05jR1dDbFZlNnlXUmlTUHp5ZVFHeQ?oc=5",
+   "ts": "2026-10-22T13:53:43Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Mâncio Lima convoca enfermeira e psicóloga aprovadas em concurso público - ac24horas",
+   "fonte": "ac24horas",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZXVmNXBSYXg4b2xtQ0hKOHU3bkhRRVBpZHhBWTlfX1JpNl9LRGlZVWlaWVNaSUlrN2VNRzhER3o3ZERNcHZTYzZOVTJTNjRNU2xZODBwanpJNVV6dzZPalFqS0VqUFhuNkRJRkFueWJSclhkNU45a05qVGxadWI5S0FGd0t0YXlaaWpIdTdCRHlxb3BuV1JQLS1YMGZ6TXlfS1RLNWppZXlVUdIBrwFBVV95cUxNaHY4Vndkam1QVFZNWnZLRFNITzdDdWhPUXlYNnlDaWtUSWdDZ2xjekZwNmV6Rm9qdXJHNG85RTg3S19MUzgxUHAtTEM4UG56S1RBaUhQTHZpWV90SnM0QjRHMHcwOXBxcmZ4ZjctejFRTVFkaU5Qa3dxYUpmcVNUeWsySjJVd0JpSFJvT3lTUjNyRXE1TlNhM1ZXUnh4T2IwVGRQWTlpVkE4a3gwOWZn?oc=5",
+   "ts": "2026-10-22T13:51:44Z",
+   "uf": "AC"
+  },
+  {
+   "titulo": "Concurso SES-DF avança com previsão de 322 vagas imediatas e 2.057 em cadastro reserva - DF Soberano",
+   "fonte": "DF Soberano",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTDlvdTZnUi1yR2R5NFpXSDc1WnBhd2psc3NaSmV0MHRCUlgyMzBsRi1DOTAzOUw2d3VobnJRWEYycmVORE51MXZrX0dXa1NCR3VCaFUyN1lDdmZBb3RBekMweG51SkNMbXl0cUJLOTRvSkRWc1ZnUnR3cVdtR3Q0dE1HTVhZZUlfQjhsbnN2cXJNMXcwZUw0Z2sxX00tdC10Z0JnQnRUMUVIQ0d6WGhqSTh2ODR2dlNVTU1DeDB4aWVhcnlGclk2UmFJTHRjejFENzJSOUxrMl9memhrX01XMUtBT0F1ZmhHaXhDXzExLTRRS28?oc=5",
+   "ts": "2026-10-22T13:43:00Z",
+   "uf": "DF"
+  },
+  {
+   "titulo": "Seleção no ES oferece vagas de níveis médio e superior com salários até R$ 4.508 - A Gazeta",
+   "fonte": "A Gazeta",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNUY4UjdfU2txNmdBV24zR183dzNScHBJdEJCOVZmdXplZWZnQzlaVGZCZEFfTmtNYXdRdlVaMmUtLTlqdDczcS1FSGJsRUp5SndCam55OHNJU29BdkRSTlhYNGJXQUVHSGNXc2lJVmpsd0tQTEdUYU9yX0pLNGxZck9fRXlBWXl4LVNUeUJ4T2cwVjZuNkVyR211dVJhcEw3UE5jRUYyQjIzSkRVQWVaOGh6UEhZZw?oc=5",
+   "ts": "2026-10-22T13:42:00Z",
+   "uf": "ES"
+  },
+  {
+   "titulo": "Prefeitura de Nova Xavantina - MT abre processo seletivo com vagas na educação - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONGtSeFV5N2Q1UkwzRWg0TE00OHNVTGdTWnNpMzF4aDlUaHFzeXhWS1JvMTRmTlhYOEMxaHVWSFdKYXdjR1czYklIV1dwWkoyZnpfZG54TEZHTjlUMnIxbUEwSzk1MWhUSHBpbnBZci01WXEtQkJkLURUaUpKZzFlcG5kT2tzb3U0bUxTSkYtM3lnOVNCSTRnUENVQ0VFNFdOZE5TQW9Va3hoVkQ3QmJiRHJXSHdsVDlI?oc=5",
+   "ts": "2026-10-22T13:38:13Z",
+   "uf": "MT"
+  },
+  {
+   "titulo": "Câmara municipal lança edital de concurso com vagas e salários - Imprensa 24h",
+   "fonte": "Imprensa 24h",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8wZG5BZGVMenRWQXpGeFRzMl9sSzlyQTAzQ0ltS2hEaWlCX3pUSWxpOFEwTDFyR25iaDRNUm04YlJyY0tCSTg4YmxBbzhxSk5fV2tWWjJzaHl3cnJidnRVX3laeUwzbkllZndPWjdRMXBXajFM?oc=5",
+   "ts": "2026-10-22T13:32:26Z",
+   "uf": "SE"
+  },
+  {
+   "titulo": "Concurso TRT-RS abre vagas para 23 cargos; salários de até R$ 18,3 mil - DOL",
+   "fonte": "DOL",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLXBKYkpKbWFyVkJoa3RVSmxSOWNPdDB3QnZYTVBzNHFxajMxTnFMbEhsejBNZ01xY2tnUXNFZk5Sdk5XVE1LYnlvRWRFSkswTHVMUkVjRVpMUldzdWFOVFZlelJjN0I3Qk9nc0NUU01CaGgySzlWSjFDS1lhbktSbFkwSWlfV2VCZGREVUpxdGNRajRTOUNWM3hTaFZpRDBUd0MzeUVkLUNGYldXTjRMbndn0gG6AUFVX3lxTFBVNE1OUFlzLTU2UUZDLUdZQmJ4bWd3VkhsMjNlZGljbXVLdExEQWM5ZjVsRExocFE1NUlyLTYxVU52SzdxX3JLX3R2VEN4N290Q2lHUjR6c1lKMmlmRzlrTzEyM3JUaDdpbmlfay10M1JES0l6Tm56NXpDNXJ5d0xrN3YzUVcwUF9pNUp5T3FZU0VYbG9RVXpoRXFBcURocC1KSllSOTNOX3JpMUZDTktLc3JfZGZWaWY5Zw?oc=5",
+   "ts": "2026-10-22T13:31:16Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Concurso da Câmara de Candeias do Jamari tem inscrições abertas até 30 de outubro - Jornal Rondônia",
+   "fonte": "Jornal Rondônia",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZWxRa1QxTVRiTlNXMVNqdVdKaXlvaVh6UUNpTDhleGNsV1FsaEl6c1QtaXVjenNyUDhZSFpqemZKZnByTDZxZDd3RVBrMS04TlJTMTNtcDRXcnBvWm9zUkxkRXlWd2twVllQYjhZYVZQRl9MWXB3Tzk0d1hjRU55RUdfdkltanQ4dWZabVpjYnZQZFJWa3J4dUpUUnlQWkF3X3d3X1pndFhXeXc0TUJRN0xhSVcwcXNDLXBhWXpqd211UQ?oc=5",
+   "ts": "2026-10-22T13:31:00Z",
+   "uf": "RO"
+  },
+  {
+   "titulo": "Governo do DF autoriza início dos trâmites para novo concurso da Seduh com 250 vagas - Imprensa 24h",
+   "fonte": "Imprensa 24h",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XWTJrX01RZV9QdVNyaGNXdG43SVlDcnFqX2xBWkNRcUFmZmZycEhlQjR3enpub0o5elZIVUtFcmxaaG5jQmUyRHlKak1lbGhzdnBWa0JMVFlQMW5xc1hkN0FYVkZIcVBIOEJQcGpIZkJNaWF5Xzdxeg?oc=5",
+   "ts": "2026-10-22T13:27:16Z",
+   "uf": "SE"
+  },
+  {
+   "titulo": "Concurso Areia-PB 2026: Câmara abre vagas para dois cargos - Ache Concursos",
+   "fonte": "Ache Concursos",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSzRUc19YaDlKT3RleWMxejVzcjdjcUk1bkxnRFA2Zm9pTlNCQ1ZZUGx2cXRMMEZLaldteERLWHhNNWdXSzVIb19va0tlY25pRWlwTnRRRVpocDFLVUpMeDc5UlB4RklNcHNYb05FUDBvV2NBQzdSVlhUT2Q4T01UbjdKcnZsWmx2Qy1xTjZydEZqZEZKZjByb2xrSnMxcWhqc3JwSm9hRTdjeUYycXpuNU5mRlU?oc=5",
+   "ts": "2026-10-22T13:26:26Z",
+   "uf": "PB"
+  },
+  {
+   "titulo": "Edital TRT4 é divulgado com salários de até R$ 16 mil - Diário do Nordeste",
+   "fonte": "Diário do Nordeste",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZVY5ZzQ4YWdVQzhaUUJxQXU1eTcwdV9YVUVzREJXaVBpNWYxTWhuVDktaDJXSEo4MEVZRjVEaEl0ZjBrWklJRG1ZN0w0X0l1Zl9haEwySmNwWGlOby0wRXQxazZVZ1JPRjhuTWFIbDFtSlphUGdWMDdXY0VQTkJMZHhybUZWcVFzUEtQS0duUHh0NV93TjdyZm5wVVJpT3FuOHVscTFjaHdtemhfc09heVlkVGxXQzRJMy12Zg?oc=5",
+   "ts": "2026-10-22T13:24:09Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "IFRS abre seleção para Professor Visitante de Matemática em Caxias do Sul - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZjdfd0ZtaWxhN0ZwV2dlWTF2Y1ZQbElNVkhsRkJiUHIzOTY5RmFFblEySFJlWWtFTl9YMmtVMVRnWE9TTXkwQkRMY1lCcl9kZE95TzhXQWVOa0M1ZEQ4S0JiSmlENlJ1RHBId0FDQVJ2Nl8zSTdFdVhpaUpOb3VUVlZqV0FCUDZEb1RBeHRGUXRPbEVtV2xteGxxOXhvZDNrZG9MOFZhTjB5dnZRWkZIV3ZpQmU?oc=5",
+   "ts": "2026-10-22T13:21:32Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Prefeitura de Santa Maria de Jetibá - ES prorroga inscrições de concurso público com vagas para guardas municipais - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYm1Wd3JFcjViN2lWWlFqdGdTTUtjVEV0cGJTeDF4TndaUl9aaDh0LVVweWxublRrbXpKTWw1LVktRW1za2FBZkJJYXFYcnlZRE0tdlZ1YkZORVJOU2h0TXMtQUphR0J3ZkdBeGpnaU02OFFLSWRiY3R6ck9qd3VMdVRzYW1CSXh0NFY3LXdrTXZrZmJIZ2hLa29laERwQzNuOXNqd1dsREFOTVFOLVdxLWNZTkd3SDY1VXl5cDJoaHU1ZElweFVMS1lRLVBHOWVMRUE3eWJmdFZ5d3JhNm5zMnA5dVpkZVVY?oc=5",
+   "ts": "2026-10-22T13:14:23Z",
+   "uf": "PA"
+  },
+  {
+   "titulo": "Prefeitura de Carlinda - MT abre processo seletivo para professores - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT2hoNkhkcFlaT1JCbm5scUJHaDFpbk1UcWpvd0doTGhxY05ILWhlYWw2UHBQSC1zLWZCb3RKdnc4ajZmemlfbVJycmx2UlY2T0ZrUy1VeEVHZmgzZ3pvbHVheG1IQ2NGTHlubnRXSndac3pkajByYlcwejdkdkxzd3g4TFJ1TnZWaC1wQ3c3a2RnclFCVkRpYXYyMEh6QTJ6QjA2cURnRkxlUQ?oc=5",
+   "ts": "2026-10-22T13:14:17Z",
+   "uf": "MT"
+  },
+  {
+   "titulo": "TRT4 - RS abre concurso público para analistas e técnicos judiciários - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbHN3SDZ5eGlEcW5NZEd0QldCWkdzcjNaOTR6eEgtdGF0bmJFc1lNZjhKMVNBUHZPQTc4Mk5IUVptZXdkWEpDanBIRXpxbTRpR2syd293XzdsQjZJSVJyUnBmRVBtcjJKUHlFOG9sbUdrRDNsdlNUazF1U2N1TFVxYVVlSUdQQW5RZ3gyaFZGWlMzdnhCczNhMU8xaGlTT182MVc2Mk80Q2ZpekI1?oc=5",
+   "ts": "2026-10-22T13:08:11Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Prefeitura de Onça de Pitangui (MG) oferta salários de até R$ 14,8 mil em seletivo - Concursos no Brasil",
+   "fonte": "Concursos no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNkg3eVFaNFpna3JfZFNfTHNuZ3FHZllRMU44R211Wkx2N0JKZWIwdi15VFJ0YTE5U2RvWF90eFU0aTZPRVR4Ym5SWW5BNWlWSlVlaHREWDV5dkhnS3BQN2lNLXIxby0zM1ZNT1Z3NXo4X3BfdndJVUJfLXF2UnVOMnJjT3dSaExvNmxZUEdkZ1dIMHNoandscEdDel9zWGlSNFpCRUwzWTNDc1lvQS00MEl6ZEZ6TGpFWmNqeG9sY3JvVng3WW9STW54RlI4UQ?oc=5",
+   "ts": "2026-10-22T13:04:36Z",
+   "uf": "MG"
+  },
+  {
+   "titulo": "Concurso TRT RS 2026: edital publicado com salários de até R$ 18 mil; veja vagas e inscrições - Quero Bolsa",
+   "fonte": "Quero Bolsa",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1PVmx6cTc0eHktblZXZU9JYlJKdzZlSXJuaF9pUEZYMk1BMXo3R3JuVHhZLWpibW5HTmpHeFAweU80czl0U0NwUG5HbzczUVhRYUFudG1qMXBOZ0ItMzJjVUo1THg3SGpNQnUzcm5uVEwzZEdVT2ZfTXpqUQ?oc=5",
+   "ts": "2026-10-22T13:02:36Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "TRT4 publica edital de concurso com salários de até R$ 18,3 mil - ncnews.com.br",
+   "fonte": "ncnews.com.br",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTG5VQk9FTXdrSlJ6dHk0MVl0X0VyRmtfdm9iRW5acTFBWkhyWk14SDVCV25uTGNmWnpUMnpJWUpibTRfM191Z19HSVBmaDhySU11d0tWdXRHVVN1a2RPQS0wNnptQWI4NGhYaExhSkhiNE9Cb01kVTZlWXFnRFRuTGFBYzU0WXNidGV6SW5Hbw?oc=5",
+   "ts": "2026-10-22T13:01:06Z",
+   "uf": ""
+  },
+  {
+   "titulo": "São João do Piauí abre seletivo com 590 vagas e salários de até R$ 16,8 mil - Portal Piauí Hoje",
+   "fonte": "Portal Piauí Hoje",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSktpY25uMzNpc1JidTJBRG1XWkVtTFJaZEFOSlRMdXFVY3djQ2wyTkJWWEs1S1hwcGdPaUZ6RzVQUUhsQnNXb2tGajJuUFBYZlNNS2tjc0hqTFhYYXg4WE13Y1pGUDFDRnl5Zm1pMGtfUEN3WGNmQWJtNy14Z1RBbTNLZ1llejRoZjRnUWJwcDkxNVNwWHdtVHN4a2c4Z0xQYkZZeW94SmlxaFBJQUg4VTEzWkxZQnBOTnF1SmFzbkp5OWI10gHKAUFVX3lxTE1Xa01IbThESC1iV3loeXRhbDBsdFBPWXl2TmhVZjVJOU1jSVJha29ycVVid0xwSVE0S2dzZzFXQUNZUzE4RFM1R1gzcU4ycHpjdXRHb3lMbjJQd2RnWDhjQ2JWYmlmLU5rajNQeXkwTjA2ZWZ1eE9IZmpEY09iaFZRcVV3clhHTVIzTmVGdTVsQnJPREFFRU5rZjE3dGZMS0Q0Z0RJZFNmRk80dkRHWUREVF9aWS0yS190WFoxUTRmSjBMV3lZSk1XM3c?oc=5",
+   "ts": "2026-10-22T12:42:10Z",
+   "uf": "PI"
+  },
+  {
+   "titulo": "Câmara municipal lança edital de concurso com oito vagas e salários atrativos - Imprensa 24h",
+   "fonte": "Imprensa 24h",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE50OGdpUlJKMnZ2WFFESkM2Zkl1bWJhTUNhR0lfSGN3RGhwRmx5a0lSVzYyY2hVYUI4anZVb0RZQVZmWkVEUmFSN3RZUXhISUUyQ25yM2QyajV6X2o0TmtzNzZfM1QwNWdRcG1V?oc=5",
+   "ts": "2026-10-22T12:41:28Z",
+   "uf": "SE"
+  },
+  {
+   "titulo": "Instituto paulista abre 98 vagas para pesquisador com salário de R$ 9.052,47, taxa de R$ 150 e prova marcada para fevereiro de 2027 - Revista Amazônia",
+   "fonte": "Revista Amazônia",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNjFSeHU4THVibW5ZTks5S3VmelMwWEFBbDdCNWI3U2hNU0d3YVlWcmV1c1BTZUlqWVVFTW1PNjJ2S0pGaXc0Z3pBSEMwek5yUldXQ09jOUVzelNRaTNuRDR2Wm9oS2M1aUdrZDBMb25ncG1OaGk3NUtTdkNWczNIczZ1ZERDQQ?oc=5",
+   "ts": "2026-10-22T12:41:00Z",
+   "uf": "AM"
+  },
+  {
+   "titulo": "TRT RS divulga edital com salários iniciais de R$ 16 mil; veja como se inscrever - LeiaJá",
+   "fonte": "LeiaJá",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR3I2RVNnQ2tNcXlNZzFXODRxV0toYUJma2VtUEd4X0I5bnZJVEJZLTN2Z1VtZkFwVjYxNnVNV000RG9WZ0s0bTE2TmhObFBsVEpYdVlNWi1vbFl5Vi1oUmw1VkdtOW0zX1RtdklvQ2Y3QjBkTGZaU3YwQlQwZzd3Vk1jcGRBSW5uODJvWWptdllqOXJGZUR0OFloWldVak5XeTUyWmlkbVBxVkZ2Znc2RndhX0NURklzQUZTNUR0ZU8?oc=5",
+   "ts": "2026-10-22T12:35:00Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Prefeitura de Luiz Alves - SC abre concurso público com salários de até R$ 8.889,30 - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUF9zNTJkZUhXLXd0bm9uc1ptbXNKVGk5NGJlVlo1R3gzbzB3NGtqYUxIR3hIQXVUM3BmeHVlcURqRnNmbEJtWmJ1UUdGRmFrSm1ETlN3dGh1aEdNbEJQR0hHcTNteWxoTXJ2dDctUFowUllCX0hGSUVDY05rX0pzR3NSTUpad2MtNFA2V2dSSmpYaTNMMWRFUGJFZUlWWFJVWEhvQ21XRUhRaHdWNUVxWmwzVDBzQQ?oc=5",
+   "ts": "2026-10-22T12:34:32Z",
+   "uf": "SC"
+  },
   {
    "titulo": "Três promotores pressionam gestão de Eduardo Siqueira a anular novo edital de terceirização das UPAs - afnoticias.com.br",
    "fonte": "afnoticias.com.br",
    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQR2MyUk50eUpIRlloWlRmZGVSeEpFM0J1QnJSWGU5dVJYaTVBcnQ1TkNERUNjUXhndDZqaE5Md0lLemJnYlp0QjYxVlhPRUtVUnE3YnR0a0UwTDhlLXh2RHd6VWRISnBJOFpGWmpOR3dHZlFaV2Z4UHdFTTQ1blFUMFhzVldzZEVzZWtnY2F5ZTdIdVQxQ3lHbXdZMDFocE5Xc2Y2akpHMnBiQ3VKb0NnckVRMVpNUzZ5OGsyZFZWRVpVN28wRWY4MXI4UFNGS0wyME1yVUVpSm9nQWhpXy1BVG1B?oc=5",
    "ts": "2026-10-22T12:27:00Z",
    "uf": "TO"
+  },
+  {
+   "titulo": "Três promotores pressionam gestão de Eduardo Siqueira a anular novo edital de terceirização das UPAs - AF Notícias",
+   "fonte": "AF Notícias",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQR2MyUk50eUpIRlloWlRmZGVSeEpFM0J1QnJSWGU5dVJYaTVBcnQ1TkNERUNjUXhndDZqaE5Md0lLemJnYlp0QjYxVlhPRUtVUnE3YnR0a0UwTDhlLXh2RHd6VWRISnBJOFpGWmpOR3dHZlFaV2Z4UHdFTTQ1blFUMFhzVldzZEVzZWtnY2F5ZTdIdVQxQ3lHbXdZMDFocE5Xc2Y2akpHMnBiQ3VKb0NnckVRMVpNUzZ5OGsyZFZWRVpVN28wRWY4MXI4UFNGS0wyME1yVUVpSm9nQWhpXy1BVG1B?oc=5",
+   "ts": "2026-10-22T12:27:00Z",
+   "uf": "TO"
+  },
+  {
+   "titulo": "Concurso Seduh DF: 250 vagas para arquitetos no DF - Blog Gran Cursos Online",
+   "fonte": "Blog Gran Cursos Online",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zRDlwaTZRa0NzRm9adG02by10NnZaU1M0ZHJIb0U5YVJ5R1k3NUpKMHhzZUJJZWk0QXJIazFGSlR2ZHBjUVlneFAwS05hcGlXbDc0ZGhIWXYyRXc5bkc4TkJWUm85Nk5sRG9J?oc=5",
+   "ts": "2026-10-22T12:23:16Z",
+   "uf": "DF"
   },
   {
    "titulo": "Câmara municipal em Minas Gerais abre edital com vagas e formação de cadastro - Imprensa 24h",
@@ -44,11 +338,25 @@
    "uf": "RS"
   },
   {
+   "titulo": "Concurso Quedas do Iguaçu-PR 2026: Edital abre 140 vagas de até R$ 12 mil - Ache Concursos",
+   "fonte": "Ache Concursos",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNemUxblY3NXJ3eUZwY0JqNFlkQU5saVB2bjg3UDdvS3M5c0NvcmNxNUZLWFdiVjRLVkhZMHBSbjZoZ296QjE0Y3BHQWFFcTE3SVlwMEo3Sk4xZDdlNFJPZW5Pd1BXQUlZZ2c5UjloMXBGd1daSnl5RGxSZG5XSmZCTk9qd2d3aVprZWNOMmpOYmdmTkVvamh6Y1JyZnlQY2QyMDcyVUtsbmRRXzBPR1Bjb0VFT1lTaEVkdFg4anRhR2hkaXE2MFE?oc=5",
+   "ts": "2026-10-22T11:55:50Z",
+   "uf": "PR"
+  },
+  {
    "titulo": "Edital Prefeitura de Nova Xavantina (MT) abre 137 vagas na Educação - Concursos no Brasil",
    "fonte": "Concursos no Brasil",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOXy03bElJN1RNNFRqTjYzTy1lNm9kRVh6Snp0TFFZTHRHS0RtMktkT1dfbkY1aVdpc1ZZYUNXV0h2NmtQOVVCdFdnT180MTRmU2JHTjBOWTAyS3hmcU13c3RwRzJXZUJfLV9RX2FJeXpQbWxfSVlxcm5qMTZDUFdVbF9TWVlodjBBQnc1SmE4ZmNrQng5MlN3aGlVTEZLaGN1dkZsT1ZVZWNwMDUtNnVmUkVOUktPX002MDJuNA?oc=5",
    "ts": "2026-10-22T11:52:26Z",
    "uf": "MT"
+  },
+  {
+   "titulo": "Concurso Receita Federal: banca pode ser anunciada a qualquer momento; veja o que já se sabe - Diário do Pará",
+   "fonte": "Diário do Pará",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcHVHdFJMRDRaQld2ZjNKVDRELTMyM1BBSmptQmRCMEJCcW5zZ1BVb0ZRUWNwQ2RYM0xLZ1ZJeWw2S1UyM2Q3cy11ZTNCcnoyc0RYM21JMWRCLUR6S3VCb0VlWnZfeEIxZFJCLW1RZFRfN0c0UElyTUowUEhYTjVYSWtmcTN2ZFVuaTdkUFktQWNqN053UERzRVdtbzB4Y1QxLVNETmxnR2M2bUFmeUJVNFRRM1ZXRXVtcUNnSENOLU5pZWxQRE9F?oc=5",
+   "ts": "2026-10-22T11:48:19Z",
+   "uf": ""
   },
   {
    "titulo": "UFU - MG abre processos seletivos para professores substitutos - PCI Concursos",
@@ -83,6 +391,13 @@
    "fonte": "BR104",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNN2N1djVwaWx6dWlzN1BqOUdIUE5HbkpyN00wVEp0Yk1KOXp5LTJYRUJyQ1FQRDh0QnF6dTk0cXYxaFVabzJmT1N0ckVFRnBHdGg4MU5VRmU3WVVXejFlRlRwOW0zUEprUjJmSXZGNlJ6d0tkem80SV91bUFGOTUwRTZnaDk3NWJZYWJjb2tybVdQZDVjbmJGaThNM0RxSmZlZDZyb2ZIa05VWXg0NDUzeERKOUJMbks4?oc=5",
    "ts": "2026-10-22T11:37:41Z",
+   "uf": "AL"
+  },
+  {
+   "titulo": "Concurso em São Miguel dos Milagres terá oportunidades em diversas áreas e salários de até R$ 10 mil - O Alagoano",
+   "fonte": "O Alagoano",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQc1ZzdnJVRFRjZU1yWGxHZFpxajNHTDdJUWJMc091UnhTejdKQUlXYlRnVWVrS3UwOHpuTnNBVVZVTndQR2NSLXFJY3hJczZpcUhfTWdhZ1huai1tX2ZmRXg1RHhLNHRMOXphM1NaQklMMGpBc1NBREZrN1BQMVFIcnZvUzFVVkRyV1pXUEdIWmpWYng1eHZHYnExbXdDWGtXaXp5TFpEVHNJTlJZRmFDcEMtYWtYLTNyUGhTV3NLWl9yV18yS0hncFF2Tjd0YjNhNjlONGMtN1JBZnQtX3V4WFVVMTM?oc=5",
+   "ts": "2026-10-22T11:33:00Z",
    "uf": "AL"
   },
   {
@@ -135,6 +450,13 @@
    "uf": "SP"
   },
   {
+   "titulo": "Concurso TRT-RS 2026: Sai edital para Técnicos e Analistas - Ache Concursos",
+   "fonte": "Ache Concursos",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTXREMTQtR0RMUTZnSGVEdnU1aTlhZEF4VDZSdDh2Vi11S1dtOHRiaG1rNjN5dVN3aTYxbU5XWjllWnZiMmJ6bFpSbl9Sd2Fjb0kyeWRHaWd2MWw3STdqdlpOTTRGbTctNEEtMm5SQXZ1SjRzenJfSThNb1JlczRXSTV4ZTlHLS1TRm5WVWdzYllGUUNxRXRiVDVsS2RoekxNZzZMOXhvOWJlekpMbWM0VDZpdmpyNmxsbmpCck1GdmdnSXpK?oc=5",
+   "ts": "2026-10-22T11:06:00Z",
+   "uf": "RS"
+  },
+  {
    "titulo": "Prefeitura de Cristalândia do Piauí abre concurso público com cinquenta vagas - Imprensa 24h",
    "fonte": "Imprensa 24h",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uTkZCdThZUHZVNFdXWG1tUkdtdi1DREVoSFdmUTNfaXJnTUVMNEJZcktKeDBJRTBBX2pQcElPQ05kX1lqcjZaX1RhVThvakJmV0Y0V0VpY1lVclU0TUhpQ1Z1akRsY202VU9ocWhpc2E?oc=5",
@@ -147,6 +469,13 @@
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVEJTR19vWU10VE9fVHM2d0lYQ2kwOHUwN2g1dXcwNE5YNkpEaDkyYl9ydk90em02VHlVSXltYi1Bb0FZanlvWk9JdDQ3UkEzbVJ0bHplU2F5YkFMcjJuZmU2cFhqcGd4azRaTDRmM19yclIzbWVGZ0h2eGRPR0pfVWlJQi1DdlNBT3FUZGh5TUd2WW5fWXVyUUNpUW11TlV6cEw0MDg2dw?oc=5",
    "ts": "2026-10-22T11:00:00Z",
    "uf": "RJ"
+  },
+  {
+   "titulo": "Máquina pesada: Marcos Rocha terá de apresentar ao TCE plano de substituição gradual de cargos em comissão - valoremercadoro.com.br",
+   "fonte": "valoremercadoro.com.br",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVmpDMHFWeU4zN1hxVGUtVU9LVW0tQ2xGaEFVNy1LWElIYjZkYmgwRU1mSkttQ19aRk52ZkkyX3pwZHNjZ0tScnBGTngzN0RvV1NOcVJqaGdGWmpqTXZ5TkRQUEVmblZqUmZZNWhXOTRSbVlzTDdnS1NVY0hDWHhXTG9SektreVhGWkUzTHY3Vl95ZTMwOHQ0OEY1dTI3WlVDWWdwRjFvTzVEa1pvTGtNNWVPM2NqV2M1V0M5Rl9YZlg1bk1EcXZrcTh6YlJkelM2Q3VnY0pmN2w?oc=5",
+   "ts": "2026-10-22T10:59:17Z",
+   "uf": "RO"
   },
   {
    "titulo": "Santa Catarina empossa 92 profissionais da Educação e cria reforço inédito para apoiar escolas - ClicRDC",
@@ -163,6 +492,20 @@
    "uf": "RS"
   },
   {
+   "titulo": "Edital Cristalândia do Piauí-PI 2026: Prefeitura abre concurso com 50 vagas - Ache Concursos",
+   "fonte": "Ache Concursos",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU3l2OTdBYk9VSjhWY1lKdWQyZ2h2clNsSzVvZGlhRVpGSGs1elpNbE81NDlVc0NVZUVsR0hyYWZib1lkYWg3YVgyZUF6NXZYRWZnTDlZYmtXNF9idkk1QXBoNlJPX1Fzd2dmeTU5dDBCZVpEaWJ6ZFo5UFFyWVlVa3Zld2tSZXVuYmdhNGthbFNuVnF6YW1XREhaMjhGLTh2NGY0dFZacjlqZkszYms1TXhJUEY?oc=5",
+   "ts": "2026-10-22T10:50:00Z",
+   "uf": "PI"
+  },
+  {
+   "titulo": "Governo do Amapá reabre inscrições para o Morar Bem Amapá, com subsídios de até R$ 55 mil - Agência de Notícias do Amapá",
+   "fonte": "Agência de Notícias do Amapá",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSlM2dUE2dDBJdG9pM2QtYy1nZUthWlpNYm5tclZscTNRV1ZkWl8tMXBBaXR1T0pJb093TzhCdkQ1UjVOZ1FfOWRTcEx5MmNQeGNGeTY3MkFheFNMWXhuNmlZX2NwTzRuY3o4ZWN0czVVT2kzUXNZSm12U0JsalFPUC1Jb0x0WmhrNEltdGZEU24tX3B5aHdjR05JbzV6TkxDWkxiSUlnOVdfbHpfZmIzd2ZwcVFuWloxaFc1YWZfaXNlVVl4ZjB6dg?oc=5",
+   "ts": "2026-10-22T10:22:20Z",
+   "uf": "AP"
+  },
+  {
    "titulo": "Edital TRT RS traz vagas com salários iniciais de até dezoito mil reais - Imprensa 24h",
    "fonte": "Imprensa 24h",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5fd29lcHBtUS1OcDZwemdOaTByaTluTk5uV3VxTHM5dk9GSTVtNlNZMU9iMl9xX3REemczMEtjVHJha2JyV2FRbUJJa3NHWmFMR09fNHcwNVpmcUdaMTZWWXFVdU85Mk9lM1RrbVViUFd1WG8?oc=5",
@@ -171,6 +514,13 @@
   },
   {
    "titulo": "Edital TRT RS PUBLICADO! Ganhe até R$ 18 mil - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNck45bjFSU0s1XzlJdWh1cEtKOUthamxWSmROUTctY3hya0toRGF5Mm9FRllhd0xmbWtEQXMtUTZkN3A5YV9zaFY5cHpzQUJvSEc0NmNhTG9ydTJ5b29SR0U1UkkzcG1fTHFzZGFKc1R0TGFxWHI1aUQ0N0RzRzlRWnF1eUzSAYoBQVVfeXFMUGJWdG40YXlEdm01ZWEwdThYcVNfaXlNTFpTaFhDT2R5eTM5ekFodXpmaDQ1ZFkwczlubWVKRTNmX2cyZ0Vjb1VxS2psaF9MeE91YXI0UUU3aGtmQzRkaGtWSERsVzgzRmdyV2o2TTV1Q1pjTy1MZVhXUW44UWtIUVNqYzJmREJmZjBR?oc=5",
+   "ts": "2026-10-22T09:17:47Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Edital TRT 4 (RS) PUBLICADO! Ganhe até R$ 18 mil - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNck45bjFSU0s1XzlJdWh1cEtKOUthamxWSmROUTctY3hya0toRGF5Mm9FRllhd0xmbWtEQXMtUTZkN3A5YV9zaFY5cHpzQUJvSEc0NmNhTG9ydTJ5b29SR0U1UkkzcG1fTHFzZGFKc1R0TGFxWHI1aUQ0N0RzRzlRWnF1eUzSAYoBQVVfeXFMUGJWdG40YXlEdm01ZWEwdThYcVNfaXlNTFpTaFhDT2R5eTM5ekFodXpmaDQ1ZFkwczlubWVKRTNmX2cyZ0Vjb1VxS2psaF9MeE91YXI0UUU3aGtmQzRkaGtWSERsVzgzRmdyV2o2TTV1Q1pjTy1MZVhXUW44UWtIUVNqYzJmREJmZjBR?oc=5",
    "ts": "2026-10-22T09:17:47Z",
@@ -191,6 +541,27 @@
    "uf": "SC"
   },
   {
+   "titulo": "Concurso CRBio 1: provas em 29 de novembro! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LVHRJaWpad3VXdW1uanMtTHdoSXFuWWw2Uzg5UVk4cnBqTnVqY21xY1U4RmlEM1IwMVRySk1DelhOVmhQNTlzRU9BNktidEZ1cGhVVDZ3WFU2VU9CQWFMRXVLR3dKa3Fy0gFuQVVfeXFMUDV1QXI2SlhjNExTa3RldXBxdGxSV05DQ0FwQ25KQXhQemZ5VkFSUC01Y0JqV0N1QzdDVVZIVWVUVGk3b0ZscjMwTFRycGFxMWZFY1dod1FPa0JLaU1BQ1Jzc3pHN1JSUTRTXy1Hb1E?oc=5",
+   "ts": "2026-10-22T07:44:00Z",
+   "uf": "MS"
+  },
+  {
+   "titulo": "Concurso Sefaz AL 2026: 100 vagas e inicial de R$ 25 mil! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA5eG1pU3VBSjlXRmVmYmxpSG9jS1QtNG9LbzZZWnJHTldja2VLdmU2Y1NGbzNkREFnZ21fbFU0VG1tX3NXWE55LTlSY2N2NW1Wak1WR2FOTVJQVjI4OTM2QTFhczhSRUczUGfSAW9BVV95cUxQd21GM0MyNko1U1pSVnpkWTFqVFJMZ2twc1RxaDN5djlLWEc5b25QbTZOZ29EbEZRQmVNdGZZOWZaZ0toZkoyaWM2ejMtTk83elBvd1lMLU8yUmxZVnlhc1MzRzdTUWg1MTVSODdkbUk?oc=5",
+   "ts": "2026-10-22T07:20:00Z",
+   "uf": "DF"
+  },
+  {
+   "titulo": "Concursos Sudeste: os EDITAIS previstos nos próximos meses! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XQ1dXRGM2YkZZeHFvSmlKZENTR1E2Vm96ZzZhZ1ZGRDRDdng0TkpscHFyM08zc3RsOU5rMk1zZ2xKUXQweVo1cVVfWHZSVUFyZTBZbmZzWmtaRkprQVN2dUc0dktRZ1hxb3c?oc=5",
+   "ts": "2026-10-22T06:40:00Z",
+   "uf": "SP"
+  },
+  {
    "titulo": "Concursos TRT 2026: confira os editais abertos e previstos [ATUALIZADO] - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWYXR4NDZEZnRxNHlpT2I2TGwwbzdkdjREWWNyUFE3WFpZMmZZMzYtVVpOSzhGdFdxUTNkZXF4RzJIYk04ZUtXS1NIMmJ0RFJ0MVBlUFlDZTVPU3Z0cVc4R21vem_SAWpBVV95cUxNRUltQjBWb01vb0k3VnoyNFZVX2t2a2YwSWMyUmlWeTg5T0pNTTVISnFselBJVVlydk5xVzRNV3Rzb0VVY0lfaXdlbktnRS0wdGRJMjV1NmFERnZMalZ3elpGeHJ3Wkg4NF9n?oc=5",
@@ -205,6 +576,27 @@
    "uf": "TO"
   },
   {
+   "titulo": "Concursos MG 2026: EDITAIS previstos para os próximos meses - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwSnhjOWhWam1ObnN2cm45VlU2dDhQV0YwS1ZybTRJVG1nX0J0XzkwRDZNQWJ5TTRQVDJLbERDYl9meFUwRzhab0FicjJ2M2dZV1lPVzhNNU9mOWRfQ2hvLUE5TdIBaEFVX3lxTE43Q3NhcENkNkN1UGoyU1NWWHFVQjJYSjhwa29Reno1RzhKNXJTUDc4OUo5RDFMdGluV1h6LUM1REZ3RFpPbk9VcHRub3BiU0x0WFdWTkR6VmJsX2FJNDdpbEpwZDQydUhi?oc=5",
+   "ts": "2026-10-22T06:03:00Z",
+   "uf": "RR"
+  },
+  {
+   "titulo": "Concurso TRT MG: comissão formada; novo edital em 2027! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LUW5UdnZkMDY4dzBhX2VfSTRadE5Ya0VlNDZsVzhtYXFsVmo5WUpWM3RMRnlwc0Z4Sm5RR25hSExXY2hyZFI5d1JhcUxaMHV0Tm5va3hhWnBhVFAtYVN6bzh3YWxNbk3SAWxBVV95cUxOYkFMMUlYVXR2Q1V2VjV4MlJtMmJaUndBeGNfM2M0aUlNNF9UOFhVRE15TlVpcE5SVWh1UVpQNEVkaEt0MDNCTWZ4X2hoRFdDc2RDQmFTcUtncGgwWm5uWnFRRGVnNEYxcTZ0TGw?oc=5",
+   "ts": "2026-10-22T05:54:00Z",
+   "uf": "MG"
+  },
+  {
+   "titulo": "Concursos RS 2026: as principais oportunidades previstas! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBtVXNfdm5JM1RLZEVxYXVxck1YZlRoUkVEblVQa2Jib2Q2U20wVXZXdGk0VXdVSmFlTlU5RjhKdFpBY2VPMDN3RUt2QjVOMERxSWZMbGhteEEyNjJLSHY3VXFna9IBaEFVX3lxTE15TVN1SnZsQnotODI4eHRIWllid1FqZUJ5Y2s1T1l5NFY3THc0MnE2TzRTSG1Id19EWnY4T0I4WjlyNFBTblBZUTlUcm9KdklPb2JXeFRCSDBsZklvQUZDODg5VEtrS0lS?oc=5",
+   "ts": "2026-10-22T05:39:00Z",
+   "uf": "RR"
+  },
+  {
    "titulo": "Concurso da Educação leva 92 novos servidores para a estrutura estadual em SC - Rádio Centro Oeste",
    "fonte": "Rádio Centro Oeste",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPczBvXzg3OVB5RERpVWxHQUdTZjc1ZHNiaEVsdW1YNERwYmhPQ3RUVHA1d3FBcllXVFkwTEhpNFpmZHY4OEh5MjVNX3dDNFM1Z3NSblIyVFE1aER0eUZnUjBiV0dhbG5xeWl5dWRZMEM4dXZScEI3M2Fpem5ibEVNVmdYOHZFSklMSnZhUUxyMmZlejlEUGhpbTQwb1VnblNBTXpLdm5OVm4waTFNVGhldGJ2VVQ?oc=5",
@@ -216,6 +608,13 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaW9KQzRRaG1uRVZpd2htdUNwZFNhRV8zeURFa3lZcW1pODVWcWxWR0x5NV81MlI3R1JFSzBRdzdUcjUySUdUUWtKYmdWQkFWaDZialJvYWVxNk5xeFE2b2FBcTB3ZUpsQUtHVXA1WHVTbV9Wc214RnNhdWZYX2hlUA?oc=5",
    "ts": "2026-10-22T05:29:04Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Concurso TRT RS PUBLICADO! Confira os salários - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4VmFaWE1ENG1Ebk1WWlRmSVVSVHRmbHNnbzZMcWtuMUhmY0E5UXgwOHY4VU9hT0dmcmNGVVVnQmR2LUZwSUptQXdMQ0JMb21kS0tqWjdhZDFfOVF6RXNRMktuQm0tMEXSAWxBVV95cUxOTE0tU1diV2pmdTdGOXNHTWcyOVF5VnRWeEM3dXc4VTlUUmJjUHROVk4yd1Q3T3BnOEVvUXlvYk45djZtTW53T3dyczFZQUhWUmhYdzR2b2JPa0Q0YVF5WDlyNUlGa0JUOWw2REo?oc=5",
+   "ts": "2026-10-22T05:29:00Z",
    "uf": "RS"
   },
   {
@@ -317,6 +716,13 @@
    "uf": "SE"
   },
   {
+   "titulo": "Governo de sergipe abre mil vagas para capacitação de jovens no mercado - Imprensa 24h",
+   "fonte": "Imprensa 24h",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pMF9GRkpPZ292NHZPMWhzcThHdHNkYS00RXZydlBXbmlUczR3U3EtUnZZUjZwTHFzYkJMaEJVT3ppN0tZZkFvbGdoWjhVMEdiV3dMbDVuX3RzVU9lQ3V4N2JiUWhucnExV0FSeA?oc=5",
+   "ts": "2026-10-21T23:15:17Z",
+   "uf": "SE"
+  },
+  {
    "titulo": "Edital Manaquiri-AM: Prefeitura abre 207 vagas via processo seletivo - Ache Concursos",
    "fonte": "Ache Concursos",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYk1SRVJWLXo4V1JiMzZoUDY2UUNQNzNldm1GVjJmUFRMZlFHREF3MEUxT1paVzVqLXJOYk5OOFpQb0VCNXBzR2pzVWtJQVZ3NlVWVm55dG4wbEFOX2pOOWhpZHRNNkZnRTluSDFOZlV4bV9LQ0FKaFkwUDU3aWZNNTM2TkNvbmFOUkJxcS0xWDJoUC1uZ3NXLW9SckdJV015Z0g3UkdR0gGrAUFVX3lxTE44REpPd0xmWFNFamtWdUg5SWk1VEJSdFZTRWtReENvYUVPRkdjQzNTSEN1aTBwVFJvM2MtYTMtenZjZmI5cnFqNHBib1hOb3l0T2Zqa0VnSXVuRk9uaDRhZTBtTkc1NzQ0VWdwQXlIRGUzOWlWaHhuNjYwa1I5a2ZCWWJsSzhiellKNHM2b2h5b29hTEh6YS1LWGdVUTJMcWltdFdDaUNjSHM1RQ?oc=5",
@@ -329,6 +735,20 @@
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LUERrRXlsVmJ3ZjRfRkZKZFN4VmNlOXlObmU1bWxxN2dUZTAzSFFvSWp3RUF1VU8tVXFHZ2Y0NWhnUlkzZlA5UzM4cFZYcUFaOTFhSFlVQnc3VXh0WnNVa0ZNcndYZWV3Y1NZdUU4MlJqUQ?oc=5",
    "ts": "2026-10-21T23:07:18Z",
    "uf": "SE"
+  },
+  {
+   "titulo": "Concurso Arraial do Cabo Saúde: vagas para ACS e ACE! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4ycGNCc0ZYTDNIU1Jzc0NhMWFvbUhMMlpockJxTElUMFNQMldtTnkwVEd5dWNDU096bkZwVUtWU2VEMWl2QjlBbjZxTzFTekwycFk1MlJwM20yV0ROYWRlSUFyT0hJWUpZUFBpaFVVblhSZGtyM3hjamxCYmpzSW_SAYQBQVVfeXFMT0phMEczdE9MbjVmbWQ2OTRLQ1Y3YzdqczVKUmNkRXI3SWNoX3NBbzFtTUEzOHZRNjlwMHBkZDBramFWVjhWZmxhUldmSFBhRG5xMHNrbEhwb1FSLWhvZGxXaF95OWQwYXpaMlpZbnduR2t2Ymw0ZzhRTW5tckVsMXB4SUdf?oc=5",
+   "ts": "2026-10-21T22:59:00Z",
+   "uf": "RJ"
+  },
+  {
+   "titulo": "Concurso Câmara de Capelinha MG: inscrições encerradas - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0yQVJTb08tMnFKS0R3VVJjWHpKbXRISndSaUNvZVFoQ2JVRkVZd3ZwdmRjUmpWZ3BpZnRaWkhFY1pNbkRibW9VQk1tVkExRzlrbHJQNTc0dTBNNXhhM3lEOXF5SHVmeGJsdWxMeVJCb2FobURoZGtJddIBfkFVX3lxTE9Ta19ZZ3UxYmZkdmw2UFdqRkppV3dDQnl6RVVVRmNUdTlqYWJnTldRWW5VNU94U0x1RFhZTGVmdWRZMlRYYll6TVFfZ2JrM1dyV3BQbjBlOFNMOW9jV29RelFpN2xlZEhBYVdac0hvdlpqbWJEMzIyR0lvWDIxQQ?oc=5",
+   "ts": "2026-10-21T22:59:00Z",
+   "uf": "MG"
   },
   {
    "titulo": "Câmara Municipal de Areia PB abre concurso com quatro vagas para várias escolaridades - Qconcursos Folha Dirigida",
@@ -361,9 +781,16 @@
   {
    "titulo": "Concurso Câmara Curral de Dentro MG: SAIU EDITAL! - Blog Gran Cursos Online",
    "fonte": "Blog Gran Cursos Online",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQzdkU0dqZXZOcEJQaU9oSWlOdi0xYlFjRHAyd04zNTlHMGlVVy11N3M1M0JfZ2hrd1R1TW05ZElub2tXX2tvT3NBMGNleFhjNGpQaDFLY0N2ZG56blhtNjBXNGFsaTlCdzNxajJrM2ttQmdMazNsbERrX0ozRlVhQlRnYw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1qQ21kVU9xUG9wYUFwZjkzcm9TLWE0dXp2VFVSOTRCcWxNNnhIZV84M2lscGdCREM5WXN0MVE3dHVUdUlZT2Rwb1hWTHdQX2JXcVpWWFZsZk84SkRVYjBJV3gzYzFUTk1vd3dvWkR2VzNIc0E1LTlZWnR3Tm02dw?oc=5",
    "ts": "2026-10-21T22:07:56Z",
    "uf": "MG"
+  },
+  {
+   "titulo": "Salários de até R$ 9 mil: TJ SP publica edital de concurso para nível médio - Andravirtual",
+   "fonte": "Andravirtual",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM01PNWVsbmhuT2dod1RlNWRwcHhfcVpudlRXRnFtSVRpb2FQRUluUlk5NnBoY0Q5UWVBUHc5blFiakdDWEpBTjI2M1BubUxHMUkzS2d4WFpPVVVHTnU1bjI5Xy1CZVZZTzA1WWlkMmFXMTI3VkZ0X3ItNGg3VzQ4c3J0dDdQWVNvV1VFR2pkTDZxWFV0dHNiNGJBRG9KR2VNeW5YcG43b3hsbFZsRWM1UFNvZTRXMmxP?oc=5",
+   "ts": "2026-10-21T21:48:00Z",
+   "uf": "SP"
   },
   {
    "titulo": "Deputados debatem desenvolvimento econômico do Nordeste - Assembleia Legislativa do Estado de Pernambuco",
@@ -447,7 +874,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNkNrc0V2ZjFSUTltWkJkS2g2eGYyWlZQRkZSdGxwSUIwcHhCMjZ0cUFaTkFzUTdqUXFZX2dGeXY3RVFZeUpnYjdrSmhKcUJvZkE4XzFfcnV3SGpNQVE2MHNTT0oyTXNhUHpleDNSSzcyT085VjJqbURqVzRZM1FXOG5JZFh1M3lOY3hXUGRqUkRDUnp5SVNtYW1qWTBhd0czbnliODhIRDBVdjg?oc=5",
    "ts": "2026-10-21T20:48:27Z",
-   "uf": "GO"
+   "uf": "BA"
   },
   {
    "titulo": "Polícia Militar da Paraíba planeja novo concurso com previsão de 1.000 vagas; confira detalhes - Portal de Prefeitura",
@@ -475,7 +902,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE42NzBFTUFXeGFtVzNxMEdzY0tPRkd4Q3lGem1BRlMweEhwbjdRM01hZHpGRTQyMjJ1OElsTmhvOEFLdl9Qc2JjYk1kWUZoSzlndE84VHlyUng1NnA5bFNqRThDUdIBaEFVX3lxTE5fTTdVb2FvTDFaZkhxV25JQ3kxOWJwNklrX0xNSUVTY0lnbnFrRTVUUzZGSEEwai1FYnlaNk5XR3dhTHR6U3hnVXloTjM0MmJBREQ4by1LWktnU09YMV9wd08tdHlmM3N6?oc=5",
    "ts": "2026-10-21T20:19:00Z",
-   "uf": "RR"
+   "uf": "RS"
   },
   {
    "titulo": "Prefeitura de Serra Grande – PB divulga concurso público com 41 vagas. - concursosrn.com.br",
@@ -529,6 +956,13 @@
   {
    "titulo": "CAU/MA solicita impugnação de edital para adequar remuneração em concurso - Conselho de Arquitetura e Urbanismo | CAU/BR",
    "fonte": "Conselho de Arquitetura e Urbanismo | CAU/BR",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYkljek0za0VCOUNjeV9XalBrR1p5S1V4czdBeHEzVV9OejBlXzRnWm0yUkZTd3dVVHhNNnl6SnlSZlBlYkp2dGVFOE5mblZOTnR4VzFTWjhqbEFjeFBxWFd2MmFadk5EV2kzTnY1VUp3aUVFOVBtS2Y5OGFwUnJBMWVsRUhWeGtkU0xCU2hjQktIWlpBRDhuckNIRQ?oc=5",
+   "ts": "2026-10-21T19:21:00Z",
+   "uf": "MA"
+  },
+  {
+   "titulo": "CAU/MA solicita impugnação de edital para adequar remuneração em concurso - CAU/BR",
+   "fonte": "CAU/BR",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYkljek0za0VCOUNjeV9XalBrR1p5S1V4czdBeHEzVV9OejBlXzRnWm0yUkZTd3dVVHhNNnl6SnlSZlBlYkp2dGVFOE5mblZOTnR4VzFTWjhqbEFjeFBxWFd2MmFadk5EV2kzTnY1VUp3aUVFOVBtS2Y5OGFwUnJBMWVsRUhWeGtkU0xCU2hjQktIWlpBRDhuckNIRQ?oc=5",
    "ts": "2026-10-21T19:21:00Z",
    "uf": "MA"
@@ -627,7 +1061,7 @@
   {
    "titulo": "Prefeitura de Currais abre inscrições para concurso público com salários de até R$ 9,7 mil - Portal R10",
    "fonte": "Portal R10",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNb3dzU2tJc3JBQi1lZmdUMHVabEFISHJlbWUzOWdmQlVVQXU2MERNTnYtOUhtN2NkeV9ibmdxcm1UZU96a1dtWEo3UDFraVZLVlJ6cU4xT1lpNEFXSG5CRkVtaDh4QVk0NWY1aTh5UGlrTlBJSUhVQ0JNUHJJZzJRTDdha2tHLWhueFl6Uk4xNmNETUU0ZmJJT2hjWTZGMzUwQlRjVC1lVDd5STY1WGJZbnlucERmZ1lOaWotOWVpRlpmcjRzblU0UjVKcjZ4bC0zWlFDZtIB2gFBVV95cUxPWnJWNWNJNGd1aTlYM0JqMmVJYXRDUzh3R1VncUZpWlZ6VlZVYjBHRHFYY3Bkc2dZTHpKYVI2V2ExMEc5d2M5bXpmMEZTbWNLNDFHXzNWdFJOX2Q3ZXhIVTF6M2xpTF95SzE1c3RkS3FNT2NtZkJXNzlmaFNiNnBCaFVYekdmaEdGRlQza3laZG9XS0RMZkhqNkpDeTlRTkpFV2swNWxNU2xEUzBhbWc0ZS13RVVaUGpjLXVuRng1UWdkZ2hiVXdsU0ZjQTdrLVNwRHV2alhEWkprZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWnJWNWNJNGd1aTlYM0JqMmVJYXRDUzh3R1VncUZpWlZ6VlZVYjBHRHFYY3Bkc2dZTHpKYVI2V2ExMEc5d2M5bXpmMEZTbWNLNDFHXzNWdFJOX2Q3ZXhIVTF6M2xpTF95SzE1c3RkS3FNT2NtZkJXNzlmaFNiNnBCaFVYekdmaEdGRlQza3laZG9XS0RMZkhqNkpDeTlRTkpFV2swNWxNU2xEUzBhbWc0ZS13RVVaUGpjLXVuRng1UWdkZ2hiVXdsU0ZjQTdrLVNwRHV2alhEWkprZ9IB2gFBVV95cUxPWnJWNWNJNGd1aTlYM0JqMmVJYXRDUzh3R1VncUZpWlZ6VlZVYjBHRHFYY3Bkc2dZTHpKYVI2V2ExMEc5d2M5bXpmMEZTbWNLNDFHXzNWdFJOX2Q3ZXhIVTF6M2xpTF95SzE1c3RkS3FNT2NtZkJXNzlmaFNiNnBCaFVYekdmaEdGRlQza3laZG9XS0RMZkhqNkpDeTlRTkpFV2swNWxNU2xEUzBhbWc0ZS13RVVaUGpjLXVuRng1UWdkZ2hiVXdsU0ZjQTdrLVNwRHV2alhEWkprZw?oc=5",
    "ts": "2026-10-21T18:16:12Z",
    "uf": "PI"
   },
@@ -814,6 +1248,13 @@
    "uf": "RJ"
   },
   {
+   "titulo": "Edital Sefaz AL 2026: 100 vagas e iniciais de R$ 25,2 mil! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNVd1dGc2UFQ1bW80Q0k2OXdtMGJVLXlZWnpYYzI4ZGthQ043VzVBb3lEOVlWM2Y2V2ZoME9ZZG9RblNMSDk5T1NKR3ROblJXc3BMd1d0SnhDbnJPZmJXUnV3R3d3XzUzWnZoQ2ZSRGpCZE9iZkZVOUdCZkR1YnJmYkFWazBSMVXSAYwBQVVfeXFMTnFZNlRxVTYxSGRpTlJscUxBMTg4T0J4UUFPYkp0Ry0xODk5djRYTkwzUEtJeTJHZzFHU2tnYVkwYkZQUlNWU21BWFVKbWZERXE0bW5zaGhEQzYxeng2RUJYX2dub2kyQjdnNnNvMklsSXQyMmNzVUZiQjZLRk5OaXlhU2tPWUlLTnMyenU?oc=5",
+   "ts": "2026-10-21T17:00:00Z",
+   "uf": "AL"
+  },
+  {
    "titulo": "Inscrições para o 4º Prêmio de Comunicação do Acre são prorrogadas até 14 de novembro - NOTíCIAS DA HORA",
    "fonte": "NOTíCIAS DA HORA",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSWZncnppV0tmU0hPNlFKRUFLWktNT1FWVHMzcXl6N2RkUHdIU2dCdEdJcUFpUjZSSnJtQ3NZbE1QSE1qdHg3dmllV2hyenhFdkl3enI2QUFFb0NqblFsSEcweTU5RmlYNlZVMXJRS3pfc3lDSXpCc2VXeEptbEV4MkpkSHpGLXhqeXhFai1SQVh5VDdPVHFuLWt3Wk5xcUdHMmlGMmxISm0yc0pGckFoWmx6MHhxUGhxVVprMTVxNG5OWGU5VlhxbXRRV05kZVQ5MGduZUZlUQ?oc=5",
@@ -865,7 +1306,7 @@
   {
    "titulo": "Concurso Câmara Candeias do Jamari RO: inscrições até 30/10! - Blog Gran Cursos Online",
    "fonte": "Blog Gran Cursos Online",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOXzJRU3hSekVIeTl6a1R0YUZaMTNkYm5SSndsWFpBV0R6S2lpd0c0VE05djRMQ05OSGdQZUt2TF9HSDVYU1RqSGNnbEtPX2ZJbU90SjhLaFdITFhfcEl4WUhqV3diUXU5OFBfUGNzankxWE8xcEhUZ3RXTGk4TkhlV184VG5kZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYTlvWWpPR0c2c01Na0Q1clNEenlQNlBqcVFFTGRGSW1HbDhUUG9RYlhxSm5vbkV3ekFPMGZMWG93dkQyV3FkSVlTaG9HSEFILUtaZDJ1UWFWN2RPenRaNGR2dWp6THgtWl9hWEFpRmEzTTN6b2FGckE0RUVxV3lfNA?oc=5",
    "ts": "2026-10-21T16:30:44Z",
    "uf": "RO"
   },
@@ -1224,7 +1665,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5BUTZIbFhjcHRNNUdiaTRKMmUzUGJYb05GWFZVVDJyckpRX2lUUzR4OU11aVVvZUR3c0VMV3g5bVk0VnJJTF9tbnlNeENrRmotbVB2Y0RzdkQ1eGVxU0czMl96a9IBaEFVX3lxTE1ORlgteFJEclppZ2ppVEgtNnNyaEszYWY0R3dwMXczWXBDMC1YZGw0S2NtTF9fRG5zT2Y3dFV4SDJ5Q2xldU9wWGhfRHdwWFI3ZjlROW5xbVhJMFRRNU10TFRPc0xqZGtr?oc=5",
    "ts": "2026-10-21T13:35:00Z",
-   "uf": "TO"
+   "uf": "RR"
   },
   {
    "titulo": "Concurso público em Canto do Buriti divulga edital com 257 vagas - Imprensa 24h",
@@ -1371,7 +1812,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9iUXB6Vko3ZW5JWFdvMmlXN3VtVXVsbVpqN1AzMUd5bGxaWkxKM1Y2Q1lETm5xemd2QU0tb0JPN281U0t3Z00yRHpQbU4zbGhndmhtRXBpc25pR0lpN0owT0VRSdIBaEFVX3lxTE1LZ09ITDJ4ZFRkRlpmRFFJanFWSWgwTzFoYmd1NzhjYVdjR3dhREdNeVBIUjJMZjluOTBVQ3h4RV9CMUQ2V2J0MGF3dDZUZmphSnJ4VUdnR1Y4UlpMM2hTXzNDSFJIVDRV?oc=5",
    "ts": "2026-10-21T12:37:00Z",
-   "uf": "RR"
+   "uf": "PR"
   },
   {
    "titulo": "Resultado das provas do concurso do DER é publicado no Diário Oficial - TNH1",
@@ -1665,7 +2106,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQklqblg1Qzl6VDUxRHAzbmlOZ01TQ0pSSFV6LWN5OVVmd180TnUzdC10b2w2R0JXZ1Y2Y05aTGRWLVlkc1ZDb000OWFIbXY5SEZURl9DTTBpNlRjeVE0Ynh6eTc0a2FHTU0yQnliUVMtX2p4RlBGMEdMbmloa0dzQmJUUHk3QdIBiwFBVV95cUxNZW9NYkw2azB4RjJjQ0xxdHY4SU1ZSEtOOFJZZ0QwVnhYQTB5SndoOGtnWl84bVU0a0tPQThLR3FKVEpRNURYTHNWUUp6VHBwT28ycFpRbnEwd2xnUFh4NTFvQU1DMDJZbzdHdmtoMDJCb2hSUmt6dGNObXpDUDI5MERQcEhwcVJUTDVN?oc=5",
    "ts": "2026-10-21T09:29:00Z",
-   "uf": "MT"
+   "uf": "RR"
   },
   {
    "titulo": "Concursos DF 2026: veja vagas, editais e últimas notícias! - Estratégia Concursos",
@@ -1700,21 +2141,21 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1temhUeElldDJnTmlla0stWVI4SnUxN2cwRjAwN2tYRWVCQXA2SWV3YVJEUWlIVlFqM3NDejhxV0Q2dHZnLS01OHhVdk9feEhvcHVFXzMtRFJGbkhPQmNtRm41dWtzUnhLMkhBTEhmREjSAXZBVV95cUxQdnlYMkZCNklxYW5meEZqczZjLThlTFhpTFZmRXFEQnV0UlV0WDJqaDdER0FmNkxQN3FkRUJyX3NQU0d5azhkQVpNS2xyU3NyalplQ0NDUGZaVFNCZDhvZ3ctNUF1VFpNRzdwbXhLVGVfZUw2U093?oc=5",
    "ts": "2026-10-21T09:05:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
-   "titulo": "Concursos Sudeste: os EDITAIS previstos nos próximos meses! - Estratégia Concursos",
+   "titulo": "Concursos SP: seleções previstas, autorizadas ou com banca! - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XQ1dXRGM2YkZZeHFvSmlKZENTR1E2Vm96ZzZhZ1ZGRDRDdng0TkpscHFyM08zc3RsOU5rMk1zZ2xKUXQweVo1cVVfWHZSVUFyZTBZbmZzWmtaRkprQVN2dUc0dktRZ1hxb3c?oc=5",
-   "ts": "2026-10-21T09:04:00Z",
-   "uf": "TO"
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzZ1k2S3lpZ09oOW54ZzRxczAzdjhBX1g4cUtjLTJndXJUWHM4aGFqS3NtaHVORnJFcUowOWJKd2dJNGp0bXVHMHFBOVNhZHlxeFJjZWk4WlJqaktWOTNPbnhKSdIBaEFVX3lxTE56bWxySlc5QmsySFhKWHV2dEM5TlZOLTFwWHBNM0U5TGxvMGxtQkZPa3hHc29MZ3VhT1lkc1M5TC05S2NoLUtVUW9seFlRbXd0MFUtYnFZcG1la1E0X2xmdWpiQmhPRnkw?oc=5",
+   "ts": "2026-10-21T09:03:00Z",
+   "uf": "SP"
   },
   {
    "titulo": "Concursos PB: vagas previstas para 2026 na Paraíba! - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0wNE5mQ1hEYVBYSG9TMjNxUkM5R3JfRHZvSXhwc29iMWJqMXZ3b01QU200cjN2Q19HWEN3cVhxMmI5MFZHSXlCN0hYQ0xJQjdrV05CV3o0YVBuWXYxVnBZTk9vONIBaEFVX3lxTFAyaXlUdU5Balo2em44VTZqekhHLUdvVmo1ODN5VzBqQUxpSUN4VGlZcGswVDVhSkVUWVRBQmpqVDRBVDJyMDgzOHpHOHcxbXhRcU5pS3psQmdwZy0xd0dyYzRKLUkyV0FB?oc=5",
    "ts": "2026-10-21T09:01:00Z",
-   "uf": "RS"
+   "uf": "RN"
   },
   {
    "titulo": "Concurso Prefeitura de Três Forquilhas (RS): provas em novembro! - Estratégia Concursos",
@@ -1805,7 +2246,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB1SGJPSVl4TW1sUE9faWwxM0VjVk83bVE1eExGME5rRjFVcmdtTEpGVEl5dlZZaDctMTU3djV1XzROWk0tbHBZQmJOXzZ2c1NfMkdza3JjdFdQM2YwdWROOXhtMU1odm5WOHNVM0JPMDJ2cTZTTDFBNXhyMHcwQdIBgwFBVV95cUxPWk10MW44cVJnSjd2NjZHY3o5djBOTDlLZnpZYlVVbUFCN2ZiMnFVQkRmbnkzT1V2SFhRVC1rZTVRU2J4cGVkbng5Njg1NnVXZkpLaVRQc0ZGbjBpQW5lVTJDUERzYm5ITngwMjhURjk4TE4xQVkzUm9nLWpZSW1JQXJVYw?oc=5",
    "ts": "2026-10-21T07:26:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Enquanto bombeiros treinam brigadistas, aprovados do concurso cobram convocação no AM - Amazonas1",
@@ -2179,6 +2620,13 @@
    "uf": "AM"
   },
   {
+   "titulo": "Noticia - Roraima na Rede",
+   "fonte": "Roraima na Rede",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb0w4VWxYc3FXWnRRZjlWeHVfLUo3UVdQeXRMOU55ODhESTg1OW1wdUoydGhuLUN1VVR4cDBHMVlqT2hyNGVIWlRadkVpRzhwNUNyLVM5bm50aUR5ZUhLNkRwQUdUcGR0eF9qZzNGQkFxM2xBMnBUai03dEN0emZLWU83eHl4bm1hTXBYb1pKMlE5T3RFOHFDaVZoQ2dQM2hnUTJQOXQyWm8wNW8?oc=5",
+   "ts": "2026-10-20T19:57:00Z",
+   "uf": "RR"
+  },
+  {
    "titulo": "ÚLTIMA SEMANA: concurso público do CRO-SE recebe inscrições até 26 de outubro - Click Sergipe",
    "fonte": "Click Sergipe",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRGJqZEJKc1BJUDhqN05HSjE2aG81YXJJYlI5VXdiVUxrVGxXMmpGaXZscTRmcE1WX3M0QWpSY2VpM0tZX2xJWWFpZ1VEc0lJdjNXa0RRNFQ2MFZZWVh5Z2tNMUVDdDA5ZFE3Wkh0WWZaOFlsRGxLYkl5eVJvXzdMemVQSWhqdWxmNEdkeHp1V0l0Q2xNSkFsZUlxcWlHZVBsMm9STDctS09jXzlwUnNkRWtDd3A4VXhWeEhoZzZRUG93U2JzQlVVSUVOd0xYdlh6TGNNbjFUeDB3UDNf?oc=5",
@@ -2291,13 +2739,6 @@
    "uf": "MG"
   },
   {
-   "titulo": "Prefeitura de Canto do Buriti publica edital de concurso com mais de 200 vagas; salários de até R$ 16 mil - A10+",
-   "fonte": "A10+",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdUxOakZJaHE4Zm10WmRhdXVrVlV1V3RmWk9WUDZsVlNzbFRLUm9SeGUzLUx3MUpZS3R5Z2ZzaTQzNXRieDEtU05aLV9iWV9jc0FOTmFWUVFqcEJkMy1fQ1poOUIyeTF5SGVTeW9fcmhuMGFCUllnZmp0YW50RW9hdWVTRWFhQy1nbVkxTV9KRGJ2OFNjaUlHTDJ3TTJDRktxVklEcWMzTTlldnMzaEtjQm5tQUZvNDhTeEJVQmlTU0IwMEJGeUVfVDhPRTYtRFZxSWJkbUpoQUxvd2UxZTljd2VucFpfYzdr?oc=5",
-   "ts": "2026-10-20T18:53:35Z",
-   "uf": "PI"
-  },
-  {
    "titulo": "Gabaritos do concurso da prefeitura de mauá são divulgados - Imprensa 24h",
    "fonte": "Imprensa 24h",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFZzZKTmMtb2k0MUt1Y00tcUlIamxYZUpTZ2gwMUFINXVxVlBpLUNuUlpJMGxuMElndk84azBJRGtMMVdEM1hka2ZwU3pET3BEenYtclRTanpYbFhENldmSEpmVzZOVVZ6M1E1Yl9CUVRrdHpuUFBORXBNRlRKUQ?oc=5",
@@ -2352,6 +2793,13 @@
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUjJ1VWNfMXlaZGttcTVHVnRORlBrT1lLN3pMV1Y3TF94NnVfWnlWTlFxemtWakNLYzdtSlZaS002aFItRi10MkFJbmU1d3ptbjB5SF9oTFpqMzlWUlY5bVBTX3d6ZE1TbktmUEJBdWVjd1B2SmxsNzNBZGR3RWlCM0w2R19mcHEzOVQycDRldHBTdUo2WHB6SVZuSkljeUp3?oc=5",
    "ts": "2026-10-20T18:17:00Z",
    "uf": "BA"
+  },
+  {
+   "titulo": "Polícia Militar de SC publica edital para concurso público para soldado com 500 vagas - G1",
+   "fonte": "G1",
+   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxORExjY1NMaXhfT3dsMUFVRTJlVElrd2dObEYzQWNfRXVxNngtV2dvR1o5aG90M2lJTUlzSThlYmMxNWxYV3pXQXB6VWxsaElFYTkzWXY5ajRWakw0YlZxemJnd0piWERCdW9ZOE5OMlA3RmpjNF9EYVkwd0xwd2xIa2JHWEdNb2FUZFdGR1daZVJWSFpfajA3WU9uNE93cVU2bTluakRZck1pRmdKcmxsUDhrRmhDbUZBYVIyVE5QYWhBM3FDOEt5cnVQV19yaXJ2a2VEY3hTQmNVYUxTN0JoTVZfcDItN25vYWFFdEttQnpEdUhrUmc5NmpIbFFQUkZxZ29Cd3FITWlYQ1M3Q2fSAY4CQVVfeXFMTkRMY2NTTGl4X093bDFBVUUyZVRJa3dnTmxGM0FjX0V1cTZ4LVdnb0daOWhvdDNpSU1Jc0k4ZWJjMTVsWFd6V0FwelVsbGhJRWE5M1l2OWo0VmpMNGJWcXpiZ3dKYlhEQnVvWThOTjJQN0ZqYzRfRGFZMHdMcHdsSGtiR1hHTW9hVGRXRkdXWmVSVkhaX2owN1lPbjRPd3FVNm05bmpEWXJNaUZnSnJsbFA4a0ZoQ21GQWFSMlROUGFoQTNxQzhLeXJ1UFdfcmlydmtlRGN4U0JjVWFMUzdCaE1WX3AyLTdub2FhRXRLbUJ6RHVIa1JnOTZqSGxRUFJGcWdvQndxSE1pWENTN0Nn?oc=5",
+   "ts": "2026-10-20T18:12:16Z",
+   "uf": "SE"
   },
   {
    "titulo": "SEAD - AP prorroga inscrições de concurso para Delegado e Oficial Investigador de Polícia Civil - PCI Concursos",
@@ -2428,7 +2876,14 @@
    "fonte": "Ache Concursos",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaVNiQnVPN3hJcEs0QWhlWndrLUxHZEZnZkNkTUppbTFBMWZXQ3BNTVBRTlA3RHhEcE5OSmhLMkQ5bU9vMnZqQ2tEX29FeTRVTlVsQ3ZtSkd1MmI0aldhZ2diOUs2UGZOeW1BTDhrUXR4aGdTaUlFUjQxSG5zTWRkaVlaMV90SlZ5bnRxN1BSR0lORGk3ZUVSQkxqMTcwb2VhbHZxRzlfR0RzUkRMY25ZQWdrVDJRMWMxSU5lVtIBwgFBVV95cUxOUGgwRVN3ZjFoYm1WRk01elE0QWRYU0VEUnRkR2h1RUNDUVZyd0VoYkV0ck0wTlp3OEZCdG9sbFRzLXU2a1VUZWxyTzNzd0hJVUNsdFN4TEdpamNEUWRHN2xsN1A3MEVEOHBOUVhOZU50UFJsUG45WXZ1ckFjNjlWUHd1WVJORjlLb3hvcU9hV1FqT2VWcjlxSERhZnVXWEV4aFFlMVJ2am5PVGQyenhYTWNKN2tCRU96SEp4Y0hkUjhoUQ?oc=5",
    "ts": "2026-10-20T17:58:10Z",
-   "uf": "RS"
+   "uf": "SP"
+  },
+  {
+   "titulo": "Prefeitura de Canto do Buriti publica edital de concurso com mais de 200 vagas; salários de até R$ 16 mil - A10+",
+   "fonte": "A10+",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcUZidUhNSWVvczdzSW5uSDZlLVE4bVd6VXNXSm9Ha2RnY0pmVGpzQnpBNjdabXRDLTJpRFZEZlVXckNBa2J3b0xUY0RyZnBJb1NXQ2VmdS1xT01EcmQ5OWJRT2tTOUJ4UFJpYzVvRWpWWjhhMGhkU1RhRzZ0MTZFSmk0VDNPVkgwbTBKOGNuWl9KV1FpX3ljdk8yWm9qSnVWbWNZc0F5MXdLU1Ywb05aTFdQUGJKQmlpbXY0ZnV3Y0FydUR0WU9BTzc0SDZPN3kyTWJzWUFtNzBubVFianJnWlRlbnBKbl9VOGNRNUh3?oc=5",
+   "ts": "2026-10-20T17:58:00Z",
+   "uf": "PI"
   },
   {
    "titulo": "Resultado final da prova objetiva do concurso da PGE é publicado no Diário Oficial - REDE BRASIL DE TELEVISÃO",
@@ -2443,6 +2898,13 @@
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZFd3Q25kcEVjVWlHZWE3UEEyOFM0THBWa2dlVFJkUUEyS0otZUQ0R2FtT2xrcVkxanoyUnBTNjl6NVJhb0FOZnZMaFQxR0pwWW14U0Q2YWlHN3pzT2ZLX0RBSjZuQ09oeHB2d1V2R3pFWUl3b1p0WmxBSTRaMVJjaE9VTTZLTjNVZjNMZUxZR0I4STY0akU1eEhDUDQ3a1RJRG5ncTR2V3RrRktNb3hyckNOQml4d3laWEd1cWxB?oc=5",
    "ts": "2026-10-20T17:46:19Z",
    "uf": "RS"
+  },
+  {
+   "titulo": "Concurso da Semed prevê 165 vagas imediatas para professores - News Rondônia",
+   "fonte": "News Rondônia",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ0QzbFgtT1RqdlNiNEZUQ2RicXNTWWhQZXJQcFBMUHA5M3c2WWRoQUI2Q0tKbXRaY3hwUTZTTUFtV09pemw3LU1GbXpGX1Q0RnF5Unl4MVA5U2E2QklENjIwR1dOdTBPMFduZjRUSTRSTUZOTXdYSzBNckpzcDZRNTJ3SElzY2JEeFNxMXRQTEtaMkNRREFVOUszVFZva19Wd0FiOGFkN3M3U1V5TEE?oc=5",
+   "ts": "2026-10-20T17:41:54Z",
+   "uf": "RO"
   },
   {
    "titulo": "Rondônia lidera redução de feminicídios no Brasil e reforça combate à violência contra a mulher - o estado de rondônia",
@@ -2526,13 +2988,6 @@
    "fonte": "Imprensa 24h",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE45WU9xQWxwTnF1UmxvSndPbkFTbTM3RFk3RVVta1RHQ2NzWXNKa1l4V0M2cV9RcmRoUktacUFPNE1GWVJGZ04xandKUVFWN2xIdmJsODN6WEdaN0wwYlRYVUhhYlc3eGZ4UVlQbXUtcmNPZ283S1NPR2x3?oc=5",
    "ts": "2026-10-20T17:10:21Z",
-   "uf": "SE"
-  },
-  {
-   "titulo": "Polícia Militar de SC publica edital para concurso público para soldado com 500 vagas - G1",
-   "fonte": "G1",
-   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPMlNOX0ZiTkFjcG5obUtwa25Ka3lncUJyY2pSb3hONlQ5aVFiMVpsZm1NNzAxdC0yOXBfSEdDNi02TlVVemk1cmJYdmtYLWotRTAtNjFvNkN4Z2JLdDdRc3poQzloSlIweTJZRFlVRWtjSW9ONVB4dktrLWZGTnBiS29ydWdLa09UdjIxdUJsRnd2UWV0clI3YVZwQkpaNS1GWGVVOE5HcHBDbE9LYjkzVnR5XzRsSlhka3dBNG16STBqNUE5NkRzb0J6ZXhLTkF5ZjdmdmhPYWVyV2F3OWluTDZzVElWNFZ1Qk15U1hCUjdMS29zVUZYcTRndVFoam80dHZqM2JLaEowMVB60gGMAkFVX3lxTE8yU05fRmJOQWNwbmhtS3BrbkpreWdxQnJjalJveE42VDlpUWIxWmxmbU03MDF0LTI5cF9IR0M2LTZOVVV6aTVyYlh2a1gtai1FMC02MW82Q3hnYkt0N1FzemhDOWhKUjB5MllEWVVFa2NJb041UHh2S2stZkZOcGJLb3J1Z0trT1R2MjF1QmxGd3ZRZXRyUjdhVnBCSlo1LUZYZVU4TkdwcENsT0tiOTNWdHlfNGxKWGRrd0E0bXpJMGo1QTk2RHNvQnpleEtOQXlmN2Z2aE9hZXJXYXc5aW5MNnNUSVY0VnVCTXlTWEJSN0xLb3NVRlhxNGd1UWhqbzR0dmozYktoSjAxUHo?oc=5",
-   "ts": "2026-10-20T17:07:16Z",
    "uf": "SE"
   },
   {
@@ -3054,6 +3509,13 @@
    "uf": "PA"
   },
   {
+   "titulo": "Concurso TJ SP Escrevente 2026 SAIU. Inicial de R$ 9 mil! - Blog Gran Cursos Online",
+   "fonte": "Blog Gran Cursos Online",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15aGFFd0NIRTZQNVZsY0Jaa2prSFRMRk80dVBrdG1ZVmFoUWJhbkd4MVA1cG1iUWdlclpXcUhWbUIwWmU1RTVkMU1OUzVMWHdJbHNqc1JfZXBLc3NDeElJbmRR?oc=5",
+   "ts": "2026-10-20T12:30:00Z",
+   "uf": "SP"
+  },
+  {
    "titulo": "Tocantins decide novo governador e presidente da República no segundo turno - ac24horas",
    "fonte": "ac24horas",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSDVickE5M0pra0tqRlZNaU1lWno5bFQ1QmI5NTF3WXJlM25NTUtZMVBRTEJ6TGdmVjV2MXJNTEFUWEl2RHlxal8zZkR4cUIxcTU5UmlTczkyN1VyVHZCRkZBcHVzalZiUDl3T1FZc2tmT0hvSGFBYm1IMURYSEFNWGgyMTJPdGxJYUhHWnlhZi16bzY5eUpEdHlDWUo5ZWVyWU40YzFtNUJaQjBtN0HSAbMBQVVfeXFMT2Fnck5weW4zaUlLTEo2VVRCbHZzWkowb1FoelRXZkczTmdMZFkwbkFpbTdjYldoMzJUc1FBb2ZCMjlUaXpYRUwzWHhINjhYdDRNdHpJQ1hDbkp3MG9RWnZrR1p5c1pkRVQ1SkpPWjJwZ2xxQzllR1Y5N3NHMENEVDlZV1hRR3lzemx1UkhFOTIwaEx0MkpOT0NuZG1fazFIbjFKRVBuUmtPTkg5WFlDN3lreGc?oc=5",
@@ -3240,7 +3702,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tek11S25kbjdjb0NRYXItZVZoQTRRekpwUlhPLVNqS0Q1ZlVwVUtYUFlXYUtXYkUxNV9aZ21SS0tBdTQtajY4QUo2ZFJKQ1ZxMmlyNDlyVnZncVpUdlRZLUtIWUjSAWpBVV95cUxPSE9ndWtTZ29valN0MWYzQ2lBMW9uQUQ4eU5naEpaTXctazdOSFF5WWhwRFh0d3Z6ODRVemdUUEZzeEUyWkVoRXJZUS1MZUxlazJyZjItQkpmbmRoa3Z6Xy1fQ0pGR0VrQjRR?oc=5",
    "ts": "2026-10-20T10:54:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Educação de qualidade em MS transforma ambiente escolar e beneficia alunos e professores - REDE BRASIL DE TELEVISÃO",
@@ -3296,7 +3758,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5TbkJOWWZXVnhLSkduVUY5dE5fRl96RGw4dGRpTnhKNFYta2swLW9aSW4tbUxmZ1pid3dhb0sxZ3ltUFlpSU1ieEV3aEh4elNCaW0wSk5MVmYyVUtyZkt2R0M2Mzkwd1lUMTVyTWRzM1M3NVJHQ3Vwekh30gF_QVVfeXFMUG4yQS1VMlZyVC1LTHRFbGpUUmNRbVRPenhwSEZoOUJtcHdHMHdIVVQwZTNNeEZMTG0zS0NHdzdHZXVyX21XU3FIRThrcVQzdGc5cU1SanU0dnVpRERNNzhOazhsSzN4LVl3UWFkcnVnV1NUdDN6WlRfek5IVzl3WQ?oc=5",
    "ts": "2026-10-20T10:32:00Z",
-   "uf": "TO"
+   "uf": "RR"
   },
   {
    "titulo": "Concurso Câmara de Ibiúna (SP) oferta iniciais de até R$ 5,5 mil - Concursos no Brasil",
@@ -3492,7 +3954,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9RN0dhYUlHVndKMXVOb1ZXT1BBMUo5aXp3R0pndDBIeG9KM2NBYl9WdWxCcUNPOFk3eDlxb3RoQy1KVUpTVm5KV0REMmZPa2xpM2lLUmtDU2tub1lKamZsc0RpSUxYWkNveXg40gFwQVVfeXFMT052MVhzQjFfYkF3V0F5MmxzSnJTM2gxU2g2a3NZX2pKcDQtVW1KTVFsM0ZSeFA2eGhKS0JtRkRmZTlTRXNtU2VKdmZDOTJBN1JVdjZtZ1BjeGw1dmdpN0hhbERtd3FHUXRyWU5GeDBxLQ?oc=5",
    "ts": "2026-10-20T06:15:00Z",
-   "uf": "RR"
+   "uf": "MA"
   },
   {
    "titulo": "Concurso Trindade PE: 353 vagas; inscreva-se! - Estratégia Concursos",
@@ -3520,7 +3982,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1xREVUa1NGY2RnTFA2eDk1YjBWUUlZQ0x5eHZMTG1nbWNXWEJ2aEQzaEVMa0RiZ0Z1cnZlWjNURXhBeElKNkNTbW1XcnZTdHBvcUItbUs0bVhNWjlVWUE3cVBPaXluVUlqc2lXZldaRmhZVFnSAXhBVV95cUxPdEg5dmhvUTF4X0pDN2t6Y1E1Nm42SzFNUHUyN3ZIUzJsZjVnSlVfX09VN0ZicFdkQ3ZNQV9lVUplVDhWQUpDUGNRelFjRXdzUzhzTXNFN3VMUWdxT1JKX2dFeDhhOS01TzB6ZHdsd05VbnpuT19fSmY?oc=5",
    "ts": "2026-10-20T05:37:00Z",
-   "uf": "SE"
+   "uf": "TO"
   },
   {
    "titulo": "Hospital Metropolitano Odilon Behrens - MG abre vagas para Fonoaudiólogo e Analista de Sistemas - PCI Concursos",
@@ -3684,6 +4146,13 @@
    "uf": "AM"
   },
   {
+   "titulo": "Palmas prorroga validade de concurso da Educação por mais dois anos - Jornal do Tocantins",
+   "fonte": "Jornal do Tocantins",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZzVJRENHRy10Slk2Y1lkTHhNRWg3RXBfajNWREQ5LWRYeWFCa0Job0JubnpXUE5JSmplWXJIODZVN2hlWHdiam9rQ1JIQnI1azZJZ19UQ25qQ1lLVEJ4b2RsOVhkcndzNldScDFrUlhuVDlFTG1TNlF1S3Z4WnFRLU0xLUpkTEJDRDhjSXFsOEVMbG1BNlNCOVZLZjh2SU5zZzA2aWkxdk9seVJvdTBGRE10SzVZX0hrOVNrRTlkSlJLRWRRSHlKWHhMYkVsS0I2WTROTzBmeWhyTU0?oc=5",
+   "ts": "2026-10-20T00:17:35Z",
+   "uf": "TO"
+  },
+  {
    "titulo": "Justiça atende pedido do MPRR e determina publicação regular do Diário Oficial do Estado - diariorr.com.br",
    "fonte": "diariorr.com.br",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNkM2QURjTURYOHFMbnhNS0Fra0MxbjVQbnY4RzYzbDFXRktHczZyaUdpN3JZazZ3eURaTHNPN1o2UUxob1oyOWZ3TDNEWkpkVzNhM1MzM2tJakdoOHJvUE1pRURFelk4REFwc3ROQ3RleXh4d3NUckkyMnNXVGNjYWlZN1RsTnRyX0VBeE53bXRjRGw4VTYwWjY0Z3J5QWlqZkozTEFPNndaMS0ybnBHbE1oaE90NThB?oc=5",
@@ -3777,7 +4246,7 @@
   {
    "titulo": "Governo do AM contrata banca para concurso da Seduc com 7,8 mil vagas - Toda Hora",
    "fonte": "Toda Hora",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdnpjeHFBa3JqMnZKeHZ1bEk2M1FtRFVqTmNDeGlEYVVURU1CZ19weUxSaEtEd2lMUUdlYUhaRDlsNkhzaGRFRkJqLVh0d1lCMGxqWE5SdEhZMHdoYVNLaG5nWTRmVkl3UVRQNTFBcno1RzB5Vks5aUFPQkhwWlFNM0Q4YV9kTlNEaWhKS1d2OHJtTFV3aXViQ3JJNzQ4ZDhIYVV0UXJVVzE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbzJpZXZtR2VneDFWTkp2YkY0TVlSNTlJVUdFVkFMYmtLdm04cUliT2oxQmYwb0o5YXpnSmhFMUNrU3JKZG9JTDM1cS1aeVVaeDJSMkVyUmpLZVFhR2RJbjduZEF0YkxaSUpPUEtMNTBMa3VQaTd6RkVzNlNsOWVrcnNaaWtwUVg5VWkwdnBkLVZ0Z2hwZDJUejZ1N2hBcHBaUWFHWGZ1Y0xrQQ?oc=5",
    "ts": "2026-10-19T23:09:32Z",
    "uf": "AM"
   },
@@ -3936,6 +4405,13 @@
    "uf": "AM"
   },
   {
+   "titulo": "Piauí tem 221 vagas em concursos públicos com salários de até R$ 7,2 mil; veja editais - Portal O Dia",
+   "fonte": "Portal O Dia",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNRnV3XzB4NUVQMi1uRHkwNDc0SjRaMHBCM3UzQ000RTZHYUduUVFjNXFlYWlSMU12cldud0Vmd21WLUloaDJoNnFRamxteVd0T2M1b3ZYWG1KNjJLU3A2NDZMYVhMOUttSmlfRXp4UVdHYnBZTnVmallrUXc1djdrWjZ6bndYWTBMZEhZY0Q5dWI0SnB5NFd4ZHY5cUJQZFRXVzZMa1g5eU9BVF9qeTBQak5LZ1p6b1Y0YTRVa09Jd3lmd3B2bWp6RndqNWJhTWZScm5NWjlSTzB6OWRYTTJqVdIB4AFBVV95cUxNRnV3XzB4NUVQMi1uRHkwNDc0SjRaMHBCM3UzQ000RTZHYUduUVFjNXFlYWlSMU12cldud0Vmd21WLUloaDJoNnFRamxteVd0T2M1b3ZYWG1KNjJLU3A2NDZMYVhMOUttSmlfRXp4UVdHYnBZTnVmallrUXc1djdrWjZ6bndYWTBMZEhZY0Q5dWI0SnB5NFd4ZHY5cUJQZFRXVzZMa1g5eU9BVF9qeTBQak5LZ1p6b1Y0YTRVa09Jd3lmd3B2bWp6RndqNWJhTWZScm5NWjlSTzB6OWRYTTJqVQ?oc=5",
+   "ts": "2026-10-19T21:27:14Z",
+   "uf": "PI"
+  },
+  {
    "titulo": "Prefeitura de Salvador abre Concurso Público para Guarda Civil Municipal - Boca News",
    "fonte": "Boca News",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQN1VyWEE4czBwRXV0dElkbzQzX1U5UGZ0XzVVaTdZY3hySmFVYUJfemt6b01VcWh0WE1EUWhNdzhldWYyVFpIVXEtWXk4SS01VkFxWTBVcWFxUzVBZF9ibkUwcmwwZkFLZDYtcGVNd0Z5dDdxenBSSE4tUVJsbV94ek9oMDhtNWpoU3Q2a2x1S3JTNk1fV0V2YmMwaWQ0SElZRE5KbXB6MGY?oc=5",
@@ -3954,7 +4430,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XN0ptWk5mWjJybm54TndNVXVTUWdTVkN5ZzNFWFhWblAtbURBeEpyaEE1NTNKb09ORmxpdUFnYTVfYnlZbmxjcFdQTW1rNDZ2MXZ4MmxMbTdEUm9TVlQ1V2FPWHM1aUx5OFI2WNIBckFVX3lxTFBrWTZnR25TWGZPc0xSZHl6NlN1bDBfLVFzS0lYLTRPWFF5NlNLeEQ2SUhMTjZXQ01uM2FJakNza0FNODhGTTF3OFFOVmtTQzFnR0p3MjhzS0dvdmhxUkt5UlEzRXdaTkw3VVJMdVdyclFXQQ?oc=5",
    "ts": "2026-10-19T21:18:00Z",
-   "uf": "SE"
+   "uf": "TO"
   },
   {
    "titulo": "Polícia Civil do RN recebe 137 novos servidores em meio à cobrança judicial por reforço - Portal N10",
@@ -4032,13 +4508,6 @@
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQd2FUaHBOMXM4MTNfTXgtc1UyNFlOejFvQ3c3b2lXa05TOTdQTVlScGtjN3JTUkVRNGFxWkdQZWQxUjVzS3M0aE1jd3Q4R3E2TmZuSTBHeTJZUWlmSGs4WWo3ZjYwZ0s1MWE5VDhYVWJPcktJbkNQRzRtUExsalBxUXhYVGNjTGVvYjhaTTZNRFdCWjEydi1Hc3lEc3Rxel9VXzRnalg4cm04V1dSRHc?oc=5",
    "ts": "2026-10-19T20:32:08Z",
    "uf": "MG"
-  },
-  {
-   "titulo": "Piauí tem 221 vagas em concursos públicos com salários de até R$ 7,2 mil; veja editais - Portal O Dia",
-   "fonte": "Portal O Dia",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNS1Y5NWZkM3NrWDVEcjZER2ZfSV9oZ0FhXzEycFV1aTZZbldCUXJaQ2tGWjFkQ3k5SzA1WkJWdUR5M0FzZjVUN2R5Tnl2bnRUY2hHMW9FeWgzQkttbGlxYU5KUzJRV3hoTXc1VVRmTmdmb0U3bkZha19aQnNKdnFsdDEwYjEzVi1aRnNNRXkwb2RIdmE4YlRYYkltYWpqZmozS3A2a2JoZWtZNzJ5a0YtdGFzMXlkdHplY00zYnh6RnM2YW9yeC1YU3BKSFhLUdIB0wFBVV95cUxOeHh1V0w1amlxUmRmQ0ZEejMtdnJlZm9OcVMzNnJ5WWgwSHVVX2RjZWRINEZwNjJXTXhIWGlZTXdPak01eUtfV1NYOWFZekF6MEZLS1VIRHY0RnlWWU9CR0czb3E5NElUTTZNa3ZMVXJ5MTN1TTFZaHVOcWVtRzc2U3l1V1RHVV9xT3FsMm1BaHpycG1sakhzNWxyeEdaaWs4STFSbEg2YWl5V2FhRWtEXzdVb0NJVDNuZFVXUXF3LVRzZGowXzVqY25oNzVudzBTVkdn?oc=5",
-   "ts": "2026-10-19T20:32:00Z",
-   "uf": "PI"
   },
   {
    "titulo": "Polícia Civil do RN empossa 137 novos servidores e quadro supera 2 mil policiais - Tribuna do Norte",
@@ -4167,6 +4636,13 @@
    "uf": "SC"
   },
   {
+   "titulo": "IPA abre concurso com 98 vagas para reforçar pesquisas ambientais em SP - Semil",
+   "fonte": "Semil",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMjNsNHdUWGFlajJ4aGtyc0JYQVhXTjhDeGc2ZF9hVDlNT1JOZlJSZ1gzUllhaVdwY3ZXT0I2eEl4eEpQTUFqZkk0LU9ydkQzLU45OHdRbkZjVmE0Z19COGpvMlJ6Rl9NRjFkYU9ZOERrbXQ2cDZpOEJGeTYtQk5sdEphdzVscDREanA4WXp1dkxDV2FXbU1BZUFOUUFrcndLdElFUG50eHh0bkhx?oc=5",
+   "ts": "2026-10-19T19:36:09Z",
+   "uf": "SP"
+  },
+  {
    "titulo": "Prefeitura de Coronel Bicaco - RS abre processos seletivos para diversas áreas - PCI Concursos",
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT0tyMXhfVzF1ZVZOLTd0a2NQNGcwelJmLXo5aWJwN0Y4NVBrRVhuTk1nZ3B6b3hubThtSXBjTnFXTHZQRzYtZUN4OGp2UnFFQV9VR1BKOW5IczVOVlM2M2RlaXVPemhnbERFTF9VVmdxY1puUnpjZ2lYZ3huZUN6UEhIeGhSdWhqbVdsaTJYMk80VU1NZTVJNU16R0h2NFgyNEtTOHdHSXE4bExCZ0ZGMzhPQjQtOU96?oc=5",
@@ -4199,7 +4675,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GanhNZF9qY3l2cC01WFNOUkRSNU1GWUFwV3ctck9BNDF5OXAybEw3UEpLNGJuNjN1NGJPR0RXbDdPdzI3SU84TUUwSzNsRXdheWZCQWk2a3FxdkhGLWhWNEp2NjgtQQ?oc=5",
    "ts": "2026-10-19T19:28:28Z",
-   "uf": "TO"
+   "uf": "PA"
   },
   {
    "titulo": "MPRO obtém liminar para invalidar concursos da educação - Tudo Rondônia",
@@ -4337,9 +4813,9 @@
   {
    "titulo": "TJ-SP abre concurso para escrevente técnico judiciário no interior e litoral - Apatej",
    "fonte": "Apatej",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOHBSMmtCMGFfRHNLMWtLSWYxbUx3Q3JDS2phbVVzSWxneFlkRXpmZGlRbmwwYXdwM3dXUk1hU1RzMURuVDBSR1d4Rk5hazQ2RUtfSFZqaUJKTnQxaG5BeVFpcVpNZ1ZOYThfNFFKUWNzRmVNY2RqRm1BSTBKSUdzU0V4SHJVbWQtWXJlVVVYcEYzel9iLVlkV1VMWUNJOERUUk55T0FB?oc=5",
-   "ts": "2026-10-19T18:13:13Z",
-   "uf": "SP"
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPM1BTb1dOczdsOS0tbVpRY2M1LUU3cEJnOGJFZzczdUlYM1ptbVNJRm1vYjhHeEVSRVdwS203eFJiT0VVS3pXSVY1aTBQNHhmWF85aUNYWTRuamhKY0ZBaW1YR2F0Q0lyWTF0eHFlam5GbVZ0eGZraGNQZ3NzWF9LS083cTAtNk83VTN0TG5GOEgyMjhXUDhVRTh2d3F5cmFjaDNXTw?oc=5",
+   "ts": "2026-10-19T18:13:12Z",
+   "uf": "PA"
   },
   {
    "titulo": "Câmara de Ibiúna - SP abre concurso público para Assistente Administrativo e Controlador Interno - PCI Concursos",
@@ -4696,14 +5172,14 @@
    "fonte": "Portal iG",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdFVBd3ZoQ3pFb2RwR2lld2hNd181REI0R29lQmRsZnl5NzY4aTdZWEtPeGtBb0lRWk9BRzhWZE5PM0Uta3hVc2xyZXZQWHJHTmZiUVpmbzVUdy15RmVEamVDV2pqWDdJUXVKeTZaakk0eXlqdmhEZUM5Vk1ybHA0Z1BPLXdJSlk0Zk9OMG9YamhLX21HRUt3Z041WTQyNVlLLXdtNm9mRl_SAa4BQVVfeXFMTW1SYTdTZzNJTUVMYXB0dHVJWElvT2dZRm5kOHVRZW5kckRqN09qUDBURHJRT3Z3aDhHQXgteDR6UVg3TEhZd2RYNjdWM3lnbDJhUWhmcE9SR0JXSmNaZlZkc0RtbkhKTjd0Y3htMmpUaVMxSmZjZzJXYWxIelVmNk96SmwyZXFGN3hVWk5wSC1KbmRnTnZhSXlkdjJ3eEIxS19QdXN5UDF4UlU0bnN3?oc=5",
    "ts": "2026-10-19T15:20:00Z",
-   "uf": "PA"
+   "uf": "SP"
   },
   {
    "titulo": "Concurso Louveira SP: edital com iniciais até R$ 8,7 mil! - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9uVmtTQTdHdUxndFNFTGxFSnFUUmxhWUFrWHlnNXVLb0s5Ry1NNnlPQTNNZ21FS2ptTWRNYWdycjJFSjgzckE4THpjcFlIVlotazBhODluR2l6R2xodHlXbkJVMmFQeDJmUTdSLTJ1SnFveHNGT2F5ZFNpN0TSAYIBQVVfeXFMTWtKNDVnUDdMOEZ3YXdyLWRQaWNUVlNuTVl5MmNNd3RDWVFIVGM2OHE3MnM2ajNBY3V1Y2lQaFlIa1VWdWROYmVGbGY0U0wtdDV2SDVFMzRSUlJHUW1xejVJeVFmYTA0d2ZhODVXLXJiTXVUaDhWd2hacl9HU012anZydw?oc=5",
    "ts": "2026-10-19T15:18:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Seduc AM tem banca contratada e edital já pode sair - Qconcursos Folha Dirigida",
@@ -4759,7 +5235,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5wTldnVF9pbS1nMEhyS2MtWVlZZVA5Y2xoOTBMYlZ4akVWb0RpeTRSUC1vYmxURHVQZEw4dlRRQmd1NXpLT0xGZGJZbHplWG0zRFlBQWFVNEZUSWttM3N2YUdlcG1IZ9IBa0FVX3lxTE5aeHM2cnpIbmtHMjN1czNCaUhza3FqZWZnOFNiWGJkaHhQelR2bllpbGl5ZDVxOTBlUGNnX196Rk05MlNqQm9kT2pwaElBYnYzX3lqdWVsbGY2YWtzYkNTNmpWMmNIUDBnX1Fj?oc=5",
    "ts": "2026-10-19T14:35:00Z",
-   "uf": "AC"
+   "uf": "SC"
   },
   {
    "titulo": "TCE-RO suspende procedimentos de posse de concurso em Jaru por suspeita de exigências médicas abusivas e violatórias de direitos humanos - Portalrondonia.com",
@@ -4925,7 +5401,7 @@
   {
    "titulo": "Concurso TJ-SP 2026 saiu! Edital para Escrevente paga R$ 6,7 mil - Ache Concursos",
    "fonte": "Ache Concursos",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZEV1ZlFWaHNJVTJrTUp2T01Xb3lsR1lKWVJxS1g2ajhBXy1QWFgwcnQzbWdqUV83UC12NllkZEZlVVFoWnQzeG00V2t1QXF2M3Q4bE16U0tWUnRJZjNfQUpfbUFVWV9ILXF1WDMtSVZqd2UyMTNYZVo5NlBGdnh6NjlUcVltNzZLZUx6RDlQaGpzQdIBlwFBVV95cUxNUTZmN0NfZUJDQWotSXF5VUZpRGZtd0VRSng1UXNOMm5EZV93OGFna1BVTWc5aWVyQTY1TUl4TTdMbDVGT1djRWpjZ0poUHA0OElEajUwV0FPTHhlN0pXYXN4ckRLNDlXT0FpNGdBdlc2ZDh3NDM1cjRBOXNzdlNsaGZwSXFtWk93eEJWSnJmVzVDVTBKaHRJ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZEV1ZlFWaHNJVTJrTUp2T01Xb3lsR1lKWVJxS1g2ajhBXy1QWFgwcnQzbWdqUV83UC12NllkZEZlVVFoWnQzeG00V2t1QXF2M3Q4bE16U0tWUnRJZjNfQUpfbUFVWV9ILXF1WDMtSVZqd2UyMTNYZVo5NlBGdnh6NjlUcVltNzZLZUx6RDlQaGpzQQ?oc=5",
    "ts": "2026-10-19T13:33:00Z",
    "uf": "SP"
   },
@@ -4967,7 +5443,7 @@
   {
    "titulo": "TJ-SP abre edital de concurso público para oficial de Justiça e escrevente com salários de até R$ 9,8 mil - G1",
    "fonte": "G1",
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQT2NMTlV4VWhvN1l1eldfOHpSZ0JwMVBmc3ZweVozRVpKTGlLZHo3QnQ0dDJ3R215VnljbWtTc0JveHh2c1VYc3lDWFlvVjNIa3pITUJCV0g0MzJSQXVTa3NSdU5PNV9FYzBaQ25Cb3pZMUpSWEdLZU51UTMtVmZpOVZkb2JxVTg4SGhMX3VEVlZfOU1fUWRJOXFWN204cGNCQUJyTl9UWjk3ZkxpZlplZjRGSUF1YkxlOHBQLWtBb2FZRmFRNTVIbUJ3QzZXOU1CT3h5cFhwV3duRlJtMFdManQ1UmZzb0t0TzJLNEhOdDJ2U3VQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQT2NMTlV4VWhvN1l1eldfOHpSZ0JwMVBmc3ZweVozRVpKTGlLZHo3QnQ0dDJ3R215VnljbWtTc0JveHh2c1VYc3lDWFlvVjNIa3pITUJCV0g0MzJSQXVTa3NSdU5PNV9FYzBaQ25Cb3pZMUpSWEdLZU51UTMtVmZpOVZkb2JxVTg4SGhMX3VEVlZfOU1fUWRJOXFWN204cGNCQUJyTl9UWjk3ZkxpZlplZjRGSUF1YkxlOHBQLWtBb2FZRmFRNTVIbUJ3QzZXOU1CT3h5cFhwV3duRlJtMFdManQ1UmZzb0t0TzJLNEhOdDJ2U3VQ0gGDAkFVX3lxTE9wN0w2U0tZVXBwVzl2UUx5WFVlRktPbThzRVIzYXhla0g1REFOVy1vRFdlUml6MnlNWTJEN3ZUOHB2STZDNXpmYUFtdk1hazNzbVVMODJubXRSNFZsUlVaYVFDdUtDTjlqNFZvNElQbDdIT0ZQQjdEaFExUnVnWWdGXzFCX2FFYkZXSVliZWdjS3BRaFBidEhlc0hIMllWdjFMa0g1cldJVzUwZFgzdmNzSndjcGZNZVBlbWNwRUxhYUdQb2ZtdzFRWXFsbDA4d1YyWUUwSDllbzdBWjBKVDdSNmFkQ3FaYXI0ZThfajRZemp0MkNUUDh1eGNqQk1ja0xoYm8?oc=5",
    "ts": "2026-10-19T13:20:40Z",
    "uf": "SP"
   },
@@ -5067,7 +5543,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPR2czZzF0anFkc2NTdzJ1cER5YnV6RU5UTlRLRlJwUHk2RWdOdmdkeG9SeWhrYndXaThkeHVFTE4wMEt0cEF0RklVYnFKNWlKZEdEQmFnNi00a3YxVkVwWTNkZ3Q0T0FMT3FrSkxrOVhXekNKa0hSRW95Vl9UUnBnRdIBhgFBVV95cUxNS2RLREk2dGdMUDRqcVkwZXp2ci1ONTBlVGpfX0h3LTN3NHFlUkRaSVNudDNxRlZIb2VUc2pSQjZGLUdQRXdUaW5adUN2ZU1fZlpiNjJrY0FBNDBRS3lJSzNfTDNnYXFzUXY5N3owSGRPcHBIcHVIbU1LMTBHSUVic1lqVXJYZw?oc=5",
    "ts": "2026-10-19T12:35:00Z",
-   "uf": "SC"
+   "uf": "TO"
   },
   {
    "titulo": "Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17 - PCI Concursos",
@@ -5096,13 +5572,6 @@
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbW5iWEJHOW9MYnZqNTNTMDA1TXJIWGVveDl1OTRSU1VPSnBkT3NOcXdkSlNxTVhtU2pBTWR0QVdwSGZtRm9TbjBNY2s5SzJfVXFvWE8taXcyT0dIUnJfWE42OHM3RWVIR0xOQ2dUVDg1T2ZDeFlyRVVvUWc5akhCaE0yQ0lpVU5scUNrb1FXMmJfa3czMGNmMkpnR1RRa1hRS1JQN1Ewa24zMWVXU2liaHRQNFB5bTZtek1pNXlR?oc=5",
    "ts": "2026-10-19T12:29:00Z",
    "uf": "PE"
-  },
-  {
-   "titulo": "Concurso TRF 3 Servidores: banca contratada; edital iminente - Magistrar",
-   "fonte": "Magistrar",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5qbFpUcFUtc20wVU53T1VQUHlVekFDajBBcEtab1FtcGVKWjc3VUVsS0lxcnA1Z1cwYlZiTl9kVlQ0MkRfRDI4R2lFWS04UFBRX1lENEtNSUNhc1ExaUJj?oc=5",
-   "ts": "2026-10-19T12:27:45Z",
-   "uf": "MS"
   },
   {
    "titulo": "Prefeitura de Braúnas - MG abre processo seletivo com salários de até R$ 22.090,10 - PCI Concursos",
@@ -5196,6 +5665,13 @@
    "uf": "TO"
   },
   {
+   "titulo": "Concurso TJ SP tem editais publicados com 132 vagas de até R$ 9,8 mil - Concursos no Brasil",
+   "fonte": "Concursos no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNldzRnBNSzk4ZG9uOG9ndlNvSWVuNFpaMmFRS2lDalg1UEgtVUt0V0lQS2pub1JSUFZGaEk3QkxKcGRadmtNRFRWVkYweFhqaFRUUWZJSFVPUUZEOXBzajZxd25GWUJPaHdnaGs1YW15Q3VwY2tqME13UUl1bmdtTFNaYnI4eG0yZFp6cnNfZzBJcWo3WnZuU3NMVmplYjgwV3JqVUx3ZnlwbjBMU0ZOOE5HcGxLVGJYUnZDbExTSQ?oc=5",
+   "ts": "2026-10-19T11:30:22Z",
+   "uf": "SP"
+  },
+  {
    "titulo": "MP cobra anulação de contrato que teria dispensado concurso público em Marechal Deodoro - Cadaminuto",
    "fonte": "Cadaminuto",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWVk0RTBYTy04dDJ6TWRMUHZGN3BFRksxNVpNbVhhZFdfYTdxWVdiblN6d2xXTGV1V2s0UjdXTzJBSjNWMEF6RFdLeWZ5YmJMeTRQUGpaMTY0dWt6Tk1iaHkxOXFnbDlNYTRZbjlUdHhyZnVxMGJwYjgwOVQzNVNJNjRRRVI0UVcxS19zdktiQ0IxZk5hdDFabDZHQ3Q2bHl6N1R2ZWJSd3QzNmZpWG9oQmswNEJTV3Y0VDdzQndvNWk2MlFVV3ZkamJCN00xc0V6alE?oc=5",
@@ -5263,7 +5739,7 @@
    "fonte": "Qconcursos Folha Dirigida",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HZ2lEX0tLa3hTa20wOTFpb2JrVkdmaVpzRjIzY3gxcG1kUnQyTUNBdUF1QmNGQ3BXejJtODlrSDdwUHdxTWR2cDVITEpMWVJRMzhHSUZhaW1RVHk2dVcxS042OTd4SmVP?oc=5",
    "ts": "2026-10-19T11:06:00Z",
-   "uf": "RJ"
+   "uf": "SP"
   },
   {
    "titulo": "Concursos e seleções: veja inscrições abertas no Ceará nesta segunda-feira (19) - Diário do Nordeste",
@@ -5420,13 +5896,6 @@
    "uf": "PB"
   },
   {
-   "titulo": "Concursos SP: seleções previstas, autorizadas ou com banca! - Estratégia Concursos",
-   "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzZ1k2S3lpZ09oOW54ZzRxczAzdjhBX1g4cUtjLTJndXJUWHM4aGFqS3NtaHVORnJFcUowOWJKd2dJNGp0bXVHMHFBOVNhZHlxeFJjZWk4WlJqaktWOTNPbnhKSdIBaEFVX3lxTE56bWxySlc5QmsySFhKWHV2dEM5TlZOLTFwWHBNM0U5TGxvMGxtQkZPa3hHc29MZ3VhT1lkc1M5TC05S2NoLUtVUW9seFlRbXd0MFUtYnFZcG1la1E0X2xmdWpiQmhPRnkw?oc=5",
-   "ts": "2026-10-19T09:03:00Z",
-   "uf": "SP"
-  },
-  {
    "titulo": "Concurso TJ SP lança edital para escrevente técnico com salários de seis mil reais - Imprensa 24h",
    "fonte": "Imprensa 24h",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9SZC0xcXlwSUhVYzlrTm9OeTJrcTRCbE9JbEVROE5telpINnd0U2RNRmFUcjRHdGt0QjVFRC1DWk9qWU5uUUhFOHR6UnNXMzRMVTdxYi1nVUxXVnVHUzJMZ01JOGZrZlpVV1V6Qg?oc=5",
@@ -5438,7 +5907,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kdWo1LTIxOGxTUEVGSmY3UHJockJ6eTVOYkJkd09BZzNhcm51TW5SRUR4dTJQN0xQMGJHMlJyYkYwQlYwR3BRLW81ajluQjlGdDRUd3hFNTZHUXhqbVpIX0V0MXBSUkNhQ21ja3ZB0gFzQVVfeXFMT0I4ZHFTeUg4Qng0NXFGSDVRcVlFYkZDOXk2V1Q2R3BzcmJTZmd0aWctMHVtX2N4b1pSVnJTT29DU1F0Z3JOX0hzOWF1M0ZlQWdmRkdhMEc3Y190VFNyazB6S0dVNGFMUVlHWVJuZlBBaU1BOA?oc=5",
    "ts": "2026-10-19T08:46:00Z",
-   "uf": "TO"
+   "uf": "RJ"
   },
   {
    "titulo": "Medalha Silvio Vianna homenageia mais 10 servidores efetivos do Estado neste ano - 082noticias.com",
@@ -5462,6 +5931,13 @@
    "uf": "CE"
   },
   {
+   "titulo": "Concursos Norte: muitas vagas para a região em 2026. Confira! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE12bmZWcnE2NFFhOTU5WUNfZUhvY21jUGV4QzJfbHJaRV91TjJqbThNWThFZTMxWnY5cFdtUjUxd1dMbEZ2Qmo4aXdOV3VzSm5OaUhJWW9uS1paQkp0RzQ5LWFQeE9yZFXSAWxBVV95cUxQSEY2b25VRlh3T2VBZGJnckJNc3dHal9fM1pNQ2Y4TzhOYnV5TVk4N3A5Qm1zV2VIbjVRckFWT29ES2NucXRuVnZJX3N6MHNxRDJ4akRJM25FOWVQMEY0d3p4cHVyQ3Jna1lndTU?oc=5",
+   "ts": "2026-10-19T07:42:00Z",
+   "uf": "TO"
+  },
+  {
    "titulo": "Concursos Abertos de Prefeituras: mais de 40 editais - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5feUdzdE5GaUllRGRhaEdoNzVIYVZueHU1cW1fZDJMVklXaHhUT1RUR0F3aGhwUC1MMENxZUItTzZybUktcHplQXFmR2ZhejRvSkFWbVZneVFneEtYdUVzTUVobzRGZ3ZkekJ1a0Q2WHk3UzRpYnF4WEpR0gF_QVVfeXFMTTVWNjlyVWo1NlNhS3A2TW1FR3NiS2cweHBpOERBX0pwTkM0RXUwX0dYeUxheE5hTkFNTVYwejV0X3p0dmZUcjlKYkdqemVycF94ZXdKcDY0THEwbDc3RzFSN19xQTVMeV83MTlaRHlXUGlOR29IQVV3bFhnRUJhRQ?oc=5",
@@ -5473,7 +5949,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVZDZ4YlpRQkpueC0wYktWUzBSVTAxelpyN09nN2xydWhWbUdPclc3VlRqU2FlRmhEajQtejBnMUNNMGVzNnkzOWFRbUNfbFZjd054UmVUOTdMOWtOZTRBenF2YUJsbDFSQnV6LURrajVFdVZWd3pz0gF8QVVfeXFMT1EyVjMzLTd5eU5YdDhlenJXUDNvNGkyNF80bXkwRXZkek0xaFhtaFAzaHZmSUNYRXcxd05acmJzcFRNRUt3SXBIb2RrVGwzaDFobjIycTl0MXRyenROZTMwRThoMUlnRkw4X3BXVmhDSW5yWmNOVTBtNC01Uw?oc=5",
    "ts": "2026-10-19T07:30:00Z",
-   "uf": "RR"
+   "uf": "DF"
   },
   {
    "titulo": "Concurso Trensurb RS: inscrições são adiadas! - Estratégia Concursos",
@@ -5481,6 +5957,13 @@
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5tTm85MkZrVnE2NktlZ0ZhVlpaX2ROejhVRmhyb1BoVnJ0cHNzUTIwZzlIbXYzT3VLMmJBYXMxbWFxaHNzcmlvZkk4cV9tSmx0RnhENDFKZEQ1WDlLbWN5U1ZSN3RNU0xTNFo3QTF30gFzQVVfeXFMUERiUURGeEhRWWtxaFhYRTg4RGQ4QVpoSC1wb0s0MkVBQ0Z5RXJmT1FranQxVm1ZZjRSWHFWUlpMMkF5OVlLVlB6NXo5T3hwWkxJeGliQ0tFSGxWbTRRMEdVdF9FM09uYzd2a0tFb0w4MzFXUQ?oc=5",
    "ts": "2026-10-19T07:25:00Z",
    "uf": "RS"
+  },
+  {
+   "titulo": "Concurso TRF 3 Servidores: banca contratada; edital iminente - Magistrar",
+   "fonte": "Magistrar",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5qbFpUcFUtc20wVU53T1VQUHlVekFDajBBcEtab1FtcGVKWjc3VUVsS0lxcnA1Z1cwYlZiTl9kVlQ0MkRfRDI4R2lFWS04UFBRX1lENEtNSUNhc1ExaUJj?oc=5",
+   "ts": "2026-10-19T07:00:00Z",
+   "uf": "MS"
   },
   {
    "titulo": "Concurso TJ PR Juiz: prova oral será em novembro; saiba mais - Magistrar",
@@ -5501,7 +5984,7 @@
    "fonte": "Estratégia Carreiras Jurídicas",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5QnFCM2ExMUxoM0R0dDk3NkpNd18zS3dMNXRKbHMyRV8xanVBNFVwcTlfWk41aWxDOFV1dnl0OWE4VUdmUzJsYzlVdmVSTllSMHBhUGFXZk9ibENMbTJ3c0NxTWJZNjRPWVU0ck1iaEFoZ0hDaVdza1E5RQ?oc=5",
    "ts": "2026-10-19T07:00:00Z",
-   "uf": "PA"
+   "uf": "SP"
   },
   {
    "titulo": "Concurso Delegado AP: inscrições prorrogadas; 102 vagas - Estratégia Carreiras Jurídicas",
@@ -5543,7 +6026,7 @@
    "fonte": "Nova Concursos",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFByTlJRLVJQQ2MtTU1QSEJBOVkzRFpkRWk0aXhZRENFREd5R1VSZWZXdVo0VVZrb0V4eWs1OTVkRlBxOU5lMDZyWnVZNzVGMmRoSUptZ096T0xoenM0cml2ZjBhREJ3cEI5akZXMVhLdGNqQQ?oc=5",
    "ts": "2026-10-19T07:00:00Z",
-   "uf": "RO"
+   "uf": "SP"
   },
   {
    "titulo": "Concurso GCM Itajaí: sai o resultado final da redação! - Magistrar",
@@ -5571,7 +6054,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdUlscWc2ZDNpdTN0MUFyeG9lWU1FLTFNZ1lFdHFPMnFIWE5hOWxNWUNEV0RUc2tNa2hRNHlkU1hxM0dyNlVSM1EwNFZkX0gtT2d1WHVHX3Bham1YS3BaWFZueWhNcUpNMENEaDRIeE5HS2pVNUlUQzVvMTgzMThZcF9FQjRwQdIBiwFBVV95cUxOSU8zSV9ram1PMXhZdG9QbjlVZEpzSFgxc0hEbUlFUk9lNk4tMnNPLXNmbFctcEx1TWJRcmdybV9JOTJ6TURCR3hWUFpvRnRnOGlDSHcxZTBodDBKUTZZYWE5eXhjWE5kMVBCMWJYVVNBYzlWMHA2cHhDYWdZem9WWFQ0c2pDTDZqSzRN?oc=5",
    "ts": "2026-10-19T06:38:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Prefeitura de Aparecida SP: edital 01/2026 publicado - Estratégia Concursos",
@@ -5928,7 +6411,7 @@
    "fonte": "G1",
    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQX0ZvNGlhc2ZsYTR5QXBhLS1Bd2xKNnZ3VlNrT2dYcThOdUhkWTdNRjhsZEY2Q0lLTXg3bG0tRkotOE52aS00a2o1OGpNdW9RRWYtVGFZS1dxaEtjTkVuTm9WY1VDdTF6d2pRMTRSamdYWTk1SWl1MzNtdk9Nd2dhTE9yY1NBeldoQkJOcmJUbUZPQmVBSWx5OTNVd3gzV0ZacmM2dFRDTEc2aWRNWmMxZ05kWERwelphcWRNb3p4NUhKMlIwd2ViRm9LMTFFQTFiQTNOZGwtYnFWcTdsWW8tblZvOENvV2RwM1VQaXdn0gH8AUFVX3lxTFBKcGFWbG5nOFlaQW5VNG1XLUU5azlZU0VqVkhZdlVTeDV5WVNncUNOSW5ReFBOZXVJT3duX0FlMkRwazR6c1hBdmZtbE1JdzIzTXVUM2h5Zmx0SldqR3pUZWtQbVRiVmtQWWhxdW1zRUVsOHpMWTN2NlR0dTV6Z3FXRXFCcmRwZlM1cHlEWlFLVEdwa3k1Nk1GYjVNVlNuenhycWE1U0RMcjY0WjRGQnBkNloxYXZ3c1J4LXBEeHFUdGxBTTJTdTh1WHZXRVZTMEJxOWFaWGx4aHFabTNVcng3T0pCLTVxZjV3UWdlbTBQWU5lSzE0Nmx5bXlJWA?oc=5",
    "ts": "2026-10-17T23:22:48Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Jornal Correio Popular Notícia - correiopopular.com.br",
@@ -6040,7 +6523,7 @@
    "fonte": "Fatos de Mato Grosso",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRUlJS1FObDFJbTVwSjBJZ0FMNU01QXNmcXVPMWVYX3U2a0NfeWlVMlZJWFRFSkF4Z0RHbmVCNGUxUmx4SVpORE43Vm5CQ2tya3pMVnFVSjVCTXE1Qk5Va2xjQlFyb2FuYzZYVGc2TC1iNFVJZjlLSk1iOGxVUW9FVVBDMDAwNWEyTVBXc2ZPWFpJQ1k3X2ZmWUlRdHZERUkxakJFR05BMHVSWHVpUHc?oc=5",
    "ts": "2026-10-17T18:29:00Z",
-   "uf": "MS"
+   "uf": "MT"
   },
   {
    "titulo": "Prefeitura de Benjamin Constant tem 90 dias para apresentar plano de concurso - Portal Tucumã",
@@ -6561,13 +7044,6 @@
    "uf": "RO"
   },
   {
-   "titulo": "Governo do Amapá reabre inscrições para o Morar Bem Amapá, com subsídios de até R$ 55 mil - Agência de Notícias do Amapá",
-   "fonte": "Agência de Notícias do Amapá",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSlM2dUE2dDBJdG9pM2QtYy1nZUthWlpNYm5tclZscTNRV1ZkWl8tMXBBaXR1T0pJb093TzhCdkQ1UjVOZ1FfOWRTcEx5MmNQeGNGeTY3MkFheFNMWXhuNmlZX2NwTzRuY3o4ZWN0czVVT2kzUXNZSm12U0JsalFPUC1Jb0x0WmhrNEltdGZEU24tX3B5aHdjR05JbzV6TkxDWkxiSUlnOVdfbHpfZmIzd2ZwcVFuWloxaFc1YWZfaXNlVVl4ZjB6dg?oc=5",
-   "ts": "2026-10-17T00:11:25Z",
-   "uf": "AP"
-  },
-  {
    "titulo": "Governo do Amapá e Instituto Golias prorrogam mutirão de castração no Museu Sacaca - Agência de Notícias do Amapá",
    "fonte": "Agência de Notícias do Amapá",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONGxiV182aHRxZGRkYVZsUXB6cngzNkdpSVl2TW5jdGdDNFRMLUZHRVNPN2NneThpNVRGY3pfSndVNGtIZVpvS0pRX2VJSUlsUlB6Si10akNRX01vWjJYRXE3eHBvLTJNWFhvaDhfZlhwaTh3NXRuaHI2MnJvT2lYcEFURFJWeW9jTWlRRU92WDdqVXcxU1N3b2NNUGk0MEdVNV81ejRIa1pnWU50VkNxRE1YZF9aUEdUd2tSaFpOWmNSUQ?oc=5",
@@ -6762,13 +7238,6 @@
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQZk9vRFZKMWdkRDhhR0UwTy14Y0NYX2IweURNaTNGbXNzdHlEcjcwdVRvYUM2aFB0LVM3WU5DU3YzNzhIeHl1Znd6dnB0T1BsNFhVVjgwdlA1cGNFeURPZmpNR2g1cGtXS1JISWpHVnF6Ni1BbTd1RVRLN0liQUZSOUxWRmxCMGI4NXRsM0c4NkpCNWRWWFFidlNVUmlOUVZhcGdzQWxjWGJmeWNrSnBQVVU1T0lIQ0VYLVpnV1JKUE5aZEFiWi1OTEFKcEpKdlU4eEdNcUdlTDZzYmpYLUowd3pqTFRvdmpsUnRuQnBqOFB2dGpOSkZWb0JIZ2c?oc=5",
    "ts": "2026-10-16T22:16:20Z",
    "uf": "AP"
-  },
-  {
-   "titulo": "Palmas prorroga validade de concurso da Educação por mais dois anos - Jornal do Tocantins",
-   "fonte": "Jornal do Tocantins",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZzVJRENHRy10Slk2Y1lkTHhNRWg3RXBfajNWREQ5LWRYeWFCa0Job0JubnpXUE5JSmplWXJIODZVN2hlWHdiam9rQ1JIQnI1azZJZ19UQ25qQ1lLVEJ4b2RsOVhkcndzNldScDFrUlhuVDlFTG1TNlF1S3Z4WnFRLU0xLUpkTEJDRDhjSXFsOEVMbG1BNlNCOVZLZjh2SU5zZzA2aWkxdk9seVJvdTBGRE10SzVZX0hrOVNrRTlkSlJLRWRRSHlKWHhMYkVsS0I2WTROTzBmeWhyTU0?oc=5",
-   "ts": "2026-10-16T22:13:01Z",
-   "uf": "TO"
   },
   {
    "titulo": "Concurso da câmara municipal de Resende Costa abre vagas com salários de até dois mil e seiscentos reais - Imprensa 24h",
@@ -7041,7 +7510,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNS0p1Rm5aS1ktWG0xNGtQZU0zTUpOb3cyRlJhN2k1eS1Ga3lMb1pnYmx1WUIxXy1QVEhqNnBIb21mRnlIV2lsSjJBYjRJUHVWNmtwWHVrYUxaN0FxMktYaXh0NldxMk1qZmszOVBPaFpSUmNESkM4dGg0Nk1VX3hpTFVLc1ZQazFEOHBsMzZseTBKSHVSbUFWcnZwckNiM01pVktWN2RwY0hKU1JX?oc=5",
    "ts": "2026-10-16T19:38:28Z",
-   "uf": "TO"
+   "uf": "RO"
   },
   {
    "titulo": "Edital Florestópolis-PR 2026: Prefeitura abre concurso com 46 vagas de até R$ 15,3 mil - Ache Concursos",
@@ -7083,7 +7552,7 @@
    "fonte": "G1",
    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQVEk1aVZFWmpqLXptQXd6eFdfZUFRLThNZFR1QUtvMDZNcmdJWi03UVcxYjJsNUt2dktzN1Q5M0YwYVRkOV9HM2h4TGFLQ1RpRVVuN0NPRDV4a2xBZ3ZjZWRMYVF6N1JyWm5VMVA0MjMyLWhtLVBnckpDcDdVY0VDc0FucldsUURoY1daUGdYSXlXdDFEY05DNHhKZmZVY05YYVBwdy0wN09wVDhjX1pGRS1pNU02ZUVIRG1jVFBQTUN1Rmhja0FxV2JibnVRejJqV2NSUGowWlg4c1hpeUdfd0dpYTdDVS01QV9N0gH6AUFVX3lxTE5Jd0NqbDIxRmRmeDhXQ0oyMHlYTEY5NGZnaXJYd0U0ZGJxS3hmV0lxUU9MZkduZ1JweHZTTnFYeXBhZUhuSXVIYlYwdkNBalZNNU1uaC1vTks2U21nSjRQcG9uZFVrQ2NBdXoxbHlBMmpBWkZ0MnlnTGhjMnJ3Q3BxV0pIUW1nN08xX05jMGNSdUQ3VmthWGZnbzYtRm9jYlZkT1V0ZW9LQTZPT0JmNFBISFB0ZWVlc1poV3lqQ0dpRXBjQnM1RmlZaHVVVE1CQ0N4ZVZaNVpaOTJJYXQzeGJta0NVRlhLdVZRUGZvdmE1ZENFVHlCTHFTeFE?oc=5",
    "ts": "2026-10-16T19:15:26Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "IFCE abre seleção para professor substituto de Biologia Geral no campus Paracuru - PCI Concursos",
@@ -7265,7 +7734,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOWZQakhHQXpVVWlQOWhmMTcyZW9MNlYyc3YwOGtYWkdSQl96QkI2SzlpdVBHcVF5SWlyNE9HODI0c1lPSHExaGpZTEYzaW14dmxvTDlvVEVYcDh2S2lUZ1FaVzBMQmJHTHJkQzNOS3hldDV5VEpYVmdFNzRMQUhaeVBRUHRWejlvMTBVOUtuUzFRdk0zcG55aTdZZ0hvWkV4UTI2bXc2d1dZazFCRW9pNGhpSEVIRnlhRXl2QjZNcE9QSjZENEE?oc=5",
    "ts": "2026-10-16T18:15:28Z",
-   "uf": "RO"
+   "uf": "MG"
   },
   {
    "titulo": "Estado autoriza concurso público para o DER-RJ com 35 vagas - Jornal Folha da Terra",
@@ -7594,6 +8063,13 @@
    "fonte": "Qconcursos Folha Dirigida",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HclRoZTZWRUh0V04tSnlBd0MtcW90QXBQQ19OTHZzTlVKY20wYnhIczRxX3FrUUhmekctcV9Tbnp4VzZEeHp0QVZkdkJPX1RRb0l0MVpnRE9zLWoyUTY5Vnl4WlhhWVg0OWlzSnBPR3lPOWJVMjBWRjh0VVA?oc=5",
    "ts": "2026-10-16T15:47:00Z",
+   "uf": "DF"
+  },
+  {
+   "titulo": "Concurso Câmara dos Deputados: passo a passo das inscrições! - Blog Gran Cursos Online",
+   "fonte": "Blog Gran Cursos Online",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQ3llSFlpTXE5dDgxd2VpY0NTQjAtZE84ZlQ2WXB0YWExbWt4TVNHODlITXJvZ3dtTUFHTXZtTF9kN0dFZzFiaWZPVENvcWY0RDBTak93YXFSakhOcGxVZ05RUDdkb0wyUzJGd3FOaVc4U3QyS1Q5XzB0UVZNX1ZmRFNrSnVhc1ZiTjZRak9YbS1Gdy1Ja0M1STE4NFhNUQ?oc=5",
+   "ts": "2026-10-16T15:43:56Z",
    "uf": "DF"
   },
   {
@@ -7965,7 +8441,7 @@
    "fonte": "atlaspublico.com.br",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QTERnNndiLUxldmwtVXduVk9LZkZVVWdaMlpZbjJPM3BvaExtNlpxMUF0RktZZ200djJQZUplVHFzNUJaQjI1YXpWUjlvRkljZmkwZmZzVlFaRWFhc05v?oc=5",
    "ts": "2026-10-16T12:06:07Z",
-   "uf": "MS"
+   "uf": "MT"
   },
   {
    "titulo": "USP abre concurso público para professor doutor na Escola de Engenharia de São Carlos - SP - PCI Concursos",
@@ -8301,7 +8777,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YWE1rdzltN3dEN3pyZ3JrcmFpNE1lZktYOF9BVEdPdXBQYWtVY2IwNnF2QXZYeHVCSUVyNjZaREZKNjZ3VXY0RjBDMjVpYzN6Z2FRQXRzLWZEaUpkZFNOUWpoOFZhZ9IBa0FVX3lxTE5xYjVXd01JcnpPSVljY1BPV29Ic2ZYQmdaX0FlTDRCaDZET05QclMtTkxIV1J5MVF1UUZEUWt2WkI3R0tzeWR4TnJGc21HOTBLR3M4a0NwenVyWEotTXREbTVRWi1xeHREQlNz?oc=5",
    "ts": "2026-10-16T08:25:00Z",
-   "uf": "AP"
+   "uf": "TO"
   },
   {
    "titulo": "Prefeitura de Caçador SC 12 vagas em concurso público - Sou Enfermagem",
@@ -9050,7 +9526,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeDRibFl3N3N4dWdPU0k2YmtfUWhYZ0dORFJuOEppVkxsaDdwbzMwdkM4cDA4MlI0M01RUWY3VmdJTTZPY245V2Uxemhob2FaT2dCZHI3SjlwYlNlazhVVExEemtDVmNINDVVVEZCd05hdVZmaGpodG02RDBTQnVzYWNpNmRuTVRLaTcybU5vcWg3cGpsRVVUdmdiWkZKdVZlQnMwWTdENlJMSkFlSG94SFN4VlBOakJfVnc?oc=5",
    "ts": "2026-10-15T19:23:15Z",
-   "uf": "SP"
+   "uf": "PA"
   },
   {
    "titulo": "SAAE de Iconha - ES abre concurso público com salários de até R$ 3.236,14 - PCI Concursos",
@@ -9183,7 +9659,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQREk1QndPQlFiTzlMcjlZRmlfUERRWUV2bEluYXlINjZtMkEzNjl6ZDBSNzliMm94OVBWeC05Yl9iUWhzX0trZ2FUM0hlcVlkZzFZc1FwcXJpRmd4T2JMQWZvVnFXeWNsZVZaTUxBTlZQbUcxT3AtcEkxMjhuZGNCLWw4SHd2RGhZNjhqTThfeUdqbzlNYVd0MU00Z3RsLU1ud3Z6SVRZWUw2QQ?oc=5",
    "ts": "2026-10-15T18:42:35Z",
-   "uf": "RO"
+   "uf": "PA"
   },
   {
    "titulo": "Concurso Nova Boa Vista (RS) abre vagas com salários de até R$ 12 mil - ConcursosSC",
@@ -9212,13 +9688,6 @@
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NdXNqWUF4MFdtMGZRT004bXQ3cEhfVTZDN3FUc1FoUF9WWktINzdZc0wxdHRZZUY2aFFZY2F6X0FhNDVZMlpLWXIzdHJRZ0xoOUx5SmdLejZNcnJJZDYxODNuYWdCbnk5eVR3TE9kZXdSRm8?oc=5",
    "ts": "2026-10-15T18:05:05Z",
    "uf": "SE"
-  },
-  {
-   "titulo": "Concursos MG 2026: EDITAIS previstos para os próximos meses - Estratégia Concursos",
-   "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwSnhjOWhWam1ObnN2cm45VlU2dDhQV0YwS1ZybTRJVG1nX0J0XzkwRDZNQWJ5TTRQVDJLbERDYl9meFUwRzhab0FicjJ2M2dZV1lPVzhNNU9mOWRfQ2hvLUE5TdIBaEFVX3lxTE43Q3NhcENkNkN1UGoyU1NWWHFVQjJYSjhwa29Reno1RzhKNXJTUDc4OUo5RDFMdGluV1h6LUM1REZ3RFpPbk9VcHRub3BiU0x0WFdWTkR6VmJsX2FJNDdpbEpwZDQydUhi?oc=5",
-   "ts": "2026-10-15T18:03:00Z",
-   "uf": "MG"
   },
   {
    "titulo": "Concurso com salário de R$ 32 mil está com inscrições abertas; Veja edital - Portal Salvador FM",
@@ -10341,13 +10810,6 @@
    "uf": "CE"
   },
   {
-   "titulo": "Concursos RS 2026: as principais oportunidades previstas! - Estratégia Concursos",
-   "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBtVXNfdm5JM1RLZEVxYXVxck1YZlRoUkVEblVQa2Jib2Q2U20wVXZXdGk0VXdVSmFlTlU5RjhKdFpBY2VPMDN3RUt2QjVOMERxSWZMbGhteEEyNjJLSHY3VXFna9IBaEFVX3lxTE15TVN1SnZsQnotODI4eHRIWllid1FqZUJ5Y2s1T1l5NFY3THc0MnE2TzRTSG1Id19EWnY4T0I4WjlyNFBTblBZUTlUcm9KdklPb2JXeFRCSDBsZklvQUZDODg5VEtrS0lS?oc=5",
-   "ts": "2026-10-15T11:39:00Z",
-   "uf": "SE"
-  },
-  {
    "titulo": "Lei sancionada por Fábio Bittencourt fixa mandato de cinco anos para diretores da Arsal - BR104",
    "fonte": "BR104",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOElaSkRKUDdobW5kZ0JYTFF6TURpeGR6VG1VRjlnN2pnaUJ3c2o5cVkweDhpMTh3a2ZlME11TFpCRGZSS0d4VEYzTjlRZUhaWjFsNlllbm5vaHMtMVNyMkJZSUYtYjJOM1J0SlBVaThrSjhXWnhsY2FJMkZKeHc1cHVxRXFuSV80NTdFMA?oc=5",
@@ -10876,7 +11338,7 @@
    "titulo": "Concurso da Saúde no Amapá tem inscrições prorrogadas até sexta-feira (16) - - amazônia brasil rádio web",
    "fonte": "amazônia brasil rádio web",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMzdwV2RTNHVHZENwWThCMHdNTU11b0JWOFJpM2Ixb1l3bzhiSDRld0djQW95ajRfbFJEc0dlLXUzLVNiZ2FLU0VUNmNSYzhSWkh2cnF6Z2dHRE1kV1lqVS1IRFlMYTAzbVpOOHBWMmJURm1GbFlxbV9oRk15aHotZDh3RHJ6OHA0QnlHXzhKSVVZQXFRTzNDTFpQUWE4X2pEd2JJMmpOLXlmTGs?oc=5",
-   "ts": "2026-10-15T00:38:22Z",
+   "ts": "2026-10-15T00:37:10Z",
    "uf": "AP"
   },
   {
@@ -10957,13 +11419,6 @@
    "uf": "RO"
   },
   {
-   "titulo": "Futuras Cientistas abre 470 vagas para Imersão Científica 2027 — Ministério da Ciência, Tecnologia e Inovação - Governo Federal",
-   "fonte": "Governo Federal",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUHFoTzhDdjZjWktzTzFBMkZRME9YVE1OUk0ybl9TVk04UGVUbUhsRnJmXzdOVERQcWhBSU9ueHltSFVoV3VlVXlaVk9rZG92czk3cnpjcUVmNk5iUXpGN2VoOTBXZ1lGOFNDY3ZVZnFRMHNXOUJYZmNRcVFuRFhnRkctbVRNMzE4QXRCS05mLWZ3SF9mS1VRUXh3MXJGYzhuU0RwTE5vd0UtcEc4bkhzaXVoclV5bEpPdWk1SVZHVUYwSUw0djJtOUJ6d0ttOW1zTDVxclpzVlN4UDZocjMzNzhvNA?oc=5",
-   "ts": "2026-10-14T21:57:00Z",
-   "uf": ""
-  },
-  {
    "titulo": "Futuras Cientistas abre 470 vagas para Imersão Científica 2027 — Ministério da Ciência, Tecnologia e Inovação - GOV.BR",
    "fonte": "GOV.BR",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUHFoTzhDdjZjWktzTzFBMkZRME9YVE1OUk0ybl9TVk04UGVUbUhsRnJmXzdOVERQcWhBSU9ueHltSFVoV3VlVXlaVk9rZG92czk3cnpjcUVmNk5iUXpGN2VoOTBXZ1lGOFNDY3ZVZnFRMHNXOUJYZmNRcVFuRFhnRkctbVRNMzE4QXRCS05mLWZ3SF9mS1VRUXh3MXJGYzhuU0RwTE5vd0UtcEc4bkhzaXVoclV5bEpPdWk1SVZHVUYwSUw0djJtOUJ6d0ttOW1zTDVxclpzVlN4UDZocjMzNzhvNA?oc=5",
@@ -10975,13 +11430,6 @@
    "fonte": "Ache Concursos",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Lb2RHc1k5X1hKdWpPZTdSci13dVNmZE5OWkdNUjh4QkRKRFMyeGl5a0hNYUtjVUsxMGRvWjlTRWcwVHpOcGJKRkthQlZhWlBCSXBKNkJYYW5sU3ZC?oc=5",
    "ts": "2026-10-14T21:56:27Z",
-   "uf": "PI"
-  },
-  {
-   "titulo": "Concurso Francisco Macedo-PI 2026: Sai edital com 49 vagas - Ache Concursos",
-   "fonte": "Ache Concursos",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdy13cUFMWXlud3I3azQ5VGJQVXh0Q2hoNHdaanFsbVdnUnB4ZGRZN1BidGZXcFVZakZVSkN4UnBSOWZyRnNSVFVqQ0x5U1lMYl9qTnhGQ080cDVXTGFMN1FpWWJlektOS05kZXgzRU1WVERmNWNKYnZkOGJ2Slp1UkJEVzZCQXlnRjJTaGp0WUhOMC1CWjFmTkhKb3Q5SWpWYTMyVGEydkF6WlNrckpvLUFR0gG3AUFVX3lxTE5NQTFhaExmVTRjdTR0NjM4VEJUdWM0Z3hIZWtyX3drNnZrSVJkLUJ1bU1qZ0VNaUdXSXZJLUhKUFFoN2JQTDhKMXdHSXU2SWRERFNQLU1WWWpoQy10bG1wa0ExRHVFQVpSSVYtV0h3ZmRBS1dkNVI2bElCcnB2TFlRbTVIbVpJcFk3cWJ4djRFMmEtNU9VYjFBMzVlaTJZOW5qS2ZKRmtabzM4WFh6N3EzYm44TWdMaw?oc=5",
-   "ts": "2026-10-14T21:56:00Z",
    "uf": "PI"
   },
   {
@@ -11328,13 +11776,6 @@
    "uf": "RO"
   },
   {
-   "titulo": "IFS - SE abre processo seletivo para professores substitutos de informática - PCI Concursos",
-   "fonte": "PCI Concursos",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQlVXazlRb2ZlVjVtYThkTHBoaUI1eE1LcW1iejZxVzYxZmJlWERmSEw3TUhMdHltcnlzTkdORkZIRjBFQ1VBMkl6MEVZMmUyRzhoVkV1ck1HUEo4ZEpETGMwemhGcElHLVhXTXJYTlhDMnI5OGpoV2Z4ZzBibmQwMVJ3b3ZrRnhVN2hNS0ROeHZGY19BVmtzbm44aEMxTmpMdHhsaWpIMmwyRWlmaHQ0dFg0TmM?oc=5",
-   "ts": "2026-10-14T18:29:59Z",
-   "uf": "SE"
-  },
-  {
    "titulo": "“Valoriza nossa história e nosso legado”, diz uma das referências da comunidade japonesa no Amapá sobre as obras na Praça do Equinócio - Agência de Notícias do Amapá",
    "fonte": "Agência de Notícias do Amapá",
    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOdkdkblE5dDVLSU5Gbjk1N0xyQ3QxVnVkaVF5VmJ2Y0tGNEg2VWJ2NE9lQUY4anhkcTFDTV83MFk2ZWRZUFZVbkZxYzNXRm5Jc09sRkszNGlQdEFtSXVKelVHRmlqTnJsRzBuQ2dWcHIwQjFBeHVjdTdzelE2VS1fYzNNYkJ4dUFGT1lzYU5MR3Azem9tR2hwSzZ2b2NrbEIyd3gtOE5rZDYtaHdYbWQ5NmNEbDhYNGlPSFhJSHVWMTB1SHgwTGpjX05na3YxbWgyZEdjak54NzNXMlh6TkM3MnVKNHNLanlneEJyRUVDSlhyVHMybkxSby1wdHZTeE95X2k0?oc=5",
@@ -11347,13 +11788,6 @@
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVh5d2FfWVpjSEdwWm9PczB2UEgtVUNiYzVVNXFVSmtpQTVPbTh5NnR1cmxwbG9tR2ZreDlvYmhDdi1RbU1sYUJULTlmd3V4eG5VdEt5Z2dUWjRoMmRjZDdZczk3ZVF4VmtMakNXb1d4ZTJkTUpWUkRmZDU4NTNoTUhrRE4xdGdXREFKeW9RcWZNTG10alJFQmdtV3JEQ2FxYWZka214VUl1dUptUlVN?oc=5",
    "ts": "2026-10-14T18:24:57Z",
    "uf": "AM"
-  },
-  {
-   "titulo": "Prefeitura de Rio Grande - RS abre seleção para Auxiliar de Saúde Bucal e Odontólogo - PCI Concursos",
-   "fonte": "PCI Concursos",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPanROc29hei00bDF2VGFFNEtTYnhfLW9Sd0RCTnlZLXF4N092VEJiT01OOWJsQ192blIwWU1mMWNCS0JvNEctbmNjTHUtb2Q2SHNlR1ZUQXNra3RmX212c3Y1QkU5ZUs1b0NscFlXYjNOZXRUR3ZjUDF4VFRzdlZ0VkhLVFhnaENNQUJxVU94WDRra3VQYkFQSS01RUlXTHl3T2VUTkJzblZuNkhjNk5FRm80ZEN0SG1IZVBiZHhXTGk?oc=5",
-   "ts": "2026-10-14T18:21:27Z",
-   "uf": "RS"
   },
   {
    "titulo": "Concurso FUNAC MA: comissão formada ; 500 vagas! - Estratégia Concursos",
@@ -11426,13 +11860,6 @@
    "uf": "AC"
   },
   {
-   "titulo": "Concursos Guarda Municipal: 1.460 vagas previstas em editais! - Blog Gran Cursos Online",
-   "fonte": "Blog Gran Cursos Online",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1MOUtacGZsZ1VzTGRVOHNGQTNqdTRvRnRIM3RfX2d1QnVYN090V2wwSDd5YW9zTUUxeTlVUi1yYU9sQk5WRDhEYnFhVWtINk9vb0JTcGtSVHJmZ0JHUklMUEI3M1dtQzI5S1o2MlVMOXl2dw?oc=5",
-   "ts": "2026-10-14T18:06:18Z",
-   "uf": "TO"
-  },
-  {
    "titulo": "Prefeitura de Firmino Alves BA abre concurso com 210 vagas para níveis fundamental, médio, técnico e superior - Qconcursos Folha Dirigida",
    "fonte": "Qconcursos Folha Dirigida",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZWxSV1V1OXZ3V3JpclVSU3NKcWk1UUZiMC1hXzVXMGgxTXAwdHg0SWVNQ3ZOZGE4cmxTdVltWGR4OURmaDhmOHFZVWhRU2ZpQkNqSHZJN1R1blpUVlpXUmZUQUpISGUyeHc0SlljLWVaNFdZdWFEd3NHWTNzWXFJTjBRQUJUZVRHUGtrODBOaVpVMFd2a3lKYjRBb3Q4YjdaZm5ISHJqb2tfU1pzbXdQSlRmS1h3cHZiTzREMjUyX1JMMm9zYUVqNFJnSndscDR3cFhoYg?oc=5",
@@ -11472,7 +11899,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qNUZGcF9yUEI0aFBjS1hKdWJOSWw5UnVzVFlac3ZlOW14bWk2QVdzeTBnY0I4NEtlX2tvQ19qVDNZSVpKeHNmOWdNZnhEamtJWkFzWmktTDU4aWM2YnJtVHU2QmFGU0lneXc?oc=5",
    "ts": "2026-10-14T17:56:19Z",
-   "uf": "RN"
+   "uf": "SP"
   },
   {
    "titulo": "Prefeitura de Chapecó SC publica edital nº 007/2026 do processo seletivo para professores - Qconcursos Folha Dirigida",
@@ -11480,13 +11907,6 @@
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdjhjWHkzWmR0dVllMFdkTzJubjdNR0xIVDhkTk84MHlBUks4eEVVTnBvUXBvLVpSM29zZUxMblVPZUM4c2M5ajBGUHA5YUVTRUMzcTZTcm1BaGowRGtWRm1PMEZsdV9MVXlrU0lEOGlOa3U3SmhrNm1uakZyUThRbTlqeG1ZSWNTZUM5TUJFdGpfcTM1R25wZDV3X1VsOFlURC1oOFF4ZHpyTjBaTXVEamdXWE9qUTd0c1BN?oc=5",
    "ts": "2026-10-14T17:48:31Z",
    "uf": "SC"
-  },
-  {
-   "titulo": "Concursos PGM 2026: veja os editais e as oportunidades disponíveis! - Blog Gran Cursos Online",
-   "fonte": "Blog Gran Cursos Online",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLWjhOUUg2ZEc4T0xFVVZ4NkhfR3RGZ2c0dXNESzJDbzdfQVhhNnNrOWJweFJONFpIdWVtSDI5X1lkc3k3c3ZvLUxnRklLcnBCalMtM0tfYmJ0akNzY29ZVA?oc=5",
-   "ts": "2026-10-14T17:46:52Z",
-   "uf": "TO"
   },
   {
    "titulo": "Concurso Guarda de Goiânia: edital em breve; 700 vagas - Estratégia Concursos",
@@ -11818,13 +12238,6 @@
    "uf": "MG"
   },
   {
-   "titulo": "Concurso SEDF: banca será anunciada nesta quinta (15/10)! - Blog Gran Cursos Online",
-   "fonte": "Blog Gran Cursos Online",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaZGdXemdaWGQ2UVRZSVJfaUUxUVNBVzhMWlZlWnV1NG5DTmIzZnRFbGJ0Q3pVSDVIVGRNck9Sd3dUTlAtdXYwbENIQ0s5NlI1SUJZaFpfS051ZElkVUs2anhEbFI5UjFBajlJTW0tWmVEUQ?oc=5",
-   "ts": "2026-10-14T15:16:45Z",
-   "uf": "DF"
-  },
-  {
    "titulo": "NOVO GOVERNO: Marcos Rogério terá orçamento de R$ 20,4 bilhões para governar Rondônia em 2027 - Rondoniaovivo.com",
    "fonte": "Rondoniaovivo.com",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbkRkWTczSjdReThPcXZ0a2p0Q1hGZ0g1QlV0N0VwaHN0c1hyckxrUDAwaTI0dExZN3BYRHRQYzhXNTVaRlU5Yk84ZU1rTk9kaVFxZDQxUlpBT1EzUGJyUXo3NkdDZEo2NDdEa3pjelY1V1h6bE8tN0hNcDZrdEFmM2VGNGV5M0lLaks3YUUyYWE2bEN5NVRGdFhGMlR1eFhldHE0aEh5N0tLZE8zMmhseXZmM0tXcGhpNmNwYXRkd1pZcl9CYno2WlF3WmtESVNxSmZkRGRDM1BFUllPTEdwenhXYw?oc=5",
@@ -12093,7 +12506,7 @@
   {
    "titulo": "Concurso da Educação de MS prevê 2 mil vagas para professores e mobiliza profissionais da Costa Lest - REDE JOTA FM",
    "fonte": "REDE JOTA FM",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQdHdRZFJRVWhJY3hjMzhSWXJENmpNd0xjbXVua2kwaXFmSGdXQUZVTEVBeUpmZVkwT0Z0bThQSXRSMVVaTGJROUFyMi1zQjNkN3RwMzJDTHUteTBnajZVT1JiTDBLMHZ5bHgxRktMNmhKMDFsLTdtTUdGcXFnSlpwRzJEaVFBTzhlSkF5M083UUpTWlRJVXJfdnAxTlFqTzNqS2VlcG5KUWZrM1VxeXR0NE1PeHluS0Q2Mk1nNjJJdnh3TWNiTVdXckl0OFRDTEMwYVJYY0c1Mmk4czRZTDdLOXpoYjUzWFVKYkFyel94UEpWYXEydUFocHlOWmU?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRzhKMXRiS3pzNEZHQXZiYi16ZTRxLU5NT0ZUNHpiLW9KUHV1MjFqTThjRkYyVkxldXVCWFFxa2V2OG11ZGlpVjFCQ2lNTDBNbGU2Sm0zdHZOMWV4NFNjRnZYakk0YklKU09HZUZnWlFwYTFhNTQyeWhtTzRnSG5pRFZ2enJJeDM0ZGRSVU90VVhMRE5aNndhYVlWVmxJZnY0Y0ZyTWNGZ3k2Sm56SEhNMmJyMW1EcG5fV3hjRkN5QQ?oc=5",
    "ts": "2026-10-14T13:33:28Z",
    "uf": "MS"
   },
@@ -12127,13 +12540,6 @@
   },
   {
    "titulo": "Concurso Bombeiros RR 2026: acompanhe resultado das provas - FiiBrasil",
-   "fonte": "FiiBrasil",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTFacExTb2JKNU9nZzJvVFl3Q1BNUnYzUFAxQWdlYTkyeU9DazlmMGhHd296UjBxRzZSMFJBT1REb2ZsVGhFTVdBWWVTTjJKMF9uNTZiN2NtWER2SUxOS0haYmcxZVF3bkVoSVNaRE5pWjN2cHdLRnNMVFJHSi1VcTA0Wms?oc=5",
-   "ts": "2026-10-14T13:26:08Z",
-   "uf": "RR"
-  },
-  {
-   "titulo": "Resultado do Concurso Bombeiros RR 2026: acompanhe atualizações - FiiBrasil",
    "fonte": "FiiBrasil",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTFacExTb2JKNU9nZzJvVFl3Q1BNUnYzUFAxQWdlYTkyeU9DazlmMGhHd296UjBxRzZSMFJBT1REb2ZsVGhFTVdBWWVTTjJKMF9uNTZiN2NtWER2SUxOS0haYmcxZVF3bkVoSVNaRE5pWjN2cHdLRnNMVFJHSi1VcTA0Wms?oc=5",
    "ts": "2026-10-14T13:26:08Z",
@@ -12445,7 +12851,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE13M0RQcjNZclpBeTdJRWdMVkQ2ZkNTa0JzYklLcFp1WGRHeFBORVB1NGRJelZtaW1qUXpwNUQ4YUZRb2pGWkE2WGJwVmxjcWV5YnREYTkzZkdvYmNxR180SGd3ZjRuUXlHTEFEVnRuNndvcy1I0gF6QVVfeXFMUE1wRElpLXYyZ05YV0JsS2JuRlIxLVJ5Y2czVGc2TEh5d3VPbUZzRG1ZOUcwLWNubzlIUkZ6dm5ub2ZNa09reFZKMEFDODc0QlU2VkxnWnBQNmF5TmowZ3hPSkh5SVNLdmRRSmlQZ1JKVmhla0wxZUNSckE?oc=5",
    "ts": "2026-10-14T11:09:00Z",
-   "uf": "RR"
+   "uf": "MT"
   },
   {
    "titulo": "Prefeitura de Carlos Barbosa - RS abre processo seletivo para cadastro de reserva em diversas áreas - PCI Concursos",
@@ -12588,13 +12994,6 @@
    "uf": "RN"
   },
   {
-   "titulo": "Concurso EPTC Porto Alegre: provas em novembro e dezembro - Estratégia Concursos",
-   "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9neWMzVFlDNk1MSnVUeHpEbkJoR0ptS2Y1XzZlVTJUeXY2Z0t3bFdVUmt6WnpndHRMTEo4RHMycExGWXVualVUQm1nUTNMS0tlMDNLYnFvVXJubDFMUF9yR1NKWmg5MGtnU2U4TGUzYngycDhhVmfSAXtBVV95cUxPVmVHSDZxTFNocnVEaGV0QzZ0Xy1rUnA2ZTViRHE0NXlsbmFoWEtaOTl3b3YtTDBlOGdqSXgydmNRalNjaXVVQmFDdl9VdWsxTkJYbW9fWXV0QlYzZWVfcW9zMHlERWQtSjI5azZCX0ZSdXl1SHVnZ3l5Rnc?oc=5",
-   "ts": "2026-10-14T08:45:00Z",
-   "uf": "RS"
-  },
-  {
    "titulo": "Concurso Câmara de Belo Jardim PE: inscrições encerradas - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1OMmdpa05tVXpuNVVuZzFmaFdtQTZ3cHFYYXV4WEk0WUVhTmxZUG9vaUNGUGlOeld0U19rNE9FNzdyal93MlUyaVljOXVvZFN2OW5KMGN1ZEtHVlpZb09Ydmg4NXFrMTFVdmZ0UExQcGZ2SFBNb1pXS3A4TdIBgAFBVV95cUxNYmN4aHk1ZkFrVXBudUFwSm5pc000N25tdGxpbGhlNzRidTRJMFZSbXBZTW1hdlBpd1FCMjRsWHlQVlR1bk5oNC1YWXdsZGJVNE1qMHp5TXJRSEhDWlUxZDhJODJsNjJkS1JRM2I5dkV5TThsQmEwdXJsWjlfeHBfWg?oc=5",
@@ -12620,7 +13019,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0zV3VqX1JsWWlWbHdJZGpXc1FmOGZNMzBJNEhPR1FpcGNoNGZQZU9jWTZuYXZzaEduRmRNR3B0UktnRVNBVjc5WFJLTmRWZHlmRV9PT2F1OHFMVWpWcnhtVVhQc3FSQVhhSzRzY0JSbjZJY2thNUhJ0gF8QVVfeXFMT2VxSDhoRFl4RGxFNHVzNVBQRWhpcUdKbTJiRGVCc2JpX2NQUi1OaU9yYWFidlctaWp6WWtKWGJObm1tZ1ZGd2w1UHlzTDhEcTRjUGMyY3NxME45bTNGOWRBRHp2OTQ1NHBFeDJidmk4eUtMMm5RcDVhbzlDaQ?oc=5",
    "ts": "2026-10-14T08:17:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Procon RJ: saiu o resultado final! - Estratégia Concursos",
@@ -12649,6 +13048,69 @@
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4SEZFNVNMQkx1MldzeGlhV0o3c2JLNkFTbGluMVJpLWM2TmNiWnRXUGp1WC1qQ0k0cnN0X0Q4YXFsWnU4emhfSUtwM2FOMUd0VzhEdkN5UzdEVmxCVzhkODdtVEhDa3FqVVRxXzFQd3lOVFlr0gF6QVVfeXFMUHNnVnBvWlZkOFktRVBBenFEZFQwWVVEYkRyYWlBeWZ4SXJteUVoT2g0amtMc3ZOb3I2aVR1SlI2R3NCcWNsSlhhbEZoblhDZHpJZ0FZSzFGRkVyMmlUMzYya1gzWXJpN1FjQldGLWNIOUVIOEc3OE90bVE?oc=5",
    "ts": "2026-10-14T07:11:00Z",
    "uf": "PR"
+  },
+  {
+   "titulo": "Futuras Cientistas abre 470 vagas para Imersão Científica 2027 — Ministério da Ciência, Tecnologia e Inovação - Governo Federal",
+   "fonte": "Governo Federal",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUHFoTzhDdjZjWktzTzFBMkZRME9YVE1OUk0ybl9TVk04UGVUbUhsRnJmXzdOVERQcWhBSU9ueHltSFVoV3VlVXlaVk9rZG92czk3cnpjcUVmNk5iUXpGN2VoOTBXZ1lGOFNDY3ZVZnFRMHNXOUJYZmNRcVFuRFhnRkctbVRNMzE4QXRCS05mLWZ3SF9mS1VRUXh3MXJGYzhuU0RwTE5vd0UtcEc4bkhzaXVoclV5bEpPdWk1SVZHVUYwSUw0djJtOUJ6d0ttOW1zTDVxclpzVlN4UDZocjMzNzhvNA?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": ""
+  },
+  {
+   "titulo": "Concurso Francisco Macedo-PI 2026: Sai edital com 49 vagas - Ache Concursos",
+   "fonte": "Ache Concursos",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdy13cUFMWXlud3I3azQ5VGJQVXh0Q2hoNHdaanFsbVdnUnB4ZGRZN1BidGZXcFVZakZVSkN4UnBSOWZyRnNSVFVqQ0x5U1lMYl9qTnhGQ080cDVXTGFMN1FpWWJlektOS05kZXgzRU1WVERmNWNKYnZkOGJ2Slp1UkJEVzZCQXlnRjJTaGp0WUhOMC1CWjFmTkhKb3Q5SWpWYTMyVGEydkF6WlNrckpvLUFR0gG3AUFVX3lxTE5NQTFhaExmVTRjdTR0NjM4VEJUdWM0Z3hIZWtyX3drNnZrSVJkLUJ1bU1qZ0VNaUdXSXZJLUhKUFFoN2JQTDhKMXdHSXU2SWRERFNQLU1WWWpoQy10bG1wa0ExRHVFQVpSSVYtV0h3ZmRBS1dkNVI2bElCcnB2TFlRbTVIbVpJcFk3cWJ4djRFMmEtNU9VYjFBMzVlaTJZOW5qS2ZKRmtabzM4WFh6N3EzYm44TWdMaw?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "PI"
+  },
+  {
+   "titulo": "IFS - SE abre processo seletivo para professores substitutos de informática - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQlVXazlRb2ZlVjVtYThkTHBoaUI1eE1LcW1iejZxVzYxZmJlWERmSEw3TUhMdHltcnlzTkdORkZIRjBFQ1VBMkl6MEVZMmUyRzhoVkV1ck1HUEo4ZEpETGMwemhGcElHLVhXTXJYTlhDMnI5OGpoV2Z4ZzBibmQwMVJ3b3ZrRnhVN2hNS0ROeHZGY19BVmtzbm44aEMxTmpMdHhsaWpIMmwyRWlmaHQ0dFg0TmM?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "SE"
+  },
+  {
+   "titulo": "Prefeitura de Rio Grande - RS abre seleção para Auxiliar de Saúde Bucal e Odontólogo - PCI Concursos",
+   "fonte": "PCI Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPanROc29hei00bDF2VGFFNEtTYnhfLW9Sd0RCTnlZLXF4N092VEJiT01OOWJsQ192blIwWU1mMWNCS0JvNEctbmNjTHUtb2Q2SHNlR1ZUQXNra3RmX212c3Y1QkU5ZUs1b0NscFlXYjNOZXRUR3ZjUDF4VFRzdlZ0VkhLVFhnaENNQUJxVU94WDRra3VQYkFQSS01RUlXTHl3T2VUTkJzblZuNkhjNk5FRm80ZEN0SG1IZVBiZHhXTGk?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "RS"
+  },
+  {
+   "titulo": "Concursos Guarda Municipal: 1.460 vagas previstas em editais! - Blog Gran Cursos Online",
+   "fonte": "Blog Gran Cursos Online",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1MOUtacGZsZ1VzTGRVOHNGQTNqdTRvRnRIM3RfX2d1QnVYN090V2wwSDd5YW9zTUUxeTlVUi1yYU9sQk5WRDhEYnFhVWtINk9vb0JTcGtSVHJmZ0JHUklMUEI3M1dtQzI5S1o2MlVMOXl2dw?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "TO"
+  },
+  {
+   "titulo": "Concursos PGM 2026: veja os editais e as oportunidades disponíveis! - Blog Gran Cursos Online",
+   "fonte": "Blog Gran Cursos Online",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLWjhOUUg2ZEc4T0xFVVZ4NkhfR3RGZ2c0dXNESzJDbzdfQVhhNnNrOWJweFJONFpIdWVtSDI5X1lkc3k3c3ZvLUxnRklLcnBCalMtM0tfYmJ0akNzY29ZVA?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "TO"
+  },
+  {
+   "titulo": "Concurso SEDF: banca será anunciada nesta quinta (15/10)! - Blog Gran Cursos Online",
+   "fonte": "Blog Gran Cursos Online",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaZGdXemdaWGQ2UVRZSVJfaUUxUVNBVzhMWlZlWnV1NG5DTmIzZnRFbGJ0Q3pVSDVIVGRNck9Sd3dUTlAtdXYwbENIQ0s5NlI1SUJZaFpfS051ZElkVUs2anhEbFI5UjFBajlJTW0tWmVEUQ?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "DF"
+  },
+  {
+   "titulo": "Resultado do Concurso Bombeiros RR 2026: acompanhe atualizações - FiiBrasil",
+   "fonte": "FiiBrasil",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTFacExTb2JKNU9nZzJvVFl3Q1BNUnYzUFAxQWdlYTkyeU9DazlmMGhHd296UjBxRzZSMFJBT1REb2ZsVGhFTVdBWWVTTjJKMF9uNTZiN2NtWER2SUxOS0haYmcxZVF3bkVoSVNaRE5pWjN2cHdLRnNMVFJHSi1VcTA0Wms?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "RR"
+  },
+  {
+   "titulo": "Concurso EPTC Porto Alegre: provas em novembro e dezembro - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9neWMzVFlDNk1MSnVUeHpEbkJoR0ptS2Y1XzZlVTJUeXY2Z0t3bFdVUmt6WnpndHRMTEo4RHMycExGWXVualVUQm1nUTNMS0tlMDNLYnFvVXJubDFMUF9yR1NKWmg5MGtnU2U4TGUzYngycDhhVmfSAXtBVV95cUxPVmVHSDZxTFNocnVEaGV0QzZ0Xy1rUnA2ZTViRHE0NXlsbmFoWEtaOTl3b3YtTDBlOGdqSXgydmNRalNjaXVVQmFDdl9VdWsxTkJYbW9fWXV0QlYzZWVfcW9zMHlERWQtSjI5azZCX0ZSdXl1SHVnZ3l5Rnc?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "RS"
   },
   {
    "titulo": "SME Rio publica novo edital com 103 vagas para professores - Qconcursos Folha Dirigida",
@@ -12857,8 +13319,15 @@
    "titulo": "Prefeitura de Porto Velho - RO retifica concurso com vagas imediatas e cadastro de reserva - PCI Concursos",
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaXFsWVNvcE92bV9uNEhFcTJjcHBxNENvOHQ4aDhGbloySkRoRWx3NXd6SnpyS0YxYWVUWXpuN3puZDF4eVpnN3ZCOTl1Z21FaDNIM014SFRadGF1enM2bzFneHFWNVFqVXJoYW93M1JFSXhPdy1ZTWd3OUNMa0JVZFJ2RVpYV3NWdmdOSTBjZjJLSE5sM3d4UVhuZDF2QzJwRTR3UzBhbnpyRC1RajdOc3Ztenh2NHJZNGhiNjdoZlljTnBJZTZpaQ?oc=5",
-   "ts": "2026-10-14T03:04:41Z",
+   "ts": "2026-10-14T07:00:00Z",
    "uf": "RO"
+  },
+  {
+   "titulo": "Concurso ISS Queimados RJ: provas em novembro! - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE05MHI5MFN6LWlGWXJ3V1cwVndSY2FGUDlET2wzZkRucW55bUNtMnltMUpGNDRaOWp1TnJDXzE1WVBVUk40cGlaZktoLU5OWmhuYzFockZ4RDJKZHdmU1B1dU1EMENDbVNyLUZrVUJpcGlNUGhD0gF6QVVfeXFMTnllbFNyRXEtaTJPNmVoRkFsaEVOV291MEZRV3NjZERSTC1CQ3VhS1EwRXM5THY4TW51ak43S1Y0WWVzYlVYNWh0Sm9OekMxN0l6aHF4dDVGRHVBb3ZldVRSdDhTOTVRN01SYVozemxfTzl6V1dqYTFjYmc?oc=5",
+   "ts": "2026-10-14T07:00:00Z",
+   "uf": "RJ"
   },
   {
    "titulo": "Concurso INB 2026: Saiu edital para nível médio e superior - Ache Concursos",
@@ -14163,13 +14632,6 @@
    "uf": "CE"
   },
   {
-   "titulo": "Concurso SES DF: assinado contrato com banca e edital com 2.379 vagas já pode sair - JC Concursos",
-   "fonte": "JC Concursos",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNU1GazVOdmg5eDRYMEhZSXdwZU81SF9oZENNYnN3S0c0eUFQT1p5NkFPRkRJYzRhbkVfcTVQQlJaM2VpLTNWS2ZlTUJMTTRjMTZ3eG5JMXpsQW8zY1VMckxVOXZKOVU3bVNLWlhBbHl5ajdBLU5JMTlwN0F0SGZ4YlViSkhUVXFMdkVDLVcyR0pnVzV6SkQ0REpIRXdGdkhQSFEzdVc2TTByZVVmZDBCU2s3UXI2ZTlhM0NPaVJJWlJKdEZZay1Gc3lrX0rSAdIBQVVfeXFMTU9iSU9La2c5WTd0Tm0xaHVYWHdHWnlkX2lBWXhVRTdNWm1KSWNHMzJTSWhQaUs5d0RXTkJyandoQ0llZFNBdW1mVFlfQWw4SVJpNHFFN1FuVm5ZektEUk44UVllNHZtdVhfeUlWZjhaRjQtT2syR0FkVTlPdWptaXZIUGFha1RXOVRzTUVCZEswWFhGSnA0SGZQUVk2NmlYdE9vMDNHY3FtR3JFc2tTajQwUktHa3daU08zcXNmVHA4ck9nWW5XQTZ3bEJXTlFVVHJn?oc=5",
-   "ts": "2026-10-13T09:30:33Z",
-   "uf": "DF"
-  },
-  {
    "titulo": "Concurso Colina SP: novo edital com 15 vagas + CR - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBsMDVFRWh4UHJBMTV1YnZFTXFrYzhRUlhMVHFSdHFEMTdRb28yMGl0N2JfQTdsV1pKdVYyMGxveVlPd3lvdlhONWxONXRrVWRWS0ZqX0p5VHQ2TE9LeVlLOU9ZMVdsNzlvbGtOVlRXY1ZwTkFxY0HSAXtBVV95cUxNaFdiQkUyVUFfVXd4YjVtaDNPcDltTFZ4RmtEeWRPNDRHZTJuUGE3SFhkWWZUWnhZQzE4Z25mbVdWSVlmMlRUOEs1amt0N3Y0ZVVnVC1Mb3ZSX1N6ai12aVdtVGd2N2tIR0lNWTVSTWtwdmdwNWlySl9xUDA?oc=5",
@@ -14247,6 +14709,13 @@
    "uf": "RN"
   },
   {
+   "titulo": "Concurso SES DF: assinado contrato com banca e edital com 2.379 vagas já pode sair - JC Concursos",
+   "fonte": "JC Concursos",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNU1GazVOdmg5eDRYMEhZSXdwZU81SF9oZENNYnN3S0c0eUFQT1p5NkFPRkRJYzRhbkVfcTVQQlJaM2VpLTNWS2ZlTUJMTTRjMTZ3eG5JMXpsQW8zY1VMckxVOXZKOVU3bVNLWlhBbHl5ajdBLU5JMTlwN0F0SGZ4YlViSkhUVXFMdkVDLVcyR0pnVzV6SkQ0REpIRXdGdkhQSFEzdVc2TTByZVVmZDBCU2s3UXI2ZTlhM0NPaVJJWlJKdEZZay1Gc3lrX0rSAdIBQVVfeXFMTU9iSU9La2c5WTd0Tm0xaHVYWHdHWnlkX2lBWXhVRTdNWm1KSWNHMzJTSWhQaUs5d0RXTkJyandoQ0llZFNBdW1mVFlfQWw4SVJpNHFFN1FuVm5ZektEUk44UVllNHZtdVhfeUlWZjhaRjQtT2syR0FkVTlPdWptaXZIUGFha1RXOVRzTUVCZEswWFhGSnA0SGZQUVk2NmlYdE9vMDNHY3FtR3JFc2tTajQwUktHa3daU08zcXNmVHA4ck9nWW5XQTZ3bEJXTlFVVHJn?oc=5",
+   "ts": "2026-10-13T07:00:00Z",
+   "uf": "DF"
+  },
+  {
    "titulo": "Allyson promete concursos; aprovados em Mossoró contestam discurso eleitoral - Saiba Mais",
    "fonte": "Saiba Mais",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUlpVb0ttWUwzdVNNcGdMenQ4ZWZreDJKWEhpbTE4N2owd1k3anBfUmlNM3FJclJMaUFmbXBhZ3liemlUUnIteklJRF9iTzNOVElydUgwMVhTM2x6ZUMzN0x3SkwtTmF2VnhuUXNDSWJJUlRpWmQ5VkszUjhabUl4S21na0dfYkpCajFzcFdWWFZmd0RBa0NJdHNCRjlKODdERzlZNEhySmo4eUZlSmc?oc=5",
@@ -14279,7 +14748,7 @@
    "fonte": "Prefeitura Municipal de Floriano",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV0dlM3RlMkJ3dGQtTFVhWW8zckdxT0VNMm44MS1wbi1BZTQyUU1WbC1sSzhmcXpoN1lxaGo0NWhaUGp6eUlzbVV4bXdZZVVxNnZlSVgyUS1IWGxqbS01c1ZFcEpOX0pGNWE2Xy10ZVpIVVowZ0V2OVZTRkg1RXR3TElybkktMlY3MTJZMERTRmNWRGdkRHVzZjFmSUZlSnlmdE5yZVZBVVpmdw?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "PA"
+   "uf": "PI"
   },
   {
    "titulo": "Prefeitura de Lajeado - RS abre seleção para Professor de Matemática - PCI Concursos",
@@ -14349,7 +14818,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5XRFU3QlpaOUJnTHNDd014TXRoT2VEMVVCc2xEY3lLWjRRTEtPRTQtZVVfam1TeWI3WUZzU2pOZ2NoWnRjanhoeGx6dHpVWFlhdUtRSEZ5ODdES2VPMXJIWUkwMmhSVUs4XzFza25IWHZmR2hWeXfSAXtBVV95cUxNbkZNQVV4ZXRmbExLbjB0UmttMlB6YXBsemxRTXlWdV9mVDdJNHFSQ0NYNjRDMlBkejRYOUJxMHlDekxGcXhWUVh4cjVaQzU3TkVYdUZLTVVCNEpaVUNBalpCa1RPVTJLVFdRdEtKR095RUtDRHYxMEdZV0E?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "TO"
+   "uf": "SP"
   },
   {
    "titulo": "Edital TJ SC Juiz: SAIU! Inicial de R$ 35,8 mil; 15 vagas + CR - Blog Gran Cursos Online",
@@ -14573,7 +15042,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTlJ5czBaNEZyUnQyUTk3ZHIwTDhvQjhVR0k1MzE3S2xlRWtrZjdiR2NSZjRTSEtzcEw5LWdWM3dFUUtMRUY2allwVHBZN2lySVllS2lQRnFrWUx1WXZ5UndpbTM5Smw0djlXS3ppQkV3S0xaUzNhRWZLLUpoNDVHMlBKMNIBiAFBVV95cUxOSDdXT3FLc3NIX2Jaemthb0VPTUJqTDlCZkltN20zMzIwZjdNdVpvUzdkbk1CSVZuWWJuVGFqSHlQTUNISldHa2d6T0FZaHd2YWpScVRON1NONFgtT0NFdGRFV1I4R29zakUyVERlTU5jMjVRRU9JNm4wZEpSdWZscUkzMi1fZkxG?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Unificado MA: serão 10 mil vagas para 18 órgãos - Estratégia Concursos",
@@ -14790,7 +15259,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KUlBNb3h4Qkc4blo5dEYyT2l6anIyOXdlbkFqdEdJbi05SnBqRWFrZjZjZXBfT3VXcVNxSTNWcDE3Q3JuYmt6c2pzVE9CakM4RzJ6aFFWMEt2SWZ5amhSOThEVdIBbEFVX3lxTE9oYXlSZExQamVfZXBuMHJtZHFtVWQwN3E4RzZNLVc5bkJ1ZmdHYXhnRlZLZ290blliYXhHM1htY1VKRTdqS1BJRDNpZmN4TmloeDlVVlNCTDhDWEZpODNLRUJqREpNUWJtVDdQVQ?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "SE"
+   "uf": "TO"
   },
   {
    "titulo": "Prefeitura de Vila Velha - ES republica edital de processo seletivo - PCI Concursos",
@@ -14818,7 +15287,7 @@
    "fonte": "Diário do Nordeste",
    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQYjZTMVZNVjJTWTRsMFc3b3FKajgwREN0ME5LcXE1bWozNDlXUEd1VkRfdzJNSU0yczRUbDNmWmljOGo1UVM2TXh5dmlNZF9hWXNtZ05wWUtIb0RYdzBQOGJ4b1FpOFZaT0ZselZxWFBIa1VtQk9WcXo5YkdGX0thV3YweUZlYWRqdlZzZmNiWFJYbXdCMEVMV0RRNTdSOWZ5am5RMmNKMENhZG1xenIwenpFZGt2SEVjOWJUdEdsNi12WkM1Y01HMVVweENwNlA4Z1ZBc2ZkdUoyOFI2MmIwTFRreFg4NkU1ZkdGWWp4bURLUQ?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "CE"
+   "uf": "DF"
   },
   {
    "titulo": "Prefeitura de São Domingos - SC abre processo seletivo para cadastro de reserva - PCI Concursos",
@@ -14832,14 +15301,14 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5NSThSdUlDeWxUV2YxN2lVcjBFMVBhRU9MaUt6amdIZHVkWF92M1dHMUlTeV9CQWVhVHBZa2pEcV93XzcyVG9BQ1ItNmswX0JWdFNJQ1pjMG01dVlaWDlZcTJJYjN0LUHSAWxBVV95cUxQMHVSS2pWelcwVDVLdU1xbnppY290OVdKTkFaaVhsTU5ZeWdldjhta3o2Vi1yX25WV1JHS1B2WUc0clhHMTJRTmpKNzB4Y0ZSeVotSkY4UVQxdS1VUkVVZEdmbjBkeV8wWGxFdEg?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "DF"
+   "uf": "BA"
   },
   {
    "titulo": "Concurso SES DF: Cebraspe organiza novo edital; extrato de contrato publicado! - Direção Concursos",
    "fonte": "Direção Concursos",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQXZmR1VralZkbUlIUi12QTNYbFBDVVpuUW1kdlB2T1FwN1pKd2tfSkxWTmRkX3c3bVdTSnJtaXBhZXU2NmRBNlV6ZFFGdnN4VW5CeXMwQlVidEVQZ21vc2RlUWdHcjFPSUtYaE51ekNMR05LY0hQYjdHdTkwT1BJaTNqTGJoN2lnNVVXTzBaRFdhZzFPLVJRMUJrWQ?oc=5",
    "ts": "2026-10-13T07:00:00Z",
-   "uf": "RJ"
+   "uf": "DF"
   },
   {
    "titulo": "Concurso SES DF tem banca contratada e edital pode sair - Qconcursos Folha Dirigida",
@@ -15707,7 +16176,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8zQzZyYm9WbkJBNV9RZ2d0djBrZGQzMVJUQVRCTl9KemJFdEFYcjc5emtocnVxa2FTYUNaU0xuaWRxVXpmbWhNV3JwNkxBWDg1ME4wV2F4Nmc5cGgyclpjeFRSMHFZcF9Sc2tlaEhB?oc=5",
    "ts": "2026-10-12T07:00:00Z",
-   "uf": "RR"
+   "uf": "RJ"
   },
   {
    "titulo": "Segurança PR: eleição de Moro amplia expectativas de novos editais - Focus Concursos",
@@ -15820,6 +16289,13 @@
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSGtlaFJfUjJpbGJNanllNkdJWjNqbWtmcHpvUlhKbzZmTExiOEs2RHAzMEJrWExkXzBVcEY2VXVJSXRCdHQ1MGRSZ2NXdnBaX0oyWEtPQWxWY3hrTGNjMlNZdDJMTnk0NFo4UDUxUXVZR2dfQVptakZDdGNYVGlxVm8xWmZyS0pmRW04VFNVXzdzSS1nTENmTlhuYXppX3k4aXBLVS13VFRmeGF3eXhwc2xUTjRTbDF1ZTFOaGpYX0s0dTBqcHpFRGwxbzBfRnM?oc=5",
    "ts": "2026-10-12T01:40:40Z",
    "uf": "ES"
+  },
+  {
+   "titulo": "Concurso da GCM de Caldas Novas abre inscrições para 60 oportunidades - O Hoje",
+   "fonte": "O Hoje",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZmw0Z3I2VHJZSHN5N090b09aZ01jY3llZHJiTTlQZXBWcE5ZT1F1NGQtZHp5YWdiZm9KLWJkVXVFZ050RVdFajlkNzAtVEhyRDFBRXFlX1o3dDUxNjMzSklkbmFVemhmR2p2SUUtOWt3NmlwakdoVWJWMlpyNlpRMUtBaWc1ZzZJb0lIRUVaTHU1SWZJTlhmNTQ4RF94ZVNt?oc=5",
+   "ts": "2026-10-12T01:30:36Z",
+   "uf": "GO"
   },
   {
    "titulo": "Jovem de 28 anos é morto em Taquaralto, e Palmas soma quatro assassinatos em uma semana - Daqui",
@@ -16130,13 +16606,6 @@
    "uf": "GO"
   },
   {
-   "titulo": "Concurso da GCM de Caldas Novas abre inscrições para 60 oportunidades - O Hoje",
-   "fonte": "O Hoje",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZmw0Z3I2VHJZSHN5N090b09aZ01jY3llZHJiTTlQZXBWcE5ZT1F1NGQtZHp5YWdiZm9KLWJkVXVFZ050RVdFajlkNzAtVEhyRDFBRXFlX1o3dDUxNjMzSklkbmFVemhmR2p2SUUtOWt3NmlwakdoVWJWMlpyNlpRMUtBaWc1ZzZJb0lIRUVaTHU1SWZJTlhmNTQ4RF94ZVNt?oc=5",
-   "ts": "2026-10-11T07:00:00Z",
-   "uf": "GO"
-  },
-  {
    "titulo": "Concurso Unificado do Piauí termina provas; gabarito sai segunda - TV Sim Brasil",
    "fonte": "TV Sim Brasil",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeldPbFA1bUtDcTBTRHdkRG50bnpuNVhWalFYcEFqckVKbEtPd3ZaRG9iNmVuRDFNVjBFdTNGR1NjM21xQkJSWmtodHB0NnNQZVNhdFhiWFY1cE8ybjZ0YUkxaDlVUjE1c0g3M2U3ZnV6dkNRUW5RZFhKSkRZR3dUYW5zaXc5MndQYjJLOUU3N3MtMHA4Z3dIY1g5bF9rYXBCZThlLXFJWlpMNnZkempobjN5QXRXTkdUWWM0NFh3?oc=5",
@@ -16162,7 +16631,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbk40SWs3TnpyT1RLZkxjb0lzZUpFLU1mSDg5cDc5c0JHLV90cE9kU3gyYlZOeG5JYUMtMG9PeVVEclo5WnUwWHE5WU9VX2NhYTM1bWx4enNEbHlnaVAxcWFrdjZTeEQ5VWpKZGhIOWM1V2xqanJLVUZnNlVsREZPZWlIZw?oc=5",
    "ts": "2026-10-11T07:00:00Z",
-   "uf": "DF"
+   "uf": "TO"
   },
   {
    "titulo": "Contingenciamento do GDF pode travar os concursos da educação, da PM e do metrô? - Correio Braziliense",
@@ -18125,13 +18594,6 @@
    "uf": "AL"
   },
   {
-   "titulo": "CGU abre concurso com vagas para o Acre e salário de R$ 20 mil - ContilNet",
-   "fonte": "ContilNet",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV3RXV3AwTmZpa005MDhUSTdaeFhXbDJlSUVacWtfRWhUeW9LWTE3UHoyanZud1BBeWFfT0hIcHJzRmN6akY5cFpfa3dISFFFUjhnVlBCZWxUWXhVZ2FSMGFJWU9BZHZ2U2dTV09SNzlYSzRGMDZjV3BnSEJFZWRzckpXOHRweG5CeDhEYUJOSDdXY1FjTThJWDdvcXlTVjFhZDJMWnRwNA?oc=5",
-   "ts": "2026-10-09T09:59:42Z",
-   "uf": "AC"
-  },
-  {
    "titulo": "CGU abre concurso com vagas para o Acre e salário de R$ 20 mil - ContilNet Notícias",
    "fonte": "ContilNet Notícias",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV3RXV3AwTmZpa005MDhUSTdaeFhXbDJlSUVacWtfRWhUeW9LWTE3UHoyanZud1BBeWFfT0hIcHJzRmN6akY5cFpfa3dISFFFUjhnVlBCZWxUWXhVZ2FSMGFJWU9BZHZ2U2dTV09SNzlYSzRGMDZjV3BnSEJFZWRzckpXOHRweG5CeDhEYUJOSDdXY1FjTThJWDdvcXlTVjFhZDJMWnRwNA?oc=5",
@@ -18151,6 +18613,13 @@
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQWFhT1NvQmwxZHN0c2lyUV9FSFFkVW5sa3cyUno1T0pkaThZbWk0S1M0UWEyRVJ3MklsNzRSSDQ2Mm5oWnlqdzE3MmQ0QnRwckZZOGZRaWtHNmVQSDIwMUhQZ2RfVzBWWlRLeER6MnpoMVZydUdlUFdRNHNZMk5GaC1KM2RHWU5MOXRoX2hFX1BrTHluTDV0cURlODJFZU5FUWpaUUI2QTBIb0tkMVZPaEpEZw?oc=5",
    "ts": "2026-10-09T08:38:00Z",
    "uf": "SP"
+  },
+  {
+   "titulo": "CGU abre concurso com vagas para o Acre e salário de R$ 20 mil - ContilNet",
+   "fonte": "ContilNet",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV3RXV3AwTmZpa005MDhUSTdaeFhXbDJlSUVacWtfRWhUeW9LWTE3UHoyanZud1BBeWFfT0hIcHJzRmN6akY5cFpfa3dISFFFUjhnVlBCZWxUWXhVZ2FSMGFJWU9BZHZ2U2dTV09SNzlYSzRGMDZjV3BnSEJFZWRzckpXOHRweG5CeDhEYUJOSDdXY1FjTThJWDdvcXlTVjFhZDJMWnRwNA?oc=5",
+   "ts": "2026-10-09T07:00:00Z",
+   "uf": "AC"
   },
   {
    "titulo": "Concurso Polícia Penal RN: resultado final da objetiva! - Magistrar",
@@ -18941,7 +19410,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00RUliLURsQVZZM2lNd1B2dGRkVUZLSFhCcGxGTjR5NEZuUFZ0c1lBMk1XQ2duMFVpTGtBY3lDNldTOFFpck1CT0xMd0xYSmVNTF9pVFlnWkxSc0tFaFEyTFR4djk5X3NDVVpPd2UzS3JlcVRl0gF6QVVfeXFMTzBkS1BWek1PamxUYVhKX2Y4aXdHa3c3TUQ0WXNVY2dBc0ZtTUt4bzlhWTZ0WjFfSDR3b2NKTmxiclJhdDhrVFVGZWI0bjVqWW5NR3gyemEyeDZhSXJJMlpvaDBQYWYxSHp5cEpfRmczb3M4ZDlxSGVrU0E?oc=5",
    "ts": "2026-10-09T07:00:00Z",
-   "uf": "MG"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso público: mais de 500 vagas na área fiscal em outubro; até R$ 33,8 mil! - Direção Concursos",
@@ -19025,7 +19494,7 @@
    "fonte": "Magistrar",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5IWmQ1S0RDOGZWbW5kdkVRRmVuWEh0R2J5OWlMbVZUcDlZSHhVWmtpYXA4S01ySjZObXYzNFN3dlhVOTBOYUEwTlVDUTNRYzgtZ25fdzNOaVNXR3d0WmZSTmFfT1BXdVZp?oc=5",
    "ts": "2026-10-09T07:00:00Z",
-   "uf": "RO"
+   "uf": "RN"
   },
   {
    "titulo": "Concurso CGU: edital é publicado; iniciais de R$ 20 mil - Magistrar",
@@ -19102,7 +19571,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQT1g0ZjZEQnRfZFp1bkhNYzh5ZF96aEg1cU5BX3Uwb0lyaXhHZy1UM2lKS05YZ1NrVFZBUENJbXpzLW1HRzdtTDlCNWQtMTlQQkF1YUlDVTAtR3VGOWtvR1B4U3pEcVBpb3gwaWhadHNUNWdfdnVrTVExalNPZV9lV3ptXzFJckhaQktZYXNwb0doV204UVFHOW82dlRNVmtER19MNEU5b01SSlJmRlY0YjVZNXZDTmZ2X1NMTHJQckY?oc=5",
    "ts": "2026-10-09T07:00:00Z",
-   "uf": "RO"
+   "uf": "DF"
   },
   {
    "titulo": "Concursos abertos com inscrições em outubro; até R$ 39 mil - Estratégia Concursos",
@@ -20586,7 +21055,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53dE55dDZqQk5RMUlZNWJwdmt5UERYN2pKaUgyYmVzVF9qZ0sycVZkTGtlaFdwNTctWkxGVkZ4OHZDbF9qX1M5a1h6dl9hd2E3ZEF3WWw1UWxRSVZJVXlRazFmUFo4T0o3cWlYbjVpS0NfZmE5d1lldjFB?oc=5",
    "ts": "2026-10-08T07:00:00Z",
-   "uf": "SP"
+   "uf": "TO"
   },
   {
    "titulo": "Câmara de Marema - SC abre concurso público para o cargo de Faxineira - PCI Concursos",
@@ -20963,6 +21432,13 @@
    "titulo": "Concurso Guarda Civil Metropolitana de São Paulo - Prefeitura de São Paulo",
    "fonte": "Prefeitura de São Paulo",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1PeC1NcHg1bnVDTmZyWHlVOE5hQ0w4VE1zZkEtcFdhYlg5RzNIazFFNU9peFZtMlVEOW8tdW1Ha2YtczFCcVU0a0JCTU14OWxGaHU0VVAtbGVwaFQ3UWJQVEx2U3VrLVJUa0hfQ0I1c3Y3dw?oc=5",
+   "ts": "2026-10-08T07:00:00Z",
+   "uf": "SP"
+  },
+  {
+   "titulo": "Concurso CRT SP: resultados divulgados - Estratégia Concursos",
+   "fonte": "Estratégia Concursos",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54clRSdzFmWlF6UlJ5REcySm9IcFEwUGJNNllNUXhfQloybEp6WnZ1TzhTeGRQWjUtQUFRdXpUcXF5ZktMcXhKQS1ZSDcwT1ptb2JqbnlaVlBITTktdHdnWlpNcVRrWVXSAWxBVV95cUxOOS1CX2NSVTIwakRiQUdsV2d3YnVVVll1bTcxVFZoSVlBR0ZGNGVmVFFNNGJPR2xRNnQtMHRaei0xUEpYVlNIZW9OY3BFNDZkdjg4TWVPclR3TzhlZFFhNnpWWlZlbnR4dmF5SzI?oc=5",
    "ts": "2026-10-08T07:00:00Z",
    "uf": "SP"
   },
@@ -22371,7 +22847,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1RVTQ1bEJjN3pRTFUwLTBzZ2k0NEFzOEFCQ09aTXpZdUVuWWxSMWtaek9HeVlnNy1iVFhtc0FYYVJqZnlDdGtVa1dkaUhWQ1N1M0pVVV9GUUpFdVlSa29pbjNOTdIBaEFVX3lxTE9qMHFqMklERFI0OHRTdkFPYW9NX1BHQ0FwZTgxMjlGejlNUUMyUVFXSzBJeG5aTm1pWnBMblpGM05JOXdmWlM3Zml3STBhdm1ZNlFfeEVDWXNkQ2JHU1M4d2lycGt1bFBV?oc=5",
    "ts": "2026-10-07T07:00:00Z",
-   "uf": "RR"
+   "uf": "RO"
   },
   {
    "titulo": "Concurso Prefeitura de Imbituba (SC) remunera até R$ 4,8 mil - Concursos no Brasil",
@@ -22399,7 +22875,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kelpmVy04aERoRlVsUFVJVzJESS1LanpfQTJpRUpKbDlFTkhhWDBLN3lrWDJPZk11Z2xtRkFCajhwZWF1V21QdVlnMHg4azlZMFctNGNQYi16OW5OUFBYVlp4RVFKZ2RoTnc?oc=5",
    "ts": "2026-10-07T07:00:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Prefeitura de Caracol - MS abre seleção para cargos na educação - PCI Concursos",
@@ -22644,7 +23120,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR1ZkYmZzcTIzQmNIekNOUWtQUHNFdTg2RWZTclZfUnpsM3VLVDV4N3l1Vksyc2tjckE2a2pLb2ZkUEJoWTNvd0dUM2NlS2lOUmY4VEdCbHZ5VUJpYzE5OVlFSU1xMGlINkVaUVRaODUxVVF3LXYtMEphXzdzMHh1U1YzWENxZFg0dm1MMHNYWmd5bDNmbUN3alhPT1AwblVxQmRtZ3BuOTYtRlNSLVppejRJOA?oc=5",
    "ts": "2026-10-07T07:00:00Z",
-   "uf": "RS"
+   "uf": "RN"
   },
   {
    "titulo": "UNEMAT - MT abre processo seletivo para professores de ensino superior em Alto Araguaia - PCI Concursos",
@@ -22974,6 +23450,13 @@
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU0dYNG9oOXRQVl94cTEyUTJ5M3FlbjN1dkpTZEhORkZBQk04bll3UEVlSzBma01KMER6QkUwNFZ1cDFybW43UmNPVnRJVThjVlVGLXhJclUyZ3hsdllmTVFUcW5aZEY2b3liN1ZwYTFOVUY3REI4S3NMdnNjRlF1eFFBNDRZcXRFMTR1b0ZhbElNUkdETEdFVmxhOGNiTEZoODVwamFBbTdwMHRvSjhEaFBfeF9aV29mVlUyQ1dyaGVON1drdmJ1S1RJLUw?oc=5",
    "ts": "2026-10-07T07:00:00Z",
    "uf": "AL"
+  },
+  {
+   "titulo": "Governo de Goiás nomeia 41 novos policiais técnico-científicos – Secretaria de Segurança Pública - Goias.GOV",
+   "fonte": "Goias.GOV",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbWo2ODloakFoQzFaT080VC1WRE8tVURkNFlxeFhDZDdiOVAzSTQtempzMjdRTDVVQU5tN2phTEZKTC13aFQ3ZnVDVU1TLVBxLXZUQXpoNTlmWmRKcURxQlFaQjRqYXlfQVFwWUViV1RLTHpyYTNEWElyLWNMZEhpMmpzb044UFh4YnFKanBvMVFnNmJ3ckZZWm9n?oc=5",
+   "ts": "2026-10-07T07:00:00Z",
+   "uf": "GO"
   },
   {
    "titulo": "Prefeitura Municipal de Olinda: Ministério Público investiga preterição de aprovados no concurso público para o cargo de Assistente Social - Jaula Cursos",
@@ -24415,7 +24898,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aS2p5ZWlYZWJ1SnFPWlBES2NRMlR5MmZPSkp4YVQ1UnNVdEtMRFpSOFFoQVRrbHdQYU5Ub3hKUEQ1R3Z1bjlrcElFRi1sTGVGcE83ZzYzdUF0aGdxSGRJem1Nd9IBaEFVX3lxTFBVaFpjMFlyc0ljb0FKUzJ6VFVBYVlFRmNFVFE2UFAwNjgtc1Y2VElLSVlXZUNwWks1dzdldl83NDM3dlcyOFViNFRkTUpWTjJuazZDS09LUEpOZ2FZOXlzS1gxbEV5cHFs?oc=5",
    "ts": "2026-10-06T07:00:00Z",
-   "uf": "PI"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Perícia Oficial MA: 76 vagas e até R$ 14,6 mil - Estratégia Concursos",
@@ -25626,7 +26109,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1DMXVEQ0U4S0hpU2JSazVOa0JsbnNueGhmdlhfa0VrcnVjeUVFU2xEY0JjTkpnN3dqRy1hRmxoUjJEM19SeU1yUFNJaHpEQkgyTzJJUVh6d2RfNm8zRjdNYVFoSlY5QXRub3NNd2FsYw?oc=5",
    "ts": "2026-10-05T07:00:00Z",
-   "uf": "RR"
+   "uf": "RS"
   },
   {
    "titulo": "Prefeitura de Piquet Carneiro - CE divulga retificação de concurso público - PCI Concursos",
@@ -26459,7 +26942,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVzhEQmxmVTBqQ3paMFlwaTlXV2lCMmQxZEJlNnRvTzZUUU9hOXgwdXdVOGtPTWFfQUlIcXhsaktMMkFlR1JpVnhNRnBxLWpFS1FnRDBCQkRPaUpmUFFpY0FVckNnUm0yUmFNNjZyc19OYks3UUFmczVaUGtmUHIzS9IBhgFBVV95cUxQNDRFaFYxT2UzM3FfdlBreHlPMm9aUFdWOHZqZ0dqNEFIZ1VPaUg0ZnVQRXg0dElwaUY1b0VMd242OGhTTE1TcHFyTThGeWZQcFZmLWRmNWxSTUFPU0F0X1dpZzVhendtUHdmWUpydmJHNnJ5MlA3MUJmdzJBdWpnaEN0cFZFQQ?oc=5",
    "ts": "2026-10-05T07:00:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Belo Jardim PE: inscrições encerradas - Estratégia Concursos",
@@ -28002,13 +28485,6 @@
    "uf": "PB"
   },
   {
-   "titulo": "Noticia - Roraima na Rede",
-   "fonte": "Roraima na Rede",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeG1ZREhybFNXYVFZSUJXQVJGekJWWmNwYmhCTkJycmRJd2c2aEhVWDVRbmpwS01yb09SbUN1c0NSZHpCTnJBenE1cExvOTJ1SC1CRXFpamNabG9NY016X0NjNWFxSlFzNjI4OTljUXozOEFRR01hZW5mbXF1MmtFSHQ0anRGbG41bGVHQkVpU3VBM3NjYWMwU3B3Ym4xMDFTTUlsSkxjVHFtZWNabGdyREphNC1rZTFMX1lqTHBn?oc=5",
-   "ts": "2026-10-03T07:00:00Z",
-   "uf": "RR"
-  },
-  {
    "titulo": "Amapá abre dois concursos com mais de 300 vagas e salários de até R$ 8,3 mil - ncnews.com.br",
    "fonte": "ncnews.com.br",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdXVUOVFTQnBSTW5OSHN3a1ZtSk93OHdOc2g1djFnREVZYnZuNU5rbEpaazhtME9uZUV6dWsxVy1Ha2Ixdm9fbkd4a0tqM2hnTFlFbTR6VG45ZDNkTHdtYk03OVJ0OFdJbDhwbEFwc2E4d014RDlTZ19HcUZPcHBoM2M0QVg0QllmNkdCekd0SGlyZHRnQ1VJeUlsVVVGdXAxX3laTndVT1p0YVk0?oc=5",
@@ -28769,7 +29245,7 @@
    "fonte": "Folha Patoense",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNd3hFc1RYR21oMjZuSmJ0d0Z2b1I3WlVCdHZQVi1YVzQzYTNvQ2Ztb3NJTmo4Unp6dmNTUFdwQ2w4OGxfcHhfcEtNTHk3a2xGcUpON3VRU1FBQUJhekdxYTI5TnpIV3F3b3VxSWJkRnNJMzRrOHVoSEVvYldiWHZwZkRHTTVETUkxamhWNFZtN2tPa2lZOFlZcE5YYzhzbHpWMFdPM3BrUjAtQnVsamc?oc=5",
    "ts": "2026-10-02T10:09:11Z",
-   "uf": "PB"
+   "uf": "ES"
   },
   {
    "titulo": "TRT 8 abre concurso com salários de até R$ 18 mil e inscrições em outubro - Imprensa 24h",
@@ -29413,7 +29889,7 @@
    "fonte": "Direção Concursos",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUEotWWNUeS1wNDVpMEU5OC1oRk42eC1IaDE1eEcwRWVSeGNJVUptUXdtdnVRaWdELXRncmxWU0pyNDZXQTZlNHpXc3JUNXNBSFZZeWRhdzVBdVhRVlVlQV9RQXQxNnBJREo1T0JsZWpkYTM5eFI3QTZmY29yRkEtT2pKc1lFZWJKU0E?oc=5",
    "ts": "2026-10-02T07:00:00Z",
-   "uf": "SP"
+   "uf": "RJ"
   },
   {
    "titulo": "Concurso ALEAC: 50 vagas imediatas + 50 CR; saiba mais! - Blog Gran Cursos Online",
@@ -29525,7 +30001,7 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rb0N2TlFIYmQtY09wdzhKY0VxbXFyVWlxVWt6blgzVmE5d0dGcE84blZINUpOVHhKbC1fQkdPdFVXSTV6ODBhdFRST1ZQOVUtd2RNUnUwR1FlQm9kSHdjNw?oc=5",
    "ts": "2026-10-02T07:00:00Z",
-   "uf": "MS"
+   "uf": "MG"
   },
   {
    "titulo": "Ronaldo Mansur destaca proposta para melhorar saúde pública da Bahia - G1",
@@ -29913,13 +30389,6 @@
    "uf": "SP"
   },
   {
-   "titulo": "Concursos Norte: muitas vagas para a região em 2026. Confira! - Estratégia Concursos",
-   "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE12bmZWcnE2NFFhOTU5WUNfZUhvY21jUGV4QzJfbHJaRV91TjJqbThNWThFZTMxWnY5cFdtUjUxd1dMbEZ2Qmo4aXdOV3VzSm5OaUhJWW9uS1paQkp0RzQ5LWFQeE9yZFXSAWxBVV95cUxQSEY2b25VRlh3T2VBZGJnckJNc3dHal9fM1pNQ2Y4TzhOYnV5TVk4N3A5Qm1zV2VIbjVRckFWT29ES2NucXRuVnZJX3N6MHNxRDJ4akRJM25FOWVQMEY0d3p4cHVyQ3Jna1lndTU?oc=5",
-   "ts": "2026-10-02T07:00:00Z",
-   "uf": "TO"
-  },
-  {
    "titulo": "Programação completa do fim de semana: dias 10 e 11/10! - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZTEyTVNQaUdUbkI0Vy1mTUdQbVpuZ1ZJV2h2bzNlS1JOSkdyTVJ4d0ViajVLYnpmM1ZkdTluZ3JZYXRuSTROLWlpMEFyTkhETkpfMUpMeXZqeGdYeHNVV2ZscWlLcGRhTlZPU2NoUy1nc3h4LTRGNnBsdmtpZjF5VlI4b9IBiAFBVV95cUxQUndvMFZmZ0Z4Mi1BeFVmajl3djdDN2oxaG1oZWxzMmZlV3d3S0paVHc4UkU1bldRMWdkcV9kVzRvTUROWnNuanZBc0VNem9kS1ZDZWw4Zmg0T19FMFpOV2ZJa0NsQ3ZUdXVqdldFLXZpNzVuWlNWZGpfZmZlS055S0tObXpqWERo?oc=5",
@@ -29978,9 +30447,9 @@
   {
    "titulo": "Concurso Lagoa Santa MG: saiu novo edital com 82 vagas! - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4tQ3BBRnFUNlN6Q1AzNUF0S1BPaHVZMmRtUldQWnc0UEVrT1I3Vkd3M3I3UHZqRElyQWdldDZVQ2h6b01XMGNhN3FMcGRXOWxBUEtoeFJTZ3VoUy1mTXVhLXFwdEhiZnZRb2E4U1F6YVJIWE81d1pFUmhCeEU?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4tQ3BBRnFUNlN6Q1AzNUF0S1BPaHVZMmRtUldQWnc0UEVrT1I3Vkd3M3I3UHZqRElyQWdldDZVQ2h6b01XMGNhN3FMcGRXOWxBUEtoeFJTZ3VoUy1mTXVhLXFwdEhiZnZRb2E4U1F6YVJIWE81d1pFUmhCeEXSAYIBQVVfeXFMUGl0TmZ5a0lTcVpQYl9tZWdUU2NIbVB1THk5Z0x1eGpLOFRaUGh0eXVJNVpUWjFlMVdVY1BCNHA0MHNsSE43cWR0M09EdnNoQng5Qm42N1Y0UTdLZnc0dGQwOEtHNy1PUzNxektkbEdoVnVsMkRTbi15NHNiY3Y5NHNaUQ?oc=5",
    "ts": "2026-10-02T07:00:00Z",
-   "uf": "MG"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso TJMG: novo edital em breve? Entenda! - Estratégia Concursos",
@@ -30036,7 +30505,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBQb3lETGpqYWlTdF9rRFlzUVo0MlotX1VzV0Zwei1wa01rbjBsdlo5SXhkd1V4eGVfSTRXQllwT3h3WmhjM1lPaE1fTUpVcEZpcE1SU2pSa2g0WGdKandTZmwxLTNFMWlXWTJhb2FkNTE1Y0Jac3ptUdIBfkFVX3lxTE92YUlJVElKSGU5d2x3V2p3THBiSjRjLU0zTDBYWkxvcVM3YkFXendIanVOcnpwM0pkMllHX0w4ZXhFMkZFX01CaUdfUW1Sd2pBV3FMblRQb25naFBZU21mS1NHbnNzVnNTNUV5dWkySG1qVl9QOU0wUGZwZmNfdw?oc=5",
    "ts": "2026-10-02T07:00:00Z",
-   "uf": "RR"
+   "uf": "SP"
   },
   {
    "titulo": "Concurso Prefeitura de Belo Vale (MG): até R$ 8 mil; inscreva-se! - Estratégia Concursos",
@@ -30338,6 +30807,13 @@
    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPcWc3andNdm5yUTZPSWtrTlJUR05MMVJlUTR4ZVBsazJ3X3NySVJOUWJCX0NYYlVLelpiQjhFaXg4aHowZktkY0NUVHhQYjRwT3dnMGxwRE1oZE5jS3o2dEU2czc0RHBTSk5VbGRkWU85clJnSHlDU19OaHJqb1AyYkVncS14Sk1mWVI1TXJvbEN0bm9aTkNuRVdITThfSFBidlNzTEdxTU85ZjhWWnRhMFZWbC1Db21GbWRHeS1SS2RoTVJGSTc3STFBZGs3UkE2UlhrYUNLRXlmQlpfSU5kMGxZc0RaOGJvRjlpOWlRa2tIMTU0VkxYenh3bmE2VUd5dUgzR3dOMEQ?oc=5",
    "ts": "2026-10-02T07:00:00Z",
    "uf": ""
+  },
+  {
+   "titulo": "Quem são todos os candidatos a senador por Rondônia (RO) nas eleições 2026 - JOTA Info",
+   "fonte": "JOTA Info",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUVlZMHU4Wnd1SjBLQnBWcmczN1UzZHAtZGozWjYxWnpEOHAtODdia1ltZUhDQTN3SU5yRm1paUJIOU9IUW04Z244MldkdVNJVHY4Tjlvbk15MVV4NzEwN3hqb1l5cHZsRkRBZG9YTVh3YUNjZjV0VGFmd1ZRTkNvOXpYXzZBYndtanVlYUxKcm1VeVFZQURHVEdmOE1pd05aNUs5OU01ZVQ2RzhlQlpPeUhFMV9QbVRT?oc=5",
+   "ts": "2026-10-02T07:00:00Z",
+   "uf": "RO"
   },
   {
    "titulo": "Allyson assina compromisso com Uern e promete expansão de investimentos - Agora RN",
@@ -31359,7 +31835,7 @@
    "fonte": "Qconcursos Folha Dirigida",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jTnVKMGlBdGMxbTFtMGNHNGZmR2g5RWFBRWdMbENQeWxnam94NkVuR0twYk4zYXdONVZLZUNaZjV5N01pUVc1WHc5bkVBLVhBdU5kRjBHTmgwMmI3ZnFIR1RGYmcwQ1RJajA5Vm1lVHk?oc=5",
    "ts": "2026-10-01T07:00:00Z",
-   "uf": "RS"
+   "uf": "DF"
   },
   {
    "titulo": "Concurso ALEAC: Idecan é a banca! 100 vagas confirmadas! - Nova Concursos",
@@ -31723,7 +32199,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VbHd3XzBIb2pnSWtJSXY1aXFGSXZMTkEyMDlLb3ZwUEIzOUNsOVRPa0hOcDhTZE13RjBfTFpuU2hlVUlMV1dvanF1RlFtbGVQRlMtUHpSaEtJcmtuOG9EVzU1WdIBaEFVX3lxTE1xdzUzUkMwTmxlQTVNM256RXZVNTc0UXJCUS04SWQ1QVh4RkQzS1NhemtpbXctOWlrUWwzV0pzY3Zud05lcHlFNUlTcHV6QXJWbkdXTGo0NzdSc0x0REdDUG9ncUtDRXFl?oc=5",
    "ts": "2026-10-01T07:00:00Z",
-   "uf": "AC"
+   "uf": "RO"
   },
   {
    "titulo": "Concurso ALEAC: banca definida; edital prevê 50 vagas - Estratégia Concursos",
@@ -32004,6 +32480,13 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWEJUSVlJd2Z5VGxxT0JHcVh1TjNrWXp3WlVFNXE2NDFhcW5idG5uZXQwZk1mZGFPRlk0X184elBSZVFUNjI4eW1lNC1HUkVKTGNKckc5c0otSlA0UFdhcUJJLUVuMURDNWJGWXV0RDFZU0JveU5qMk1USHFYVW9LelpjdGFqX2oyVnUtd0tUcWRBdzRFVTJacl9OUm94QkVodS1tbThVWFVrTnV3TktQNVY3MHZsOUE?oc=5",
    "ts": "2026-10-01T07:00:00Z",
    "uf": "CE"
+  },
+  {
+   "titulo": "TCE altera regra e reabre concurso com salário de quase R$ 40 mil no Acre - ContilNet Notícias",
+   "fonte": "ContilNet Notícias",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOai1RQ2otb2F2X29PM1FJeW94eTNHWHRpeXB1S2NHXzNCcGxCdTFxMHk3bTJNWmlaZ0Y4Uk5DYnBRT3VTVDdzWTdIajlGVlozdU4wRXZMdUxWdGVRVmNpR180eDNaT21wdGNEQ1RCdUg4THhaY3hOd01GbWJOWVR2bkVvSWRWbUQ1RWpXRjR3NmNqSGFFTk9CU0hQZm1RT290X09kMEE3c0ZUNjZCVDRuXzJtNjlSQllk?oc=5",
+   "ts": "2026-10-01T07:00:00Z",
+   "uf": "AC"
   },
   {
    "titulo": "Concurso São João da Serra PI: processo seletivo de 2018 - Estratégia Concursos",
@@ -32493,7 +32976,7 @@
    "fonte": "Revista Factual",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM3hfcXlhMHh2WG9WaHVJOXZOek1NbGhuQXFwa05tRHc1S3ZKV1J5MXh0SHhRbmNwMERnUm11Z000eDA0MGRIVFlKNG55dkhndGxCWVVIOVJqODkyX1FnVVBGelExYzRwcjhPZGN1WlloUXJEcTZieklnamZnMWIxRkZZY3ZpOE5nMVFQTndTOFlmT3lUc2pJbDR1Nm9wNHFWQXpORDBuc3Ftd1FlZDJOdW1HR2Y?oc=5",
    "ts": "2026-09-30T07:00:00Z",
-   "uf": "GO"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso CGU: assinado contrato com banca e edital com 60 vagas já pode sair - JC Concursos",
@@ -33149,9 +33632,9 @@
   {
    "titulo": "Concursos Rondônia: ATUALIZADO! Vagas previstas para 2026 - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Id3JJVnJncVc4N09VeUIxb21nNHBDaDE2YXk1bWhyZ3NUU0wxOFVsbU5hcnBnck9BLVA5MzJDdHZ0UXFpbDk3c2VKMHdrcGdZQkpfTE1fZUpKdlpnV1N4R281VDJwR1B5Q3Zv0gGnAUFVX3lxTE9rTWJTanA5elp0MG1sVnpMOHh1R3JfRXF6S3BLMnZ1X3Nyc1dXc1VkQWpsaEZDV2YwQ1ppMENpMThKWDZNNHNaSlpnZXg4Rklta2YtQm1FUmdxWlgtOE5tZUN4QjlzLUxBbWVYaTdxcHlNRWtBLV81Zlg4Y0pqbHk4enhJQmE4ODNqWFRqOXJHMnR6SlRMd0ZzenVMM09lT05XbHlXUXl3?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Id3JJVnJncVc4N09VeUIxb21nNHBDaDE2YXk1bWhyZ3NUU0wxOFVsbU5hcnBnck9BLVA5MzJDdHZ0UXFpbDk3c2VKMHdrcGdZQkpfTE1fZUpKdlpnV1N4R281VDJwR1B5Q3Zv0gFwQVVfeXFMTzdSX19BWW43cnlyenoxTjYxNmlrWGV6UHJvS3RlQ19FQy1wV29kSGRudW1QUi14Zkg0UHdDLUNtT243SGtBZDVkLTR2Wmtsck11dWlCZ2NWS09EOEkwaWgxV3E3c016WEtiYkoxU001dQ?oc=5",
    "ts": "2026-09-30T07:00:00Z",
-   "uf": "RR"
+   "uf": "RO"
   },
   {
    "titulo": "Edital PM PE 2026 publicado com 1.320 vagas; até R$ 12,9 mil - Terra",
@@ -33221,7 +33704,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZS0yQ2pIeUJGajJYQ0VWOV95QnRVVTlWRTRKRlJaWkpjQ1V0NHNzSUhKWEJobU83ZDl1cWVUVXdTaUt3eHFReUNkVHU2Mmg4emlQa05uWXVFTlloakUxR1JJNktZQk13T1dLRnkzUzZXcWtRNFlibEhqalZHZFdiRmRPY0IzUdIBiwFBVV95cUxQdFpuSjlHcHlpaWlKclFRdzZ3NS1mWUJOa2FRYlZOWXJNeUVFYlE1dkhST0wyakFJRjBFWmZuTzJUcEgwTGwwTUdlMEwyRmVNOEJSellHaDVmLWlCQmFrVmF5Z3ItUC0yckd3ODEzdFVNdTBJcklpYVNtVFBYcFk3UzdGQjZEX1o1b2s0?oc=5",
    "ts": "2026-09-30T07:00:00Z",
-   "uf": "RR"
+   "uf": "GO"
   },
   {
    "titulo": "Concurso ADAB: veja o resultado preliminar dos títulos! - Estratégia Concursos",
@@ -33663,6 +34146,13 @@
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWXhJLTdIU3RkWVY5TWt0SFdKS1doeW9WMkZUcVZfLWlHYmJpZGNlMDVHY0JnVWduLVRyNklVYTZhVGRkTUROdExqLVQ3blBHN1haN1JQN21jSVFiQkVMajFxMDk2a2Y5eFVjMWhzZkRxaDVCNGxmNzN6N0h4ZXZpMXFPdjFYR2pKOWdoQ2FmZUk4ei1zWW9zRE5oQ0hPbnVKWlFkUmFFMnJlcy1ZcXBMSVV2WjdwZE5TcUVfeXpDUjhuYmpqS0U5QUdUd2c5N2fSAdQBQVVfeXFMUFhHRm1MY3hySWhvWjRyTGFZdXpsNDZDQldwTDV3VjgwaFpGejQ1cjExSHN5cm1TQXNJUlVzQlA5czZ0SjBXZy00RldUT0taa2RtWllYcXNMdWxVU2EyX2VmcEhmUkN3STl1LXB0NXJsM3JDX2trUzBPMXZtb2xGQ3UzZzBqa2pEOXdEU3o2NGZCd1l1NDhURHZqdGZJOUQwSk9kOVNQUEU3RXBfbk9SdVU3aVJkaGVoMEY4RVp6R2k3a1k2a0dSNkFoOXl1eV9USkc3VHQ?oc=5",
    "ts": "2026-09-30T07:00:00Z",
    "uf": "SP"
+  },
+  {
+   "titulo": "TRE-SE homologa renúncia de vice e declara impossibilidade de manutenção da candidatura de Ricardo Marques ao governo - G1",
+   "fonte": "G1",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUmEwNVptLTI0WFFDSTllRVBMaUtRV2RORDNrbTlmSnpCd29Va083RDZvYkhWbjJsWWZINWNldDZTak5MdnBSb0FBeE9lSmk0dEpYNlZraEZRaVIzYUFoc2s3NnJqZDMxWFhFSVJyRm9PMS1pa0trMVd0b1NkWFJEd1dqV1hiTXV4VUV3azRlc2EzSVdQQlJHd3VqVHNNcUnSAa4BQVVfeXFMTVVhb3JYQS1COFlreWV2ZTlka3czczRlejdHcm0wLUZrQkgwZ3VrYWJDdlktYy1OQ2w5N2ZPLU5SSnY3WGdocWR2ZnpKbnlvYmF3Mi1HZkp3OV9zNHlqakhtcThWWllFbHJLUnRzblBiaXRBNnpLQXJWa3I1NXJkVkZPZGpMcVhnM3pPYzc1dnlzcF9mR0ppakY2QWhJYmxCYjRRYlM1dEs5V1V0ZWVn?oc=5",
+   "ts": "2026-09-30T07:00:00Z",
+   "uf": "SE"
   },
   {
    "titulo": "Debate tem Lucas como principal alvo de críticas e ‘dobradinha’ de Efraim e Cícero - CBN Paraíba",
@@ -34845,7 +35335,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51b2w4ZUZoWU1xeWxjdF9kMG1wQ3p5endaSnU2WjBOZHVVSlY3VW05RkJoVG5WMExTZE5EODFVTFRkeXIzM05pM0hSc1RNclN1WWRSRlNoS0RWRWpLSkQ1SmN5djBDVjgyOHZiZjcyZUJyOVdSN2FZ0gF8QVVfeXFMTU1kcXRzS1oxS2tsTUl1UE8tUU9NdlFuWm5QX1IxSFJ3SUwwUk9MaktwVnBmMjRIRGdITFZYakNBT055bE5TWnJFaEU2WTRGQXEtb3RBWHJ0T0prTzZ5Z2J6dUtmN1pZdEp3bTBxalc4VjZGcGt4VTB1TGM4WQ?oc=5",
    "ts": "2026-09-29T07:00:00Z",
-   "uf": "RR"
+   "uf": "DF"
   },
   {
    "titulo": "Resultado Preliminar do Concurso da Prefeitura de Ponta Grossa (PR) é divulgado; confira - FiiBrasil",
@@ -35259,6 +35749,20 @@
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeGMzZktXcWFCbE1aazRJbFNCa2FmelJSLXBSbXUtOHNZbi1PUnYwdlJidVNvQTJWTmRndDZmd0F3bVJvMk9HYl91SlQ0aDlkcVJfTWdyM0hZQWZpYXNQZ3Nna25nVFNjZUUxMjlLblVyZFdTU2hGUEJGa0tfMkdhSlpTcXRpbUE2c0piQm9n?oc=5",
    "ts": "2026-09-29T07:00:00Z",
    "uf": "RR"
+  },
+  {
+   "titulo": "Leandro Vilela anuncia concurso público para a Educação de Aparecida de Goiânia - A Redação",
+   "fonte": "A Redação",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVDBKNjNTWW9JNERLclNNVXZ0UEhuZjVDcFE0Y0lPMC1RRzNtUktrUkQzcEFVT0p6eDN2blZaYUV0U0FVYjlHeEhTXzRYQjJqLVlTYTJuVXVyYjYzMFdjR08wZjdERUs0ajdYb1ZxM1k4Q1YzVlkxWXVZamxXcnFNa2VwLXNNX1NSWDh4TDhTQW5ieFQ5RGZ4cWVnYmtwc2xteDZpT0dBVQ?oc=5",
+   "ts": "2026-09-29T07:00:00Z",
+   "uf": "GO"
+  },
+  {
+   "titulo": "Concurso da Educação de Aparecida terá provas em janeiro, após 13 anos sem processo seletivo na área - Diário de Goiás",
+   "fonte": "Diário de Goiás",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbDl5VEtiTGNfZF9XWlRlMllkaVpBREh1QVNSdmx0Rm1zaGpSSV9PREhNYlhZZXZLTUFXX1lRb29hbjhYdVhaajM5MnluR2x5WmZiREsxeWQ2WnN3UWRfd0plMjZPd2N0Smg4ZFZzUVF5RmlHajNOMmpvbG5xNUJKLTNzRGI3ZjdhNlZkcW52c3o5dVVlc1dLRnlGVnhsQUdqS25PY01SMWVVeDhPSTd4UzdIcWVXZ3BIRGFhWEVFN2Q0YWN0Yno3VUlYOHQyS1l5Q0E?oc=5",
+   "ts": "2026-09-29T07:00:00Z",
+   "uf": "GO"
   },
   {
    "titulo": "RN registra avanços em segurança pública e investimentos de R$ 530 milhões - Portal Na Boca da Noite",
@@ -35706,21 +36210,21 @@
    "fonte": "Blog Gran Cursos Online",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tbjFhM2JoTlNSWmJ6ZjJFaTRHV2h2cHZkR2Q0WjhoMUNGeVUyanVlbGVhc1hiektwYWdRWnd3dWlRdnpveEpXUkRCblZIMUZ4a3Z4YVZjN2hqT3dWUmFRcVo4ckswQlE?oc=5",
    "ts": "2026-09-28T07:00:00Z",
-   "uf": "AM"
+   "uf": "MA"
   },
   {
    "titulo": "Prefeitura de Itarema - CE abre concurso público com salários de até R$ 5.622,00 - PCI Concursos",
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdUhoQmtMQ1g4NlZ3OVRRN0phSjM5Ymg3NFdLdXJmWm5HWlEzUUxPVm8xNS1mZUkxNER0VHJuOU41VUtvenN5S29KdU5vWHRkTmZscVFsVXJ3eHZEaklfdU5nVlFwME5NSzA3b2pYWElUSHhxS09iYmNkanMxMjVlRkNZQVNkaXVfblN6ZkZxZjlsd200akdSSnZBNTZVOEFwRmdwQjVKZXY3bUNCQmJRQ2Fn?oc=5",
    "ts": "2026-09-28T07:00:00Z",
-   "uf": "CE"
+   "uf": "PA"
   },
   {
    "titulo": "Concurso público: melhores oportunidades para Analista em setembro de 2026! - Magistrar",
    "fonte": "Magistrar",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaVZzLVQ1MlBVUUJVd2lUaExBSFFENXpRR0VmVzVXNVVZaFZfd1dDNUkxaEpDTTJWSWp5clRWX21KQzZHSFV3OGpXVXpIMkx2SGlFSVY4aWE3QURZekdDbWxTNkh6V2NCeFByNHFtcG5rcEZTNmFPTGFvSkNOOWM4VEhUY0RLREtXRllnd0dMNVlON083QXpSSTJRM2JnMTlMX3AtdDUzY0xvZlNtR2hZ?oc=5",
    "ts": "2026-09-28T07:00:00Z",
-   "uf": "AM"
+   "uf": "DF"
   },
   {
    "titulo": "Concurso ATA MF 2026: Edital em breve! 2.171 vagas em análise! - Nova Concursos",
@@ -36469,7 +36973,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSEZKLWxRR01hNzk2Y0FQWlhwbnAxSGFHQnVlaGdEdHFmTXdWb0VfRG9Fc2xBNm10WVg4Y0hLcHFsR0Z2bG1WVFJPdkxPbUx1ZU5zTXEwQ2tVNzRnOUhQWWh1UEl0U1BWa2ZiRXowblJQSmViTU9HbmF0YnRBWDNoMUU2ckU?oc=5",
    "ts": "2026-09-28T07:00:00Z",
-   "uf": "TO"
+   "uf": "RR"
   },
   {
    "titulo": "Concurso Câmara de Araguatins: confira os gabaritos da prova - Estratégia Concursos",
@@ -36479,18 +36983,11 @@
    "uf": "TO"
   },
   {
-   "titulo": "Edital Sefaz AL 2026: 100 vagas e iniciais de R$ 25,2 mil! - Estratégia Concursos",
-   "fonte": "Estratégia Concursos",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNVd1dGc2UFQ1bW80Q0k2OXdtMGJVLXlZWnpYYzI4ZGthQ043VzVBb3lEOVlWM2Y2V2ZoME9ZZG9RblNMSDk5T1NKR3ROblJXc3BMd1d0SnhDbnJPZmJXUnV3R3d3XzUzWnZoQ2ZSRGpCZE9iZkZVOUdCZkR1YnJmYkFWazBSMVXSAYwBQVVfeXFMTnFZNlRxVTYxSGRpTlJscUxBMTg4T0J4UUFPYkp0Ry0xODk5djRYTkwzUEtJeTJHZzFHU2tnYVkwYkZQUlNWU21BWFVKbWZERXE0bW5zaGhEQzYxeng2RUJYX2dub2kyQjdnNnNvMklsSXQyMmNzVUZiQjZLRk5OaXlhU2tPWUlLTnMyenU?oc=5",
-   "ts": "2026-09-28T07:00:00Z",
-   "uf": "AL"
-  },
-  {
    "titulo": "Concurso Guarda de São Gonçalo: 606 vagas; inscreva-se! - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LVUtSbmE5Z2RGWU9nWVFSOXo2SHZZQS1BT3p1M1djOEZwcXNGSWlJTll3SFd1bjZGenp5azB1YjNlYV9VcmJrQ3J3N3J5VnI2OF9tdElfNFFtU1dacTdYWGtRY0RRbnE4ejJpX3dVZUM0NVo5eXBGSFlBSUh2S1HSAYQBQVVfeXFMUDFHTXpZem5sS0ExRDRtRlBKM0xWNFdDZEhXZDBzWUs1cmhBRTI4SWtKbHJWbEJHR2R1anBXOUVEZmVHQVdaaDdoS3BycHZvMkNGSmg5LXZqUzhOMkNHX3NacVRoVEprTkJ4blpzTXJWRXJ6Z0ZESGNwd192dE15UWttSEFl?oc=5",
    "ts": "2026-09-28T07:00:00Z",
-   "uf": "RR"
+   "uf": "RJ"
   },
   {
    "titulo": "Concurso Ivaiporã PR: inscrições abertas até outubro; confira! - Estratégia Concursos",
@@ -36532,7 +37029,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE42NW1jbTB6OElTRzg4b0hBMEZJbWpCRkEzSFBaZ3k5Yi1ObmJ0ejhhUW01NXRZQVBZeXBpdkh1WS1rT1ZKV0gwV0lPcklVaktXS0g1VjVNVk1sU3RIVVNQYjZSRzdFSE5sdW5WdXpPUXRHb3pVMmo3U3NaclTSAYIBQVVfeXFMUGhLcWl4MlRWY3FkZm8xTFZBNjBoanNhZnNZQW8yTkwxU28tNV91Qk9Mb3JZN0c3bmRtSTRMSTRqYTZHcGVjeXZuc3JJRE5yMlFXbUxDaUJyOTVkdy02VXRVNWdTbDhxRFFKUmh5RDAzZ1RoU0Y1UEJxQzVSZGlYRnoyQQ?oc=5",
    "ts": "2026-09-28T07:00:00Z",
-   "uf": "RJ"
+   "uf": "SP"
   },
   {
    "titulo": "Concurso Polícia Penal PE: edital iminente com 700 vagas! - Estratégia Concursos",
@@ -36771,6 +37268,13 @@
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNXdWNHBodW8tZ19FandpeVF1THVBTlVxZ2pmdmZaSjMxelg1aHlNTFBKN0stbks5emJ6T0dENXlTanU1SnZqN25EbUhKeXVEYl9xdWFmZE9FS2R4LXJidzRfYV9nRF9TTWIyakZyaGNpZXJxSnJwOHQ1S2tMYjE0cjFkMkRfaFZQOVl3?oc=5",
    "ts": "2026-09-28T07:00:00Z",
    "uf": "MG"
+  },
+  {
+   "titulo": "Concurso DPE PB: inscrições abertas; até R$ 5.197,50! - Direção Concursos",
+   "fonte": "Direção Concursos",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMURZSUtTNU5WU09RSnlVcldxZWZYTWYxakFhaVBoRC0tZHJ6enhoLXUyMEp2ZVZiS1R0ODhOdjk2UHJIYWE0MzMySDBiTnB4RVp2cm5sQ0UwdGJ3UExWdDBhYlZTN1lxUzJnamZpOS02VE5aNDhlSVRmWnZMSzRmMHI1eVRaQQ?oc=5",
+   "ts": "2026-09-28T07:00:00Z",
+   "uf": "PB"
   },
   {
    "titulo": "Carmo do Rio Verde abre concurso com salário de R$ 3,8 mil para professores - O Hoje",
@@ -37354,6 +37858,20 @@
    "uf": "RN"
   },
   {
+   "titulo": "Prefeitura de Campo Grande chama 126 aprovados para começar a trabalhar - bra1.com.br",
+   "fonte": "bra1.com.br",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUWpFSEJveHctU2JNcy01Sl8zZVFWZDgtVTRaVV8ydFFGQ0gyVmpCZURaeGN1Q3hIU3I1aWZJanpVQlZZNm9qbExwTF9tYTVKXzdNSGJ6RV83YTdtUlZrRmVKT0ZqME5yN2g4UURranRJalZuT0czcEYwTVRERUJlMEluQ2JFTWsyR0o2UzFmRHcyTjVsYTBMdWNaeGd3MWpJSm9LSmtqaXoyTnZMN2xDLQ?oc=5",
+   "ts": "2026-09-25T17:37:00Z",
+   "uf": "MS"
+  },
+  {
+   "titulo": "Prefeitura de Ângulo/PR abre concurso com 29 vagas e salários de até R$ 6,7 mil - ConcursosSC",
+   "fonte": "ConcursosSC",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGg3ZlB6YS1MUVpDTm42NHBaSHNUbklueXFGYU8xdnRuVjNVYy0taHpydTNFWUZZLWVKN2Q1bTR4SGxUUXc3OG1Yb0pyeHJFc1kwd2FHTWo1QktqcFNXejJyWUt4YXJjTk50akJPRG8zTzhKQXhQeDBCeVM4UEtvQTUteXZWNkJOOVFpajBUNUJNVVNURG82S2pZRG8tdHZGQjFoMGtrOWQ?oc=5",
+   "ts": "2026-09-25T17:19:50Z",
+   "uf": "PR"
+  },
+  {
    "titulo": "Concurso Jaborá-SC tem retificações; salários chegam a R$ 13,8 mil - ConcursosSC",
    "fonte": "ConcursosSC",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdUVaVzI2Tnk1VUREeTQ5TElGOElYekZROUxZTC1UTmNZX2tDT0w3bmt6alJNQ0hxNGc1Ml9BMzFBQTktZ0xWZ0ZqYllKdlptdVUxNzVGLVVKeWFzZVpIWndqUmFodEJVay00SmJSNG4xbU1VQnR4dmZYcmhkRm1nTXN4b1NGUGpYQWRiTkdRcDlld2Q5dEZvSS1xLUFBOXpBdE5HRE9n?oc=5",
@@ -37401,13 +37919,6 @@
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLV9tVk5YVTZxS3RUdmU5S2Y1MExXRnEyaWxIRloyb3BvdW54MEJuNHhvemd4RjdoazdIbkVHRmhtYWpLbkRtV013alZLeDd6OTZHU0k2RWRKVlJGTU1WS0U0eEJSTGNEUmdWNWl4NUN3RGRDUVA1bW1WbDNyTnBSaF90eE1LWEZjZE90eWhTNTdrN2NCcEhPWDVzaFhsZnUtUDU2V0pQVS14N3lXUS1PbnlYLWNiWFZORmhoWmZqSDVJZw?oc=5",
    "ts": "2026-09-25T12:50:00Z",
    "uf": "TO"
-  },
-  {
-   "titulo": "Prefeitura de Ângulo/PR abre concurso com 29 vagas e salários de até R$ 6,7 mil - ConcursosSC",
-   "fonte": "ConcursosSC",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGg3ZlB6YS1MUVpDTm42NHBaSHNUbklueXFGYU8xdnRuVjNVYy0taHpydTNFWUZZLWVKN2Q1bTR4SGxUUXc3OG1Yb0pyeHJFc1kwd2FHTWo1QktqcFNXejJyWUt4YXJjTk50akJPRG8zTzhKQXhQeDBCeVM4UEtvQTUteXZWNkJOOVFpajBUNUJNVVNURG82S2pZRG8tdHZGQjFoMGtrOWQ?oc=5",
-   "ts": "2026-09-25T07:00:00Z",
-   "uf": "PR"
   },
   {
    "titulo": "Segurança Governo do RN nomeia mais 149 delegados, agentes e escrivães para a Polícia Civil - NOVO Notícias",
@@ -37757,7 +38268,7 @@
    "fonte": "Midiamax",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3lPN1FHSzZidk5rSUUtNV9IR0I1dzR1dUdrQnBLaGxQc3hNMmFqekQ5STdRaWhNODM3eGkzc2VFbjJOejFhaXhOa0NVbWlqREFzRUYtR2lCVDAwbktmdTRKVXFSVk1sUzQ1dmY4ZFBtanQyRktIaEN5N2hZSXE2cnkwQ1NSU1ZSdkZMRW1HV18yWlZqdEJPTmZyVWlqaFJMQ01TSzI0UjBUUENP?oc=5",
    "ts": "2026-09-25T07:00:00Z",
-   "uf": "MS"
+   "uf": "PA"
   },
   {
    "titulo": "Concurso PM MS: governo amplia em 35 o número de vagas para Oficiais - Magistrar",
@@ -39542,7 +40053,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fTDBOOG12NEt3THB1dG5kSC1aTlYwdWVFRjJKZ3h6M0h4dHRvMUI3czc1T2wyUkNSaVktRzlGMFJHem1iYmwyN2J0MjZoeXBLSmYyVWNaajNXTmp2ZDlfaFEwNFVMTGM1ZjVMaDk1THl4NklQc1JuNNIBfkFVX3lxTE5yTkRuQ0ZuTzRrWjlrSW5hMEloLVBvZ0tZY3VES0VKRDB6aUFKY21iNldzSEdHOHBkWE5Hd2dUQWxiSVQ5dnNtZS05NWFEMnZTNXFmY3lpeERnUllFbm5ScXB4TGkwejFaT0czQ09FcEdPb3lNMDd4QUQ4YWZkQQ?oc=5",
    "ts": "2026-09-24T07:00:00Z",
-   "uf": "TO"
+   "uf": "SE"
   },
   {
    "titulo": "Concurso IFPA tem novo cronograma; inscrições abertas - Estratégia Concursos",
@@ -39556,7 +40067,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BLXdxOWZmS2pvVXhVTlh0bTN3eWxBc1R4aGtTcGdidDk0RVpUQVE1dnhoRDRkVGNiX0U1TThubG1IZU4tLXc1RjFzRHdNSkoxcXFvdW9IaWJOallZbE1xR1Eyb0EyZU5VODV0Q2530gFzQVVfeXFMTmFwM2tzaVpZR2hGa29vcXp2dWZyVV9zZEFKTERSZEUwQktVSWYxZFNfQzJHWUJJZDRDbXBSZ09ZLUZzWktqMmZnTl93M0NpSVhaOXFWeWtFNkktUTRiTXlYeHNrNTFQejNDRGs5dWdSVWctOA?oc=5",
    "ts": "2026-09-24T07:00:00Z",
-   "uf": "SC"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Nísia Floresta RN: saiu edital para diversos cargos! - Estratégia Concursos",
@@ -39577,7 +40088,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE92YktfbnRuOEVmaWtXd0d4TExuWmNEQ3JFejFGSUZiZkpJMFFlWjJVTloyX3VCdzhYSTNsOEgwRTV2UmhfZmx1ODZlcjl2ZUVWTWxxUldFYURvTnZ0ZlNHT1dhMnI5UkRHdjdFUDc2YVpNclJh0gF6QVVfeXFMTzdTTVk1NE1qanY4VmpHaFd6eTIxakVyQjlXQWJlNVhHZ2VuTklXRUhOS21fOUpNSzN6emUtNGh2bEh5MlB1WHJLVTFqUkJQWk1raTFrMThlalVXeUp2Zml0MHpScWxJa3gzN1dJcEU3eDhZdkZlMVJKN3c?oc=5",
    "ts": "2026-09-24T07:00:00Z",
-   "uf": "RO"
+   "uf": "ES"
   },
   {
    "titulo": "Concurso de Prefeitura de Aracati CE: 127 vagas e até R$ 5,4 mil - Estratégia Concursos",
@@ -39937,13 +40448,6 @@
    "uf": "AP"
   },
   {
-   "titulo": "Concurso Prefeitura de Gaspar – SC: 38 vagas para a Educação - ConcursosSC",
-   "fonte": "ConcursosSC",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbFhuMllhdWpWczdPR29rZnZRYjh1X0FlSUhxZ1N5aGxSR2s4anBWVl9QM1JCSktGUzhLUXVmenRmdG1kQnBTaW1iLUhaOTdtUzliMTdZZHg0Q2RNZ1lnS1h4dnpaYTVqbXlQaG5oalNrUXh5UFRUbmh0cVpxRFpuMjlMRENNSmtWTjRVUm1n?oc=5",
-   "ts": "2026-09-24T07:00:00Z",
-   "uf": "SC"
-  },
-  {
    "titulo": "Concurso SESAB: edital previsto para 2027 - Estratégia Concursos",
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQT2RyQlRjalVWM0VQY002c1EtYTBkY3JvVWpfci1WNmFpSnpRTHhSOFlWT09Cb29lazhURGNCRXhCWUJsczNUbm5ucU5zZ1BkWURjVk1tZWlKMXRaN2I2TE00SktTdEdnR3JHMUM2SkNDdVNreDQ3cHZqUzMxSldyYXlxbUhmN3c00gGOAUFVX3lxTE5SeWYzWTluby1iQ2ZQaUtSS25VaFozbmVCSHc4U0dHZHNROFczalpkYU9Zem5Rdmp5Rld4Z0ZGWk1uT0NvZHd2djNQd0pYVnZjQzVHV1hvYmVRU0JZSEM4Q0VELWZGdEdudzZvQ2FtdVowalI3RjR5TW1raGFZUjFPQTBqdVJ5VEZ5X2tCTWc?oc=5",
@@ -40075,6 +40579,13 @@
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVVNmY1RKLThzWlNyUm5RSHVQTHY0Rmk0bWpIZC16ZndORTZSd3YycFNCSjVVM3JQREt2SGVNaGZaYVJzVEI0YlNublpaakpFMG9VajFDYlQ2T3FURFBvaFNnVWRubHMwMlZ5bXBEcC10clF2YXB6ZExPOVZ1VzEwZGFSQVVXcEtpSzVjTmEzNDlSQjlnZUotdFQtV2dVOFVfSnI4YkhmNlVTMFE1cnFMZA?oc=5",
    "ts": "2026-09-23T11:42:00Z",
    "uf": "RN"
+  },
+  {
+   "titulo": "Concurso Prefeitura de Gaspar – SC: 38 vagas para a Educação - ConcursosSC",
+   "fonte": "ConcursosSC",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbFhuMllhdWpWczdPR29rZnZRYjh1X0FlSUhxZ1N5aGxSR2s4anBWVl9QM1JCSktGUzhLUXVmenRmdG1kQnBTaW1iLUhaOTdtUzliMTdZZHg0Q2RNZ1lnS1h4dnpaYTVqbXlQaG5oalNrUXh5UFRUbmh0cVpxRFpuMjlMRENNSmtWTjRVUm1n?oc=5",
+   "ts": "2026-09-23T07:00:00Z",
+   "uf": "SC"
   },
   {
    "titulo": "Concurso Curitiba 2026: Veja os editais, vagas e salários - Focus Concursos",
@@ -40389,7 +40900,7 @@
    "fonte": "PCI Concursos",
    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZWQ3MDgtWW9KN1NUYVlkeWI1eFlXaWhiRERmSHJVM1BVTlAwaVM1cl9OOXA5NjNwVGlnTER6YTBTY1EyeVNkdV82NXJlQXVyaFduZGdxdExNaFp4cWo4R3YwNGstNEZKU2FHWDRTd3Nqc2RfUzJReVJyM2lrY2gtZlNiX0k5QmIteGlrMk5KdXFBemhxeGxZVVVld0dzaTlqX3Vid1NNVnhra2tERzJRQ3U5Tm83VzY5eVJZOF9QdjFGRjdqNDFYeV9DcUwxM0NFSEZibDQ0VEZaNkNELWZF?oc=5",
    "ts": "2026-09-23T07:00:00Z",
-   "uf": "RO"
+   "uf": "PI"
   },
   {
    "titulo": "CONCURSO Prefeitura de Arandu (SP): edital publicado com vagas para motorista e operador de máquina - JC Concursos",
@@ -40431,7 +40942,7 @@
    "fonte": "Ache Concursos",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWWpLQW9ILUc0d2RiLUY1OUZONG5XNFd6WjAxSFRGN3JmX3V3UlFLc3RkaE9ZQmpqeV9GTjByc1FzRFdMbk5zbV84bk9OenczUUw0UDRiVE9CNE0tVDdvTEY0SzZNUDJvZGxTNEM1T1paT2p4REZYWkZTSk83MnJTSDR2RkNwZG11QVRjMmFnUDkxYkdkREM3bmZTbUdSeXJocTVV0gGoAUFVX3lxTE9oNnlUMTdJY2FXZFFhUHc4M1R2WENDNURJWGJUSGkxS2k4RDdORUlpRlRmNkUwUUF4MUF5LXZXa3JlM2lUWGRfM1A4dElSU3JOeER0Vjg3OVFqczl0MkRDWDRiRUJDM3lLUEh1SWU4NGh1Y2RFTEQ2OS02VHdzNnJYeEZTQkZVcFR5bUJDc1BJSDIyNlV1d18tMC1UbFM4QVRwMWE3cE9xTQ?oc=5",
    "ts": "2026-09-23T07:00:00Z",
-   "uf": "PE"
+   "uf": "MT"
   },
   {
    "titulo": "Prefeitura de Brasilândia do Sul-PR abre 5 vagas de até R$ 5.130 - Ache Concursos",
@@ -40886,7 +41397,7 @@
    "fonte": "Estratégia Concursos",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE45c1gwOVRWTnd4R2FWQjBjdHc4dHpGWHhzWE53NVJEN0FFNW1obUtzUFZwQmVfaE5qTTIwYzZfTXczTFJ3b0I3dm4xRXNRM2h4M3dHWVF6X3czbTVsVzJkTnFfck1CeDNmNGx5aDBKSV9OanowVHfSAXtBVV95cUxNc21tVGo2YlhVLVJsSFRRUkdWN2ljZFVtTlJZeVd6X05WcVhtUjRZZVVHZlJVT0NkcXRCc3JIdXdOdmZLRk1vc2lEUGh4MnJ3UFlKUFNlbEU3bHlGZ3VydHgxYmdGMjUzVTVqQzJMMEhnNzRtVS1jMkdxNUU?oc=5",
    "ts": "2026-09-23T07:00:00Z",
-   "uf": "RR"
+   "uf": "TO"
   },
   {
    "titulo": "Concurso Fapeal: resultados das provas divulgados! - Estratégia Concursos",
@@ -41328,13 +41839,6 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNenBSQTdPd2xISnhSUHhINTAwRlNfMWU4N0NVUGNiNGg5SHp0aTBzWHNuel9id1lSeHF1TWU5Q0M2NmItN3lIOVhSSmRDazJMMEZWeENMaEdsQVBYd2dVd2xmWm8tUlpyX2dfd0pDcWNVUGh0a2ZHT2RTVERJR2N3ZHJQeXJ0NXNpSVdYS1BwQXNHRUY5TnExWHRkZ1N0TjBrR3l0c1U1TXdPUUJsZnBOck9TY0NhclU?oc=5",
    "ts": "2026-09-22T22:00:00Z",
    "uf": "MT"
-  },
-  {
-   "titulo": "Mobilização da Rede Estadual conquista audiência, mas Governo adia respostas para reunião com a SEEC - Sinte-RN",
-   "fonte": "Sinte-RN",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPaGlsQlFTU1MxZVk1N2s2blJOUmNHaEhud3V6RFJnRThUVzliNVpNVVlXNU5uUklOTWtZMEFwTlBCMzJmNmxab0d6eTlwNFFUR2E1RzZBUGJzN2ZWaWk2T1pJNlkxWkxMRXM0aG14NlFmd3YyeVpjeW1ZNndHbmtEbkdRYWM3NlN4NlhJR0NxcHh5eEJ5N0hEWUZGTGNmVURSZlFCQlpsZDNnZnlHcXctRGpZa1dQRXFuQWtNdktscXJjcTF1bXF5WFhVbHVhWFg0eWJIa2ZBOA?oc=5",
-   "ts": "2026-09-22T13:58:00Z",
-   "uf": "RN"
   }
  ]
 }
